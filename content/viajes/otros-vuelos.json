@@ -1,0 +1,26 @@
+{
+  "key": "OV",
+  "slug": "otros-vuelos",
+  "acto": "Fuera de la obra",
+  "apertura": {
+    "es": "Lugares que la golondrina no llegó a contar.",
+    "de": "",
+    "en": ""
+  },
+  "cierre": {
+    "es": "",
+    "de": "",
+    "en": ""
+  },
+  "cierre_tragico": {
+    "es": "",
+    "de": "",
+    "en": ""
+  },
+  "intro": {
+    "es": [],
+    "de": [],
+    "en": []
+  },
+  "fuentes": []
+}

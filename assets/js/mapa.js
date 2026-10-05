@@ -93,7 +93,9 @@
       var grupo = L.layerGroup().addTo(mapa);
       capas[viaje.key] = grupo;
 
-      ruta(origen, viaje.places).forEach(function (tramo) {
+      // "Otros vuelos" no es un recorrido: son lugares sueltos, fuera de la
+      // obra. Se marcan en el mapa pero sin línea que los encadene.
+      (viaje.sinRuta ? [] : ruta(origen, viaje.places)).forEach(function (tramo) {
         L.polyline(tramo, {
           color: color, weight: 2.2, opacity: 0.9,
           dashArray: datos.trazo[viaje.key], interactive: false,

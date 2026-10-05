@@ -22,8 +22,8 @@ AQUI = Path(__file__).parent
 DIST = AQUI / "dist"
 IDIOMAS = ("es", "de", "en")
 
-COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B"}
-TRAZO = {"E": "6 5", "S": "14 6", "O": "12 4 2 4"}
+COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
+TRAZO = {"E": "6 5", "S": "14 6", "O": "12 4 2 4", "OV": "2 4"}
 
 
 # ---------------------------------------------------------------- utilidades
