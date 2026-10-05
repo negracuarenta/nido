@@ -1,0 +1,216 @@
+/* NIDO · estilo del afiche A0 llevado a pantalla.
+   Los colores son los mismos del mapa impreso. */
+
+:root {
+  --tierra: #ECE5D3;
+  --mar: #EAF1F5;
+  --contorno: #B9AD92;
+  --tinta: #2A2520;
+  --tinta-suave: #6B6154;
+  --rojo: #C62828;
+  --este: #D9822B;
+  --sur: #2B6CB0;
+  --oeste: #2F8F5B;
+  --serif: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
+  --medida: 34rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--tinta);
+  background: var(--mar);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Un solo HTML lleva los tres idiomas; acá se elige cuál se ve.
+   Sin JavaScript queda el castellano, que es el original. */
+.i18n { display: none; }
+html[data-lang='es'] .i18n[data-lang='es'],
+html[data-lang='de'] .i18n[data-lang='de'],
+html[data-lang='en'] .i18n[data-lang='en'] { display: block; }
+
+a { color: inherit; }
+
+/* ------------------------------------------------------------- barra */
+
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem clamp(1rem, 4vw, 2.5rem);
+  background: var(--tierra);
+  border-bottom: 1px solid var(--contorno);
+}
+
+.marca {
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.idiomas { display: flex; gap: 0.25rem; }
+
+.sel-idioma {
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: none;
+  color: var(--tinta-suave);
+  cursor: pointer;
+}
+
+.sel-idioma[aria-current='true'] {
+  border-color: var(--contorno);
+  background: #fff8;
+  color: var(--tinta);
+}
+
+.sel-idioma:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
+
+/* -------------------------------------------------------------- mapa */
+
+.pagina-mapa { height: 100vh; display: flex; flex-direction: column; }
+.pagina-mapa .barra { flex: 0 0 auto; }
+
+#mapa { flex: 1 1 auto; background: var(--mar); }
+.leaflet-container { background: var(--mar); font-family: var(--serif); }
+
+.leyenda {
+  position: absolute;
+  left: clamp(0.75rem, 3vw, 2rem);
+  bottom: clamp(0.75rem, 3vw, 2rem);
+  z-index: 900;
+  max-width: 19rem;
+  padding: 1rem 1.2rem;
+  background: #FBF8F0E8;
+  border: 1px solid var(--contorno);
+  font-size: 0.95rem;
+}
+
+.leyenda .titulo { font-size: 1.15rem; margin: 0 0 0.3rem; letter-spacing: 0.02em; }
+.leyenda .bajada { margin: 0 0 0.9rem; color: var(--tinta-suave); font-size: 0.9rem; }
+.leyenda h2 {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave); margin: 0.9rem 0 0.4rem; font-weight: 500;
+}
+.leyenda ul { list-style: none; margin: 0; padding: 0; }
+.leyenda li { margin: 0.25rem 0; }
+.leyenda label { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+.leyenda svg { flex: 0 0 auto; }
+
+.s-punto, .s-cero {
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--tinta-suave); display: inline-block; flex: 0 0 auto;
+}
+.s-cero { background: #fff; border: 2.5px solid var(--tinta); }
+.s-cruz { color: var(--rojo); font-size: 0.9rem; width: 11px; flex: 0 0 auto; }
+
+.punto-lugar { border-radius: 50%; border: 1.5px solid #FBF8F0; }
+.marca-cruz { color: var(--rojo); font-weight: 600; line-height: 1; text-shadow: 0 0 2px #FBF8F0; }
+.marca-cero {
+  border-radius: 50%; background: #FBF8F0;
+  border: 3px solid var(--tinta); box-shadow: inset 0 0 0 3px #FBF8F0, inset 0 0 0 7px var(--tinta);
+}
+
+/* ------------------------------------------------------------- ficha */
+
+.ficha { max-width: var(--medida); margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+.pagina-ficha { background: #FBF8F0; }
+
+.codigo {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--tinta-suave); margin: 0 0 0.4rem;
+}
+.pastilla { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+
+.ficha h1 { font-size: clamp(2rem, 6vw, 2.9rem); line-height: 1.1; margin: 0 0 1.4rem; font-weight: 500; }
+.ficha h2 {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave); font-weight: 500;
+  margin: 2.5rem 0 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--contorno);
+}
+
+.cita {
+  margin: 0 0 2rem; padding: 0 0 0 1.1rem;
+  border-left: 2px solid var(--contorno);
+  font-size: 1.3rem; line-height: 1.45; font-style: italic; color: var(--tinta);
+}
+.cita-tragica { border-left-color: var(--rojo); }
+
+.aviso { color: var(--tinta-suave); font-style: italic; }
+
+/* ---------------------------------------------------- lo que también vio */
+
+.tragico { margin: 2.5rem 0 0; }
+
+.abrir-tragico {
+  font: inherit; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1.2rem; cursor: pointer;
+  background: none; color: var(--rojo);
+  border: 1px solid var(--rojo); border-radius: 2px;
+  transition: background-color 160ms, color 160ms;
+}
+.abrir-tragico:hover, .abrir-tragico:focus-visible { background: var(--rojo); color: #FBF8F0; }
+.abrir-tragico .cruz { font-size: 0.9rem; }
+
+.panel-tragico {
+  margin-top: 1.2rem; padding: 1.2rem 1.4rem;
+  border: 1px solid var(--rojo); border-radius: 2px; background: #FDF6F5;
+}
+.panel-tragico p:last-child { margin-bottom: 0; }
+
+/* ----------------------------------------------------------- galería */
+
+.galeria figure { margin: 0 0 1.8rem; }
+.galeria img { width: 100%; height: auto; display: block; background: var(--tierra); }
+.galeria figcaption { font-size: 0.9rem; color: var(--tinta-suave); padding-top: 0.45rem; }
+.credito { display: block; font-size: 0.78rem; opacity: 0.8; }
+
+/* ----------------------------------------------------------- fuentes */
+
+.fuentes ol { font-size: 0.88rem; color: var(--tinta-suave); padding-left: 1.2rem; }
+.fuentes li { margin-bottom: 0.6rem; }
+.fuentes a { word-break: break-word; }
+.consultado { white-space: nowrap; }
+
+/* --------------------------------------------------------------- pie */
+
+.pie {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--contorno);
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;
+}
+.pie a { text-decoration: none; color: var(--tinta-suave); }
+.pie a:hover, .pie a:focus-visible { color: var(--tinta); }
+.pie span { display: block; text-transform: none; letter-spacing: 0; font-size: 0.95rem; color: var(--tinta); }
+.pie .siguiente { text-align: right; }
+.pie .volver { flex: 0 0 auto; }
+
+@media (max-width: 700px) {
+  .leyenda {
+    position: static; max-width: none; border: 0;
+    border-top: 1px solid var(--contorno); background: #FBF8F0;
+  }
+  .pagina-mapa { height: auto; }
+  #mapa { height: 62vh; flex: 0 0 auto; }
+  .pie { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.01ms !important; }
+}

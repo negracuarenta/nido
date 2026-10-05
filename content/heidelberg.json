@@ -1,0 +1,36 @@
+{
+  "id": "P0",
+  "slug": "heidelberg",
+  "cita": {
+    "es": "—Quedate. Tengo lugar entre mis ramas para vos y para cualquier nido que quieras hacer. Yo te voy a dar mi quietud.\n—Y yo te voy a dar el mundo. Cada vez que vuelva, te voy a contar todo lo que vi.",
+    "de": "—Bleib. Ich habe Platz zwischen meinen Zweigen für dich und für jedes Nest, das du bauen willst. Ich schenke dir meine Stille.\n—Und ich schenke dir die Welt. Jedes Mal, wenn ich zurückkomme, erzähle ich dir alles, was ich gesehen habe.",
+    "en": "—Stay. I have room among my branches for you and for any nest you care to build. I will give you my stillness.\n—And I will give you the world. Every time I come back, I will tell you everything I saw."
+  },
+  "info": {
+    "es": [
+      "«En un bosque del mundo nació este liquidámbar hace ciento cuarenta y seis años. […] Es un árbol de hoja caduca. Sus hojas tienen forma de estrella, de tres a cinco puntas, y en otoño se vuelven naranjas, rojas, casi violetas: el liquidambar es de los pocos árboles que en su despedida anual se pone más hermoso, no menos.»",
+      "«El pájaro es una golondrina. Nació en un nido de barro que sus padres armaron pluma a pluma en apenas diez días. […] Una golondrina puede volar a más de cien kilómetros por hora cuando hace falta, y cruzar doce mil kilómetros dos veces por año.»",
+      "Desde este punto salen los tres vuelos. Cada uno va y vuelve: al Este, al Sur y al Oeste. En el mapa, el árbol es el Punto 0."
+    ],
+    "de": [
+      "«In einem Wald dieser Welt wurde dieser Amberbaum vor hundertsechsundvierzig Jahren geboren. […] Er ist ein Laubbaum. Seine Blätter haben die Form eines Sterns, mit drei bis fünf Spitzen, und im Herbst werden sie orange, rot, fast violett: der Amberbaum ist einer der wenigen Bäume, die bei ihrem jährlichen Abschied schöner werden, nicht weniger schön.»",
+      "«Der Vogel ist eine Schwalbe. Sie wurde in einem Lehmnest geboren, das ihre Eltern Feder um Feder in nur zehn Tagen bauten. […] Eine Schwalbe kann über hundert Kilometer pro Stunde fliegen, wenn es nötig ist, und zweimal im Jahr zwölftausend Kilometer zurücklegen.»",
+      "Von diesem Punkt gehen die drei Flüge aus. Jeder führt hin und zurück: nach Osten, nach Süden und nach Westen. Auf der Karte ist der Baum der Punkt 0."
+    ],
+    "en": [
+      "«In a forest of the world this sweetgum was born one hundred and forty-six years ago. […] It is a deciduous tree. Its leaves are shaped like stars, with three to five points, and in autumn they turn orange, red, almost violet: the sweetgum is one of the few trees that in its yearly farewell becomes more beautiful, not less.»",
+      "«The bird is a swallow. It was born in a mud nest that its parents built feather by feather in barely ten days. […] A swallow can fly at more than a hundred kilometres an hour when it needs to, and cross twelve thousand kilometres twice a year.»",
+      "The three flights set out from this point. Each one goes and returns: to the East, to the South and to the West. On the map, the tree is Point 0."
+    ]
+  },
+  "tragico": null,
+  "fotos": [],
+  "fuentes": [
+    {
+      "institucion": "Martín Virgili / Negra40",
+      "titulo": "NIDO, guión de la obra · Acto 1",
+      "url": "",
+      "consultado": "2026-10-05"
+    }
+  ]
+}

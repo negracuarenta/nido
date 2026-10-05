@@ -1,0 +1,39 @@
+{
+  "titulo": {
+    "es": "NIDO · Los vuelos de la golondrina",
+    "de": "NIDO · Die Flüge der Schwalbe",
+    "en": "NIDO · The Flights of the Swallow"
+  },
+  "bajada": {
+    "es": "Un liquidámbar de 146 años, en Heidelberg, espera. Una golondrina hace tres viajes y vuelve cada vez a contarle lo que vio.",
+    "de": "Ein 146 Jahre alter Amberbaum in Heidelberg wartet. Eine Schwalbe unternimmt drei Reisen und kehrt jedes Mal zurück, um zu erzählen, was sie gesehen hat.",
+    "en": "A 146-year-old sweetgum tree in Heidelberg waits. A swallow makes three journeys and each time returns to tell what it saw."
+  },
+  "viajes": {
+    "E": { "es": "Este", "de": "Osten", "en": "East" },
+    "S": { "es": "Sur", "de": "Süden", "en": "South" },
+    "O": { "es": "Oeste", "de": "Westen", "en": "West" }
+  },
+  "ui": {
+    "viajes": { "es": "Viajes", "de": "Reisen", "en": "Journeys" },
+    "simbolos": { "es": "Símbolos", "de": "Zeichen", "en": "Symbols" },
+    "lugar": { "es": "Lugar del vuelo", "de": "Ort des Fluges", "en": "Place on the flight" },
+    "capa_tragica": { "es": "Lo que también vio", "de": "Was sie auch sah", "en": "What it also saw" },
+    "punto_cero": { "es": "Punto 0 · el árbol", "de": "Punkt 0 · der Baum", "en": "Point 0 · the tree" },
+    "ver_tragico": { "es": "Lo que también vio", "de": "Was sie auch sah", "en": "What it also saw" },
+    "cerrar": { "es": "Cerrar", "de": "Schließen", "en": "Close" },
+    "informacion": { "es": "Información", "de": "Information", "en": "Information" },
+    "galeria": { "es": "Galería", "de": "Galerie", "en": "Gallery" },
+    "fuentes": { "es": "Fuentes", "de": "Quellen", "en": "Sources" },
+    "volver": { "es": "Volver al mapa", "de": "Zurück zur Karte", "en": "Back to the map" },
+    "anterior": { "es": "Anterior", "de": "Zurück", "en": "Previous" },
+    "siguiente": { "es": "Siguiente", "de": "Weiter", "en": "Next" },
+    "consultado": { "es": "consultado", "de": "abgerufen", "en": "accessed" },
+    "en_preparacion": {
+      "es": "Esta ficha está en preparación. La información y las fotos se publican a medida que se verifican las fuentes.",
+      "de": "Diese Seite ist in Vorbereitung. Informationen und Fotos werden veröffentlicht, sobald die Quellen geprüft sind.",
+      "en": "This page is in preparation. Information and photos are published as sources are verified."
+    },
+    "idioma": { "es": "Idioma", "de": "Sprache", "en": "Language" }
+  }
+}

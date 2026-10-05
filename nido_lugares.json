@@ -1,0 +1,348 @@
+{
+  "origin": {
+    "name": "Heidelberg",
+    "sub": "Punto 0 · el árbol",
+    "c": [
+      8.6724,
+      49.3988
+    ]
+  },
+  "trips": [
+    {
+      "key": "E",
+      "name": "Este",
+      "acto": "Acto 2",
+      "places": [
+        {
+          "id": "E1",
+          "name": "Cataratas del Iguazú",
+          "slug": "e1-cataratas-del-iguazu",
+          "lon": -54.437,
+          "lat": -25.695,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E2",
+          "name": "Pantanal",
+          "slug": "e2-pantanal",
+          "lon": -57,
+          "lat": -18,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "E3",
+          "name": "Amazonas",
+          "slug": "e3-amazonas",
+          "lon": -60,
+          "lat": -3.1,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E4",
+          "name": "Lençóis Maranhenses",
+          "slug": "e4-lencois-maranhenses",
+          "lon": -43.12,
+          "lat": -2.53,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E5",
+          "name": "Bonito",
+          "slug": "e5-bonito",
+          "lon": -56.48,
+          "lat": -21.13,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E6",
+          "name": "Cachoeira da Fumaça",
+          "slug": "e6-cachoeira-da-fumaca",
+          "lon": -41.47,
+          "lat": -12.6,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E7",
+          "name": "Delta del Paraná",
+          "slug": "e7-delta-del-parana",
+          "lon": -58.6,
+          "lat": -34,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "E8",
+          "name": "Fernando de Noronha",
+          "slug": "e8-fernando-de-noronha",
+          "lon": -32.42,
+          "lat": -3.85,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E9",
+          "name": "Esteros del Iberá",
+          "slug": "e9-esteros-del-ibera",
+          "lon": -57.2,
+          "lat": -28.5,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "E10",
+          "name": "Bosque Atlántico",
+          "slug": "e10-bosque-atlantico",
+          "lon": -55.6,
+          "lat": -24,
+          "tragico": true,
+          "soloTragico": true
+        }
+      ]
+    },
+    {
+      "key": "S",
+      "name": "Sur",
+      "acto": "Acto 3",
+      "places": [
+        {
+          "id": "S1",
+          "name": "Antártida",
+          "slug": "s1-antartida",
+          "lon": -40,
+          "lat": -75,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S2",
+          "name": "Islas Georgias del Sur",
+          "slug": "s2-islas-georgias-del-sur",
+          "lon": -36.5,
+          "lat": -54.3,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S3",
+          "name": "Cordillera de los Andes",
+          "slug": "s3-cordillera-de-los-andes",
+          "lon": -69.8,
+          "lat": -36.2,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S4",
+          "name": "Bosques de araucarias",
+          "slug": "s4-bosques-de-araucarias",
+          "lon": -71.1,
+          "lat": -38.9,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S5",
+          "name": "Glaciar Perito Moreno",
+          "slug": "s5-glaciar-perito-moreno",
+          "lon": -73.05,
+          "lat": -50.48,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S6",
+          "name": "Estepa patagónica",
+          "slug": "s6-estepa-patagonica",
+          "lon": -69,
+          "lat": -46.5,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S7",
+          "name": "Península Valdés",
+          "slug": "s7-peninsula-valdes",
+          "lon": -64,
+          "lat": -42.5,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S8",
+          "name": "Cataratas Victoria",
+          "slug": "s8-cataratas-victoria",
+          "lon": 25.857,
+          "lat": -17.925,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S9",
+          "name": "Desierto del Namib",
+          "slug": "s9-desierto-del-namib",
+          "lon": 15.3,
+          "lat": -24.73,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S10",
+          "name": "Delta del Okavango",
+          "slug": "s10-delta-del-okavango",
+          "lon": 22.9,
+          "lat": -19.3,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S11",
+          "name": "Serengueti",
+          "slug": "s11-serengueti",
+          "lon": 34.83,
+          "lat": -2.33,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S12",
+          "name": "Gran Barrera de Coral",
+          "slug": "s12-gran-barrera-de-coral",
+          "lon": 148.3,
+          "lat": -19.2,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "S13",
+          "name": "Shark Bay",
+          "slug": "s13-shark-bay",
+          "lon": 113.5,
+          "lat": -26,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S14",
+          "name": "Selva de Daintree",
+          "slug": "s14-selva-de-daintree",
+          "lon": 145.42,
+          "lat": -16.17,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S15",
+          "name": "Uluru",
+          "slug": "s15-uluru",
+          "lon": 131.04,
+          "lat": -25.34,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "S16",
+          "name": "Bosques andino-patagónicos",
+          "slug": "s16-bosques-andino-patagonicos",
+          "lon": -71.5,
+          "lat": -42.1,
+          "tragico": true,
+          "soloTragico": true
+        },
+        {
+          "id": "S17",
+          "name": "Sudeste australiano",
+          "slug": "s17-sudeste-australiano",
+          "lon": 149.5,
+          "lat": -36,
+          "tragico": true,
+          "soloTragico": true
+        }
+      ]
+    },
+    {
+      "key": "O",
+      "name": "Oeste",
+      "acto": "Acto 4",
+      "places": [
+        {
+          "id": "O1",
+          "name": "El Chaltén",
+          "slug": "o1-el-chalten",
+          "lon": -72.89,
+          "lat": -49.33,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O2",
+          "name": "Aconcagua",
+          "slug": "o2-aconcagua",
+          "lon": -70.01,
+          "lat": -32.65,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O3",
+          "name": "Salinas Grandes",
+          "slug": "o3-salinas-grandes",
+          "lon": -65.87,
+          "lat": -23.62,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O4",
+          "name": "Cerro de los Siete Colores",
+          "slug": "o4-cerro-de-los-siete-colores",
+          "lon": -65.5,
+          "lat": -23.745,
+          "tragico": false,
+          "soloTragico": false
+        },
+        {
+          "id": "O5",
+          "name": "Páramo de Sumapaz",
+          "slug": "o5-paramo-de-sumapaz",
+          "lon": -74.25,
+          "lat": 3.95,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O6",
+          "name": "Laguna de Guatavita",
+          "slug": "o6-laguna-de-guatavita",
+          "lon": -73.776,
+          "lat": 4.978,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O7",
+          "name": "Wirikuta",
+          "slug": "o7-wirikuta",
+          "lon": -100.88,
+          "lat": 23.69,
+          "tragico": true,
+          "soloTragico": false
+        },
+        {
+          "id": "O8",
+          "name": "Secuoyas gigantes",
+          "slug": "o8-secuoyas-gigantes",
+          "lon": -118.75,
+          "lat": 36.56,
+          "tragico": true,
+          "soloTragico": false
+        }
+      ]
+    }
+  ]
+}
