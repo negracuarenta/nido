@@ -230,6 +230,75 @@ def indice(datos, site):
                   base="", clase="pagina-mapa", head=head)
 
 
+
+# --------------------------------------------------------- resumen de viaje
+
+def resumen_viaje(viaje, textos, contenidos, site, base):
+    """El recorrido completo de un acto, en una sola lectura.
+
+    Va en orden de vuelo e incluye los lugares `soloTragico`, que en el mapa no
+    están sobre la ruta: acá sí corresponden, porque son parte de lo que la
+    golondrina contó.
+    """
+    clave = viaje["key"]
+    color = COLOR[clave]
+    ui = site["ui"]
+
+    entradas = []
+    for lugar in viaje["places"]:
+        c = contenidos.get(lugar["slug"])
+        foto = ""
+        if c and c.get("fotos"):
+            f = c["fotos"][0]
+            foto = (f'<img src="{base}assets/fotos/{lugar["slug"]}/{f["archivo"]}" '
+                    f'alt="{escape(t(f["epigrafe"], "es"))}" loading="lazy" decoding="async">')
+        cita = por_idioma(lambda l, c=c: (
+            f'<p class="cita-corta">{escape(t(c["cita"], l))}</p>'
+            if c and t(c["cita"], l) else ""
+        ))
+        resumen = por_idioma(lambda l, c=c: (
+            f'<p>{escape((c["info"].get(l) or c["info"].get("es") or [""])[0])}</p>'
+            if c and (c["info"].get(l) or c["info"].get("es")) else ""
+        ))
+        marca = ('<span class="cruz-chica" title="Lo que también vio">✕</span>'
+                 if lugar.get("tragico") or lugar.get("soloTragico") else "")
+        entradas.append(f"""
+<article class="parada">
+  <a class="parada__foto" href="{base}lugares/{lugar['slug']}/">{foto}</a>
+  <div class="parada__texto">
+    <p class="codigo" style="--c:{color}"><span class="pastilla"></span>{escape(lugar['id'])}{marca}</p>
+    <h2><a href="{base}lugares/{lugar['slug']}/">{escape(lugar['name'])}</a></h2>
+    {cita}
+    {resumen}
+  </div>
+</article>""")
+
+    def linea(campo, clase):
+        return por_idioma(lambda l: (
+            f'<p class="{clase}">{escape(t(textos[campo], l))}</p>'
+            if t(textos.get(campo, {}), l) else ""
+        ))
+
+    nombre = por_idioma(lambda l: escape(t(site["viajes"][clave], l)))
+    cuerpo = f"""
+<main class="viaje" style="--c:{color}">
+  <header class="viaje__cabecera">
+    <p class="codigo" style="--c:{color}"><span class="pastilla"></span>{escape(textos['acto'])}</p>
+    <h1>{nombre}</h1>
+    {linea('apertura', 'apertura')}
+  </header>
+  <div class="paradas">{''.join(entradas)}</div>
+  <footer class="viaje__cierre">
+    {linea('cierre', 'cierre')}
+    {linea('cierre_tragico', 'cierre cierre--tragico')}
+    {por_idioma(lambda l: f'<a class="volver" href="{base}">{escape(t(ui["volver"], l))}</a>')}
+  </footer>
+</main>
+"""
+    titulo = t(site["viajes"][clave], "es")
+    return pagina(f"{titulo} · NIDO", cuerpo, base=base, clase="pagina-viaje")
+
+
 # --------------------------------------------------------------------- build
 
 def main() -> None:
@@ -267,6 +336,23 @@ def main() -> None:
             vecinos = (lista[i - 1] if i > 0 else None,
                        lista[i + 1] if i < len(lista) - 1 else None)
             paginas.append((contenido, lugar, viaje, vecinos))
+
+    # Las páginas de resumen reusan el contenido ya leído de cada ficha.
+    contenidos = {}
+    for carpeta_json in (AQUI / "content/lugares").glob("*.json"):
+        contenidos[carpeta_json.stem] = json.loads(carpeta_json.read_text(encoding="utf-8"))
+
+    for viaje in datos["trips"]:
+        textos_ruta = AQUI / "content/viajes"
+        for archivo in textos_ruta.glob("*.json"):
+            textos = json.loads(archivo.read_text(encoding="utf-8"))
+            if textos["key"] != viaje["key"]:
+                continue
+            destino = DIST / "viajes" / textos["slug"]
+            destino.mkdir(parents=True, exist_ok=True)
+            (destino / "index.html").write_text(
+                resumen_viaje(viaje, textos, contenidos, site, base="../../"),
+                encoding="utf-8")
 
     hechas, pendientes = 0, []
     for contenido, lugar, viaje, vecinos in paginas:

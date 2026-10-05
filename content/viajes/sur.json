@@ -1,0 +1,26 @@
+{
+  "key": "S",
+  "slug": "sur",
+  "acto": "Acto 3",
+  "apertura": {
+    "es": "Fui al sur. Y vi…",
+    "de": "",
+    "en": ""
+  },
+  "cierre": {
+    "es": "El sur, árbol, es hermoso.",
+    "de": "",
+    "en": ""
+  },
+  "cierre_tragico": {
+    "es": "Eso también vi, árbol. No te mentí en la primera parte. Tampoco te voy a mentir en esta.",
+    "de": "",
+    "en": ""
+  },
+  "intro": {
+    "es": [],
+    "de": [],
+    "en": []
+  },
+  "fuentes": []
+}

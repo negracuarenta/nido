@@ -214,3 +214,59 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   * { transition-duration: 0.01ms !important; }
 }
+
+/* ------------------------------------------------- resumen de viaje */
+
+.pagina-viaje { background: #FBF8F0; }
+
+.viaje { max-width: 54rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+
+.viaje__cabecera { max-width: var(--medida); margin-bottom: 3.5rem; }
+.viaje__cabecera h1 {
+  font-size: clamp(2.4rem, 7vw, 3.6rem); font-weight: 500;
+  line-height: 1.05; margin: 0 0 1rem;
+}
+.apertura { font-size: 1.4rem; font-style: italic; color: var(--tinta); margin: 0; }
+
+.paradas { display: grid; gap: 2.8rem; }
+
+.parada {
+  display: grid; grid-template-columns: 13rem 1fr; gap: 1.6rem; align-items: start;
+}
+
+.parada__foto {
+  display: block; aspect-ratio: 1 / 1; overflow: hidden;
+  background: var(--tierra); position: relative;
+}
+.parada__foto img { width: 100%; height: 100%; object-fit: cover; }
+.parada__foto::after {
+  content: ''; position: absolute; inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08); pointer-events: none;
+}
+
+.parada__texto h2 { font-size: 1.5rem; font-weight: 500; margin: 0 0 0.6rem; line-height: 1.15; }
+.parada__texto h2 a { text-decoration: none; }
+.parada__texto h2 a:hover, .parada__texto h2 a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+.parada .codigo { margin-bottom: 0.35rem; }
+.cruz-chica { color: var(--rojo); margin-left: 0.5rem; font-size: 0.85rem; }
+
+.cita-corta {
+  font-style: italic; font-size: 1.15rem; line-height: 1.45;
+  padding-left: 0.9rem; border-left: 2px solid var(--contorno); margin: 0 0 0.8rem;
+}
+
+.viaje__cierre {
+  max-width: var(--medida); margin-top: 4rem; padding-top: 1.6rem;
+  border-top: 1px solid var(--contorno);
+}
+.cierre { font-size: 1.25rem; font-style: italic; margin: 0 0 0.8rem; }
+.cierre--tragico { color: var(--rojo); }
+.viaje__cierre .volver {
+  display: inline-block; margin-top: 1rem; font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 0.14em; color: var(--tinta-suave);
+}
+
+@media (max-width: 640px) {
+  .parada { grid-template-columns: 1fr; gap: 0.9rem; }
+  .parada__foto { max-width: 15rem; }
+}

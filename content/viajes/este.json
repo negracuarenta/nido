@@ -1,0 +1,26 @@
+{
+  "key": "E",
+  "slug": "este",
+  "acto": "Acto 2",
+  "apertura": {
+    "es": "Fui al este. Y vi:",
+    "de": "",
+    "en": ""
+  },
+  "cierre": {
+    "es": "",
+    "de": "",
+    "en": ""
+  },
+  "cierre_tragico": {
+    "es": "Eso también vi.",
+    "de": "",
+    "en": ""
+  },
+  "intro": {
+    "es": [],
+    "de": [],
+    "en": []
+  },
+  "fuentes": []
+}

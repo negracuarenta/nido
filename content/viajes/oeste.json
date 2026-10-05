@@ -1,0 +1,26 @@
+{
+  "key": "O",
+  "slug": "oeste",
+  "acto": "Acto 4",
+  "apertura": {
+    "es": "Fui al oeste,",
+    "de": "",
+    "en": ""
+  },
+  "cierre": {
+    "es": "Me enamoré, árbol. El oeste, la puerta negra, es maravilloso.",
+    "de": "",
+    "en": ""
+  },
+  "cierre_tragico": {
+    "es": "Dolor. Mucho dolor. Vi la pobreza más difícil de todas: la de los corazones que ya no se conmueven.",
+    "de": "",
+    "en": ""
+  },
+  "intro": {
+    "es": [],
+    "de": [],
+    "en": []
+  },
+  "fuentes": []
+}
