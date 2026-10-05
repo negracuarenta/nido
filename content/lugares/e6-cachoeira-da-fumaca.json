@@ -7,11 +7,56 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La Cachoeira da Fumaça está en el Parque Nacional da Chapada Diamantina, en Bahía. Con unos 340 metros es la segunda cascada más alta de Brasil. El caudal es tan fino y la caída tan larga que el agua se deshace en neblina antes de llegar abajo: de ahí el nombre.",
+      "Para llegar al borde hay que caminar seis kilómetros. El parque protege 152.141 hectáreas y fue creado por decreto en septiembre de 1985.",
+      "La Chapada Diamantina está en el límite de dos biomas y forma parte de las Reservas de Biosfera de la Caatinga y de la Mata Atlántica."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "La Cachoeira da Fumaça, en la Chapada Diamantina",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jack5599",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cachoeira_da_Fuma%C3%A7a,_Chapada_Diamantina.JPG"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El Morrão, en el Parque Nacional da Chapada Diamantina",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jeilsonandrade",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Morr%C3%A3o_-_Parque_Nacional_da_Chapada_Diamantina_-_Bahia_03.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "El paisaje de mesetas de la Chapada Diamantina",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Lucas Xavier da Cunha",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Chapada_Diamantina_view-21.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "ICMBio, Brasil",
+      "titulo": "Parque Nacional da Chapada Diamantina",
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/caatinga/lista-de-ucs/parna-da-chapada-da-diamantina",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

@@ -7,11 +7,67 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El archipiélago de Fernando de Noronha está a unos 340 kilómetros de la costa brasileña y son picos volcánicos de una cadena de montañas sumergida. El sitio de Patrimonio Mundial cubre 42.270 hectáreas, con una zona de amortiguación de 140.713, e incluye cerca del 70 % de la isla principal, 21 islas e islotes menores y las aguas hasta los 50 metros de profundidad.",
+      "Junto con el Atol das Rocas —el único atolón del Atlántico Sur, 150 kilómetros al oeste— reúne buena parte de la superficie insular de todo el Atlántico Sur. Sus aguas son decisivas para la reproducción y la alimentación de atunes, tiburones, tortugas y mamíferos marinos.",
+      "Las islas concentran la mayor cantidad de aves marinas tropicales del Atlántico occidental. En la Baía dos Golfinhos vive una población residente de delfines, y en el Atol das Rocas la marea baja descubre lagunas y piletas naturales llenas de peces."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Praia do Leão, en Fernando de Noronha",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Rosana Antunes",
+      "licencia": "CC0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Praia_do_Le%C3%A3o_localizada_em_Fernando_de_Noronha.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Baía dos Golfinhos, donde vive una población residente",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Adelano Lázaro",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Baia_dos_Golfinhos_1.JPG"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Delfín rotador amamantando a su cría",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Verônica Souto",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Rotador_mamando.jpg"
+    },
+    {
+      "archivo": "04.webp",
+      "epigrafe": {
+        "es": "La bahía desde el mirador",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Adelano Lázaro",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Baia_dos_Golfinhos_2.JPG"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Brazilian Atlantic Islands: Fernando de Noronha and Atol das Rocas Reserves",
+      "url": "https://whc.unesco.org/en/list/1000/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

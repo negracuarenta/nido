@@ -7,11 +7,73 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Nacional dos Lençóis Maranhenses protege 156.608 hectáreas sobre la costa de Maranhão. Unas 90.000 son un campo de dunas con lagunas temporarias y permanentes, a lo largo de 80 kilómetros de costa.",
+      "El viento sopla casi siempre en la misma dirección y forma dunas en media luna que llegan a encadenarse por 75 kilómetros y avanzan más de 20 tierra adentro. Entre ellas, la lluvia estacional junta agua dulce en lagunas que aparecen y desaparecen con el año.",
+      "El área está protegida por decreto desde 1981 y la administra el ICMBio. En julio de 2024 la UNESCO la declaró Patrimonio Mundial por su belleza excepcional y por ser un fenómeno natural único."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Dunas y lagunas de los Lençóis Maranhenses",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Heris Luiz Cordeiro Rocha",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Dunas_e_lagoas_dos_Len%C3%A7ois_Maranhenses_(cropped).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El campo de dunas del parque nacional",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Paulo Cattelan",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_(03).jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Lagunas de agua dulce entre las dunas",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Vania Passos",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nac_dos_Len%C3%A7ois_Maranhenses_Vania_Passos_16.png"
+    },
+    {
+      "archivo": "04.webp",
+      "epigrafe": {
+        "es": "Las dunas avanzan tierra adentro empujadas por el viento",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Julius Dadalti",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Len%C3%A7%C3%B3is_Maranhenses_2018.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Lençóis Maranhenses National Park",
+      "url": "https://whc.unesco.org/en/list/1611/",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "ICMBio, Brasil",
+      "titulo": "Parque Nacional dos Lençóis Maranhenses",
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

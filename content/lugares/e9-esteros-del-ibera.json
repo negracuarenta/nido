@@ -7,11 +7,62 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Nacional Iberá conserva más de 195.000 hectáreas en la provincia de Corrientes, dentro de la ecorregión de los Esteros del Iberá, uno de los humedales más grandes de Sudamérica.",
+      "El yaguareté se había extinguido en Corrientes. En 2018 nacieron los dos primeros cachorros en el proyecto de reintroducción, y en enero de 2021 una hembra con sus dos crías pasó a vivir en libertad plena: los primeros yaguaretés sueltos en la provincia después de más de setenta años de ausencia.",
+      "La población sigue creciendo. Parques Nacionales contabiliza hoy al menos 35 yaguaretés viviendo libres en el Iberá, y algunos se trasladaron desde ahí a otras áreas, como el Parque Nacional El Impenetrable."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Atardecer en los Esteros del Iberá",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Puya Raimondi",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Atardecer_en_los_Esteros_del_Iber%C3%A1_-_Portal_Carambola.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El humedal del Iberá, en Corrientes",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Carlos Bagliani",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Esteros_del_Iber%C3%A1_2.JPG"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Incendios en el Iberá vistos desde satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Pierre Markuse",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Fires_in_the_Ibera_Wetlands,_Corrientes,_Argentina_-_27_February_2023_(52718001705).jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "Administración de Parques Nacionales, Argentina",
+      "titulo": "Parque Nacional Iberá",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-ibera",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Administración de Parques Nacionales, Argentina",
+      "titulo": "Nacieron tres nuevos cachorros de yaguareté en el Parque Nacional Iberá",
+      "url": "https://www.argentina.gob.ar/noticias/nacieron-tres-nuevos-cachorros-de-yaguarete-en-el-parque-nacional-ibera",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

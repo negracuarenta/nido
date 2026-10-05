@@ -95,3 +95,44 @@ el aviso desaparece solo.
 E10, S16 y S17 están marcados `soloTragico` en el JSON. La línea del vuelo los saltea
 —no son escalas de la maravilla— y aparecen en el mapa únicamente como ✕ roja, en la
 capa trágica. Si alguno debería estar en el recorrido, avisá.
+
+---
+
+## Contradicciones entre el guión y las fuentes (viaje Este)
+
+Ninguna de estas se corrigió: el guión no se toca. Quedan acá para que decidas.
+
+### E6 · La altura de la Cachoeira da Fumaça
+El guión dice **«trescientos ochenta metros»**. ICMBio y el Ministerio de Turismo
+de Brasil la dan en **unos 340 metros**, y la describen como la segunda cascada
+más alta del país. La ficha dice 340 y cita la fuente; el guión sigue diciendo 380.
+
+### E9 · Cuántos años estuvo ausente el yaguareté
+El guión dice **«el primero en volver, en cien años»**. Parques Nacionales habla
+de **«más de 70 años»** de ausencia en Corrientes: los primeros cachorros nacieron
+en 2018 y en enero de 2021 una hembra con dos crías pasó a vivir en libertad plena.
+La ficha usa la cifra de Parques Nacionales.
+
+### E2 · Cuánto se quemó el Pantanal en 2020
+Las fuentes difieren bastante: entre el 26 % y el 40 % del bioma según la
+metodología. La ficha toma la cifra del Observatorio de la Tierra de la NASA
+—unos 43.000 km², cerca del 28 %— por ser la mejor documentada. Si preferís otra,
+decime.
+
+---
+
+## Fichas del Este que quedaron a medias
+
+Tienen fotos y su frase del guión, pero **todavía no tienen información ni
+fuentes**, porque no encontré respaldo institucional suficiente:
+
+- **E5 · Bonito.** Las lagunas y cavernas de Bonito están repartidas en
+  propiedades privadas y monumentos naturales municipales; no hay una ficha de
+  ICMBio equivalente a la de un parque nacional. Hace falta buscar en la
+  Secretaría de Medio Ambiente de Mato Grosso do Sul.
+- **E10 · Bosque Atlántico.** El dato del guión —«de cada diez árboles que había,
+  hoy queda uno»— coincide a grandes rasgos con lo que reportan SOS Mata
+  Atlântica e INPE (alrededor del 12 % remanente), pero no pude confirmarlo en
+  una publicación citable. Lo mismo con el desplazamiento de familias guaraníes
+  por el avance de la soja, que necesita una fuente académica o de un organismo
+  de derechos humanos, no de prensa.

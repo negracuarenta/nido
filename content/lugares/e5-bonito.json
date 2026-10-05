@@ -12,6 +12,40 @@
     "en": []
   },
   "tragico": null,
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Gruta do Lago Azul, monumento natural",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego de Medeiros Bento",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Monumento_Natural_da_Gruta_do_Lago_Azul_Diego_Bento_(01).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El lago azul dentro de la caverna",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Bruno Lenharo",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Gruta_do_lago_azul.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Buraco das Araras, dolina habitada por guacamayos",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Bruno L Wagner",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Bonito_-_Mato_Grosso_do_Sul_-_Buraco_das_Araras_-_Bruno_Leandro_Wagner_-_W14A3590.jpg"
+    }
+  ],
   "fuentes": []
 }

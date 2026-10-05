@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Pantanal es uno de los humedales de agua dulce más grandes del mundo: unos 14 millones de hectáreas. El sitio de Patrimonio Mundial protege 187.818 de ellas —el 1,3 % del Pantanal brasileño— en el extremo suroeste de Mato Grosso, sobre el límite con Bolivia y Paraguay, y reúne cuatro áreas protegidas contiguas.",
+      "Entre octubre y abril los ríos Cuiabá y Paraguay desbordan e inundan regiones enteras, y el agua reparte los nutrientes que sostienen la pesca de todo el humedal. La sierra del Amolar, de hasta 900 metros, corta esa llanura de golpe: el contraste entre lo inundable y la montaña es abrupto y no se repite en ninguna otra parte del Pantanal.",
+      "Ahí viven el tatú carreta, el oso hormiguero gigante, el lobo gargantilla, el ciervo de los pantanos y el guacamayo jacinto, el loro más grande del mundo. La población de yaguaretés del sitio es probablemente la mayor de todo el Pantanal."
+    ],
     "de": [],
     "en": []
   },
@@ -18,11 +22,82 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "En 2020 el fuego arrasó unos 43.000 kilómetros cuadrados del Pantanal, alrededor del 28 % de la región, según el Observatorio de la Tierra de la NASA. Fue la temporada de incendios más extensa registrada en el humedal."
+      ],
       "de": [],
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El humedal del Pantanal en la estación de crecida",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Bernard DUPONT from FRANCE",
+      "licencia": "CC BY-SA 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Pantanal_Wetland_-_Flickr_-_berniedup.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Yaguareté en el Pantanal: la mayor población del sitio",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Charles J. Sharp",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Jaguar_(Panthera_onca_palustris)_male_Three_Brothers_River.JPG"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Guacamayo jacinto, el loro más grande del mundo",
+        "de": "",
+        "en": ""
+      },
+      "autor": "sussexbirder",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Hyacinth_Macaw_(Anodorhynchus_hyacinthinus)2.jpg"
+    },
+    {
+      "archivo": "04.webp",
+      "epigrafe": {
+        "es": "Carpincho, uno de los habitantes más comunes del humedal",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Wolves201",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Pantanal_capybara_JF5.jpg"
+    },
+    {
+      "archivo": "05.webp",
+      "epigrafe": {
+        "es": "Los incendios de 2020 vistos desde satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Pierre Markuse",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Wildfires_in_the_Pantanal_wetlands_region,_Brazil,_Bolivia_-_November_7th,_2020_-_50590259691.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Pantanal Conservation Area",
+      "url": "https://whc.unesco.org/en/list/999/",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "NASA Earth Observatory",
+      "titulo": "A Human Fingerprint on the Pantanal Inferno",
+      "url": "https://earthobservatory.nasa.gov/images/149398/a-human-fingerprint-on-the-pantanal-inferno",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

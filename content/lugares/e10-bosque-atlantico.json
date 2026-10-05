@@ -23,6 +23,40 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Mata Atlántica conservada en Paraibuna",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Themium",
+      "licencia": "CC0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Mata_Atl%C3%A2ntica_preservada_em_Paraibuna.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Sendero dentro del bosque atlántico",
+        "de": "",
+        "en": ""
+      },
+      "autor": "AmbrosimM",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Trilha_mata_atl%C3%A2ntica.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Yaguarundí registrado por cámara trampa en un remanente de Mata Atlántica",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Miguelrangeljr",
+      "licencia": "CC BY 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Herpailurus_jaguarundi_camera_trap_Santa_Fe_do_Sul,_Brazil_2.jpg"
+    }
+  ],
   "fuentes": []
 }

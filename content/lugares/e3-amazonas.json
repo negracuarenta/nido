@@ -7,11 +7,67 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Complejo de Conservación de la Amazonia Central supera los 6 millones de hectáreas: es el área protegida más grande de toda la cuenca amazónica. Empezó en 2000 con el Parque Nacional Jaú y se amplió en 2003 con Anavilhanas, Amanã y Mamirauá.",
+      "Está en la confluencia del río Negro y el Solimões, y contiene la mayoría de los ecosistemas amazónicos: bosques de tierra firme y bosques inundables —várzea e igapó—, aguas negras y aguas blancas, lagos y canales que forman un mosaico que cambia todo el tiempo.",
+      "Es la región del planeta con mayor variedad de peces eléctricos. También protege al pirarucú, al manatí amazónico, al yacaré negro y a dos especies de delfín de río."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Parque Nacional de Anavilhanas, sobre el río Negro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Silvio Batista Piotto Junior",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_de_Anavilhanas_Silvio_Batista_Piotto_Junior_(01).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Bosque inundado en un afluente del río Negro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "James Martins",
+      "licencia": "CC BY 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:FLOODED_AREA_-_VISTA_360_GRAUS_DE_AFLUENTE_DO_RIO_NEGRO_DE_CIMA_DE_CANOAS_VISITA_O_AMAZON_ECOPARK_JUNGLE_LODGE_-_panoramio.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Victoria amazonica en cultivo: la hoja llega a más de un metro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "P,TO 19104",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Victoria_amazonica_in_Florida.jpg"
+    },
+    {
+      "archivo": "04.webp",
+      "epigrafe": {
+        "es": "La cuenca amazónica vista por el satélite MODIS",
+        "de": "",
+        "en": ""
+      },
+      "autor": "MODIS Land Rapid Response Team, NASA GSFC",
+      "licencia": "Public domain",
+      "origen": "https://commons.wikimedia.org/wiki/File:Early_Autumn_in_the_Amazon_Basin_(MODIS_2026-03-24).jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Central Amazon Conservation Complex",
+      "url": "https://whc.unesco.org/en/list/998/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

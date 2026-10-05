@@ -7,7 +7,9 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Delta del Paraná se forma con el sedimento que el río arrastra desde el norte y deposita al llegar al Río de la Plata. Es uno de los pocos deltas del mundo que no desemboca en el mar abierto sino en otro río, y crece de manera continua: las islas nuevas son barro recién depositado."
+    ],
     "de": [],
     "en": []
   },
@@ -18,11 +20,54 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "Entre 2020 y 2021 el Paraná atravesó la bajante más severa desde 1944. El Instituto Nacional del Agua registró una caída brusca de los caudales desde marzo de 2020; a fines de diciembre de 2021 el río llevaba 291 días seguidos por debajo del nivel de aguas bajas."
+      ],
       "de": [],
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Los brazos del Delta del Paraná",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diegazo2000",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Delta_del_Paran%C3%A1_1_por_D2000.JPG"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Caraguatá (Bromelia balansae), propia del delta",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Roberto Fiadone",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Caraguat%C3%A1,_Bromelia_balansae,_Delta_del_Paran%C3%A1,_Tigre.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Los incendios del delta de 2020, vistos desde satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Pierre Markuse from Hamm, Germany",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Fires_in_the_Paran%C3%A1_Delta,_Argentina_-_14_December_2022_(52566913976).jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "Instituto Nacional del Agua, Argentina",
+      "titulo": "Bajante histórica del río Paraná, informe",
+      "url": "https://www.argentina.gob.ar/sites/default/files/2021/09/informe_bajante_150921.pdf",
+      "consultado": "2026-10-05"
+    }
+  ]
 }
