@@ -136,3 +136,41 @@ fuentes**, porque no encontré respaldo institucional suficiente:
   una publicación citable. Lo mismo con el desplazamiento de familias guaraníes
   por el avance de la soja, que necesita una fuente académica o de un organismo
   de derechos humanos, no de prensa.
+
+---
+
+## Viaje Sur · estado
+
+Los 17 lugares tienen fotos con licencia libre. **Diez tienen información con
+fuente**, todas de UNESCO salvo la Gran Barrera, que suma AIMS y un artículo de
+*Nature* con DOI.
+
+### Siete que quedaron con fotos pero sin información
+No encontré todavía una fuente institucional con la que sostener el texto, y
+prefiero dejarlos vacíos antes que improvisar:
+
+**S1 Antártida** · **S2 Islas Georgias del Sur** · **S3 Cordillera de los
+Andes** · **S4 Bosques de araucarias** · **S6 Estepa patagónica** ·
+**S16 Bosques andino-patagónicos** · **S17 Sudeste australiano**
+
+Ninguno es Patrimonio Mundial, que es de donde salió la mayor parte del material
+del resto. Para estos hace falta ir a otras fuentes: SCAR y el Tratado
+Antártico, BirdLife y la Lista Roja de la UICN para el albatros y el cóndor,
+CONAF y Parques Nacionales para las araucarias y el huemul.
+
+### Partes trágicas pendientes
+Sólo está escrita la de la Gran Barrera. Faltan las de **S1, S2, S3, S5, S10,
+S11, S16 y S17**. Varias de esas son las que tenías marcadas «(a confirmar)» en
+el guión, así que conviene cerrarlas antes de que las investigue.
+
+### El guión y las fuentes, sin contradicciones esta vez
+- **S8** · «casi dos kilómetros» de cortina de agua: UNESCO dice que el Zambeze
+  tiene más de dos kilómetros de ancho en ese punto. Coincide.
+- **S12** · «cinco veces en ocho años»: exacto. AIMS y GBRMPA registran blanqueos
+  masivos en 2016, 2017, 2020, 2022 y 2024.
+- **S14** · «ya era selva cuando caminaban los dinosaurios»: UNESCO fecha el
+  bosque de Gondwana entre 50 y 100 millones de años atrás, y los dinosaurios se
+  extinguieron hace 66. El extremo más antiguo del rango se superpone. Se sostiene.
+- **S11** · «un millón y medio de animales»: UNESCO dice dos millones de ñus más
+  cientos de miles de gacelas y cebras, aunque en otro párrafo habla de «más de
+  un millón». La ficha usa las cifras de UNESCO; el guión queda como está.

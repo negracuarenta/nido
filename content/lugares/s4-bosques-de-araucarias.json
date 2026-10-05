@@ -12,6 +12,40 @@
     "en": []
   },
   "tragico": null,
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Araucarias en el Parque Nacional Conguillío",
+        "de": "",
+        "en": ""
+      },
+      "autor": "José Tomás Ossa Villalón",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_conguillio_(200).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Bosque de araucarias",
+        "de": "",
+        "en": ""
+      },
+      "autor": "José Tomás Ossa Villalón",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_conguillio_(182).jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Araucarias sobre el paisaje volcánico",
+        "de": "",
+        "en": ""
+      },
+      "autor": "José Tomás Ossa Villalón",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_conguillio_(313).jpg"
+    }
+  ],
   "fuentes": []
 }

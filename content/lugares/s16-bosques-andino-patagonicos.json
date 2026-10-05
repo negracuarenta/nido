@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Huemul macho (Hippocamelus bisulcus)",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Alejandroaguilarc",
+      "licencia": "CC BY 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Huemul_macho_(Hippocamelus_bisulcus),.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Huemul en la Reserva Cerro Castillo",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Fotogalilea",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Huemul_Reserva_Cerro_Castillo_2.jpg"
+    }
+  ],
   "fuentes": []
 }

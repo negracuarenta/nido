@@ -7,11 +7,44 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Nacional Uluru-Kata Tjuta protege dos formaciones geológicas que dominan la llanura roja del centro de Australia: Uluru, un monolito inmenso, y Kata Tjuta, un conjunto de domos de roca al oeste.",
+      "Los propietarios tradicionales son los anangu, uno de los pueblos de sociedad más antigua del mundo. Uluru y Kata Tjuta forman parte de su sistema de creencias, el Tjukurpa: la ley, las canciones y las historias que se transmiten de generación en generación y que, según los anangu, hay que sostener."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Uluru, en el Parque Nacional Uluru-Kata Tjuta",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dietmar Rabich",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru_--_2019_--_3602-6.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Uluru y las cordilleras Petermann",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dietmar Rabich",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru_--_2019_--_3704-8.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Uluru-Kata Tjuta National Park",
+      "url": "https://whc.unesco.org/en/list/447/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

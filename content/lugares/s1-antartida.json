@@ -23,6 +23,40 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Pingüinos emperador en la isla Snow Hill",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jenny Varley",
+      "licencia": "CC BY-SA 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Emperor_penguins_at_Snow_Hill_Island.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El iceberg A-81 desprendido de la barrera de hielo Brunt",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Pierre Markuse",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Freshly_calved_Iceberg_A-81_at_the_Brunt_Ice_Shelf,_Antarctica_-_24_January_2023_(52647731904).jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Hielo antártico",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dr. Mike Goebel, NOAA NMFS SWFSC. Credit: NOAA NMFS SWFSC An",
+      "licencia": "Public domain",
+      "origen": "https://commons.wikimedia.org/wiki/File:Fish8011_-_Flickr_-_NOAA_Photo_Library.jpg"
+    }
+  ],
   "fuentes": []
 }

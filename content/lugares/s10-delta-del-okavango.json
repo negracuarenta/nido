@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Okavango es un abanico aluvial en el noroeste de Botsuana: uno de los pocos deltas interiores grandes del mundo que no desemboca en ningún mar. Tiene unas 600.000 hectáreas de pantanos permanentes y hasta 1,2 millones más de pradera que se inunda por temporadas.",
+      "Su rareza es el calendario. La crecida anual del río Okavango llega durante la estación seca, y las plantas y los animales del delta sincronizaron sus ciclos biológicos con esa inundación a contramano.",
+      "Ahí viven algunas de las especies de grandes mamíferos más amenazadas del planeta: el guepardo, el rinoceronte blanco, el rinoceronte negro, el licaón y el león."
+    ],
     "de": [],
     "en": []
   },
@@ -23,6 +27,36 @@
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El delta del Okavango",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Delta_del_Okavango,_Botsuana,_2018-07-31,_DD_01.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Jabirú africano en el delta",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Jabir%C3%BA_africano_(Ephippiorhynchus_senegalensis),_delta_del_Okavango,_Botsuana,_2018-07-31,_DD_10.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Okavango Delta",
+      "url": "https://whc.unesco.org/en/list/1432/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

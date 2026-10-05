@@ -7,11 +7,56 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La Península Valdés, en Chubut, abarca unas 360.000 hectáreas y se mete más de 100 kilómetros en el Atlántico Sur. Tiene unos 400 kilómetros de costa, con acantilados de hasta 100 metros, bahías poco profundas, lagunas costeras, médanos activos e islas pequeñas.",
+      "Es un sitio de importancia mundial para la conservación de mamíferos marinos: ahí se reproduce la ballena franca austral, una especie amenazada, y también el elefante marino del sur y el lobo marino de un pelo.",
+      "Las orcas de esta costa desarrollaron una técnica de caza propia, adaptada a las condiciones de este litoral y que no se repite en otras poblaciones."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Ballena franca austral",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Ksnordstrand",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Southern_Right_Whale.JPG"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "La Península Valdés vista por el satélite SAOCOM 1B",
+        "de": "",
+        "en": ""
+      },
+      "autor": "CONAE",
+      "licencia": "CC BY 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Valdes_Peninsula_as_seen_by_SAOCOM_1B.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Pingüino en Península Valdés",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Giorgio Parravicini parradesign",
+      "licencia": "CC0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Pen%C3%ADnsula_Vald%C3%A9s_penguin_(Unsplash).jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Península Valdés",
+      "url": "https://whc.unesco.org/en/list/937/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

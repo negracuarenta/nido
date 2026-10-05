@@ -7,11 +7,56 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Los Trópicos Húmedos de Queensland se extienden unos 450 kilómetros por la costa noreste de Australia y cubren 894.420 hectáreas, casi todas de selva tropical.",
+      "Conservan un registro sin paralelo de los procesos que dieron forma a la flora y la fauna australianas: son los restos del gran bosque de Gondwana que cubrió Australia y parte de la Antártida hace entre 50 y 100 millones de años.",
+      "Ahí están representados todos los marsupiales propios de Australia y la mayor parte de sus aves cantoras, junto a otras especies raras o amenazadas."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "La selva de Daintree, en Queensland",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Robert Linsdell from St. Andrews, Canada",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Daintree_Rainforest,_Queensland_(483851)_(9443593640).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Bosque de lianas mesófilo en el Parque Nacional Daintree",
+        "de": "",
+        "en": ""
+      },
+      "autor": "John Robert McPherson",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Complex_mesophyll_vine_forest_Daintree_National_Park_Queensland_1986_IMG_0012_(2).jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "El sotobosque de Daintree",
+        "de": "",
+        "en": ""
+      },
+      "autor": "John Robert McPherson",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Complex_mesophyll_vine_forest_understorey_Daintree_National_Park_Queensland_1986_IMG_0032.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Wet Tropics of Queensland",
+      "url": "https://whc.unesco.org/en/list/486/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

@@ -7,11 +7,44 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "En Mosi-oa-Tunya —«el humo que truena»— el río Zambeze, que ahí tiene más de dos kilómetros de ancho, se desploma por una sucesión de gargantas de basalto. La neblina que levanta se ve desde más de 20 kilómetros de distancia.",
+      "Es la mayor lámina de agua en caída del mundo. El sitio de Patrimonio Mundial es compartido entre dos países y cubre 6.860 hectáreas: 3.779 del Parque Nacional Mosi-oa-Tunya, en Zambia, y 2.340 del Parque Nacional Victoria Falls más 741 de una franja ribereña del Parque Nacional Zambeze, en Zimbabue."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "La cortina de agua de Mosi-oa-Tunya",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Las cataratas Victoria desde el aire",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_29.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Mosi-oa-Tunya / Victoria Falls",
+      "url": "https://whc.unesco.org/en/list/509/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Los incendios de 2019-20 en la isla Canguro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "New Matilda from Brisbane Australia, Australia",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:2019-20_Australian_Bushfires_-_Kangaroo_Island,_South_Australia_(51374142111).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Bosque quemado en la isla Canguro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "New Matilda from Brisbane Australia, Australia",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:2019-20_Australian_Bushfires_-_Kangaroo_Island,_South_Australia_(51367520267).jpg"
+    }
+  ],
   "fuentes": []
 }

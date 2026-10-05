@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Albatros errante en la isla Prion, Georgias del Sur",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Godot13",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:SGI-2016-South_Georgia_(Prion_Island)%E2%80%93Wandering_albatross_(Diomedea_exulans)_03.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Nido de albatros errante en la isla Prion",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Liam Quinn from Canada",
+      "licencia": "CC BY-SA 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Wandering_Albatross_nest_on_Prion_Island,_South_Georgia_(5747169864).jpg"
+    }
+  ],
   "fuentes": []
 }

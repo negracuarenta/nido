@@ -12,6 +12,29 @@
     "en": []
   },
   "tragico": null,
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Puma en la estepa, cerca del lago Pehoé",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Murray Foubister",
+      "licencia": "CC BY-SA 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Puma_(Puma_Concolor)_encounter_near_Lago_Pehoe,_just_across_the_lake_from_Salto_Grande_waterfall_-_the_two_cubs_give_us_a_last_curious_look_as_they_crest_the_hill_-_(25186632175).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "La estepa patagónica en Torres del Paine",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Ferna.mf",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Torres_del_Paine_-_XII_Region_de_Magallanes_y_La_Antartica_Chilena_-_Puma_Concolor_Atardecer.jpg"
+    }
+  ],
   "fuentes": []
 }

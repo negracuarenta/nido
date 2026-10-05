@@ -18,7 +18,10 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "El Atlas dos Remanescentes Florestais, que la Fundación SOS Mata Atlântica y el Instituto Nacional de Pesquisas Espaciais publican desde 1985, mide cuánto queda del bosque atlántico brasileño. Del total original permanece alrededor del 24 % de cobertura, pero sólo el 12,4 % corresponde a bosque maduro: fragmentos de más de tres hectáreas con dosel cerrado y sin degradación detectable por satélite.",
+        "Los fragmentos mayores a cien hectáreas —los únicos que funcionan como hábitat para las especies raras y los que más carbono almacenan— son apenas el 8,5 % del bosque original. La literatura científica ubica en un 30 % de cobertura el umbral mínimo para conservar el bioma: la Mata Atlántica está muy por debajo."
+      ],
       "de": [],
       "en": []
     }
@@ -58,5 +61,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Herpailurus_jaguarundi_camera_trap_Santa_Fe_do_Sul,_Brazil_2.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Instituto Nacional de Pesquisas Espaciais (INPE), Brasil",
+      "titulo": "Atlas da Mata Atlântica, datos de remanentes forestales",
+      "url": "https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/atlas-da-mata-atlantica-registra-menor-indice-historico-de-desmatamento-em-40-anos-de-monitoramento",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Fundação SOS Mata Atlântica",
+      "titulo": "Atlas da Mata Atlântica",
+      "url": "https://www.sosma.org.br/iniciativas/atlas-da-mata-atlantica",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

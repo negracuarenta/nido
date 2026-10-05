@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La Gran Barrera de Coral es el sistema arrecifal más extenso del mundo. Se inscribió casi entero como Patrimonio Mundial en 1981: 348.000 kilómetros cuadrados que se estiran 14 grados de latitud por la costa noreste de Australia y llegan hasta 250 kilómetros mar adentro.",
+      "Reúne 400 tipos de coral, 1.500 especies de peces y 4.000 de moluscos. Es también el hábitat del dugongo y de la tortuga verde, las dos amenazadas de extinción."
+    ],
     "de": [],
     "en": []
   },
@@ -18,11 +21,67 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "Desde 2016 la Gran Barrera atravesó cinco blanqueos masivos: 2016, 2017, 2020, 2022 y 2024. El de 2016 mató al menos la mitad de los corales constructores de aguas someras. El de 2022 fue el primero registrado en condiciones de La Niña, que suelen ser más frescas.",
+        "Entre enero y marzo de 2024, el mar del Coral registró el calor más alto de los últimos cuatrocientos años."
+      ],
       "de": [],
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Arrecife en Heron Bommie",
+        "de": "",
+        "en": ""
+      },
+      "autor": "© Underwater Earth / XL Catlin Seaview Survey / Christophe B",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Heron_Bommie_SVII.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "La Gran Barrera vista por satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "European Space Agency",
+      "licencia": "CC BY-SA 3.0 igo",
+      "origen": "https://commons.wikimedia.org/wiki/File:Great_Barrier_Reef_ESA378130.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "La Gran Barrera de Coral, en el mar del Coral",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Björn Söderlund, Sw3dPix",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:GREAT_BARRIER_REEF_-_Coral_Sea.tif"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Great Barrier Reef",
+      "url": "https://whc.unesco.org/en/list/154/",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Australian Institute of Marine Science (AIMS)",
+      "titulo": "Aerial surveys reveal mass coral bleaching event unfolding on the Great Barrier Reef",
+      "url": "https://www.aims.gov.au/information-centre/news-and-stories/aerial-surveys-reveal-mass-coral-bleaching-event-unfolding-great-barrier-reef",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Nature",
+      "titulo": "Highest ocean heat in four centuries places Great Barrier Reef in danger (doi:10.1038/s41586-024-07672-x)",
+      "url": "https://www.nature.com/articles/s41586-024-07672-x",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

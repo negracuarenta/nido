@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Nacional Serengueti son 1,5 millones de hectáreas de sabana. Cada año, dos millones de ñus y cientos de miles de gacelas y cebras recorren un circuito de mil kilómetros buscando pasto y agua, seguidos por sus depredadores.",
+      "Es la mayor migración animal del mundo que sigue intacta, sin alterar.",
+      "La diversidad del parque es muy alta e incluye al menos cuatro especies amenazadas a escala global: el rinoceronte negro, el elefante, el licaón y el guepardo."
+    ],
     "de": [],
     "en": []
   },
@@ -23,6 +27,47 @@
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Amanecer en el Serengueti",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Giles Laurent",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Ñu de barba blanca occidental",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Charles J. Sharp",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Western_white-bearded_wildebeest_(Connochaetes_taurinus_mearnsi)_Serengeti.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Búfalo africano en el Serengueti",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Giles Laurent",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:029_African_buffalo_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Serengeti National Park",
+      "url": "https://whc.unesco.org/en/list/156/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

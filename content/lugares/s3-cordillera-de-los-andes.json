@@ -23,6 +23,40 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Cóndor andino en vuelo",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Qyurryusinthehizzouse",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Condor_flight_from_the_side.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Los Andes desde Mendoza",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Steve Peck",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:The_Andes_from_Mendoza.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Glaciares patagónicos y cordillera, desde satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "O.V.E.R.V.I.E.W.",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Patagonian_Glaciers_%26_Andes_Mountains,_Chile_-_Argentina_(34210080150).jpg"
+    }
+  ],
   "fuentes": []
 }

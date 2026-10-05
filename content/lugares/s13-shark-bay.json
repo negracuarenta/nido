@@ -7,11 +7,45 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Shark Bay está en el punto más occidental del continente australiano. Sus aguas, islas y penínsulas cubren unos 2,2 millones de hectáreas, de las cuales cerca del 70 % son marinas.",
+      "Tiene las praderas de pastos marinos más extensas y diversas del mundo: 4.800 kilómetros cuadrados. De ellas vive su población de dugongos.",
+      "Pero lo que la hace única son los estromatolitos: colonias de tapetes microbianos que forman depósitos duros con forma de cúpula, y que están entre las formas de vida más antiguas que se conocen en la Tierra. En Shark Bay viven además cinco especies de mamíferos amenazados."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Las salinas de Shark Bay",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Bruce R. Mitchell",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Mitchell_Bruce_R--_Shark_Bay_salt_lakes.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Shark Bay y sus depósitos sedimentarios, desde la Estación Espacial",
+        "de": "",
+        "en": ""
+      },
+      "autor": "NASA",
+      "licencia": "Public domain",
+      "origen": "https://commons.wikimedia.org/wiki/File:ISS-57_Shark_Bay_and_Sedimentary_Deposits_Reserve,_Western_Australia.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Shark Bay, Western Australia",
+      "url": "https://whc.unesco.org/en/list/578/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

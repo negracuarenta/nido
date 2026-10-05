@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Nacional Los Glaciares, en el suroeste de Santa Cruz, cubre 600.000 hectáreas. Los glaciares ocupan cerca de la mitad del área protegida, y la mayoría se alimenta del Campo de Hielo Patagónico Sur, el vestigio más extenso que dejó en Sudamérica la glaciación del Cuaternario.",
+      "El lago Argentino, de 160 kilómetros de largo, recibe el agua de deshielo. En su extremo tres glaciares desembocan juntos y sueltan al agua gris bloques de hielo del tamaño de una casa, que caen con un estruendo que se escucha a kilómetros.",
+      "En conjunto, el parque es una reserva enorme de agua dulce."
+    ],
     "de": [],
     "en": []
   },
@@ -23,6 +27,47 @@
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El frente del glaciar Perito Moreno",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Fernando",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_2023.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El glaciar sobre el lago Argentino",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Correliebre",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_2019_2.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Los bloques de hielo del frente",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Valentinamaur",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Glaciar_Perito_Moreno,_Argentina,_enero_2024.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Los Glaciares National Park",
+      "url": "https://whc.unesco.org/en/list/145/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

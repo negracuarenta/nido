@@ -7,11 +7,56 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El mar de arena del Namib es el único desierto costero del mundo con campos de dunas moldeados por la niebla. Cubre 3.077.700 hectáreas, con una zona de amortiguación de 899.500, íntegramente dentro del Parque Namib-Naukluft, en Namibia.",
+      "Son dos sistemas de dunas superpuestos: uno antiguo y semiconsolidado, y encima otro más joven y todavía en movimiento. La arena llegó desde miles de kilómetros tierra adentro, transportada por los ríos, las corrientes del océano y el viento.",
+      "La niebla es la principal fuente de agua del lugar. De ella dependen invertebrados, reptiles y mamíferos endémicos, adaptados a una variedad de microhábitats que cambia todo el tiempo."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Las dunas de Sossusvlei",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Sossusvlei,_Namibia,_2018-08-06,_DD_050-054_PAN.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Dead Vlei, en el mar de arena del Namib",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Dead_Vlei,_Sossusvlei,_Namibia,_2018-08-06,_DD_041-049_PAN.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "La duna Elim",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Diego Delso",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Duna_Elim,_Sossusvlei,_Namibia,_2018-08-06,_DD_164-168_PAN.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }
