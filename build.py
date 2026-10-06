@@ -22,6 +22,26 @@ AQUI = Path(__file__).parent
 DIST = AQUI / "dist"
 IDIOMAS = ("es", "de", "en")
 
+# Las tres instituciones que acompañan la obra, con su sitio. Se usan tanto en
+# el pie como sobre el mapa, así que viven acá una sola vez.
+MARCAS = (
+    ("negra40.png", "negra40", "negra40", "https://negracuarenta.github.io/negra40/"),
+    ("ceac.png", "CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata",
+     "ceac", "https://ceac.mdp.utn.edu.ar/"),
+    ("vpst.png", "Völkerkundemuseum vPST", "vpst", "https://www.voelkerkundemuseum-vpst.de/"),
+)
+
+
+def marcas_html(base: str) -> str:
+    return "".join(
+        f'<li><a href="{url}" target="_blank" rel="noopener" '
+        f'title="{escape(alt)}">'
+        f'<img class="logo logo--{clase}" src="{base}assets/logos/{archivo}" '
+        f'alt="{escape(alt)}" loading="lazy"></a></li>'
+        for archivo, alt, clase, url in MARCAS
+    )
+
+
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 TRAZO = {"E": "6 5", "S": "14 6", "O": "12 4 2 4", "OV": "2 4"}
 
@@ -73,16 +93,7 @@ def pie_sitio(site, base):
     Va en todas las páginas: cada ficha puede llegarse directo por su QR, sin
     pasar nunca por la portada, así que la autoría tiene que viajar con ella.
     """
-    logos = [
-        ("negra40.png", "negra40", "negra40"),
-        ("ceac.png", "CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata", "ceac"),
-        ("vpst.png", "Völkerkundemuseum vPST", "vpst"),
-    ]
-    marcas = "".join(
-        f'<li><img class="logo logo--{clase}" src="{base}assets/logos/{archivo}" '
-        f'alt="{escape(alt)}" loading="lazy"></li>'
-        for archivo, alt, clase in logos
-    )
+    marcas = marcas_html(base)
     return f"""
 <footer class="pie-sitio">
   <ul class="pie-sitio__logos">{marcas}</ul>
@@ -244,15 +255,7 @@ def bloque_fuentes(fuentes, ui):
 
 def indice(datos, site):
     ui = site["ui"]
-    marcas_mapa = "".join(
-        f'<li><img class="logo logo--{clase}" src="assets/logos/{archivo}" '
-        f'alt="{escape(alt)}" loading="lazy"></li>'
-        for archivo, alt, clase in (
-            ("negra40.png", "negra40", "negra40"),
-            ("ceac.png", "CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata", "ceac"),
-            ("vpst.png", "Völkerkundemuseum vPST", "vpst"),
-        )
-    )
+    marcas_mapa = marcas_html("")
     leyenda_viajes = "".join(
         f'<li><label><input type="checkbox" checked data-viaje="{v["key"]}">'
         f'<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" '

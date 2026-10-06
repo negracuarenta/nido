@@ -373,3 +373,11 @@ a { color: inherit; }
   .marcas-mapa .logo--ceac { height: 20px; }
   .marcas-mapa .logo--vpst { height: 25px; }
 }
+
+/* Los logos enlazan a cada institución. */
+.marcas-mapa a, .pie-sitio__logos a { display: block; line-height: 0; }
+.marcas-mapa a:focus-visible, .pie-sitio__logos a:focus-visible {
+  outline: 2px solid var(--tinta); outline-offset: 4px;
+}
+.pie-sitio__logos .logo { transition: opacity var(--ease-dur, 180ms) ease; }
+.pie-sitio__logos a:hover .logo, .marcas-mapa a:hover .logo { opacity: 1; }
