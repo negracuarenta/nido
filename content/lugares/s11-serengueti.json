@@ -22,7 +22,10 @@
       "en": "I saw that in twenty-five years almost half the lions were gone."
     },
     "info": {
-      "es": [],
+      "es": [
+        "La Unión Internacional para la Conservación de la Naturaleza clasifica al león como vulnerable. La evaluación anterior estimó una caída de la población del 43 % en tres generaciones —unos veintiún años—, con variación según la región.",
+        "Hoy se calculan unos 23.000 individuos adultos, en descenso: eran unos 25.100 en 2018. El león desapareció de al menos el 92 % del territorio que ocupaba históricamente."
+      ],
       "de": [],
       "en": []
     }
@@ -68,6 +71,18 @@
       "titulo": "Serengeti National Park",
       "url": "https://whc.unesco.org/en/list/156/",
       "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "UICN, Lista Roja de Especies Amenazadas",
+      "titulo": "Panthera leo (ficha de evaluación, PDF)",
+      "url": "https://www.iucnredlist.org/species/pdf/231696234",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "PNAS",
+      "titulo": "Lion (Panthera leo) populations are declining rapidly across Africa, except in intensively managed areas (doi:10.1073/pnas.1500664112)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1500664112",
+      "consultado": "2026-10-06"
     }
   ]
 }

@@ -22,7 +22,10 @@
       "en": "I saw elephants dying beside waterholes the heat had turned to poison, and machines looking for oil in the river that feeds the Okavango."
     },
     "info": {
-      "es": [],
+      "es": [
+        "En 2020 murieron más de trescientos cincuenta elefantes en el delta del Okavango. Se los vio caminar en círculos antes de desplomarse. Un estudio que examinó tres mil charcas encontró que las que ese año tuvieron más floraciones de cianobacterias concentraban más cadáveres: el agua de la que bebían se había vuelto tóxica, en lo que los autores describen como un envenenamiento inducido por el clima.",
+        "Por otro lado, el Centro del Patrimonio Mundial sigue «con atención y preocupación» los proyectos de exploración de petróleo y gas de la empresa canadiense ReconAfrica en el noreste de Namibia y el noroeste de Botsuana. Las áreas con licencia no se superponen con el delta ni con su zona de amortiguación, pero están en sectores sensibles de la cuenca del Cubango-Okavango: una fuga o una contaminación llegaría igual, y la extracción de agua del río Kavango reduciría el caudal que alimenta al delta."
+      ],
       "de": [],
       "en": []
     }
@@ -57,6 +60,24 @@
       "titulo": "Okavango Delta",
       "url": "https://whc.unesco.org/en/list/1432/",
       "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Nature",
+      "titulo": "Toxic bacteria caused the mysterious deaths of hundreds of African elephants",
+      "url": "https://www.nature.com/articles/d41586-020-02703-9",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "UNESCO vigilant on potential impacts of oil exploration in Namibia and Botswana on World Heritage properties",
+      "url": "https://whc.unesco.org/en/news/2230",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Estado de conservación 2023: Okavango Delta (Botsuana)",
+      "url": "https://whc.unesco.org/en/soc/4322/",
+      "consultado": "2026-10-06"
     }
   ]
 }

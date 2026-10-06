@@ -298,3 +298,41 @@ Las traduje buscando conservar el tono, no la literalidad. Dudas concretas:
 Los párrafos de información, los epígrafes de las fotos y los nombres de las
 fuentes. Son unas diez mil palabras por idioma. Las frases del guión, que son la
 obra, ya están.
+
+---
+
+## Cierre: los 44 lugares, completos
+
+Las 19 partes trágicas están escritas y los 44 lugares tienen fotos, información
+y fuentes. Quedan dos cosas donde el guión y las fuentes no coinciden del todo,
+y las dos las decidís vos.
+
+### S5 · El Perito Moreno es la excepción, no el ejemplo
+Tu frase dice: *«Vi el hielo —el mismo hielo que te dije que era hermoso—
+derretirse más rápido que nunca»*.
+
+El dato es real pero apunta al vecindario, no al glaciar. Entre 2000 y 2012 los
+glaciares del Campo de Hielo Patagónico Sur perdieron en promedio **casi un
+metro de espesor por año**. Pero **el Perito Moreno es una de las pocas
+excepciones**: se mantuvo estable mientras casi todos los demás retrocedían.
+
+La ficha lo cuenta así, con la aclaración. Si en la obra te interesa que el
+hielo que se derrite sea exactamente el que la golondrina acaba de nombrar,
+quizá convenga que la frase diga «el hielo de alrededor» o que el acto trágico
+mire al Upsala o al Viedma, que sí retroceden fuerte.
+
+### O2 · La frase del Aconcagua, ajustada
+Me pediste ajustarla y lo hice, con el cambio más chico posible:
+
+| | |
+|---|---|
+| **Antes** | Y vi a los hombres votar una ley **que le quita protección**, para que las máquinas puedan llegar más cerca. |
+| **Ahora** | Y vi a los hombres votar una ley para que las máquinas puedan llegar más cerca. |
+
+Saqué sólo la parte que las fuentes contradicen —el parque no perdió
+protección, se amplió un 21 %— y dejé intacto lo demás: la ley existe, es la
+**9684 de 2025**, y es la que habilita la mina de cobre a cielo abierto en
+Uspallata, el mismo departamento del parque. El ritmo de la frase no cambia.
+
+Está traducida a los tres idiomas. **Si preferís la versión original, se vuelve
+en un minuto.**

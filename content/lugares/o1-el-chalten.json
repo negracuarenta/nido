@@ -21,7 +21,11 @@
       "en": "I saw the ice of El Chaltén and of Aconcagua, that white gold I told you about, retreating year after year."
     },
     "info": {
-      "es": [],
+      "es": [
+        "Los Andes guardan más de 31.000 kilómetros cuadrados de hielo, desde Venezuela hasta Tierra del Fuego. Son uno de los mejores indicadores del cambio climático: si sube la temperatura se derriten, si aumentan las precipitaciones crecen.",
+        "El Chaltén está al borde del Campo de Hielo Patagónico Sur, donde entre 2000 y 2012 los glaciares perdieron en promedio casi un metro de espesor por año. Salvo el Perito Moreno y algunos casos aislados, todos retrocedieron y se adelgazaron.",
+        "Investigadores del CONICET participaron del primer estudio que comparó la evolución de todos los glaciares andinos entre 2000 y 2018, con más de treinta mil modelos de terreno hechos a partir de imágenes satelitales."
+      ],
       "de": [],
       "en": []
     }
@@ -56,6 +60,18 @@
       "titulo": "Los Glaciares National Park",
       "url": "https://whc.unesco.org/en/list/145/",
       "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "CONICET",
+      "titulo": "Revelan cómo cambiaron los glaciares de la Cordillera de los Andes en los últimos veinte años",
+      "url": "https://www.conicet.gov.ar/revelan-como-cambiaron-los-glaciares-de-la-cordillera-de-los-andes-en-los-ultimos-veinte-anos/",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "SEGEMAR, Argentina",
+      "titulo": "El Campo de Hielo Patagónico Sur (PDF)",
+      "url": "https://repositorio.segemar.gob.ar/bitstream/handle/308849217/1375/68%20-%20Campo%20de%20Hielo%20Patagonico%20Sur.pdf",
+      "consultado": "2026-10-06"
     }
   ]
 }

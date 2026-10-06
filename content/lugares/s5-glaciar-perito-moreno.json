@@ -22,7 +22,11 @@
       "en": "I saw the ice — the same ice I told you was beautiful — melting faster than ever. It is maddening, tree."
     },
     "info": {
-      "es": [],
+      "es": [
+        "El Campo de Hielo Patagónico Sur cubre unos 14.200 kilómetros cuadrados y reúne 48 glaciares principales; del lado argentino, el Perito Moreno, el Viedma y el Upsala. Entre 2000 y 2012 los glaciares de la región perdieron en promedio casi un metro de espesor por año.",
+        "El Perito Moreno es una de las pocas excepciones: se mantuvo estable mientras casi todos sus vecinos retrocedían y se adelgazaban. El hielo que se derrite más rápido que nunca es el de alrededor.",
+        "Un trabajo de investigadores del CONICET publicado en Nature Geoscience comparó por primera vez, con más de treinta mil modelos digitales de terreno hechos con imágenes satelitales, la evolución de todos los glaciares de los Andes entre 2000 y 2018."
+      ],
       "de": [],
       "en": []
     }
@@ -68,6 +72,18 @@
       "titulo": "Los Glaciares National Park",
       "url": "https://whc.unesco.org/en/list/145/",
       "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "SEGEMAR, Argentina",
+      "titulo": "El Campo de Hielo Patagónico Sur. Un pasado, un presente… y un futuro incierto (PDF)",
+      "url": "https://repositorio.segemar.gob.ar/bitstream/handle/308849217/1375/68%20-%20Campo%20de%20Hielo%20Patagonico%20Sur.pdf",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "CONICET",
+      "titulo": "Revelan cómo cambiaron los glaciares de la Cordillera de los Andes en los últimos veinte años",
+      "url": "https://www.conicet.gov.ar/revelan-como-cambiaron-los-glaciares-de-la-cordillera-de-los-andes-en-los-ultimos-veinte-anos/",
+      "consultado": "2026-10-06"
     }
   ]
 }

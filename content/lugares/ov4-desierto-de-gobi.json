@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La Gran Reserva de Biosfera del Gobi, en el suroeste de Mongolia, sobre el límite con China, es una de las áreas protegidas más grandes del mundo: 6.839.160 hectáreas en total. Sólo su parte A ocupa unos 4,6 millones de hectáreas, y la parte B otros 0,9 millones. Juntas superan la superficie de Suiza.",
+      "Se declaró Área Estrictamente Protegida en 1975 y entró a la Red Mundial de Reservas de Biosfera en 1991. Representa a los desiertos de Asia Central.",
+      "Ahí viven el leopardo de las nieves, el íbice siberiano, el oso del Gobi, el asno salvaje asiático, el argalí y la gacela de bocio. Es además uno de los tres últimos lugares del planeta donde todavía queda el camello bactriano salvaje."
+    ],
     "de": [],
     "en": []
   },
@@ -36,5 +40,12 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Mongolia_-_Gobi_Desert_(49310228777).jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Programa el Hombre y la Biosfera (MAB)",
+      "titulo": "Great Gobi Biosphere Reserve",
+      "url": "https://www.unesco.org/en/mab/great-gobi",
+      "consultado": "2026-10-06"
+    }
+  ]
 }
