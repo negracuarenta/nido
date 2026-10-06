@@ -12,8 +12,16 @@
       "El yaguareté se había extinguido en Corrientes. En 2018 nacieron los dos primeros cachorros en el proyecto de reintroducción, y en enero de 2021 una hembra con sus dos crías pasó a vivir en libertad plena: los primeros yaguaretés sueltos en la provincia después de más de setenta años de ausencia.",
       "La población sigue creciendo. Parques Nacionales contabiliza hoy al menos 35 yaguaretés viviendo libres en el Iberá, y algunos se trasladaron desde ahí a otras áreas, como el Parque Nacional El Impenetrable."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Nationalpark Iberá bewahrt mehr als 195.000 Hektar in der Provinz Corrientes, innerhalb der Ökoregion der Esteros del Iberá, eines der größten Feuchtgebiete Südamerikas.",
+      "Der Jaguar war in Corrientes ausgestorben. 2018 kamen im Wiederansiedlungsprojekt die ersten beiden Jungtiere zur Welt, und im Januar 2021 ging ein Weibchen mit seinen zwei Jungen in die volle Freiheit über: die ersten frei lebenden Jaguare der Provinz nach mehr als siebzig Jahren Abwesenheit.",
+      "Die Population wächst weiter. Die Nationalparkverwaltung zählt heute mindestens 35 frei lebende Jaguare im Iberá, und einige sind von dort in andere Gebiete abgewandert, etwa in den Nationalpark El Impenetrable."
+    ],
+    "en": [
+      "Iberá National Park conserves more than 195,000 hectares in the province of Corrientes, within the ecoregion of the Esteros del Iberá, one of the largest wetlands in South America.",
+      "The jaguar had become extinct in Corrientes. In 2018 the first two cubs were born in the reintroduction project, and in January 2021 a female with her two cubs moved into full freedom: the first jaguars at liberty in the province after more than seventy years of absence.",
+      "The population keeps growing. National Parks now counts at least 35 jaguars living free in the Iberá, and some have moved from there to other areas, such as El Impenetrable National Park."
+    ]
   },
   "tragico": {
     "cita": {
@@ -27,8 +35,16 @@
         "Dentro del área protegida se quemó cerca de la mitad del Parque Nacional Iberá —el 57 % de su cobertura vegetal— y alrededor del 20 % de la reserva, con predominio de severidades moderada-alta y alta. Los sectores más castigados fueron el norte, el corredor Mburucuyá-San Roque y Colonia Carlos Pellegrini.",
         "Fue un año después de que la primera familia de yaguaretés pasara a vivir en libertad plena. El CONICET puso en marcha una evaluación de los efectos a mediano plazo sobre la biodiversidad."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Im Sommer 2022 verwüstete das Feuer Corrientes. Seit Januar erfassten die Brände mehr als 900.000 Hektar, über 10 % der Provinzfläche, und die Feuchtgebiete verloren 534.000 Hektar an Sümpfen, Bruchland und Auen.",
+        "Innerhalb des Schutzgebiets brannte etwa die Hälfte des Nationalparks Iberá — 57 % seiner Vegetationsdecke — und rund 20 % des Reservats, überwiegend mit mittlerer bis hoher und hoher Schwere. Am härtesten traf es den Norden, den Korridor Mburucuyá–San Roque und Colonia Carlos Pellegrini.",
+        "Es geschah ein Jahr, nachdem die erste Jaguarfamilie in die volle Freiheit übergegangen war. Der argentinische Forschungsrat CONICET startete eine Untersuchung der mittelfristigen Folgen für die Biodiversität."
+      ],
+      "en": [
+        "In the summer of 2022 fire swept through Corrientes. From January the fires affected more than 900,000 hectares, over 10 % of the provincial surface, and the wetlands lost 534,000 hectares of marshes, swamps and floodplains.",
+        "Inside the protected area, close to half of Iberá National Park burned — 57 % of its vegetation cover — along with around 20 % of the reserve, predominantly at moderate-high and high severity. The worst-hit sectors were the north, the Mburucuyá–San Roque corridor and Colonia Carlos Pellegrini.",
+        "It came a year after the first jaguar family moved into full freedom. CONICET launched an assessment of the medium-term effects on biodiversity."
+      ]
     },
     "fuentes": [
       {
@@ -56,8 +72,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Atardecer en los Esteros del Iberá",
-        "de": "",
-        "en": ""
+        "de": "Abenddämmerung in den Esteros del Iberá",
+        "en": "Sunset over the Esteros del Iberá"
       },
       "autor": "Puya Raimondi",
       "licencia": "CC BY-SA 4.0",
@@ -67,8 +83,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El humedal del Iberá, en Corrientes",
-        "de": "",
-        "en": ""
+        "de": "Das Feuchtgebiet des Iberá in Corrientes",
+        "en": "The Iberá wetland, in Corrientes"
       },
       "autor": "Carlos Bagliani",
       "licencia": "CC BY-SA 4.0",
@@ -78,8 +94,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Incendios en el Iberá vistos desde satélite",
-        "de": "",
-        "en": ""
+        "de": "Brände im Iberá vom Satelliten aus gesehen",
+        "en": "Fires in the Iberá seen from satellite"
       },
       "autor": "Pierre Markuse",
       "licencia": "CC BY 2.0",

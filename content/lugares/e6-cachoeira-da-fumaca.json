@@ -12,8 +12,16 @@
       "Para llegar al borde hay que caminar seis kilómetros. El parque protege 152.141 hectáreas y fue creado por decreto en septiembre de 1985.",
       "La Chapada Diamantina está en el límite de dos biomas y forma parte de las Reservas de Biosfera de la Caatinga y de la Mata Atlántica."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Cachoeira da Fumaça liegt im Nationalpark Chapada Diamantina im Bundesstaat Bahia. Mit rund 340 Metern ist sie der zweithöchste Wasserfall Brasiliens. Die Wassermenge ist so gering und der Sturz so lang, dass sich das Wasser in Nebel auflöst, bevor es unten ankommt — daher der Name, «Rauchfall».",
+      "Bis an die Kante sind sechs Kilometer zu Fuß zurückzulegen. Der Park schützt 152.141 Hektar und wurde im September 1985 per Dekret eingerichtet.",
+      "Die Chapada Diamantina liegt an der Grenze zweier Großlebensräume und gehört zu den Biosphärenreservaten der Caatinga und der Mata Atlântica."
+    ],
+    "en": [
+      "The Cachoeira da Fumaça is in the Chapada Diamantina National Park, in Bahia. At some 340 metres it is the second-highest waterfall in Brazil. The flow is so slight and the drop so long that the water breaks up into mist before reaching the bottom: hence the name, «smoke fall».",
+      "Reaching the edge takes a six-kilometre walk. The park protects 152,141 hectares and was created by decree in September 1985.",
+      "The Chapada Diamantina sits on the boundary of two biomes and forms part of the Caatinga and Atlantic Forest Biosphere Reserves."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "El fuego es la amenaza principal de la Chapada Diamantina. Entre 2003 y 2006 el parque registró la mayor cantidad de focos de incendio de todas las áreas protegidas federales de Brasil.",
         "El control del fuego ocupa los períodos secos críticos —de agosto a febrero y de septiembre a diciembre— y durante esa temporada el equipo del parque dedica prácticamente toda su energía y sus escasos recursos a combatirlo, con el apoyo de brigadas voluntarias locales."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Feuer ist die Hauptbedrohung der Chapada Diamantina. Zwischen 2003 und 2006 verzeichnete der Park die meisten Brandherde aller bundesstaatlichen Schutzgebiete Brasiliens.",
+        "Die Brandbekämpfung füllt die kritischen Trockenzeiten — von August bis Februar und von September bis Dezember —, und in dieser Zeit wendet das Parkteam praktisch seine gesamte Kraft und seine knappen Mittel dafür auf, unterstützt von örtlichen freiwilligen Brigaden."
+      ],
+      "en": [
+        "Fire is the main threat to the Chapada Diamantina. Between 2003 and 2006 the park recorded the highest number of fire outbreaks of all Brazil's federal protected areas.",
+        "Fire control fills the critical dry periods — August to February and September to December — and through that season the park team devotes practically all its energy and its scarce resources to fighting it, with the support of local volunteer brigades."
+      ]
     },
     "fuentes": [
       {
@@ -49,8 +63,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "La Cachoeira da Fumaça, en la Chapada Diamantina",
-        "de": "",
-        "en": ""
+        "de": "Die Cachoeira da Fumaça in der Chapada Diamantina",
+        "en": "The Cachoeira da Fumaça, in the Chapada Diamantina"
       },
       "autor": "Jack5599",
       "licencia": "CC BY-SA 3.0",
@@ -60,8 +74,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El Morrão, en el Parque Nacional da Chapada Diamantina",
-        "de": "",
-        "en": ""
+        "de": "Der Morrão im Nationalpark Chapada Diamantina",
+        "en": "The Morrão, in Chapada Diamantina National Park"
       },
       "autor": "Jeilsonandrade",
       "licencia": "CC BY-SA 3.0",
@@ -71,8 +85,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "El paisaje de mesetas de la Chapada Diamantina",
-        "de": "",
-        "en": ""
+        "de": "Die Tafelberglandschaft der Chapada Diamantina",
+        "en": "The plateau landscape of the Chapada Diamantina"
       },
       "autor": "Lucas Xavier da Cunha",
       "licencia": "CC BY-SA 4.0",

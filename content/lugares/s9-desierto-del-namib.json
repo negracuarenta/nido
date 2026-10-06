@@ -12,8 +12,16 @@
       "Son dos sistemas de dunas superpuestos: uno antiguo y semiconsolidado, y encima otro más joven y todavía en movimiento. La arena llegó desde miles de kilómetros tierra adentro, transportada por los ríos, las corrientes del océano y el viento.",
       "La niebla es la principal fuente de agua del lugar. De ella dependen invertebrados, reptiles y mamíferos endémicos, adaptados a una variedad de microhábitats que cambia todo el tiempo."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Sandmeer der Namib ist die einzige Küstenwüste der Welt mit Dünenfeldern, die vom Nebel geformt werden. Sie umfasst 3.077.700 Hektar mit einer Pufferzone von 899.500 Hektar, vollständig innerhalb des Namib-Naukluft-Parks in Namibia.",
+      "Es sind zwei einander überlagernde Dünensysteme: ein altes, halb verfestigtes und darüber ein jüngeres, das noch in Bewegung ist. Der Sand kam aus Tausenden von Kilometern im Landesinneren, befördert von Flüssen, Meeresströmungen und Wind.",
+      "Der Nebel ist die wichtigste Wasserquelle des Ortes. Von ihm hängen endemische Wirbellose, Reptilien und Säugetiere ab, angepasst an eine Vielfalt von Kleinlebensräumen, die sich ständig verändert."
+    ],
+    "en": [
+      "The Namib Sand Sea is the only coastal desert in the world with dune fields shaped by fog. It covers 3,077,700 hectares, with a buffer zone of 899,500, entirely within the Namib-Naukluft Park, in Namibia.",
+      "There are two superimposed dune systems: an ancient, semi-consolidated one, and above it a younger one still on the move. The sand arrived from thousands of kilometres inland, carried by rivers, ocean currents and wind.",
+      "Fog is the place's main source of water. Endemic invertebrates, reptiles and mammals depend on it, adapted to a range of microhabitats that changes all the time."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "Acá la noticia es buena, y conviene decirlo: la UICN evalúa el mar de arena del Namib como «bueno». Su propia naturaleza lo protege —una extensión enorme de dunas inhóspitas, bañadas por la niebla, prácticamente sin caminos ni instalaciones— y eso lo vuelve resistente.",
         "Lo que sí requiere manejo cuidadoso es el agua: de ello depende que se mantengan los pocos ríos estacionales que penetran en el área. Y en las llanuras costeras hay depósitos de diamantes aluviales."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Hier ist die Nachricht gut, und das gehört gesagt: die IUCN bewertet das Sandmeer der Namib als «gut». Seine eigene Beschaffenheit schützt es — eine riesige Fläche unwirtlicher, nebelgetränkter Dünen, praktisch ohne Wege und Anlagen —, und das macht es widerstandsfähig.",
+        "Sorgfältiges Management verlangt allerdings das Wasser: davon hängt ab, dass die wenigen jahreszeitlichen Flüsse erhalten bleiben, die in das Gebiet vordringen. Und in den Küstenebenen liegen alluviale Diamantvorkommen."
+      ],
+      "en": [
+        "Here the news is good, and it is worth saying so: the IUCN assesses the Namib Sand Sea as «good». Its own nature protects it — a vast expanse of inhospitable dunes bathed in fog, with practically no roads or installations — and that makes it resilient.",
+        "What does require careful management is water: on it depends the survival of the few seasonal rivers that penetrate the area. And on the coastal plains there are alluvial diamond deposits."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Las dunas de Sossusvlei",
-        "de": "",
-        "en": ""
+        "de": "Die Dünen von Sossusvlei",
+        "en": "The dunes of Sossusvlei"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Dead Vlei, en el mar de arena del Namib",
-        "de": "",
-        "en": ""
+        "de": "Dead Vlei im Sandmeer der Namib",
+        "en": "Dead Vlei, in the Namib Sand Sea"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "La duna Elim",
-        "de": "",
-        "en": ""
+        "de": "Die Düne Elim",
+        "en": "The Elim dune"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",

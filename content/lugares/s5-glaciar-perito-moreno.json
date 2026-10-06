@@ -12,8 +12,16 @@
       "El lago Argentino, de 160 kilómetros de largo, recibe el agua de deshielo. En su extremo tres glaciares desembocan juntos y sueltan al agua gris bloques de hielo del tamaño de una casa, que caen con un estruendo que se escucha a kilómetros.",
       "En conjunto, el parque es una reserva enorme de agua dulce."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Nationalpark Los Glaciares im Südwesten von Santa Cruz umfasst 600.000 Hektar. Die Gletscher nehmen fast die Hälfte des Schutzgebiets ein, und die meisten speisen sich aus dem Südlichen Patagonischen Eisfeld, dem ausgedehntesten Überrest, den die quartäre Vereisung in Südamerika hinterlassen hat.",
+      "Der 160 Kilometer lange Lago Argentino nimmt das Schmelzwasser auf. An seinem Ende münden drei Gletscher nebeneinander und lassen haushohe Eisblöcke ins graue Wasser stürzen, die mit einem Krachen fallen, das kilometerweit zu hören ist.",
+      "Insgesamt ist der Park ein gewaltiger Süßwasserspeicher."
+    ],
+    "en": [
+      "Los Glaciares National Park, in the south-west of Santa Cruz, covers 600,000 hectares. Glaciers occupy close to half the protected area, and most are fed by the Southern Patagonian Ice Field, the most extensive remnant left in South America by the Quaternary glaciation.",
+      "Lake Argentino, 160 kilometres long, receives the meltwater. At its far end three glaciers come down together and drop house-sized blocks of ice into the grey water, falling with a roar heard kilometres away.",
+      "Taken together, the park is an enormous reserve of fresh water."
+    ]
   },
   "tragico": {
     "cita": {
@@ -27,8 +35,16 @@
         "El Perito Moreno es una de las pocas excepciones: se mantuvo estable mientras casi todos sus vecinos retrocedían y se adelgazaban. El hielo que se derrite más rápido que nunca es el de alrededor.",
         "Un trabajo de investigadores del CONICET publicado en Nature Geoscience comparó por primera vez, con más de treinta mil modelos digitales de terreno hechos con imágenes satelitales, la evolución de todos los glaciares de los Andes entre 2000 y 2018."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Das Südliche Patagonische Eisfeld bedeckt rund 14.200 Quadratkilometer und vereint 48 Hauptgletscher; auf argentinischer Seite den Perito Moreno, den Viedma und den Upsala. Zwischen 2000 und 2012 verloren die Gletscher der Region im Mittel fast einen Meter Dicke pro Jahr.",
+        "Der Perito Moreno ist eine der wenigen Ausnahmen: er blieb stabil, während fast alle seine Nachbarn zurückwichen und dünner wurden. Das Eis, das schneller schmilzt als je zuvor, ist das ringsum.",
+        "Eine in Nature Geoscience veröffentlichte Arbeit von CONICET-Forschenden verglich erstmals, mit mehr als dreißigtausend aus Satellitenbildern erstellten digitalen Geländemodellen, die Entwicklung sämtlicher Gletscher der Anden zwischen 2000 und 2018."
+      ],
+      "en": [
+        "The Southern Patagonian Ice Field covers some 14,200 square kilometres and gathers 48 principal glaciers; on the Argentine side, the Perito Moreno, the Viedma and the Upsala. Between 2000 and 2012 the region's glaciers lost on average almost a metre of thickness per year.",
+        "The Perito Moreno is one of the few exceptions: it held steady while almost all its neighbours retreated and thinned. The ice melting faster than ever is the ice around it.",
+        "A study by CONICET researchers published in Nature Geoscience compared, for the first time and using more than thirty thousand digital terrain models built from satellite imagery, the evolution of every glacier in the Andes between 2000 and 2018."
+      ]
     }
   },
   "fotos": [
@@ -36,8 +52,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El frente del glaciar Perito Moreno",
-        "de": "",
-        "en": ""
+        "de": "Die Front des Perito-Moreno-Gletschers",
+        "en": "The front of the Perito Moreno glacier"
       },
       "autor": "Fernando",
       "licencia": "CC BY-SA 4.0",
@@ -47,8 +63,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El glaciar sobre el lago Argentino",
-        "de": "",
-        "en": ""
+        "de": "Der Gletscher über dem Lago Argentino",
+        "en": "The glacier above Lake Argentino"
       },
       "autor": "Correliebre",
       "licencia": "CC BY-SA 4.0",
@@ -58,8 +74,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Los bloques de hielo del frente",
-        "de": "",
-        "en": ""
+        "de": "Die Eisblöcke an der Gletscherfront",
+        "en": "The ice blocks at the front"
       },
       "autor": "Valentinamaur",
       "licencia": "CC BY-SA 4.0",

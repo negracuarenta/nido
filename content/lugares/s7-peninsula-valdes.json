@@ -12,8 +12,16 @@
       "Es un sitio de importancia mundial para la conservación de mamíferos marinos: ahí se reproduce la ballena franca austral, una especie amenazada, y también el elefante marino del sur y el lobo marino de un pelo.",
       "Las orcas de esta costa desarrollaron una técnica de caza propia, adaptada a las condiciones de este litoral y que no se repite en otras poblaciones."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Halbinsel Valdés in Chubut umfasst rund 360.000 Hektar und ragt mehr als 100 Kilometer in den Südatlantik. Sie hat etwa 400 Kilometer Küste, mit bis zu 100 Meter hohen Kliffs, flachen Buchten, Küstenlagunen, wandernden Dünen und kleinen Inseln.",
+      "Sie ist ein Ort von weltweiter Bedeutung für den Schutz von Meeressäugern: dort pflanzt sich der Südkaper fort, eine bedrohte Art, und ebenso der Südliche See-Elefant und der Südamerikanische Seebär.",
+      "Die Orcas dieser Küste haben eine eigene Jagdtechnik entwickelt, angepasst an die Bedingungen dieses Küstenstrichs und in keiner anderen Population wiederzufinden."
+    ],
+    "en": [
+      "Península Valdés, in Chubut, covers some 360,000 hectares and reaches more than 100 kilometres into the South Atlantic. It has around 400 kilometres of coast, with cliffs up to 100 metres high, shallow bays, coastal lagoons, active dunes and small islands.",
+      "It is a site of world importance for the conservation of marine mammals: the southern right whale, a threatened species, breeds there, as do the southern elephant seal and the South American fur seal.",
+      "The orcas of this coast developed a hunting technique of their own, adapted to the conditions of this shoreline and not repeated in other populations."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa Península Valdés como de «preocupación significativa». La población de ballena franca austral —la especie emblema del sitio— sigue creciendo, pero cada vez más despacio, y se registran niveles inusualmente altos de mortandad: el número de ballenas muertas por año viene en aumento y la investigación científica sobre las causas continúa.",
         "A eso se suma el impacto de la gripe aviar H5N1 sobre la fauna marina y las aves, en especial la mortandad masiva de elefantes marinos del sur."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet Península Valdés als «erheblich besorgniserregend». Die Population des Südkapers — das Wahrzeichen der Stätte — wächst weiter, aber immer langsamer, und es werden ungewöhnlich hohe Sterblichkeitsraten verzeichnet: die Zahl der pro Jahr tot aufgefundenen Wale nimmt zu, und die Forschung zu den Ursachen dauert an.",
+        "Hinzu kommt die Wirkung der Vogelgrippe H5N1 auf Meeresfauna und Vögel, insbesondere das Massensterben der Südlichen See-Elefanten."
+      ],
+      "en": [
+        "The IUCN assesses Península Valdés as of «significant concern». The southern right whale population — the site's emblem species — is still growing, but ever more slowly, and unusually high mortality levels are being recorded: the number of whales found dead each year is rising, and scientific research into the causes continues.",
+        "To that is added the impact of H5N1 avian influenza on marine fauna and birds, in particular the mass mortality of southern elephant seals."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Ballena franca austral",
-        "de": "",
-        "en": ""
+        "de": "Südkaper",
+        "en": "Southern right whale"
       },
       "autor": "Ksnordstrand",
       "licencia": "CC BY-SA 3.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "La Península Valdés vista por el satélite SAOCOM 1B",
-        "de": "",
-        "en": ""
+        "de": "Die Halbinsel Valdés, aufgenommen vom Satelliten SAOCOM 1B",
+        "en": "Península Valdés seen by the SAOCOM 1B satellite"
       },
       "autor": "CONAE",
       "licencia": "CC BY 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Pingüino en Península Valdés",
-        "de": "",
-        "en": ""
+        "de": "Pinguin auf der Halbinsel Valdés",
+        "en": "Penguin on Península Valdés"
       },
       "autor": "Giorgio Parravicini parradesign",
       "licencia": "CC0",

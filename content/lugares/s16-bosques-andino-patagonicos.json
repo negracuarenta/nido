@@ -21,8 +21,12 @@
       "es": [
         "El huemul es un ciervo de los bosques patagónicos de Argentina y Chile, y está clasificado en peligro de extinción. Se estima un mínimo de 780 ejemplares entre los dos países, y menos de 1.500 en total. En Argentina fue declarado Monumento Natural por la Ley 24.702 de 1996."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Der Huemul ist ein Hirsch der patagonischen Wälder Argentiniens und Chiles und gilt als vom Aussterben bedroht. Man schätzt mindestens 780 Tiere in beiden Ländern zusammen und weniger als 1.500 insgesamt. In Argentinien wurde er durch das Gesetz 24.702 von 1996 zum Naturdenkmal erklärt."
+      ],
+      "en": [
+        "The huemul is a deer of the Patagonian forests of Argentina and Chile, and is classified as endangered. A minimum of 780 individuals is estimated between the two countries, and fewer than 1,500 in total. In Argentina it was declared a Natural Monument by Law 24,702 of 1996."
+      ]
     }
   },
   "fotos": [
@@ -30,8 +34,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Huemul macho (Hippocamelus bisulcus)",
-        "de": "",
-        "en": ""
+        "de": "Männlicher Huemul (Hippocamelus bisulcus)",
+        "en": "Male huemul (Hippocamelus bisulcus)"
       },
       "autor": "Alejandroaguilarc",
       "licencia": "CC BY 4.0",
@@ -41,8 +45,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Huemul en la Reserva Cerro Castillo",
-        "de": "",
-        "en": ""
+        "de": "Huemul im Reservat Cerro Castillo",
+        "en": "Huemul in the Cerro Castillo Reserve"
       },
       "autor": "Fotogalilea",
       "licencia": "CC BY-SA 4.0",

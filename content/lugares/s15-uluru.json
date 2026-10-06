@@ -11,8 +11,14 @@
       "El Parque Nacional Uluru-Kata Tjuta protege dos formaciones geológicas que dominan la llanura roja del centro de Australia: Uluru, un monolito inmenso, y Kata Tjuta, un conjunto de domos de roca al oeste.",
       "Los propietarios tradicionales son los anangu, uno de los pueblos de sociedad más antigua del mundo. Uluru y Kata Tjuta forman parte de su sistema de creencias, el Tjukurpa: la ley, las canciones y las historias que se transmiten de generación en generación y que, según los anangu, hay que sostener."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Uluru-Kata-Tjuta-Nationalpark schützt zwei geologische Formationen, die die rote Ebene Zentralaustraliens beherrschen: den Uluru, einen gewaltigen Monolithen, und die Kata Tjuta, eine Gruppe von Felsdomen im Westen.",
+      "Die traditionellen Eigentümer sind die Anangu, eines der Völker mit der ältesten Gesellschaftsform der Welt. Uluru und Kata Tjuta sind Teil ihres Glaubenssystems, des Tjukurpa: des Gesetzes, der Lieder und der Geschichten, die von Generation zu Generation weitergegeben werden und die, so die Anangu, aufrechterhalten werden müssen."
+    ],
+    "en": [
+      "Uluru-Kata Tjuta National Park protects two geological formations that dominate the red plain of central Australia: Uluru, an immense monolith, and Kata Tjuta, a group of rock domes to the west.",
+      "The traditional owners are the Anangu, one of the peoples with the oldest society in the world. Uluru and Kata Tjuta are part of their belief system, the Tjukurpa: the law, the songs and the stories passed down from generation to generation and which, the Anangu say, must be upheld."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "Otra donde la noticia es buena: la UICN evalúa Uluru-Kata Tjuta como «bueno». Los valores del sitio están en buen estado y es probable que se mantengan, y la protección se considera en general muy eficaz.",
         "La tierra es de propiedad aborigen y se maneja de forma conjunta, combinando conocimiento tradicional y científico, a través de un consejo con mayoría de propietarios tradicionales —los anangu—. El manejo se guía por el Tjukurpa, la ley y la cultura anangu, junto con la legislación australiana."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Noch ein Ort, an dem die Nachricht gut ist: die IUCN bewertet Uluru-Kata Tjuta als «gut». Die Werte der Stätte sind in gutem Zustand und werden es voraussichtlich bleiben, und der Schutz gilt insgesamt als sehr wirksam.",
+        "Das Land ist Eigentum der Aborigines und wird gemeinsam verwaltet, indem traditionelles und wissenschaftliches Wissen zusammengeführt werden, über einen Rat mit einer Mehrheit traditioneller Eigentümer — der Anangu. Leitlinie der Verwaltung sind das Tjukurpa, das Gesetz und die Kultur der Anangu, zusammen mit der australischen Gesetzgebung."
+      ],
+      "en": [
+        "Another where the news is good: the IUCN assesses Uluru-Kata Tjuta as «good». The site's values are in good condition and are likely to stay that way, and protection is considered generally highly effective.",
+        "The land is Aboriginal-owned and jointly managed, combining traditional and scientific knowledge, through a board with a majority of traditional owners — the Anangu. Management is guided by the Tjukurpa, Anangu law and culture, alongside Australian legislation."
+      ]
     },
     "fuentes": [
       {
@@ -42,8 +54,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Uluru, en el Parque Nacional Uluru-Kata Tjuta",
-        "de": "",
-        "en": ""
+        "de": "Uluru im Uluru-Kata-Tjuta-Nationalpark",
+        "en": "Uluru, in Uluru-Kata Tjuta National Park"
       },
       "autor": "Dietmar Rabich",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +65,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Uluru y las cordilleras Petermann",
-        "de": "",
-        "en": ""
+        "de": "Uluru und die Petermann Ranges",
+        "en": "Uluru and the Petermann Ranges"
       },
       "autor": "Dietmar Rabich",
       "licencia": "CC BY-SA 4.0",

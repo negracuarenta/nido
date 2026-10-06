@@ -12,8 +12,16 @@
       "Los suelos son pobres, llueve poco, hiela casi todo el año y el viento supera los cien kilómetros por hora. Aun así, arbustos achaparrados y pastos ralos cubren casi toda la región.",
       "El guanaco es el camélido más grande de Sudamérica, y sus patas largas le permiten correr para escapar del puma, su principal depredador. Nueve áreas protegidas nacionales conservan muestras de esta ecorregión."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die patagonische Steppe bedeckt mehr als 54 Millionen Hektar, von den Anden bis zum Atlantik und von den Vulkanfeldern der Payunia in Mendoza bis zu den Grasländern im Norden Feuerlands.",
+      "Die Böden sind arm, es regnet wenig, fast das ganze Jahr über friert es, und der Wind übersteigt hundert Kilometer pro Stunde. Dennoch bedecken niedrige Sträucher und lichte Gräser fast die gesamte Region.",
+      "Das Guanako ist das größte Kamelartige Südamerikas, und seine langen Beine erlauben ihm, dem Puma davonzulaufen, seinem wichtigsten Fressfeind. Neun nationale Schutzgebiete bewahren Ausschnitte dieser Ökoregion."
+    ],
+    "en": [
+      "The Patagonian steppe covers more than 54 million hectares, from the Andes to the Atlantic and from the volcanic fields of the Payunia, in Mendoza, to the grasslands of northern Tierra del Fuego.",
+      "The soils are poor, it rains little, it freezes almost all year and the wind exceeds a hundred kilometres an hour. Even so, stunted shrubs and sparse grasses cover nearly the whole region.",
+      "The guanaco is the largest camelid in South America, and its long legs let it outrun the puma, its main predator. Nine national protected areas conserve samples of this ecoregion."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "El pastoreo intensivo sostenido redujo de forma marcada la diversidad y la cobertura de plantas vasculares de la estepa, bajó la disponibilidad y la calidad del forraje, facilitó el avance de especies exóticas e invasoras, y aumentó la degradación del suelo y la desertificación.",
         "Durante décadas la ganadería patagónica se practicó sin manejo: se estima que alrededor del 30 % de la región —unos 24 millones de hectáreas— quedó sobrepastoreada. El INTA diseñó un sistema de pastoreo rotativo que demostró ser sostenible, pero su adopción sigue siendo baja."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Anhaltende intensive Beweidung hat die Vielfalt und die Deckung der Gefäßpflanzen der Steppe deutlich verringert, Menge und Qualität des Futters gesenkt, das Vordringen gebietsfremder und invasiver Arten erleichtert und Bodendegradation wie Wüstenbildung verstärkt.",
+        "Jahrzehntelang wurde die patagonische Weidewirtschaft ohne Management betrieben: Schätzungen zufolge wurden etwa 30 % der Region — rund 24 Millionen Hektar — überweidet. Das argentinische Agrarforschungsinstitut INTA entwarf ein Rotationsweidesystem, das sich als nachhaltig erwies, doch seine Verbreitung bleibt gering."
+      ],
+      "en": [
+        "Sustained intensive grazing has sharply reduced the diversity and the cover of vascular plants in the steppe, lowered the availability and quality of forage, eased the advance of exotic and invasive species, and increased soil degradation and desertification.",
+        "For decades Patagonian stock-raising was practised without management: around 30 % of the region — some 24 million hectares — is estimated to have been overgrazed. INTA, Argentina's agricultural research institute, designed a rotational grazing system that proved sustainable, but uptake remains low."
+      ]
     },
     "fuentes": [
       {
@@ -49,8 +63,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Puma en la estepa, cerca del lago Pehoé",
-        "de": "",
-        "en": ""
+        "de": "Puma in der Steppe, nahe dem Lago Pehoé",
+        "en": "Puma on the steppe, near Lake Pehoé"
       },
       "autor": "Murray Foubister",
       "licencia": "CC BY-SA 2.0",
@@ -60,8 +74,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "La estepa patagónica en Torres del Paine",
-        "de": "",
-        "en": ""
+        "de": "Die patagonische Steppe in Torres del Paine",
+        "en": "The Patagonian steppe at Torres del Paine"
       },
       "autor": "Ferna.mf",
       "licencia": "CC BY-SA 4.0",

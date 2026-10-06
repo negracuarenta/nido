@@ -22,8 +22,14 @@
         "El Atlas dos Remanescentes Florestais, que la Fundación SOS Mata Atlântica y el Instituto Nacional de Pesquisas Espaciais publican desde 1985, mide cuánto queda del bosque atlántico brasileño. Del total original permanece alrededor del 24 % de cobertura, pero sólo el 12,4 % corresponde a bosque maduro: fragmentos de más de tres hectáreas con dosel cerrado y sin degradación detectable por satélite.",
         "Los fragmentos mayores a cien hectáreas —los únicos que funcionan como hábitat para las especies raras y los que más carbono almacenan— son apenas el 8,5 % del bosque original. La literatura científica ubica en un 30 % de cobertura el umbral mínimo para conservar el bioma: la Mata Atlántica está muy por debajo."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Der Atlas dos Remanescentes Florestais, den die Stiftung SOS Mata Atlântica und das brasilianische Institut für Weltraumforschung seit 1985 herausgeben, misst, wie viel vom brasilianischen Atlantischen Regenwald übrig ist. Vom ursprünglichen Bestand bleibt rund 24 % Bedeckung, doch nur 12,4 % entfallen auf reifen Wald: Fragmente von mehr als drei Hektar mit geschlossenem Kronendach und ohne per Satellit erkennbare Degradierung.",
+        "Fragmente über hundert Hektar — die einzigen, die seltenen Arten als Lebensraum dienen, und die mit dem größten Kohlenstoffspeicher — machen nur 8,5 % des ursprünglichen Waldes aus. Die Fachliteratur setzt die Mindestschwelle für den Erhalt des Großlebensraums bei 30 % Bedeckung an: die Mata Atlântica liegt weit darunter."
+      ],
+      "en": [
+        "The Atlas dos Remanescentes Florestais, published since 1985 by the SOS Mata Atlântica Foundation and Brazil's National Institute for Space Research, measures how much of the Brazilian Atlantic forest is left. Of the original total, around 24 % cover remains, but only 12.4 % is mature forest: fragments larger than three hectares with closed canopy and no degradation detectable by satellite.",
+        "Fragments over a hundred hectares — the only ones that work as habitat for rare species, and the ones storing the most carbon — are just 8.5 % of the original forest. The scientific literature puts the minimum threshold for conserving the biome at 30 % cover: the Atlantic forest is far below it."
+      ]
     }
   },
   "fotos": [
@@ -31,8 +37,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Mata Atlántica conservada en Paraibuna",
-        "de": "",
-        "en": ""
+        "de": "Erhaltener Atlantischer Regenwald bei Paraibuna",
+        "en": "Atlantic forest conserved at Paraibuna"
       },
       "autor": "Themium",
       "licencia": "CC0",
@@ -42,8 +48,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Sendero dentro del bosque atlántico",
-        "de": "",
-        "en": ""
+        "de": "Pfad im Inneren des Atlantischen Regenwalds",
+        "en": "A trail inside the Atlantic forest"
       },
       "autor": "AmbrosimM",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +59,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Yaguarundí registrado por cámara trampa en un remanente de Mata Atlántica",
-        "de": "",
-        "en": ""
+        "de": "Jaguarundi, von einer Fotofalle in einem Restbestand der Mata Atlântica erfasst",
+        "en": "Jaguarundi recorded by camera trap in a remnant of Atlantic forest"
       },
       "autor": "Miguelrangeljr",
       "licencia": "CC BY 4.0",

@@ -12,8 +12,16 @@
       "Conservan un registro sin paralelo de los procesos que dieron forma a la flora y la fauna australianas: son los restos del gran bosque de Gondwana que cubrió Australia y parte de la Antártida hace entre 50 y 100 millones de años.",
       "Ahí están representados todos los marsupiales propios de Australia y la mayor parte de sus aves cantoras, junto a otras especies raras o amenazadas."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Feuchten Tropen von Queensland erstrecken sich über rund 450 Kilometer entlang der Nordostküste Australiens und bedecken 894.420 Hektar, fast ausschließlich Regenwald.",
+      "Sie bewahren ein beispielloses Zeugnis der Vorgänge, die Australiens Pflanzen- und Tierwelt geformt haben: sie sind die Reste des großen Gondwana-Waldes, der vor 50 bis 100 Millionen Jahren Australien und einen Teil der Antarktis bedeckte.",
+      "Dort sind sämtliche Beuteltiere Australiens vertreten und der größte Teil seiner Singvögel, dazu weitere seltene oder bedrohte Arten."
+    ],
+    "en": [
+      "The Wet Tropics of Queensland stretch some 450 kilometres along the north-east coast of Australia and cover 894,420 hectares, almost all of it rainforest.",
+      "They preserve an unparalleled record of the processes that shaped Australia's flora and fauna: they are the remains of the great Gondwanan forest that covered Australia and part of Antarctica between 50 and 100 million years ago.",
+      "Every marsupial native to Australia is represented there, along with most of its songbirds and other rare or threatened species."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa los Trópicos Húmedos de Queensland como de «preocupación significativa». El sitio tiene un marco legal sólido, una autoridad de manejo propia con amplio apoyo de la comunidad y un conjunto completo de estrategias.",
         "Aun así, la amenaza insidiosa de las plantas, los animales y las enfermedades invasoras, sumada a los impactos del cambio climático, representa un peligro real para la integridad de su biodiversidad y de las especies endémicas que sólo viven ahí."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet die Feuchten Tropen von Queensland als «erheblich besorgniserregend». Die Stätte verfügt über einen soliden Rechtsrahmen, eine eigene Verwaltungsbehörde mit breiter Unterstützung in der Bevölkerung und ein vollständiges Bündel von Strategien.",
+        "Dennoch stellt die schleichende Bedrohung durch invasive Pflanzen, Tiere und Krankheiten, verbunden mit den Folgen des Klimawandels, eine reale Gefahr für die Unversehrtheit ihrer Biodiversität und der endemischen Arten dar, die nur dort vorkommen."
+      ],
+      "en": [
+        "The IUCN assesses the Wet Tropics of Queensland as of «significant concern». The site has a solid legal framework, a management authority of its own with broad community support, and a complete set of strategies.",
+        "Even so, the insidious threat of invasive plants, animals and diseases, added to the impacts of climate change, represents a real danger to the integrity of its biodiversity and of the endemic species that live only there."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "La selva de Daintree, en Queensland",
-        "de": "",
-        "en": ""
+        "de": "Der Daintree-Regenwald in Queensland",
+        "en": "The Daintree rainforest, in Queensland"
       },
       "autor": "Robert Linsdell from St. Andrews, Canada",
       "licencia": "CC BY 2.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Bosque de lianas mesófilo en el Parque Nacional Daintree",
-        "de": "",
-        "en": ""
+        "de": "Mesophyler Lianenwald im Daintree-Nationalpark",
+        "en": "Mesophyll vine forest in Daintree National Park"
       },
       "autor": "John Robert McPherson",
       "licencia": "CC BY-SA 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "El sotobosque de Daintree",
-        "de": "",
-        "en": ""
+        "de": "Der Unterwuchs von Daintree",
+        "en": "The understorey of Daintree"
       },
       "autor": "John Robert McPherson",
       "licencia": "CC BY-SA 4.0",

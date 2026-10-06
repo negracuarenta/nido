@@ -11,8 +11,14 @@
       "La araucaria, o pehuén, es un árbol de vida muy larga: se midieron ejemplares de hasta 1.021 años. Sus bosques ocupan unos 2.611 kilómetros cuadrados en la cordillera, entre Chile y Argentina, y la mayor parte está dentro de parques y reservas.",
       "La especie está clasificada en peligro. Se estima una reducción de al menos el 30 % de su área de ocupación en los últimos 360 años. En Chile fue declarada Monumento Natural por decretos sucesivos en 1974, 1976 y 1987."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Araukarie, auch Pehuén genannt, ist ein sehr langlebiger Baum: es wurden Exemplare von bis zu 1.021 Jahren vermessen. Ihre Wälder bedecken rund 2.611 Quadratkilometer in der Kordillere zwischen Chile und Argentinien, der größte Teil davon innerhalb von Parks und Reservaten.",
+      "Die Art gilt als stark gefährdet. Man schätzt, dass ihr Verbreitungsgebiet in den letzten 360 Jahren um mindestens 30 % geschrumpft ist. In Chile wurde sie durch aufeinanderfolgende Dekrete von 1974, 1976 und 1987 zum Naturdenkmal erklärt."
+    ],
+    "en": [
+      "The araucaria, or pehuén, is a very long-lived tree: specimens of up to 1,021 years have been measured. Its forests cover some 2,611 square kilometres in the cordillera, between Chile and Argentina, and most of that lies inside parks and reserves.",
+      "The species is classified as endangered. Its area of occupancy is estimated to have shrunk by at least 30 % over the last 360 years. In Chile it was declared a Natural Monument by successive decrees in 1974, 1976 and 1987."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "La araucaria está clasificada en peligro. Se estima una reducción de al menos el 30 % de su área de ocupación en los últimos 360 años.",
         "Los bosques que quedan ocupan unos 2.611 kilómetros cuadrados en la cordillera, y la mayor parte está dentro de parques y reservas: lo que sobrevive, sobrevive protegido."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Araukarie gilt als stark gefährdet. Man schätzt, dass ihr Verbreitungsgebiet in den letzten 360 Jahren um mindestens 30 % geschrumpft ist.",
+        "Die verbliebenen Wälder bedecken rund 2.611 Quadratkilometer in der Kordillere, und der größte Teil liegt innerhalb von Parks und Reservaten: was überlebt, überlebt unter Schutz."
+      ],
+      "en": [
+        "The araucaria is classified as endangered. Its area of occupancy is estimated to have shrunk by at least 30 % over the last 360 years.",
+        "The forests that remain cover some 2,611 square kilometres in the cordillera, and most of that lies inside parks and reserves: what survives, survives protected."
+      ]
     },
     "fuentes": [
       {
@@ -42,8 +54,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Araucarias en el Parque Nacional Conguillío",
-        "de": "",
-        "en": ""
+        "de": "Araukarien im Nationalpark Conguillío",
+        "en": "Araucarias in Conguillío National Park"
       },
       "autor": "José Tomás Ossa Villalón",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +65,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Bosque de araucarias",
-        "de": "",
-        "en": ""
+        "de": "Araukarienwald",
+        "en": "Araucaria forest"
       },
       "autor": "José Tomás Ossa Villalón",
       "licencia": "CC BY-SA 4.0",
@@ -64,8 +76,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Araucarias sobre el paisaje volcánico",
-        "de": "",
-        "en": ""
+        "de": "Araukarien über der Vulkanlandschaft",
+        "en": "Araucarias above the volcanic landscape"
       },
       "autor": "José Tomás Ossa Villalón",
       "licencia": "CC BY-SA 4.0",

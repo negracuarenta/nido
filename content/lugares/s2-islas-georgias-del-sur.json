@@ -11,8 +11,14 @@
       "El albatros errante tiene la mayor envergadura de todas las aves vivas y pasa casi toda su vida planeando sobre el océano Austral. Los jóvenes se van al mar y pueden tardar años en volver a pisar tierra, hasta que regresan a criar a las islas donde nacieron. En las Georgias del Sur anidan en Prion Island y en Bird Island.",
       "La Unión Internacional para la Conservación de la Naturaleza lo clasifica como vulnerable. La población de las Georgias del Sur viene en caída sostenida: de 1.553 parejas reproductoras en 2003-2004 pasó a unas 1.278 en 2014-2015, un 18 % menos en poco más de una década."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Wanderalbatros hat die größte Flügelspannweite aller lebenden Vögel und verbringt fast sein ganzes Leben segelnd über dem Südpolarmeer. Die Jungvögel ziehen aufs Meer hinaus und betreten jahrelang kein Land mehr, bis sie zum Brüten auf die Inseln zurückkehren, auf denen sie geboren wurden. Auf Südgeorgien nisten sie auf Prion Island und auf Bird Island.",
+      "Die Internationale Union zur Bewahrung der Natur führt ihn als gefährdet. Die Population Südgeorgiens geht anhaltend zurück: von 1.553 Brutpaaren 2003–2004 auf rund 1.278 in den Jahren 2014–2015, 18 % weniger in gut einem Jahrzehnt."
+    ],
+    "en": [
+      "The wandering albatross has the greatest wingspan of any living bird and spends almost its entire life gliding over the Southern Ocean. The young go out to sea and may take years to set foot on land again, until they return to breed on the islands where they were born. In South Georgia they nest on Prion Island and on Bird Island.",
+      "The International Union for Conservation of Nature classifies it as vulnerable. The South Georgia population has been in sustained decline: from 1,553 breeding pairs in 2003–2004 to some 1,278 in 2014–2015, 18 % fewer in little more than a decade."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "La principal causa de la caída del albatros errante es la pesca. Al recorrer distancias enormes, las aves se cruzan con flotas de muchos países; cuando intentan comer la carnada de los palangres quedan enganchadas en el anzuelo y se ahogan arrastradas por la línea. La supervivencia de los adultos empezó a caer con la expansión de los palangres a fines de los años noventa.",
         "En las Georgias del Sur la población viene bajando alrededor de un 4,8 % por año desde 1996."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Hauptursache für den Rückgang des Wanderalbatros ist die Fischerei. Da die Vögel gewaltige Strecken zurücklegen, kreuzen sie die Flotten vieler Länder; wenn sie den Köder der Langleinen fressen wollen, verfangen sie sich am Haken und ertrinken, von der Leine in die Tiefe gezogen. Das Überleben der Altvögel begann mit der Ausweitung der Langleinenfischerei Ende der neunziger Jahre zu sinken.",
+        "Auf Südgeorgien geht die Population seit 1996 um etwa 4,8 % pro Jahr zurück."
+      ],
+      "en": [
+        "The main cause of the wandering albatross's decline is fishing. Travelling enormous distances, the birds cross the fleets of many countries; when they try to take the bait from longlines they are caught on the hook and drown, dragged down by the line. Adult survival began to fall with the expansion of longlining in the late nineteen-nineties.",
+        "In South Georgia the population has been falling by around 4.8 % a year since 1996."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Albatros errante en la isla Prion, Georgias del Sur",
-        "de": "",
-        "en": ""
+        "de": "Wanderalbatros auf Prion Island, Südgeorgien",
+        "en": "Wandering albatross on Prion Island, South Georgia"
       },
       "autor": "Godot13",
       "licencia": "CC BY-SA 4.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Nido de albatros errante en la isla Prion",
-        "de": "",
-        "en": ""
+        "de": "Nest eines Wanderalbatros auf Prion Island",
+        "en": "Wandering albatross nest on Prion Island"
       },
       "autor": "Liam Quinn from Canada",
       "licencia": "CC BY-SA 2.0",

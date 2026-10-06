@@ -11,8 +11,14 @@
       "La Gran Barrera de Coral es el sistema arrecifal más extenso del mundo. Se inscribió casi entero como Patrimonio Mundial en 1981: 348.000 kilómetros cuadrados que se estiran 14 grados de latitud por la costa noreste de Australia y llegan hasta 250 kilómetros mar adentro.",
       "Reúne 400 tipos de coral, 1.500 especies de peces y 4.000 de moluscos. Es también el hábitat del dugongo y de la tortuga verde, las dos amenazadas de extinción."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Große Barriereriff ist das ausgedehnteste Riffsystem der Welt. Es wurde 1981 fast vollständig als Welterbe eingeschrieben: 348.000 Quadratkilometer, die sich über 14 Breitengrade entlang der Nordostküste Australiens ziehen und bis zu 250 Kilometer aufs Meer hinausreichen.",
+      "Es vereint 400 Korallenarten, 1.500 Fischarten und 4.000 Weichtierarten. Es ist außerdem der Lebensraum des Dugongs und der Suppenschildkröte, die beide vom Aussterben bedroht sind."
+    ],
+    "en": [
+      "The Great Barrier Reef is the most extensive reef system in the world. It was inscribed almost in its entirety as World Heritage in 1981: 348,000 square kilometres stretching over 14 degrees of latitude along the north-east coast of Australia and reaching up to 250 kilometres out to sea.",
+      "It gathers 400 types of coral, 1,500 species of fish and 4,000 of molluscs. It is also the habitat of the dugong and the green turtle, both threatened with extinction."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "Desde 2016 la Gran Barrera atravesó cinco blanqueos masivos: 2016, 2017, 2020, 2022 y 2024. El de 2016 mató al menos la mitad de los corales constructores de aguas someras. El de 2022 fue el primero registrado en condiciones de La Niña, que suelen ser más frescas.",
         "Entre enero y marzo de 2024, el mar del Coral registró el calor más alto de los últimos cuatrocientos años."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Seit 2016 durchlief das Große Barriereriff fünf Massenbleichen: 2016, 2017, 2020, 2022 und 2024. Die von 2016 tötete mindestens die Hälfte der riffbildenden Korallen des Flachwassers. Die von 2022 war die erste, die unter La-Niña-Bedingungen verzeichnet wurde, die gewöhnlich kühler ausfallen.",
+        "Zwischen Januar und März 2024 verzeichnete die Korallensee die höchste Wärme der letzten vierhundert Jahre."
+      ],
+      "en": [
+        "Since 2016 the Great Barrier Reef has gone through five mass bleaching events: 2016, 2017, 2020, 2022 and 2024. The 2016 event killed at least half the shallow-water reef-building corals. The 2022 event was the first recorded under La Niña conditions, which are usually cooler.",
+        "Between January and March 2024, the Coral Sea recorded the highest heat of the last four hundred years."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Arrecife en Heron Bommie",
-        "de": "",
-        "en": ""
+        "de": "Riff bei Heron Bommie",
+        "en": "Reef at Heron Bommie"
       },
       "autor": "© Underwater Earth / XL Catlin Seaview Survey / Christophe B",
       "licencia": "CC BY-SA 3.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "La Gran Barrera vista por satélite",
-        "de": "",
-        "en": ""
+        "de": "Das Große Barriereriff vom Satelliten aus",
+        "en": "The Great Barrier Reef seen from satellite"
       },
       "autor": "European Space Agency",
       "licencia": "CC BY-SA 3.0 igo",
@@ -56,8 +68,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "La Gran Barrera de Coral, en el mar del Coral",
-        "de": "",
-        "en": ""
+        "de": "Das Große Barriereriff in der Korallensee",
+        "en": "The Great Barrier Reef, in the Coral Sea"
       },
       "autor": "Björn Söderlund, Sw3dPix",
       "licencia": "CC BY-SA 4.0",

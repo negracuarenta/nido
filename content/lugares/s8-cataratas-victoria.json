@@ -11,8 +11,14 @@
       "En Mosi-oa-Tunya —«el humo que truena»— el río Zambeze, que ahí tiene más de dos kilómetros de ancho, se desploma por una sucesión de gargantas de basalto. La neblina que levanta se ve desde más de 20 kilómetros de distancia.",
       "Es la mayor lámina de agua en caída del mundo. El sitio de Patrimonio Mundial es compartido entre dos países y cubre 6.860 hectáreas: 3.779 del Parque Nacional Mosi-oa-Tunya, en Zambia, y 2.340 del Parque Nacional Victoria Falls más 741 de una franja ribereña del Parque Nacional Zambeze, en Zimbabue."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Bei Mosi-oa-Tunya — «der Rauch, der donnert» — stürzt der Sambesi, dort über zwei Kilometer breit, durch eine Folge von Basaltschluchten in die Tiefe. Der Sprühnebel, den er aufwirbelt, ist noch aus über 20 Kilometern Entfernung zu sehen.",
+      "Es ist der größte herabstürzende Wasservorhang der Welt. Die Welterbestätte wird von zwei Ländern geteilt und umfasst 6.860 Hektar: 3.779 des Nationalparks Mosi-oa-Tunya in Sambia sowie 2.340 des Nationalparks Victoria Falls und weitere 741 eines Uferstreifens des Sambesi-Nationalparks in Simbabwe."
+    ],
+    "en": [
+      "At Mosi-oa-Tunya — «the smoke that thunders» — the Zambezi, more than two kilometres wide at that point, plunges down a succession of basalt gorges. The mist it throws up can be seen from more than 20 kilometres away.",
+      "It is the largest sheet of falling water in the world. The World Heritage site is shared between two countries and covers 6,860 hectares: 3,779 of Mosi-oa-Tunya National Park, in Zambia, and 2,340 of Victoria Falls National Park plus 741 of a riverside strip of Zambezi National Park, in Zimbabwe."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "La UICN evalúa Mosi-oa-Tunya como «bueno, con algunas preocupaciones», pero señala amenazas serias: cambio climático, turismo insostenible y desarrollo urbano.",
         "El valor que define al sitio —ser la mayor cortina de agua en caída del mundo— está bajo presión por la reducción del caudal, agravada por las sequías periódicas y por la extracción de agua para generación hidroeléctrica. La sequía de 2019-2020, una de las peores en un siglo, redujo drásticamente el agua que caía por las cataratas."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet Mosi-oa-Tunya als «gut, mit einigen Bedenken», nennt aber ernste Bedrohungen: Klimawandel, nicht nachhaltigen Tourismus und Siedlungsentwicklung.",
+        "Der Wert, der die Stätte ausmacht — der größte herabstürzende Wasservorhang der Welt zu sein —, steht durch den sinkenden Abfluss unter Druck, verschärft durch die wiederkehrenden Dürren und durch die Wasserentnahme für die Stromerzeugung. Die Dürre von 2019–2020, eine der schwersten seit einem Jahrhundert, verringerte die über die Fälle stürzende Wassermenge drastisch."
+      ],
+      "en": [
+        "The IUCN assesses Mosi-oa-Tunya as «good with some concerns», but points to serious threats: climate change, unsustainable tourism and urban development.",
+        "The value that defines the site — being the largest curtain of falling water in the world — is under pressure from reduced flow, aggravated by periodic droughts and by water abstraction for hydroelectric generation. The drought of 2019–2020, one of the worst in a century, drastically reduced the water coming over the falls."
+      ]
     },
     "fuentes": [
       {
@@ -42,8 +54,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "La cortina de agua de Mosi-oa-Tunya",
-        "de": "",
-        "en": ""
+        "de": "Der Wasservorhang von Mosi-oa-Tunya",
+        "en": "The curtain of water at Mosi-oa-Tunya"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +65,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Las cataratas Victoria desde el aire",
-        "de": "",
-        "en": ""
+        "de": "Die Victoriafälle aus der Luft",
+        "en": "Victoria Falls from the air"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",

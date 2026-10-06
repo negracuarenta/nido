@@ -12,8 +12,16 @@
       "Junto con el Atol das Rocas —el único atolón del Atlántico Sur, 150 kilómetros al oeste— reúne buena parte de la superficie insular de todo el Atlántico Sur. Sus aguas son decisivas para la reproducción y la alimentación de atunes, tiburones, tortugas y mamíferos marinos.",
       "Las islas concentran la mayor cantidad de aves marinas tropicales del Atlántico occidental. En la Baía dos Golfinhos vive una población residente de delfines, y en el Atol das Rocas la marea baja descubre lagunas y piletas naturales llenas de peces."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Archipel Fernando de Noronha liegt rund 340 Kilometer vor der brasilianischen Küste und besteht aus den Vulkangipfeln einer untergetauchten Gebirgskette. Die Welterbestätte umfasst 42.270 Hektar mit einer Pufferzone von 140.713 Hektar und schließt etwa 70 % der Hauptinsel ein, dazu 21 kleinere Inseln und Eilande sowie die Gewässer bis in 50 Meter Tiefe.",
+      "Zusammen mit dem Atol das Rocas — dem einzigen Atoll des Südatlantiks, 150 Kilometer weiter westlich — vereint sie einen großen Teil der gesamten Inselfläche des Südatlantiks. Ihre Gewässer sind entscheidend für die Fortpflanzung und die Ernährung von Thunfischen, Haien, Schildkröten und Meeressäugern.",
+      "Die Inseln beherbergen die größte Ansammlung tropischer Seevögel im westlichen Atlantik. In der Baía dos Golfinhos lebt eine ortsfeste Delfinpopulation, und im Atol das Rocas legt die Ebbe Lagunen und natürliche Becken voller Fische frei."
+    ],
+    "en": [
+      "The Fernando de Noronha archipelago lies some 340 kilometres off the Brazilian coast and consists of the volcanic peaks of a submerged mountain range. The World Heritage site covers 42,270 hectares, with a buffer zone of 140,713, and includes about 70 % of the main island, 21 smaller islands and islets, and the waters down to 50 metres deep.",
+      "Together with Atol das Rocas — the only atoll in the South Atlantic, 150 kilometres to the west — it brings together much of the insular surface of the entire South Atlantic. Its waters are decisive for the breeding and feeding of tunas, sharks, turtles and marine mammals.",
+      "The islands hold the largest concentration of tropical seabirds in the western Atlantic. A resident dolphin population lives in the Baía dos Golfinhos, and at Atol das Rocas low tide uncovers lagoons and natural pools full of fish."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa el sitio como de «preocupación significativa». Hay marco legal y sistema de manejo, pero la implementación es insuficiente en varias áreas y los recursos de monitoreo no alcanzan para controlar las amenazas.",
         "La pesca industrial en las cercanías viene impactando sobre las especies pelágicas y en particular sobre los tiburones, y la concentración de embarcaciones agrava el problema. El archipiélago que se cuida dejando entrar a muy pocos no controla lo que pasa del otro lado de su límite."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet die Stätte als «erheblich besorgniserregend». Rechtsrahmen und Managementsystem bestehen, doch die Umsetzung ist in mehreren Bereichen unzureichend, und die Mittel für die Überwachung reichen nicht aus, um die Bedrohungen zu kontrollieren.",
+        "Die industrielle Fischerei in der Umgebung wirkt sich seit Längerem auf die pelagischen Arten und besonders auf die Haie aus, und die Konzentration der Schiffe verschärft das Problem. Der Archipel, den man schützt, indem man nur sehr wenige hineinlässt, hat keine Kontrolle darüber, was jenseits seiner Grenze geschieht."
+      ],
+      "en": [
+        "The IUCN assesses the site as of «significant concern». A legal framework and a management system exist, but implementation is insufficient in several areas and monitoring resources fall short of controlling the threats.",
+        "Industrial fishing nearby has been affecting pelagic species and sharks in particular, and the concentration of vessels aggravates the problem. The archipelago that protects itself by letting very few people in has no control over what happens on the other side of its boundary."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Praia do Leão, en Fernando de Noronha",
-        "de": "",
-        "en": ""
+        "de": "Praia do Leão auf Fernando de Noronha",
+        "en": "Praia do Leão, on Fernando de Noronha"
       },
       "autor": "Rosana Antunes",
       "licencia": "CC0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Baía dos Golfinhos, donde vive una población residente",
-        "de": "",
-        "en": ""
+        "de": "Baía dos Golfinhos, wo eine ortsfeste Population lebt",
+        "en": "Baía dos Golfinhos, home to a resident population"
       },
       "autor": "Adelano Lázaro",
       "licencia": "CC BY-SA 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Delfín rotador amamantando a su cría",
-        "de": "",
-        "en": ""
+        "de": "Ostpazifischer Delfin säugt sein Junges",
+        "en": "Spinner dolphin nursing its calf"
       },
       "autor": "Verônica Souto",
       "licencia": "CC BY-SA 4.0",
@@ -76,8 +90,8 @@
       "archivo": "04.webp",
       "epigrafe": {
         "es": "La bahía desde el mirador",
-        "de": "",
-        "en": ""
+        "de": "Die Bucht vom Aussichtspunkt",
+        "en": "The bay from the lookout"
       },
       "autor": "Adelano Lázaro",
       "licencia": "CC BY-SA 4.0",

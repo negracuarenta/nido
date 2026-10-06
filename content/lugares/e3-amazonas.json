@@ -12,8 +12,16 @@
       "Está en la confluencia del río Negro y el Solimões, y contiene la mayoría de los ecosistemas amazónicos: bosques de tierra firme y bosques inundables —várzea e igapó—, aguas negras y aguas blancas, lagos y canales que forman un mosaico que cambia todo el tiempo.",
       "Es la región del planeta con mayor variedad de peces eléctricos. También protege al pirarucú, al manatí amazónico, al yacaré negro y a dos especies de delfín de río."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Schutzgebietskomplex Zentralamazonien umfasst mehr als 6 Millionen Hektar: er ist das größte Schutzgebiet des gesamten Amazonasbeckens. Er begann im Jahr 2000 mit dem Nationalpark Jaú und wurde 2003 um Anavilhanas, Amanã und Mamirauá erweitert.",
+      "Er liegt am Zusammenfluss von Rio Negro und Solimões und enthält die meisten amazonischen Ökosysteme: Festlandwälder und Überschwemmungswälder — várzea und igapó —, Schwarz- und Weißwasser, Seen und Kanäle, die ein unablässig wechselndes Mosaik bilden.",
+      "Es ist die Region der Erde mit der größten Vielfalt an elektrischen Fischen. Sie schützt außerdem den Arapaima, die Amazonas-Seekuh, den Mohrenkaiman und zwei Flussdelfinarten."
+    ],
+    "en": [
+      "The Central Amazon Conservation Complex exceeds 6 million hectares: it is the largest protected area in the whole Amazon basin. It began in 2000 with Jaú National Park and was extended in 2003 with Anavilhanas, Amanã and Mamirauá.",
+      "It lies at the confluence of the Negro and the Solimões, and contains most Amazonian ecosystems: terra firme forests and flooded forests — várzea and igapó —, blackwater and whitewater, lakes and channels forming a mosaic that changes all the time.",
+      "It is the region of the planet with the greatest variety of electric fish. It also protects the arapaima, the Amazonian manatee, the black caiman and two species of river dolphin."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa el sitio como «bueno, con algunas preocupaciones». Los valores se mantienen en buen estado, con impactos localizados.",
         "La presión que crece es la visita y la expansión de caminos, sobre todo por la construcción del puente sobre el río Negro, que recae en particular sobre el Parque Nacional de Anavilhanas."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet die Stätte als «gut, mit einigen Bedenken». Die Werte bleiben in gutem Zustand, mit örtlich begrenzten Beeinträchtigungen.",
+        "Wachsenden Druck erzeugen der Besucherverkehr und der Ausbau der Straßen, vor allem durch den Bau der Brücke über den Rio Negro, was besonders den Nationalpark Anavilhanas trifft."
+      ],
+      "en": [
+        "The IUCN assesses the site as «good with some concerns». Its values remain in good condition, with localised impacts.",
+        "The pressure that is growing is visitation and the expansion of roads, above all through the construction of the bridge over the Negro river, which falls in particular on Anavilhanas National Park."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Parque Nacional de Anavilhanas, sobre el río Negro",
-        "de": "",
-        "en": ""
+        "de": "Nationalpark Anavilhanas am Rio Negro",
+        "en": "Anavilhanas National Park, on the Negro river"
       },
       "autor": "Silvio Batista Piotto Junior",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Bosque inundado en un afluente del río Negro",
-        "de": "",
-        "en": ""
+        "de": "Überschwemmter Wald an einem Zufluss des Rio Negro",
+        "en": "Flooded forest on a tributary of the Negro river"
       },
       "autor": "James Martins",
       "licencia": "CC BY 3.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Victoria amazonica en cultivo: la hoja llega a más de un metro",
-        "de": "",
-        "en": ""
+        "de": "Victoria amazonica in Kultur: das Blatt wird über einen Meter groß",
+        "en": "Victoria amazonica in cultivation: the leaf reaches over a metre across"
       },
       "autor": "P,TO 19104",
       "licencia": "CC BY-SA 4.0",
@@ -76,8 +90,8 @@
       "archivo": "04.webp",
       "epigrafe": {
         "es": "La cuenca amazónica vista por el satélite MODIS",
-        "de": "",
-        "en": ""
+        "de": "Das Amazonasbecken, aufgenommen vom Satelliten MODIS",
+        "en": "The Amazon basin seen by the MODIS satellite"
       },
       "autor": "MODIS Land Rapid Response Team, NASA GSFC",
       "licencia": "Public domain",

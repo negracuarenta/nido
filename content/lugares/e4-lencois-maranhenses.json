@@ -12,8 +12,16 @@
       "El viento sopla casi siempre en la misma dirección y forma dunas en media luna que llegan a encadenarse por 75 kilómetros y avanzan más de 20 tierra adentro. Entre ellas, la lluvia estacional junta agua dulce en lagunas que aparecen y desaparecen con el año.",
       "El área está protegida por decreto desde 1981 y la administra el ICMBio. En julio de 2024 la UNESCO la declaró Patrimonio Mundial por su belleza excepcional y por ser un fenómeno natural único."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Nationalpark Lençóis Maranhenses schützt 156.608 Hektar an der Küste von Maranhão. Rund 90.000 davon sind ein Dünenfeld mit zeitweiligen und dauerhaften Lagunen, entlang von 80 Küstenkilometern.",
+      "Der Wind weht fast immer aus derselben Richtung und formt halbmondförmige Dünen, die sich über 75 Kilometer aneinanderreihen und mehr als 20 Kilometer landeinwärts vordringen. Zwischen ihnen sammelt der jahreszeitliche Regen Süßwasser in Lagunen, die im Lauf des Jahres entstehen und wieder verschwinden.",
+      "Das Gebiet steht seit 1981 per Dekret unter Schutz und wird vom ICMBio verwaltet. Im Juli 2024 erklärte die UNESCO es wegen seiner außergewöhnlichen Schönheit und als einzigartiges Naturphänomen zum Welterbe."
+    ],
+    "en": [
+      "Lençóis Maranhenses National Park protects 156,608 hectares on the coast of Maranhão. Some 90,000 of them are a dune field with temporary and permanent lagoons, along 80 kilometres of coast.",
+      "The wind blows almost always from the same direction and forms crescent dunes that chain together for 75 kilometres and advance more than 20 inland. Between them, the seasonal rain gathers fresh water into lagoons that appear and disappear with the year.",
+      "The area has been protected by decree since 1981 and is managed by ICMBio. In July 2024 UNESCO declared it World Heritage for its exceptional beauty and for being a unique natural phenomenon."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "El parque entró en la Lista del Patrimonio Mundial en 2024. Un año después, en su primera evaluación, la UICN lo calificó como «bueno, con algunas preocupaciones», pero situó la amenaza general en el nivel alto: las presiones crecieron desde la inscripción. La mayor es el turismo, y detrás vienen la especulación inmobiliaria —varios intentos de loteos y de desarrollos privados dentro y alrededor del parque, algunos frenados por la justicia— y un conflicto sin resolver con las comunidades tradicionales, cuyos derechos sobre el territorio la política de conservación no reconoce. Mientras esos derechos sigan indefinidos, dice la evaluación, el riesgo de conflicto se mantiene alto.",
         "En el borde oriental de la zona de amortiguación, en los municipios de Barreirinhas y Paulino Neves, se instalaron parques eólicos que, según el propio expediente de nominación, se levantaron sin el estudio de impacto ambiental que exige la ley federal brasileña. Más lejos, la exploración de petróleo en la cuenca Pará-Maranhão figura como amenaza potencial alta: un derrame comprometería seriamente la biodiversidad de la costa. La UICN reclama además un plan de acción climática, porque los episodios extremos alteran la formación y la dinámica de las dunas, que es justamente lo que hace único al lugar: un campo de dunas que se llena de lagunas de agua dulce."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Der Park kam 2024 auf die Welterbeliste. Ein Jahr später, in ihrer ersten Bewertung, stufte die IUCN ihn als «gut, mit einigen Bedenken» ein, setzte die Gesamtbedrohung aber auf die Stufe hoch: der Druck ist seit der Einschreibung gewachsen. Am stärksten wirkt der Tourismus, dahinter folgen die Immobilienspekulation — mehrere Versuche von Parzellierungen und privaten Bauvorhaben im Park und rundherum, einige davon gerichtlich gestoppt — und ein ungelöster Konflikt mit den traditionellen Gemeinschaften, deren Rechte am Land die Schutzpolitik nicht anerkennt. Solange diese Rechte ungeklärt bleiben, heißt es in der Bewertung, bleibt das Konfliktrisiko hoch.",
+        "Am östlichen Rand der Pufferzone, in den Gemeinden Barreirinhas und Paulino Neves, wurden Windparks errichtet, die nach dem Nominierungsdossier selbst ohne die vom brasilianischen Bundesrecht vorgeschriebene Umweltverträglichkeitsprüfung gebaut wurden. Weiter draußen gilt die Erdölsuche im Becken Pará-Maranhão als hohe potenzielle Bedrohung: eine Ölpest würde die Biodiversität der Küste schwer beeinträchtigen. Die IUCN fordert zudem einen Klima-Aktionsplan, denn Extremereignisse verändern die Entstehung und die Dynamik der Dünen — und genau das macht den Ort einzigartig: ein Dünenfeld, das sich mit Süßwasserlagunen füllt."
+      ],
+      "en": [
+        "The park entered the World Heritage List in 2024. A year later, in its first assessment, the IUCN rated it «good with some concerns», but placed the overall threat at the high level: pressures have grown since inscription. The greatest is tourism, and behind it come real-estate speculation — several attempts at subdivisions and private developments inside and around the park, some halted by the courts — and an unresolved conflict with the traditional communities, whose rights over the territory conservation policy does not recognise. As long as those rights remain undefined, the assessment says, the risk of conflict stays high.",
+        "On the eastern edge of the buffer zone, in the municipalities of Barreirinhas and Paulino Neves, wind farms were installed which, according to the nomination dossier itself, were built without the environmental impact study required by Brazilian federal law. Further out, oil exploration in the Pará-Maranhão basin is listed as a high potential threat: a spill would seriously compromise the biodiversity of the coast. The IUCN also calls for a climate action plan, because extreme events alter the formation and dynamics of the dunes — which is precisely what makes the place unique: a dune field that fills with freshwater lagoons."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Dunas y lagunas de los Lençóis Maranhenses",
-        "de": "",
-        "en": ""
+        "de": "Dünen und Lagunen der Lençóis Maranhenses",
+        "en": "Dunes and lagoons of the Lençóis Maranhenses"
       },
       "autor": "Heris Luiz Cordeiro Rocha",
       "licencia": "CC BY-SA 3.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El campo de dunas del parque nacional",
-        "de": "",
-        "en": ""
+        "de": "Das Dünenfeld des Nationalparks",
+        "en": "The national park's dune field"
       },
       "autor": "Paulo Cattelan",
       "licencia": "CC BY-SA 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Lagunas de agua dulce entre las dunas",
-        "de": "",
-        "en": ""
+        "de": "Süßwasserlagunen zwischen den Dünen",
+        "en": "Freshwater lagoons between the dunes"
       },
       "autor": "Vania Passos",
       "licencia": "CC BY-SA 4.0",
@@ -76,8 +90,8 @@
       "archivo": "04.webp",
       "epigrafe": {
         "es": "Las dunas avanzan tierra adentro empujadas por el viento",
-        "de": "",
-        "en": ""
+        "de": "Vom Wind getrieben wandern die Dünen landeinwärts",
+        "en": "The dunes advance inland, pushed by the wind"
       },
       "autor": "Julius Dadalti",
       "licencia": "CC BY-SA 4.0",

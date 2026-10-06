@@ -12,8 +12,16 @@
       "Entre octubre y abril los ríos Cuiabá y Paraguay desbordan e inundan regiones enteras, y el agua reparte los nutrientes que sostienen la pesca de todo el humedal. La sierra del Amolar, de hasta 900 metros, corta esa llanura de golpe: el contraste entre lo inundable y la montaña es abrupto y no se repite en ninguna otra parte del Pantanal.",
       "Ahí viven el tatú carreta, el oso hormiguero gigante, el lobo gargantilla, el ciervo de los pantanos y el guacamayo jacinto, el loro más grande del mundo. La población de yaguaretés del sitio es probablemente la mayor de todo el Pantanal."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Pantanal ist eines der größten Süßwasser-Feuchtgebiete der Welt: rund 14 Millionen Hektar. Die Welterbestätte schützt davon 187.818 Hektar — 1,3 % des brasilianischen Pantanals — im äußersten Südwesten von Mato Grosso, an der Grenze zu Bolivien und Paraguay, und vereint vier aneinandergrenzende Schutzgebiete.",
+      "Zwischen Oktober und April treten die Flüsse Cuiabá und Paraguay über die Ufer und überfluten ganze Landstriche; das Wasser verteilt die Nährstoffe, die den Fischreichtum des gesamten Feuchtgebiets tragen. Die bis zu 900 Meter hohe Serra do Amolar durchschneidet diese Ebene unvermittelt: der Gegensatz zwischen Überschwemmungsland und Gebirge ist schroff und wiederholt sich nirgendwo sonst im Pantanal.",
+      "Dort leben das Riesengürteltier, der Große Ameisenbär, der Riesenotter, der Sumpfhirsch und der Hyazinthara, der größte Papagei der Welt. Die Jaguarpopulation der Stätte ist vermutlich die größte des gesamten Pantanals."
+    ],
+    "en": [
+      "The Pantanal is one of the largest freshwater wetlands in the world: some 14 million hectares. The World Heritage site protects 187,818 of them — 1.3 % of the Brazilian Pantanal — in the far south-west of Mato Grosso, on the border with Bolivia and Paraguay, bringing together four adjoining protected areas.",
+      "Between October and April the Cuiabá and Paraguay rivers overflow and flood whole regions, and the water distributes the nutrients that sustain the fisheries of the entire wetland. The Serra do Amolar, rising to 900 metres, cuts that plain off abruptly: the contrast between floodplain and mountain is sharp and is not repeated anywhere else in the Pantanal.",
+      "Living there are the giant armadillo, the giant anteater, the giant otter, the marsh deer and the hyacinth macaw, the largest parrot in the world. The site's jaguar population is probably the largest in the whole Pantanal."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +33,12 @@
       "es": [
         "En 2020 el fuego arrasó unos 43.000 kilómetros cuadrados del Pantanal, alrededor del 28 % de la región, según el Observatorio de la Tierra de la NASA. Fue la temporada de incendios más extensa registrada en el humedal."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "2020 verwüstete das Feuer rund 43.000 Quadratkilometer des Pantanals, etwa 28 % der Region, wie das Earth Observatory der NASA angibt. Es war die ausgedehnteste Brandsaison, die je in diesem Feuchtgebiet verzeichnet wurde."
+      ],
+      "en": [
+        "In 2020 fire swept through some 43,000 square kilometres of the Pantanal, around 28 % of the region, according to NASA's Earth Observatory. It was the most extensive fire season ever recorded in the wetland."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El humedal del Pantanal en la estación de crecida",
-        "de": "",
-        "en": ""
+        "de": "Das Feuchtgebiet des Pantanals zur Hochwasserzeit",
+        "en": "The Pantanal wetland in the flood season"
       },
       "autor": "Bernard DUPONT from FRANCE",
       "licencia": "CC BY-SA 2.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Yaguareté en el Pantanal: la mayor población del sitio",
-        "de": "",
-        "en": ""
+        "de": "Jaguar im Pantanal: die größte Population der Stätte",
+        "en": "Jaguar in the Pantanal: the site's largest population"
       },
       "autor": "Charles J. Sharp",
       "licencia": "CC BY-SA 4.0",
@@ -56,8 +68,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Guacamayo jacinto, el loro más grande del mundo",
-        "de": "",
-        "en": ""
+        "de": "Hyazinthara, der größte Papagei der Welt",
+        "en": "Hyacinth macaw, the largest parrot in the world"
       },
       "autor": "sussexbirder",
       "licencia": "CC BY 2.0",
@@ -67,8 +79,8 @@
       "archivo": "04.webp",
       "epigrafe": {
         "es": "Carpincho, uno de los habitantes más comunes del humedal",
-        "de": "",
-        "en": ""
+        "de": "Wasserschwein, einer der häufigsten Bewohner des Feuchtgebiets",
+        "en": "Capybara, one of the wetland's most common inhabitants"
       },
       "autor": "Wolves201",
       "licencia": "CC BY-SA 4.0",
@@ -78,8 +90,8 @@
       "archivo": "05.webp",
       "epigrafe": {
         "es": "Los incendios de 2020 vistos desde satélite",
-        "de": "",
-        "en": ""
+        "de": "Die Brände von 2020 aus dem Satelliten gesehen",
+        "en": "The 2020 fires seen from satellite"
       },
       "autor": "Pierre Markuse",
       "licencia": "CC BY 2.0",

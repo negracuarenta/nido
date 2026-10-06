@@ -12,8 +12,16 @@
       "Es la mayor migración animal del mundo que sigue intacta, sin alterar.",
       "La diversidad del parque es muy alta e incluye al menos cuatro especies amenazadas a escala global: el rinoceronte negro, el elefante, el licaón y el guepardo."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Serengeti-Nationalpark umfasst 1,5 Millionen Hektar Savanne. Jedes Jahr legen zwei Millionen Gnus und Hunderttausende Gazellen und Zebras einen tausend Kilometer langen Rundweg auf der Suche nach Gras und Wasser zurück, gefolgt von ihren Jägern.",
+      "Es ist die größte Tierwanderung der Welt, die noch unversehrt und ungestört geblieben ist.",
+      "Die Artenvielfalt des Parks ist sehr hoch und umfasst mindestens vier weltweit bedrohte Arten: das Spitzmaulnashorn, den Elefanten, den Afrikanischen Wildhund und den Geparden."
+    ],
+    "en": [
+      "Serengeti National Park is 1.5 million hectares of savanna. Each year, two million wildebeest and hundreds of thousands of gazelles and zebras travel a thousand-kilometre circuit in search of grass and water, followed by their predators.",
+      "It is the largest animal migration in the world that remains intact, unaltered.",
+      "The park's diversity is very high and includes at least four globally threatened species: the black rhinoceros, the elephant, the African wild dog and the cheetah."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La Unión Internacional para la Conservación de la Naturaleza clasifica al león como vulnerable. La evaluación anterior estimó una caída de la población del 43 % en tres generaciones —unos veintiún años—, con variación según la región.",
         "Hoy se calculan unos 23.000 individuos adultos, en descenso: eran unos 25.100 en 2018. El león desapareció de al menos el 92 % del territorio que ocupaba históricamente."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Internationale Union zur Bewahrung der Natur führt den Löwen als gefährdet. Die vorangegangene Bewertung schätzte einen Rückgang der Population um 43 % in drei Generationen — rund einundzwanzig Jahren —, mit Unterschieden je nach Region.",
+        "Heute geht man von etwa 23.000 ausgewachsenen Tieren aus, mit abnehmender Tendenz: 2018 waren es noch rund 25.100. Aus mindestens 92 % seines historischen Verbreitungsgebiets ist der Löwe verschwunden."
+      ],
+      "en": [
+        "The International Union for Conservation of Nature classifies the lion as vulnerable. The previous assessment estimated a 43 % fall in the population over three generations — some twenty-one years — varying by region.",
+        "Today some 23,000 adult individuals are reckoned, and declining: there were around 25,100 in 2018. The lion has disappeared from at least 92 % of the territory it historically occupied."
+      ]
     }
   },
   "fotos": [
@@ -35,8 +49,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Amanecer en el Serengueti",
-        "de": "",
-        "en": ""
+        "de": "Sonnenaufgang in der Serengeti",
+        "en": "Dawn in the Serengeti"
       },
       "autor": "Giles Laurent",
       "licencia": "CC BY-SA 4.0",
@@ -46,8 +60,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Ñu de barba blanca occidental",
-        "de": "",
-        "en": ""
+        "de": "Westliches Weißbartgnu",
+        "en": "Western white-bearded wildebeest"
       },
       "autor": "Charles J. Sharp",
       "licencia": "CC BY-SA 4.0",
@@ -57,8 +71,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Búfalo africano en el Serengueti",
-        "de": "",
-        "en": ""
+        "de": "Kaffernbüffel in der Serengeti",
+        "en": "African buffalo in the Serengeti"
       },
       "autor": "Giles Laurent",
       "licencia": "CC BY-SA 4.0",

@@ -11,8 +11,14 @@
       "El cóndor andino es una de las aves voladoras más grandes del mundo. Casi no bate las alas: se deja subir por las corrientes de aire caliente que ascienden contra las laderas y puede recorrer cientos de kilómetros planeando.",
       "Está categorizado como vulnerable. Se estima una población mundial de unos 6.700 ejemplares, en descenso, y el principal motivo no es la caza directa sino el envenenamiento: los cebos tóxicos que se colocan ilegalmente para matar depredadores del ganado, y el plomo de la munición en los animales de los que se alimenta."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Andenkondor ist einer der größten flugfähigen Vögel der Welt. Er schlägt kaum mit den Flügeln: er lässt sich von den warmen Aufwinden tragen, die an den Hängen aufsteigen, und kann Hunderte von Kilometern im Gleitflug zurücklegen.",
+      "Er gilt als gefährdet. Die Weltpopulation wird auf rund 6.700 Tiere geschätzt, mit abnehmender Tendenz, und der Hauptgrund ist nicht die direkte Jagd, sondern die Vergiftung: illegal ausgelegte Giftköder, die Raubtiere des Viehs töten sollen, und das Blei der Munition in den Tieren, von denen er sich ernährt."
+    ],
+    "en": [
+      "The Andean condor is one of the largest flying birds in the world. It barely beats its wings: it lets the warm air currents that rise against the slopes carry it up, and can cover hundreds of kilometres gliding.",
+      "It is categorised as vulnerable. The world population is estimated at some 6,700 individuals and declining, and the main reason is not direct hunting but poisoning: toxic baits set out illegally to kill predators of livestock, and lead from ammunition in the animals it feeds on."
+    ]
   },
   "tragico": {
     "cita": {
@@ -24,8 +30,12 @@
       "es": [
         "El cóndor no mata: come animales ya muertos. Por eso un solo cebo envenenado puede matar a muchos de una vez. En 2018, en Mendoza, se encontraron 34 cóndores muertos alrededor de un cadáver envenenado a propósito para eliminar depredadores del ganado. En el sur de Bolivia se repitió después un episodio con otros 34."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Der Kondor tötet nicht: er frisst bereits tote Tiere. Deshalb kann ein einziger vergifteter Köder viele auf einmal töten. 2018 fand man in Mendoza 34 tote Kondore rund um einen Kadaver, der absichtlich vergiftet worden war, um Raubtiere des Viehs zu beseitigen. Im Süden Boliviens wiederholte sich später ein Vorfall mit weiteren 34."
+      ],
+      "en": [
+        "The condor does not kill: it eats animals already dead. That is why a single poisoned bait can kill many at once. In 2018, in Mendoza, 34 dead condors were found around a carcass poisoned deliberately to eliminate predators of livestock. In southern Bolivia an episode with another 34 followed later."
+      ]
     }
   },
   "fotos": [
@@ -33,8 +43,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Cóndor andino en vuelo",
-        "de": "",
-        "en": ""
+        "de": "Andenkondor im Flug",
+        "en": "Andean condor in flight"
       },
       "autor": "Qyurryusinthehizzouse",
       "licencia": "CC BY-SA 4.0",
@@ -44,8 +54,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Los Andes desde Mendoza",
-        "de": "",
-        "en": ""
+        "de": "Die Anden von Mendoza aus",
+        "en": "The Andes from Mendoza"
       },
       "autor": "Steve Peck",
       "licencia": "CC BY 2.0",
@@ -55,8 +65,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Glaciares patagónicos y cordillera, desde satélite",
-        "de": "",
-        "en": ""
+        "de": "Patagonische Gletscher und Kordillere, vom Satelliten aus",
+        "en": "Patagonian glaciers and cordillera, from satellite"
       },
       "autor": "O.V.E.R.V.I.E.W.",
       "licencia": "CC BY 2.0",

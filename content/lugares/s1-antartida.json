@@ -11,8 +11,14 @@
       "La Antártida es el continente más frío, más seco y más ventoso del planeta, y está cubierto casi por completo de hielo. En su invierno, cuando el mar se congela, el pingüino emperador cría ahí: los machos incuban el huevo sobre sus patas, apretados en grupo, sin comer durante unos dos meses y soportando temperaturas que caen por debajo de los cuarenta grados bajo cero.",
       "Las crías dependen del hielo marino: necesitan que la plataforma aguante hasta que les crezca el plumaje impermeable. Si el hielo se rompe antes, caen al agua sin poder flotar ni regular su temperatura."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Antarktis ist der kälteste, trockenste und windigste Kontinent der Erde und fast vollständig von Eis bedeckt. In ihrem Winter, wenn das Meer gefriert, brütet dort der Kaiserpinguin: die Männchen bebrüten das Ei auf ihren Füßen, dicht gedrängt in der Gruppe, rund zwei Monate lang ohne zu fressen und bei Temperaturen, die unter vierzig Grad minus fallen.",
+      "Die Küken hängen vom Meereis ab: die Scholle muss halten, bis ihnen das wasserdichte Gefieder gewachsen ist. Bricht das Eis früher, fallen sie ins Wasser, ohne schwimmen oder ihre Temperatur regeln zu können."
+    ],
+    "en": [
+      "Antarctica is the coldest, driest and windiest continent on the planet, and is almost entirely covered in ice. In its winter, when the sea freezes, the emperor penguin breeds there: the males incubate the egg on their feet, pressed together in a huddle, without eating for some two months and enduring temperatures that drop below forty degrees under zero.",
+      "The chicks depend on the sea ice: they need the shelf to hold until their waterproof plumage grows. If the ice breaks sooner, they fall into the water unable to float or to regulate their temperature."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "En la primavera de 2022, cuatro de las cinco colonias de pingüino emperador del mar de Bellingshausen no sacaron adelante ninguna cría. El hielo marino se rompió antes de que los pichones tuvieran plumaje impermeable. En noviembre de ese año, el sector central y oriental de ese mar perdió el 100 % de su hielo.",
         "Es el primer caso documentado de una falla reproductiva generalizada de la especie vinculada claramente a la contracción del hielo marino a gran escala. En la colonia de Halley Bay, en el mar de Weddell, el fracaso ya se había repetido tres temporadas seguidas desde 2016."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Im Frühjahr 2022 brachten vier der fünf Kaiserpinguin-Kolonien der Bellingshausensee kein einziges Küken durch. Das Meereis brach, bevor die Jungen wasserdichtes Gefieder hatten. Im November jenes Jahres verlor der mittlere und östliche Teil dieses Meeres 100 % seines Eises.",
+        "Es ist der erste dokumentierte Fall eines flächendeckenden Brutausfalls der Art, der sich klar auf den großräumigen Rückgang des Meereises zurückführen lässt. In der Kolonie von Halley Bay im Weddellmeer hatte sich der Fehlschlag seit 2016 bereits drei Saisons in Folge wiederholt."
+      ],
+      "en": [
+        "In the spring of 2022, four of the five emperor penguin colonies of the Bellingshausen Sea raised no chicks at all. The sea ice broke up before the chicks had waterproof plumage. In November of that year, the central and eastern sector of that sea lost 100 % of its ice.",
+        "It is the first documented case of a widespread breeding failure in the species clearly linked to large-scale sea-ice contraction. At the Halley Bay colony, in the Weddell Sea, the failure had already repeated for three seasons running since 2016."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Pingüinos emperador en la isla Snow Hill",
-        "de": "",
-        "en": ""
+        "de": "Kaiserpinguine auf Snow Hill Island",
+        "en": "Emperor penguins on Snow Hill Island"
       },
       "autor": "Jenny Varley",
       "licencia": "CC BY-SA 2.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El iceberg A-81 desprendido de la barrera de hielo Brunt",
-        "de": "",
-        "en": ""
+        "de": "Der Eisberg A-81, vom Brunt-Schelfeis abgebrochen",
+        "en": "Iceberg A-81, calved from the Brunt Ice Shelf"
       },
       "autor": "Pierre Markuse",
       "licencia": "CC BY 2.0",
@@ -56,8 +68,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Hielo antártico",
-        "de": "",
-        "en": ""
+        "de": "Antarktisches Eis",
+        "en": "Antarctic ice"
       },
       "autor": "Dr. Mike Goebel, NOAA NMFS SWFSC. Credit: NOAA NMFS SWFSC An",
       "licencia": "Public domain",

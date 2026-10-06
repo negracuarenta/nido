@@ -12,8 +12,16 @@
       "Tiene las praderas de pastos marinos más extensas y diversas del mundo: 4.800 kilómetros cuadrados. De ellas vive su población de dugongos.",
       "Pero lo que la hace única son los estromatolitos: colonias de tapetes microbianos que forman depósitos duros con forma de cúpula, y que están entre las formas de vida más antiguas que se conocen en la Tierra. En Shark Bay viven además cinco especies de mamíferos amenazados."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Shark Bay liegt am westlichsten Punkt des australischen Kontinents. Ihre Gewässer, Inseln und Halbinseln umfassen rund 2,2 Millionen Hektar, davon etwa 70 % Meeresfläche.",
+      "Sie besitzt die ausgedehntesten und vielfältigsten Seegraswiesen der Welt: 4.800 Quadratkilometer. Von ihnen lebt ihre Dugong-Population.",
+      "Einzigartig machen sie aber die Stromatolithen: Kolonien mikrobieller Matten, die harte, kuppelförmige Ablagerungen bilden und zu den ältesten bekannten Lebensformen der Erde gehören. In Shark Bay leben außerdem fünf bedrohte Säugetierarten."
+    ],
+    "en": [
+      "Shark Bay lies at the westernmost point of the Australian continent. Its waters, islands and peninsulas cover some 2.2 million hectares, of which around 70 % are marine.",
+      "It has the most extensive and diverse seagrass meadows in the world: 4,800 square kilometres. Its dugong population lives on them.",
+      "But what makes it unique are the stromatolites: colonies of microbial mats that form hard, dome-shaped deposits, and which are among the oldest known life forms on Earth. Five threatened mammal species also live in Shark Bay."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa Shark Bay como de «preocupación significativa», por la escalada de amenazas ligadas al clima.",
         "Los estromatolitos y microbialitos —los ejemplos vivos más antiguos de vida en la Tierra que guarda el sitio— están en buen estado y sin daños mayores, pero cada vez más amenazados: su crecimiento es vulnerable al ascenso del nivel del mar."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet Shark Bay als «erheblich besorgniserregend», wegen der zunehmenden klimabedingten Bedrohungen.",
+        "Die Stromatolithen und Mikrobialithe — die ältesten lebenden Zeugnisse des Lebens auf der Erde, die die Stätte bewahrt — sind in gutem Zustand und ohne größere Schäden, aber zunehmend bedroht: ihr Wachstum ist gegenüber dem steigenden Meeresspiegel verwundbar."
+      ],
+      "en": [
+        "The IUCN assesses Shark Bay as of «significant concern», because of escalating climate-linked threats.",
+        "The stromatolites and microbialites — the oldest living examples of life on Earth that the site holds — are in good condition and without major damage, but increasingly threatened: their growth is vulnerable to sea-level rise."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Las salinas de Shark Bay",
-        "de": "",
-        "en": ""
+        "de": "Die Salinen von Shark Bay",
+        "en": "The salt pans of Shark Bay"
       },
       "autor": "Bruce R. Mitchell",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Shark Bay y sus depósitos sedimentarios, desde la Estación Espacial",
-        "de": "",
-        "en": ""
+        "de": "Shark Bay und ihre Sedimentablagerungen, von der Raumstation aus",
+        "en": "Shark Bay and its sedimentary deposits, from the Space Station"
       },
       "autor": "NASA",
       "licencia": "Public domain",

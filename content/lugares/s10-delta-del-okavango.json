@@ -12,8 +12,16 @@
       "Su rareza es el calendario. La crecida anual del río Okavango llega durante la estación seca, y las plantas y los animales del delta sincronizaron sus ciclos biológicos con esa inundación a contramano.",
       "Ahí viven algunas de las especies de grandes mamíferos más amenazadas del planeta: el guepardo, el rinoceronte blanco, el rinoceronte negro, el licaón y el león."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Okavango ist ein Schwemmfächer im Nordwesten Botswanas: eines der wenigen großen Binnendeltas der Welt, das in kein Meer mündet. Es hat rund 600.000 Hektar dauerhafte Sümpfe und bis zu 1,2 Millionen Hektar zusätzliches Grasland, das jahreszeitlich überflutet wird.",
+      "Seine Besonderheit ist der Kalender. Das jährliche Hochwasser des Okavango kommt während der Trockenzeit an, und die Pflanzen und Tiere des Deltas haben ihre Lebenszyklen mit dieser gegenläufigen Überflutung synchronisiert.",
+      "Dort leben einige der am stärksten bedrohten Großsäugerarten der Erde: der Gepard, das Breitmaulnashorn, das Spitzmaulnashorn, der Afrikanische Wildhund und der Löwe."
+    ],
+    "en": [
+      "The Okavango is an alluvial fan in north-west Botswana: one of the few large inland deltas in the world that reaches no sea. It has some 600,000 hectares of permanent swamp and up to 1.2 million more of grassland that floods seasonally.",
+      "Its rarity is the calendar. The annual flood of the Okavango river arrives during the dry season, and the plants and animals of the delta have synchronised their biological cycles with that contrary inundation.",
+      "Some of the most threatened large mammal species on the planet live there: the cheetah, the white rhinoceros, the black rhinoceros, the African wild dog and the lion."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "En 2020 murieron más de trescientos cincuenta elefantes en el delta del Okavango. Se los vio caminar en círculos antes de desplomarse. Un estudio que examinó tres mil charcas encontró que las que ese año tuvieron más floraciones de cianobacterias concentraban más cadáveres: el agua de la que bebían se había vuelto tóxica, en lo que los autores describen como un envenenamiento inducido por el clima.",
         "Por otro lado, el Centro del Patrimonio Mundial sigue «con atención y preocupación» los proyectos de exploración de petróleo y gas de la empresa canadiense ReconAfrica en el noreste de Namibia y el noroeste de Botsuana. Las áreas con licencia no se superponen con el delta ni con su zona de amortiguación, pero están en sectores sensibles de la cuenca del Cubango-Okavango: una fuga o una contaminación llegaría igual, y la extracción de agua del río Kavango reduciría el caudal que alimenta al delta."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "2020 starben im Okavango-Delta mehr als dreihundertfünfzig Elefanten. Man sah sie im Kreis laufen, bevor sie zusammenbrachen. Eine Untersuchung von dreitausend Wasserlöchern ergab, dass sich um jene mit den meisten Cyanobakterienblüten jenes Jahres die meisten Kadaver häuften: das Wasser, aus dem sie tranken, war giftig geworden — was die Autoren als klimabedingte Vergiftung beschreiben.",
+        "Daneben verfolgt das Welterbezentrum «mit Aufmerksamkeit und Besorgnis» die Erdöl- und Gaserkundungsprojekte des kanadischen Unternehmens ReconAfrica im Nordosten Namibias und im Nordwesten Botswanas. Die Lizenzgebiete überschneiden sich weder mit dem Delta noch mit seiner Pufferzone, liegen aber in empfindlichen Abschnitten des Cubango-Okavango-Beckens: ein Leck oder eine Verunreinigung käme dennoch an, und die Wasserentnahme aus dem Kavango würde den Zufluss verringern, der das Delta speist."
+      ],
+      "en": [
+        "In 2020 more than three hundred and fifty elephants died in the Okavango delta. They were seen walking in circles before collapsing. A study examining three thousand waterholes found that those with the most cyanobacterial blooms that year concentrated the most carcasses: the water they drank had turned toxic, in what the authors describe as a climate-induced poisoning.",
+        "Separately, the World Heritage Centre is following «with attention and concern» the oil and gas exploration projects of the Canadian company ReconAfrica in north-east Namibia and north-west Botswana. The licensed areas do not overlap the delta or its buffer zone, but they lie in sensitive sectors of the Cubango-Okavango basin: a leak or contamination would arrive all the same, and water abstraction from the Kavango river would reduce the flow that feeds the delta."
+      ]
     }
   },
   "fotos": [
@@ -35,8 +49,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El delta del Okavango",
-        "de": "",
-        "en": ""
+        "de": "Das Okavango-Delta",
+        "en": "The Okavango delta"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",
@@ -46,8 +60,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Jabirú africano en el delta",
-        "de": "",
-        "en": ""
+        "de": "Sattelstorch im Delta",
+        "en": "Saddle-billed stork in the delta"
       },
       "autor": "Diego Delso",
       "licencia": "CC BY-SA 4.0",

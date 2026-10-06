@@ -10,8 +10,12 @@
     "es": [
       "El Delta del Paraná se forma con el sedimento que el río arrastra desde el norte y deposita al llegar al Río de la Plata. Es uno de los pocos deltas del mundo que no desemboca en el mar abierto sino en otro río, y crece de manera continua: las islas nuevas son barro recién depositado."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Paraná-Delta entsteht aus dem Sediment, das der Fluss aus dem Norden heranträgt und beim Erreichen des Río de la Plata ablagert. Es ist eines der wenigen Deltas der Welt, das nicht ins offene Meer mündet, sondern in einen anderen Fluss, und es wächst ununterbrochen: die neuen Inseln sind frisch abgelagerter Schlamm."
+    ],
+    "en": [
+      "The Paraná Delta is formed by the sediment the river drags down from the north and deposits as it reaches the Río de la Plata. It is one of the few deltas in the world that flows not into the open sea but into another river, and it grows continuously: the new islands are freshly laid mud."
+    ]
   },
   "tragico": {
     "cita": {
@@ -23,8 +27,12 @@
       "es": [
         "Entre 2020 y 2021 el Paraná atravesó la bajante más severa desde 1944. El Instituto Nacional del Agua registró una caída brusca de los caudales desde marzo de 2020; a fines de diciembre de 2021 el río llevaba 291 días seguidos por debajo del nivel de aguas bajas."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Zwischen 2020 und 2021 durchlief der Paraná das schwerste Niedrigwasser seit 1944. Das Nationale Wasserinstitut Argentiniens verzeichnete ab März 2020 einen abrupten Rückgang der Abflüsse; Ende Dezember 2021 lag der Fluss seit 291 Tagen in Folge unter dem Niedrigwasserstand."
+      ],
+      "en": [
+        "Between 2020 and 2021 the Paraná went through the most severe low water since 1944. Argentina's National Water Institute recorded an abrupt fall in flows from March 2020; by late December 2021 the river had spent 291 consecutive days below the low-water level."
+      ]
     }
   },
   "fotos": [
@@ -32,8 +40,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Los brazos del Delta del Paraná",
-        "de": "",
-        "en": ""
+        "de": "Die Arme des Paraná-Deltas",
+        "en": "The arms of the Paraná Delta"
       },
       "autor": "Diegazo2000",
       "licencia": "CC BY-SA 4.0",
@@ -43,8 +51,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Caraguatá (Bromelia balansae), propia del delta",
-        "de": "",
-        "en": ""
+        "de": "Caraguatá (Bromelia balansae), typisch für das Delta",
+        "en": "Caraguatá (Bromelia balansae), native to the delta"
       },
       "autor": "Roberto Fiadone",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +62,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Los incendios del delta de 2020, vistos desde satélite",
-        "de": "",
-        "en": ""
+        "de": "Die Brände im Delta 2020, vom Satelliten aus gesehen",
+        "en": "The 2020 delta fires, seen from satellite"
       },
       "autor": "Pierre Markuse from Hamm, Germany",
       "licencia": "CC BY 2.0",
