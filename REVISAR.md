@@ -576,3 +576,29 @@ en la versión castellana.
 Traducciones que conviene que mire alguien de allá: «Zeichenerklärung» para
 Referencias, «Ort, den sie sah», «Verzeichnis · Code scannen für mehr zu jedem
 Ort» y el pie técnico de la proyección.
+
+---
+
+## Los PDF: cuatro archivos, A0 exacto, verificados
+
+`pdf_afiche.py` convierte los SVG a PDF con Chrome en modo headless —el mismo
+motor con el que vengo verificando el afiche en pantalla, así que lo que se ve
+es lo que se imprime—. El SVG va incrustado en el HTML, no como `<img>`, para
+que el texto llegue al PDF **como texto** y no como dibujo.
+
+Los cuatro salen en 1189 × 841 mm, una sola página, con las fuentes incrustadas:
+Palatino y Courier New, que son las que el afiche declara y que están instaladas
+en esta máquina.
+
+**Verificación de los QR sobre el PDF, no sobre el SVG.** Rastericé la franja
+del índice de cada PDF con Core Graphics, recorté cada código por sus
+coordenadas y lo decodifiqué: **46 de 46 en los cuatro archivos**, todos
+apuntando a la URL que les corresponde. Es la prueba que importa, porque es el
+archivo que va a imprenta. Se repite con `verificar-pdf.html`.
+
+### Antes de mandar a imprenta
+- El PDF es RGB. El taller va a pedir CMYK, sangrado y marcas de corte: eso se
+  resuelve abriendo el SVG o el PDF en Illustrator.
+- Aparecen dos tipografías de reserva, Times New Roman Italic y Menlo, para unos
+  pocos glifos que Palatino y Courier no cubren. No lo vi romper nada, pero vale
+  mirarlo con el archivo abierto.
