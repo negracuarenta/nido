@@ -1,0 +1,40 @@
+<!doctype html><meta charset="utf-8"><title>verificación</title>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+<body><div id="r">listo</div>
+<script>
+// Rasteriza cada QR tal como quedó incrustado en el afiche y lo vuelve a leer.
+// Comprobar que el archivo existe no sirve de nada: lo que importa es que el
+// código impreso lleve a la dirección correcta.
+window.verificar = async function () {
+  const txt = await (await fetch('/NIDO_mapa_A0_color.svg?v=' + Date.now())).text();
+  const doc = new DOMParser().parseFromString(txt, 'image/svg+xml');
+  const out = [];
+  for (const g of [...doc.querySelectorAll('g.qr')]) {
+    const copia = g.cloneNode(true);
+    const tr = copia.getAttribute('transform');
+    const esc = parseFloat(tr.match(/scale\(([\d.]+)\)/)[1]);
+    const lado = esc * 45;                       // 45 módulos de lado
+    copia.setAttribute('transform', tr.replace(/translate\([^)]*\)/, 'translate(0 0)'));
+
+    const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.setAttribute('xmlns','http://www.w3.org/2000/svg');
+    svg.setAttribute('width', 600); svg.setAttribute('height', 600);
+    svg.setAttribute('viewBox', '0 0 ' + lado + ' ' + lado);
+    const fondo = document.createElementNS('http://www.w3.org/2000/svg','rect');
+    fondo.setAttribute('width', lado); fondo.setAttribute('height', lado);
+    fondo.setAttribute('fill', '#fff');
+    svg.appendChild(fondo); svg.appendChild(copia);
+
+    const url = 'data:image/svg+xml;base64,' +
+      btoa(unescape(encodeURIComponent(new XMLSerializer().serializeToString(svg))));
+    const img = new Image(); img.src = url;
+    await new Promise((ok, err) => { img.onload = ok; img.onerror = err; });
+    const c = document.createElement('canvas'); c.width = c.height = 600;
+    const cx = c.getContext('2d');
+    cx.fillStyle = '#fff'; cx.fillRect(0, 0, 600, 600); cx.drawImage(img, 0, 0);
+    const leido = jsQR(cx.getImageData(0, 0, 600, 600).data, 600, 600);
+    out.push({ id: g.id.replace('qr-', ''), url: leido ? leido.data : null });
+  }
+  return out;
+};
+</script></body>

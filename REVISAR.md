@@ -478,3 +478,49 @@ siguen llegando a una página que existe.
   a inventar un mecanismo aparte.
 - «Lo que también vio» quedó como *Was sie außerdem sah* / *What it also saw*, que ya
   estaba definido en `site.json`.
+
+---
+
+## El afiche A0 · los 46 QR puestos y verificados
+
+Encontré dos cosas al abrir el afiche:
+
+1. **Los QR nunca se habían colocado.** Donde van los códigos había recuadros
+   punteados vacíos, uno por lugar, con su id (`qr-E1`, `qr-E2`…). Los 46 archivos
+   existían en `qr/`, pero el afiche no los tenía adentro.
+2. **El índice se había quedado en 35 lugares**, de cuando el mapa no tenía todavía
+   el grupo «Otros vuelos».
+
+Ahora el índice se genera con `afiche.py` desde el mismo `nido_lugares.json` que usa
+el sitio, igual que los QR. Son 44 lugares en seis columnas, más un bloque nuevo
+«Para empezar» abajo a la derecha con el código del mapa completo y el del árbol.
+El planisferio, el detalle de Sudamérica y las referencias no se tocaron: eso está
+dibujado a mano y se respeta.
+
+**Verificación:** rasterizé los 46 códigos tal como quedaron incrustados en el afiche
+y los volví a leer con un decodificador. Los 46 decodifican, y los 46 coinciden con la
+URL que les corresponde en `qr/indice.csv`. Está en `verificar-qr.html`, para que se
+pueda repetir antes de mandar a imprenta. Comprobar que el archivo existe no sirve:
+lo que importa es que el código impreso lleve adonde tiene que llevar.
+
+**Tamaño:** el QR más denso tiene 45 módulos de lado. A 24 mm da 0,53 mm por módulo,
+por encima del mínimo de 0,4 mm que pide la imprenta. Los dos de navegación van a 32 mm.
+
+### Tres cosas que quedan abiertas
+
+**El planisferio no dibuja los nueve de «Otros vuelos».** El índice ahora los lista,
+pero en el mapa no aparecen ni ellos ni su recorrido. Hay que decidir si se agregan
+—habría que deducir la proyección del dibujo, que no tiene script— o si el mapa se
+queda con los tres vuelos de la obra y el bloque OV del índice lleva una nota que lo
+aclare. **No lo resolví por mi cuenta.**
+
+**El ✕ quedó desactualizado.** Marca los lugares donde «lo que también vio» son malas
+noticias, y está puesto en 19 de los 44. Pero los nueve de «Otros vuelos» no lo tienen
+ninguno, y varios sí son malas noticias: el Baikal, los Sundarbans, el delta del Ebro.
+Al revés, hay lugares donde la noticia es buena —Namib, Uluru— y ahí el ✕ no
+correspondería. Es una marca de contenido, no mía: decime cuáles llevan ✕ y lo ajusto
+en `nido_lugares.json`, que es de donde lo toman el mapa web y el afiche.
+
+**Los PDF quedaron viejos.** `NIDO_mapa_A0.pdf` y `NIDO_mapa_A0_color.pdf` siguen
+teniendo el índice de 35 recuadros vacíos. En esta máquina no hay conversor de SVG a
+PDF. El SVG es el archivo bueno; el PDF hay que rehacerlo antes de imprimir.
