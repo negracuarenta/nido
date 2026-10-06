@@ -226,23 +226,29 @@ encontré con licencia libre la planta en su lugar de origen:
 Los ocho lugares tienen ya información con fuente. Pero apareció algo que **no
 puedo resolver yo**.
 
-### O2 · El guión dice que le quitaron protección al Aconcagua
-Tu texto trágico dice: *«vi a los hombres votar una ley que le quita protección,
-para que las máquinas puedan llegar más cerca»*.
+### O2 · Aconcagua — RESUELTO
 
-**Las fuentes oficiales dicen lo contrario.** La actualización de la zonificación
-del Parque Provincial Aconcagua se presenta como una **ampliación del 21 % del
-territorio**, incorporando áreas nuevas como la Quebrada de Matienzo, y
-reemplazando la zonificación de la Ley 5463 de 1989.
+Mi objeción anterior estaba mal planteada. Eran **dos cosas distintas que
+pasaron casi a la vez**, y yo las había mezclado:
 
-Puede que las dos cosas sean ciertas a la vez: un parque puede crecer en
-superficie y al mismo tiempo bajar la categoría de protección de ciertas zonas,
-habilitando actividad donde antes no la había. Pero **eso no lo pude verificar**,
-y la versión oficial es la de la ampliación.
+1. **El parque creció.** En 2024 una ley actualizó la zonificación del Parque
+   Provincial Aconcagua y **amplió** el área protegida un 21 %, de 67.438 a
+   85.699 hectáreas, sumando zonas como la Quebrada de Matienzo.
+2. **Y en el mismo corredor se habilitó una mina.** El proyecto San Jorge —un
+   pórfido de cobre con oro, a cielo abierto, en la estancia Yalguaraz, distrito
+   de Uspallata, **departamento de Las Heras, el mismo del parque**, unos 37 km
+   al norte de Uspallata— había sido **rechazado por la Legislatura en 2011**. En
+   **2025 la Legislatura aprobó su Declaración de Impacto Ambiental**, ratificada
+   por la **Ley provincial 9684**.
 
-**No escribí la parte trágica de O2.** Si tenés la fuente que respalda lo que
-decís —un análisis del articulado, una denuncia de alguna organización, una nota
-técnica— pasámela y la escribo. Si no, conviene revisar la frase.
+Tu lectura era la correcta: la ley votada existe y es de 2025. Lo único que no
+se sostiene es que le quite protección *al parque*, porque el parque se amplió.
+La ficha ahora cuenta las dos cosas y cita las dos leyes.
+
+**Si querés, podés dejar tu frase como está** —«una ley que le quita protección»
+funciona como síntesis poética de lo que pasa en la zona— **o ajustarla** a algo
+como «votar una ley que deja entrar las máquinas». Es tu texto; la ficha ya
+aporta el dato preciso.
 
 ### Lo que sí dio exacto en el Oeste
 - **O6** · «una herida abierta en el borde: la cortaron para vaciarla». Desde 1580

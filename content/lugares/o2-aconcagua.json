@@ -21,7 +21,11 @@
       "en": "And I saw men vote a law that takes away its protection, so the machines can come closer."
     },
     "info": {
-      "es": [],
+      "es": [
+        "El yacimiento San Jorge está en la estancia Yalguaraz, distrito de Uspallata, departamento de Las Heras: el mismo departamento que el Parque Provincial Aconcagua, unos 37 kilómetros al norte de la ciudad de Uspallata. Es un pórfido de cobre con oro en menor proporción, conocido desde los años sesenta, y el proyecto prevé explotación a cielo abierto durante unos dieciséis años sobre una superficie afectada de 475.870 metros cuadrados.",
+        "En 2011 la Legislatura de Mendoza rechazó la Declaración de Impacto Ambiental del proyecto. En 2025 la aprobó: la ratificación quedó formalizada en la Ley provincial 9684, que habilita a «PSJ Cobre Mendocino» a avanzar en Uspallata.",
+        "El parque en sí no se achicó. En 2024, otra ley actualizó la zonificación del Parque Provincial Aconcagua y amplió el área protegida un 21 %, de 67.438 a 85.699 hectáreas, incorporando zonas nuevas como la Quebrada de Matienzo. Las dos cosas ocurrieron casi a la vez: el parque creció, y en el mismo corredor que lleva hacia él se votó habilitar una mina de cobre a cielo abierto."
+      ],
       "de": [],
       "en": []
     }
@@ -61,6 +65,30 @@
       "institucion": "Sistema de Información de Biodiversidad, Argentina",
       "titulo": "Parque Provincial Aconcagua",
       "url": "https://sib.gob.ar/index.php/areas-protegidas/parque-provincial-aconcagua-mendoza",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Boletín Oficial de Mendoza",
+      "titulo": "Ley N° 9684, ratificación de la Declaración de Impacto Ambiental de PSJ Cobre Mendocino",
+      "url": "https://boe.mendoza.gov.ar/publico/pdf_pedido/8c95cbafe2784077ba438432527efc22fb84128b58",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Gobierno de Mendoza",
+      "titulo": "San Jorge: se emitió la Declaración de Impacto Ambiental",
+      "url": "http://www.prensa.mendoza.gov.ar/san-jorge-se-emitio-la-declaracion-de-impacto-ambiental/",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Gobierno de Mendoza, Dirección de Minería",
+      "titulo": "Informe de Impacto Ambiental, resumen ejecutivo (PDF)",
+      "url": "https://www.mendoza.gov.ar/wp-content/uploads/sites/105/2025/02/Copia-de-ORDEN-0004-IF-2025-00279594-GDEMZA-MINERIA.pdf",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Honorable Cámara de Diputados de Mendoza",
+      "titulo": "Media sanción a la actualización de la zonificación del Parque Provincial Aconcagua",
+      "url": "https://www.hcdmza.gob.ar/site/noticias/8890-media-sancion-a-la-actualizacion-de-la-zonificacion-del-parque-provincial-aconcagua",
       "consultado": "2026-10-06"
     }
   ]
