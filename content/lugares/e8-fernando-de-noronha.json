@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa el sitio como de «preocupación significativa». Hay marco legal y sistema de manejo, pero la implementación es insuficiente en varias áreas y los recursos de monitoreo no alcanzan para controlar las amenazas.",
+        "La pesca industrial en las cercanías viene impactando sobre las especies pelágicas y en particular sobre los tiburones, y la concentración de embarcaciones agrava el problema. El archipiélago que se cuida dejando entrar a muy pocos no controla lo que pasa del otro lado de su límite."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Brazilian Atlantic Islands: Fernando de Noronha and Atol das Rocas Reserves",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/brazilian-atlantic-islands-fernando-de-noronha-and-atol-das-rocas-reserves",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

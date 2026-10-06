@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa Península Valdés como de «preocupación significativa». La población de ballena franca austral —la especie emblema del sitio— sigue creciendo, pero cada vez más despacio, y se registran niveles inusualmente altos de mortandad: el número de ballenas muertas por año viene en aumento y la investigación científica sobre las causas continúa.",
+        "A eso se suma el impacto de la gripe aviar H5N1 sobre la fauna marina y las aves, en especial la mortandad masiva de elefantes marinos del sur."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Península Valdés",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/peninsula-valdes",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

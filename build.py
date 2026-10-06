@@ -221,18 +221,33 @@ def bloque_tragico(contenido, ui):
     tr = contenido.get("tragico")
     if not tr:
         return ""
+    # No todos tienen frase del guión: los que la golondrina no contó abren
+    # directo con la información.
     cita = por_idioma(lambda l: (
         f'<blockquote class="cita cita-tragica">{escape(t(tr["cita"], l))}</blockquote>'
-        if tr.get("cita") else ""
+        if t(tr.get("cita", {}), l) else ""
     ))
     info = por_idioma(lambda l: parrafos(tr.get("info", {}), l))
     boton = por_idioma(lambda l: escape(t(ui["ver_tragico"], l)))
+    # Las fuentes van dentro del panel, pegadas a lo que afirman, y no sólo en
+    # la lista del pie: quién lo dice se lee en el mismo lugar que el dato.
+    fuentes = ""
+    if tr.get("fuentes"):
+        filas = "".join(
+            f'<li><strong>{escape(f["institucion"])}</strong>, {escape(f["titulo"])}'
+            + (f' — <a href="{escape(f["url"])}" rel="noopener">{escape(f["url"])}</a>'
+               if f.get("url") else "")
+            + "</li>"
+            for f in tr["fuentes"]
+        )
+        titulo = por_idioma(lambda l: escape(t(ui["fuentes"], l)))
+        fuentes = f'<div class="fuentes-tragicas"><h3>{titulo}</h3><ol>{filas}</ol></div>'
     return f"""
 <section class="tragico">
   <button type="button" class="abrir-tragico" aria-expanded="false" aria-controls="panel-tragico">
     <span class="cruz" aria-hidden="true">✕</span>{boton}
   </button>
-  <div class="panel-tragico" id="panel-tragico" hidden>{cita}{info}</div>
+  <div class="panel-tragico" id="panel-tragico" hidden>{cita}{info}{fuentes}</div>
 </section>
 """
 

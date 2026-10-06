@@ -23,7 +23,29 @@
       "The park's emblem bird is the great dusky swift (Cypseloides senex). It measures some 18 centimetres, is brown with a greyish head, and has a short bill and a wide mouth, ideal for catching insects in flight. It forms enormous flocks that leave to feed very early and return at dusk to sleep behind the curtains of water. The park was created in 1934 by National Law 12,103, declared a World Heritage Site in 1984, and protects 67,698 hectares; together with its Brazilian sister park, Iguaçu, inscribed in 1986, they total around 240,000 hectares: the largest protected remnant of the Paranaense rainforest."
     ]
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa el estado de conservación del Parque Nacional Iguazú como de «preocupación significativa». La amenaza mayor está fuera del parque y fuera del alcance de quienes lo administran: el efecto combinado de las represas hidroeléctricas aguas arriba, en Brasil, que alteran el caudal del río Iguazú.",
+        "Ese cambio en el caudal tiene impactos escénicos y ecológicos que exigen monitoreo permanente. Desde 2019 Argentina lleva adelante un proyecto de doce años para estudiar los ecosistemas, las comunidades de peces y la calidad del agua."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Iguazú National Park",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/iguazu-national-park",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

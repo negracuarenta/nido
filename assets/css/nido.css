@@ -381,3 +381,30 @@ a { color: inherit; }
 }
 .pie-sitio__logos .logo { transition: opacity var(--ease-dur, 180ms) ease; }
 .pie-sitio__logos a:hover .logo, .marcas-mapa a:hover .logo { opacity: 1; }
+
+/* Fuentes dentro del panel: quién lo dice, pegado a lo que se afirma. */
+.fuentes-tragicas {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #E8C9C6;
+}
+
+.fuentes-tragicas h3 {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: var(--tinta-suave);
+  margin: 0 0 0.6rem;
+}
+
+.fuentes-tragicas ol {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--tinta-suave);
+}
+
+.fuentes-tragicas li { margin-bottom: 0.45rem; }
+.fuentes-tragicas a { word-break: break-word; }

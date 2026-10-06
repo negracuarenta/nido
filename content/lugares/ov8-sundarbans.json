@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa los Sundarbans como de «preocupación significativa». La biodiversidad se mantiene en buena medida intacta, pero las presiones del cambio climático, la degradación del hábitat y la actividad humana crecen.",
+        "Preocupan en particular la conservación de las aves y los mamíferos acuáticos, y la degradación de la diversidad vegetal: sobre todo el mangle sundri (Heritiera fomes), la especie que le da nombre al lugar, hoy en peligro a escala global."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Sundarbans National Park",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/sundarbans-national-park",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

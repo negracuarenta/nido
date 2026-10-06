@@ -14,7 +14,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa Jiuzhaigou como «bueno, con algunas preocupaciones». Los valores naturales se conservaron bien.",
+        "En 2017 un terremoto de magnitud 7,0 provocó cambios importantes en el paisaje; los trabajos de restauración lograron recuperar el área y sus rasgos principales. Antes de eso, la protección de algunas zonas se había visto comprometida por una infraestructura turística rápida y excesiva."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Jiuzhaigou Valley Scenic and Historic Interest Area",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/jiuzhaigou-valley-scenic-and-historic-interest-area",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

@@ -14,7 +14,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa el lago Baikal como de «preocupación significativa», por la contaminación que persiste y por amenazas nuevas: desarrollo turístico a gran escala, tratamiento deficiente de aguas cloacales que provoca eutrofización en la costa, y cambio climático.",
+        "También preocupan los proyectos hidroeléctricos en Mongolia y las prácticas actuales de regulación del nivel del agua, calificadas de peligrosas y dañinas. El cierre de la papelera de Baikalsk fue un paso positivo."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Lake Baikal",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/lake-baikal",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

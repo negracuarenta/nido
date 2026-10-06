@@ -336,3 +336,50 @@ Uspallata, el mismo departamento del parque. El ritmo de la frase no cambia.
 
 Está traducida a los tres idiomas. **Si preferís la versión original, se vuelve
 en un minuto.**
+
+---
+
+## "Lo que también vio" en los lugares que no lo tenían
+
+Eran 25 sin el apartado. **Quedaron 15 escritos; faltan 10.**
+
+La fuente principal es la **Perspectiva del Patrimonio Mundial de la UICN**, que
+evalúa cada sitio con una metodología uniforme y una categoría explícita. Las
+evaluaciones usadas son las del ciclo cerrado el 11 de octubre de 2025. Las
+fuentes van **dentro del panel**, debajo del texto, como pediste.
+
+### Dos donde la noticia es buena, y lo dice así
+No todo lugar tiene una catástrofe. En estos dos la UICN evalúa el estado como
+**bueno**, y la ficha lo dice en esos términos en vez de forzar un drama:
+
+- **S9 · Namib** — su propia inhospitalidad lo protege: casi no hay caminos ni
+  instalaciones. Lo que requiere manejo es el agua de los pocos ríos
+  estacionales.
+- **S15 · Uluru** — los valores están en buen estado y la protección se
+  considera muy eficaz. Tierra de propiedad aborigen, manejada en conjunto y
+  guiada por el Tjukurpa.
+
+**Si preferís que estos dos no lleven el apartado, se sacan.** Me pareció más
+honesto decir que están bien que inventarles una amenaza.
+
+### Hallazgos que dialogan con tus frases
+- **E1** · la amenaza mayor de Iguazú son **las represas aguas arriba**, que
+  alteran el caudal. El río que se rompe en dos para caer está siendo regulado
+  antes de llegar.
+- **S7** · además de la mortandad creciente de ballenas francas, la **gripe
+  aviar H5N1** provocó una mortandad masiva de elefantes marinos.
+- **S8** · la sequía de 2019-2020, una de las peores en un siglo, **redujo
+  drásticamente el agua que caía** por las cataratas Victoria.
+- **OV8** · el mangle **sundri**, el que le da nombre a los Sundarbans, está hoy
+  en peligro a escala global.
+
+### Los 10 que faltan
+No son Patrimonio Mundial natural, así que no tienen evaluación de la UICN y hay
+que buscarlos uno por uno en fuentes dispersas:
+
+**E4** Lençóis · **E5** Bonito · **E6** Cachoeira da Fumaça · **E9** Iberá ·
+**S6** Estepa patagónica · **O4** Cerro de los Siete Colores ·
+**OV4** Gobi · **OV5** Zumaia · **OV6** Delta del Ebro · **OV7** Dolomitas
+
+Para esos hace falta ICMBio, Imasul, Parques Nacionales, el Geoparque de la
+Costa Vasca, la Generalitat y la Fundación Dolomitas Patrimonio Mundial.

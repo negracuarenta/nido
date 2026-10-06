@@ -14,7 +14,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa Mosi-oa-Tunya como «bueno, con algunas preocupaciones», pero señala amenazas serias: cambio climático, turismo insostenible y desarrollo urbano.",
+        "El valor que define al sitio —ser la mayor cortina de agua en caída del mundo— está bajo presión por la reducción del caudal, agravada por las sequías periódicas y por la extracción de agua para generación hidroeléctrica. La sequía de 2019-2020, una de las peores en un siglo, redujo drásticamente el agua que caía por las cataratas."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Mosi-oa-Tunya / Victoria Falls",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/mosi-oa-tunya-victoria-falls",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

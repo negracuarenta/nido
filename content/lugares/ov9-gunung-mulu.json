@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa Gunung Mulu como «bueno, con algunas preocupaciones». Lo que protege al sitio es sobre todo su aislamiento: no hay acceso por camino público al interior del parque, el terreno es abrupto, y a eso se suman la base legal de protección y los proyectos internacionales de investigación.",
+        "Es una protección que depende de que el lugar siga siendo difícil de alcanzar."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Gunung Mulu National Park",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/gunung-mulu-national-park",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

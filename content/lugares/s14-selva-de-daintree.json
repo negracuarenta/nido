@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa los Trópicos Húmedos de Queensland como de «preocupación significativa». El sitio tiene un marco legal sólido, una autoridad de manejo propia con amplio apoyo de la comunidad y un conjunto completo de estrategias.",
+        "Aun así, la amenaza insidiosa de las plantas, los animales y las enfermedades invasoras, sumada a los impactos del cambio climático, representa un peligro real para la integridad de su biodiversidad y de las especies endémicas que sólo viven ahí."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Wet Tropics of Queensland",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/wet-tropics-queensland",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

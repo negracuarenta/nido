@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "Acá la noticia es buena, y conviene decirlo: la UICN evalúa el mar de arena del Namib como «bueno». Su propia naturaleza lo protege —una extensión enorme de dunas inhóspitas, bañadas por la niebla, prácticamente sin caminos ni instalaciones— y eso lo vuelve resistente.",
+        "Lo que sí requiere manejo cuidadoso es el agua: de ello depende que se mantengan los pocos ríos estacionales que penetran en el área. Y en las llanuras costeras hay depósitos de diamantes aluviales."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Namib Sand Sea",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/namib-sand-sea",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

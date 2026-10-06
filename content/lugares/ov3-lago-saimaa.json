@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La foca anillada de Saimaa necesita nieve y hielo para criar: excava sus madrigueras en los ventisqueros de las orillas. Los inviernos suaves son por eso una amenaza directa, junto con las redes de enmalle en las que las crías quedan atrapadas.",
+        "La población crece, pero despacio y de forma despareja: avanza en Puruvesi y en el sur del Saimaa, mientras que la situación en el norte del lago es preocupante. Cada invierno, más de trescientos voluntarios palean nieve a mano para armar ventisqueros artificiales cuando el frío no alcanza."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Metsähallitus, Parks & Wildlife Finland",
+        "titulo": "Saimaa ringed seal population continues to grow: mild winters and gill nets remain a threat",
+        "url": "https://www.metsa.fi/en/press-releases/saimaa-ringed-seal-population-continues-to-grow-mild-winters-and-gill-nets-remain-a-threat/",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

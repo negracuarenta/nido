@@ -14,7 +14,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "Otra donde la noticia es buena: la UICN evalúa Uluru-Kata Tjuta como «bueno». Los valores del sitio están en buen estado y es probable que se mantengan, y la protección se considera en general muy eficaz.",
+        "La tierra es de propiedad aborigen y se maneja de forma conjunta, combinando conocimiento tradicional y científico, a través de un consejo con mayoría de propietarios tradicionales —los anangu—. El manejo se guía por el Tjukurpa, la ley y la cultura anangu, junto con la legislación australiana."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Uluṟu-Kata Tjuṯa National Park",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/uluru-kata-tjuta-national-park",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

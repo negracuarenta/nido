@@ -14,7 +14,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La araucaria está clasificada en peligro. Se estima una reducción de al menos el 30 % de su área de ocupación en los últimos 360 años.",
+        "Los bosques que quedan ocupan unos 2.611 kilómetros cuadrados en la cordillera, y la mayor parte está dentro de parques y reservas: lo que sobrevive, sobrevive protegido."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Ministerio del Medio Ambiente, Chile",
+        "titulo": "Ficha de especie clasificada: Araucaria araucana (PDF)",
+        "url": "https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Araucaria_araucana_14RCE_FINAL.pdf",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

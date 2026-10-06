@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa el sitio como «bueno, con algunas preocupaciones». Los valores se mantienen en buen estado, con impactos localizados.",
+        "La presión que crece es la visita y la expansión de caminos, sobre todo por la construcción del puente sobre el río Negro, que recae en particular sobre el Parque Nacional de Anavilhanas."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Central Amazon Conservation Complex",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/central-amazon-conservation-complex",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",
