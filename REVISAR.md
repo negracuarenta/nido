@@ -383,3 +383,30 @@ que buscarlos uno por uno en fuentes dispersas:
 
 Para esos hace falta ICMBio, Imasul, Parques Nacionales, el Geoparque de la
 Costa Vasca, la Generalitat y la Fundación Dolomitas Patrimonio Mundial.
+
+---
+
+## La página «Sobre la obra» · cuatro actos o cinco
+
+La sinopsis que me pasaste dice, en castellano y en alemán, que la obra es **en cinco
+actos**: *invierno, primavera, verano, otoño, invierno*. La transcribí tal cual, sin
+tocarla, en `content/obra.json` y por lo tanto en `/obra/`.
+
+Pero **el resto del proyecto está construido sobre cuatro actos**. Dice «cuatro actos
+—invierno, primavera, verano, otoño—» la ficha de NIDO en la web de negra40, en los dos
+idiomas (`src/content/proyectos/{es,en}/nido.md`), y es también el esquema del mapa: la
+golondrina hace **tres vuelos** —Este, Sur y Oeste— y vuelve cada vez al árbol. Tres
+vuelos encajan con cuatro actos (uno por estación, con un vuelo entre cada par), no con
+cinco.
+
+Las dos lecturas son coherentes consigo mismas: puede que hayas cerrado el ciclo
+devolviendo el invierno al final, que es un cambio de estructura real y no un error de
+tipeo. **No corregí ninguno de los dos textos.** Decime cuál manda y alineo el otro:
+
+- Si son **cinco actos**, hay que actualizar la ficha de negra40 en castellano e inglés.
+- Si son **cuatro**, hay que corregir `content/obra.json` en los tres idiomas.
+
+Con el mapa no hay nada que tocar en ninguno de los dos casos: los vuelos son tres.
+
+### Un nombre incompleto
+En la ficha técnica, **Video: Andrés** quedó sin apellido, tal como me lo pasaste.

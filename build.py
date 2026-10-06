@@ -286,6 +286,7 @@ def indice(datos, site):
   <h1 class="titulo">{por_idioma(lambda l: escape(t(site["titulo"], l)))}</h1>
   {por_idioma(lambda l: f'<p class="subtitulo">{escape(t(site["subtitulo"], l))}</p>')}
   {por_idioma(lambda l: f'<p class="bajada">{escape(t(site["bajada"], l))}</p>')}
+  {por_idioma(lambda l: f'<p class="leyenda__obra"><a href="obra/">{escape(t(ui["sobre_la_obra"], l))}</a></p>')}
   <h2>{por_idioma(lambda l: escape(t(ui["viajes"], l)))}</h2>
   <ul class="filtros">{leyenda_viajes}</ul>
   <h2>{por_idioma(lambda l: escape(t(ui["simbolos"], l)))}</h2>
@@ -375,6 +376,56 @@ def resumen_viaje(viaje, textos, contenidos, site, base):
     return pagina(f"{titulo} · NIDO", cuerpo, base=base, clase="pagina-viaje", site=site)
 
 
+
+# ------------------------------------------------------------ la obra
+
+def pagina_obra(obra, site, base):
+    """Sinopsis y ficha técnica, en los tres idiomas."""
+    def valor(v, etiqueta):
+        """Un nombre puede ser igual en los tres idiomas o cambiar con ellos
+        (la conjunción de «Juan Corro y Martín Virgili», por ejemplo)."""
+        if isinstance(v, dict):
+            return por_idioma(lambda l: f'<{etiqueta}>{escape(t(v, l))}</{etiqueta}>')
+        return f'<{etiqueta}>{escape(v)}</{etiqueta}>'
+
+    filas = "".join(
+        '<div class="credito">'
+        + por_idioma(lambda l, f=f: f'<dt>{escape(t(f["rol"], l))}</dt>')
+        + valor(f["nombre"], "dd")
+        + '</div>'
+        for f in obra["ficha"]
+    )
+    cuerpo = f"""
+<main class="obra">
+  <header class="obra__cabecera">
+    <h1>{por_idioma(lambda l: escape(t(obra["titulo"], l)))}</h1>
+    {por_idioma(lambda l: f'<p class="obra__bajada">{escape(t(obra["bajada"], l))}</p>')}
+    {por_idioma(lambda l: f'<p class="obra__subtitulo">{escape(t(obra["subtitulo"], l))}</p>')}
+    {por_idioma(lambda l: f'<p class="obra__entrada">{escape(t(obra["entrada"], l))}</p>')}
+    <p class="obra__autores">
+      {por_idioma(lambda l: escape(t(obra["proyecto"], l)))}
+      {valor(obra["autores"], "span")}
+    </p>
+  </header>
+
+  <section>
+    <h2>{por_idioma(lambda l: escape(t(obra["sinopsis_titulo"], l)))}</h2>
+    {por_idioma(lambda l: parrafos(obra["sinopsis"], l))}
+  </section>
+
+  <section class="ficha-tecnica">
+    <h2>{por_idioma(lambda l: escape(t(obra["ficha_titulo"], l)))}</h2>
+    <dl>{filas}</dl>
+  </section>
+
+  <nav class="pie">
+    {por_idioma(lambda l: f'<a class="volver" href="{base}">{escape(t(site["ui"]["volver"], l))}</a>')}
+  </nav>
+</main>
+"""
+    return pagina("Nido · la obra", cuerpo, base=base, clase="pagina-obra", site=site)
+
+
 # --------------------------------------------------------------------- build
 
 def main() -> None:
@@ -398,6 +449,12 @@ def main() -> None:
         encoding="utf-8")
 
     (DIST / "index.html").write_text(indice(datos, site), encoding="utf-8")
+
+    obra = json.loads((AQUI / "content/obra.json").read_text(encoding="utf-8"))
+    destino_obra = DIST / "obra"
+    destino_obra.mkdir(parents=True, exist_ok=True)
+    (destino_obra / "index.html").write_text(
+        pagina_obra(obra, site, base="../"), encoding="utf-8")
 
     # Una página por lugar, más la del árbol.
     paginas = [(json.loads((AQUI / "content/heidelberg.json").read_text(encoding="utf-8")),

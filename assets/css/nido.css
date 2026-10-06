@@ -408,3 +408,56 @@ a { color: inherit; }
 
 .fuentes-tragicas li { margin-bottom: 0.45rem; }
 .fuentes-tragicas a { word-break: break-word; }
+
+/* ---------------------------------------------------- la obra */
+
+.pagina-obra { background: #FBF8F0; }
+
+.obra { max-width: var(--medida); margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+
+.obra__cabecera { margin-bottom: 3rem; }
+.obra h1 { font-size: clamp(2.6rem, 8vw, 4rem); font-weight: 500; line-height: 1; margin: 0; }
+.obra__bajada { font-size: 1.15rem; font-style: italic; color: var(--tinta-suave); margin: 0.5rem 0 0; }
+.obra__subtitulo { font-size: 1.3rem; margin: 1.6rem 0 0; }
+.obra__entrada { margin: 0.8rem 0 0; color: var(--tinta-suave); }
+
+.obra__autores {
+  margin: 1.8rem 0 0;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave);
+}
+.obra__autores span {
+  display: block; margin-top: 0.3rem;
+  font-size: 1.05rem; text-transform: none; letter-spacing: 0; color: var(--tinta);
+}
+
+.obra h2 {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave); font-weight: 500;
+  margin: 2.8rem 0 0.9rem; padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--contorno);
+}
+
+.ficha-tecnica dl {
+  display: grid; grid-template-columns: max-content 1fr;
+  gap: 0.5rem var(--espacio, 1.6rem); margin: 0;
+}
+.ficha-tecnica .credito { display: contents; }
+.ficha-tecnica dt {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--tinta-suave); align-self: baseline; padding-top: 0.2rem;
+}
+.ficha-tecnica dd { margin: 0; font-size: 1.05rem; }
+
+.leyenda__obra { margin: 0.9rem 0 0; }
+.leyenda__obra a {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
+  text-decoration: none; border-bottom: 1px solid var(--contorno);
+  padding-bottom: 2px;
+}
+.leyenda__obra a:hover { border-bottom-color: var(--tinta); }
+
+@media (max-width: 560px) {
+  .ficha-tecnica dl { grid-template-columns: 1fr; gap: 0.15rem; }
+  .ficha-tecnica dd { margin-bottom: 0.9rem; }
+}

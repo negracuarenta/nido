@@ -1,0 +1,138 @@
+{
+  "slug": "obra",
+  "titulo": {
+    "es": "Nido",
+    "de": "Nido",
+    "en": "Nido"
+  },
+  "bajada": {
+    "es": "Obra para danza con música en vivo",
+    "de": "Ein Stück für Tanz mit Live-Musik",
+    "en": "A work for dance with live music"
+  },
+  "subtitulo": {
+    "es": "La historia de un acuerdo",
+    "de": "Die Geschichte eines Paktes",
+    "en": "The story of a pact"
+  },
+  "entrada": {
+    "es": "Una experiencia poética y corporal de nuestra pertenencia a la naturaleza. Entrada libre y gratuita; se agradecen las donaciones.",
+    "de": "Eine poetische und körperliche Erfahrung unserer Verbundenheit mit der Natur. Eintritt kostenlos, Spenden erbeten.",
+    "en": "A poetic and bodily experience of our belonging to nature. Free admission; donations welcome."
+  },
+  "proyecto": {
+    "es": "Proyecto",
+    "de": "Projekt",
+    "en": "Project"
+  },
+  "autores": {
+    "es": "Juan Corro y Martín Virgili",
+    "de": "Juan Corro und Martín Virgili",
+    "en": "Juan Corro and Martín Virgili"
+  },
+  "sinopsis_titulo": {
+    "es": "Sinopsis",
+    "de": "Synopse",
+    "en": "Synopsis"
+  },
+  "sinopsis": {
+    "es": [
+      "Un árbol le ofrece refugio a un pájaro. A cambio le pide una sola cosa: que le cuente lo que ve cuando vuela. Es un trueque entre quien no puede moverse y quien no puede quedarse quieto. Es un pacto entre lo que permanece y lo que viaja. Entre lo que tiene raíces y lo que tiene alas.",
+      "Nido parte de esa imagen para construir una obra escénica en cinco actos —invierno, primavera, verano, otoño, invierno— en la que, a través de danza y música, escucharemos las noticias del pájaro por el mundo, en un contexto sonoro en constante transformación.",
+      "La obra surge de una pregunta urgente: ¿cómo recuperar la sensibilidad hacia el mundo natural en un tiempo que parecería haberla perdido? Siguiendo el camino de muchas tradiciones amerindias, Nido busca nuevas metáforas para nombrar nuestra relación con la naturaleza: no desde la nostalgia ni desde la denuncia, sino desde el cuerpo, el sonido y la imagen."
+    ],
+    "de": [
+      "Ein Baum bietet einem Vogel Zuflucht. Im Gegenzug bittet er um eine einzige Sache: dass dieser ihm erzählt, was er sieht, wenn er fliegt. Es ist ein Tausch zwischen dem, der sich nicht bewegen kann, und dem, der nicht stillstehen kann. Es ist ein Pakt zwischen dem, was bleibt, und dem, was reist. Zwischen dem, was Wurzeln hat, und dem, was Flügel hat.",
+      "Nido geht von diesem Bild aus, um ein Bühnenstück in fünf Akten zu entwickeln — Winter, Frühling, Sommer, Herbst, Winter —, in dem wir durch Tanz und Musik die Nachrichten des Vogels aus der Welt hören, in einem sich ständig wandelnden klanglichen Kontext.",
+      "Das Werk entspringt einer dringenden Frage: Wie lässt sich die Sensibilität gegenüber der natürlichen Welt in einer Zeit zurückgewinnen, die sie verloren zu haben scheint? Dem Weg vieler indigener amerikanischer Traditionen folgend, sucht Nido nach neuen Metaphern, um unsere Beziehung zur Natur zu benennen — nicht aus Nostalgie oder Anklage, sondern ausgehend vom Körper, vom Klang und vom Bild."
+    ],
+    "en": [
+      "A tree offers shelter to a bird. In return it asks for one thing only: that the bird tell it what it sees when it flies. It is a trade between the one who cannot move and the one who cannot keep still. It is a pact between what remains and what travels. Between what has roots and what has wings.",
+      "Nido sets out from that image to build a stage work in five acts — winter, spring, summer, autumn, winter — in which, through dance and music, we hear the bird's news of the world, within a soundscape in constant transformation.",
+      "The work springs from an urgent question: how can we recover our sensitivity towards the natural world in a time that seems to have lost it? Following the path of many Amerindian traditions, Nido looks for new metaphors to name our relationship with nature — not out of nostalgia or denunciation, but starting from the body, from sound and from image."
+    ]
+  },
+  "ficha_titulo": {
+    "es": "Ficha técnica",
+    "de": "Technische Angaben",
+    "en": "Credits"
+  },
+  "ficha": [
+    {
+      "rol": {
+        "es": "Proyecto",
+        "de": "Projekt",
+        "en": "Project"
+      },
+      "nombre": {
+        "es": "Juan Corro y Martín Virgili",
+        "de": "Juan Corro und Martín Virgili",
+        "en": "Juan Corro and Martín Virgili"
+      }
+    },
+    {
+      "rol": {
+        "es": "Bailarín y coreografía",
+        "de": "Tänzer und Choreografie",
+        "en": "Dancer and choreography"
+      },
+      "nombre": "Juan Corro"
+    },
+    {
+      "rol": {
+        "es": "Música y guión",
+        "de": "Musik und Konzept/Text",
+        "en": "Music and script"
+      },
+      "nombre": "Martín Virgili"
+    },
+    {
+      "rol": {
+        "es": "Asistente de coreografía",
+        "de": "Choreografische Assistenz",
+        "en": "Choreography assistant"
+      },
+      "nombre": "Johana Tocci"
+    },
+    {
+      "rol": {
+        "es": "Percusión",
+        "de": "Perkussion",
+        "en": "Percussion"
+      },
+      "nombre": "Emmanuel Schvabbauer"
+    },
+    {
+      "rol": {
+        "es": "Recitación y laúd",
+        "de": "Rezitation und Laute",
+        "en": "Recitation and lute"
+      },
+      "nombre": "Lea Scholz"
+    },
+    {
+      "rol": {
+        "es": "Violín",
+        "de": "Violine",
+        "en": "Violin"
+      },
+      "nombre": "David Jara"
+    },
+    {
+      "rol": {
+        "es": "Video",
+        "de": "Video",
+        "en": "Video"
+      },
+      "nombre": "Andrés"
+    },
+    {
+      "rol": {
+        "es": "Asistencia técnica",
+        "de": "Technische Assistenz",
+        "en": "Technical assistance"
+      },
+      "nombre": "Federico Ehrenbolger"
+    }
+  ]
+}

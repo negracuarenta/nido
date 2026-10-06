@@ -126,6 +126,11 @@
       "es": "Con",
       "de": "Mit",
       "en": "With"
+    },
+    "sobre_la_obra": {
+      "es": "Sobre la obra →",
+      "de": "Über das Stück →",
+      "en": "About the work →"
     }
   },
   "subtitulo": {
