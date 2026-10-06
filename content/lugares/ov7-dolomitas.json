@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La UICN evalúa las Dolomitas como «bueno, con algunas preocupaciones». En 2015 se aprobó una estrategia general de manejo para todo el sitio, elaborada con las administraciones locales y las comunidades, y fue un paso importante.",
+        "Aun así, la construcción de infraestructura turística sigue siendo una amenaza para los valores del sitio, agravada ahora por el cambio climático: eventos meteorológicos extremos e inestabilidad hidrogeológica creciente. Hay proyectos para ampliar instalaciones de esquí, incluso cerca de algunos componentes del área protegida."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "The Dolomites",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/dolomites",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

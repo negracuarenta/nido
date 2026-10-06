@@ -15,7 +15,35 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El pastoreo intensivo sostenido redujo de forma marcada la diversidad y la cobertura de plantas vasculares de la estepa, bajó la disponibilidad y la calidad del forraje, facilitó el avance de especies exóticas e invasoras, y aumentó la degradación del suelo y la desertificación.",
+        "Durante décadas la ganadería patagónica se practicó sin manejo: se estima que alrededor del 30 % de la región —unos 24 millones de hectáreas— quedó sobrepastoreada. El INTA diseñó un sistema de pastoreo rotativo que demostró ser sostenible, pero su adopción sigue siendo baja."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "INTA, Argentina",
+        "titulo": "Rangeland grazing management in Patagonia (PDF)",
+        "url": "https://sipas.inta.gob.ar/sites/default/files/archivos/Rangeland%20grazing%20management%20in%20Patagonia%20(International%20J.%20of%20Agriculture%20and%20Biology_2020).pdf",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "CONICET",
+        "titulo": "Economics of Land Degradation in Argentina (PDF)",
+        "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/162448/CONICET_Digital_Nro.ee76f089-9143-473c-b41c-a71863af72ae_G.pdf",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

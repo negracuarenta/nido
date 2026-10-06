@@ -14,7 +14,36 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El delta del Ebro se hunde y retrocede a la vez. Por un lado el mar se come la costa; por el otro el terreno baja por su propio peso y por falta de sedimento, y a eso se suma el ascenso del nivel del mar por el calentamiento.",
+        "La causa del segundo fenómeno está río arriba: en la cuenca del Ebro se construyeron unos doscientos embalses que retienen alrededor del 99,9 % de la carga sólida que el río llevaba a fines del siglo XIX. El barro que formó el delta ya no llega.",
+        "En enero de 2020 el temporal Gloria dejó daños por más de 75 millones de euros sólo en reparaciones de puertos, playas y paseos marítimos. Se están ensayando inyecciones de sedimento en el tramo final del río."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Generalitat de Catalunya, Consell Assessor per al Desenvolupament Sostenible",
+        "titulo": "Un litoral al límit. Recomanacions per a una gestió integrada (PDF)",
+        "url": "https://cads.gencat.cat/web/.content/Documents/Informes/2021/informe-Un-Litoral-al-Limit.pdf",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "Generalitat de Catalunya, Oficina Catalana del Canvi Climàtic",
+        "titulo": "Sobre el temporal Gloria (19-23.01.20) i els seus efectes (PDF)",
+        "url": "https://canviclimatic.gencat.cat/web/.content/03_AMBITS/adaptacio/ESCACC_2021_2030/GLORIA_BAIXA.pdf",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

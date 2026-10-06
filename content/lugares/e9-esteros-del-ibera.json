@@ -15,7 +15,42 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "En el verano de 2022 el fuego arrasó Corrientes. Desde enero los incendios afectaron más de 900.000 hectáreas, más del 10 % de la superficie provincial, y los humedales perdieron 534.000 hectáreas entre esteros, bañados y valles aluviales.",
+        "Dentro del área protegida se quemó cerca de la mitad del Parque Nacional Iberá —el 57 % de su cobertura vegetal— y alrededor del 20 % de la reserva, con predominio de severidades moderada-alta y alta. Los sectores más castigados fueron el norte, el corredor Mburucuyá-San Roque y Colonia Carlos Pellegrini.",
+        "Fue un año después de que la primera familia de yaguaretés pasara a vivir en libertad plena. El CONICET puso en marcha una evaluación de los efectos a mediano plazo sobre la biodiversidad."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "CONICET",
+        "titulo": "Incendios en Corrientes: evaluarán los efectos a mediano plazo sobre la biodiversidad",
+        "url": "https://www.conicet.gov.ar/incendios-en-corrientes-evaluaran-los-efectos-a-mediano-plazo-sobre-la-biodiversidad/",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "CONICET",
+        "titulo": "Análisis preliminar de la severidad del fuego en el Parque y Reserva Nacional Iberá",
+        "url": "https://ri.conicet.gov.ar/handle/11336/237402",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "Gobierno de Argentina",
+        "titulo": "Información satelital sobre los incendios en Corrientes",
+        "url": "https://www.argentina.gob.ar/noticias/informacion-satelital-sobre-los-incendios-en-corrientes",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

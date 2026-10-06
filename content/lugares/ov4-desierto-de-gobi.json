@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "La reserva alberga al oso del Gobi —el mazaalai—, una subespecie de oso pardo en peligro crítico que sólo vive acá: es el único oso del mundo adaptado a vivir en un desierto.",
+        "Las presiones sobre el ecosistema del Gobi son la desertificación asociada al cambio climático, el aumento de inviernos extremos que matan al ganado, y la caza furtiva."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UNESCO, Programa el Hombre y la Biosfera (MAB)",
+        "titulo": "Great Gobi Biosphere Reserve",
+        "url": "https://www.unesco.org/en/mab/great-gobi",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

@@ -15,7 +15,35 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El fuego es la amenaza principal de la Chapada Diamantina. Entre 2003 y 2006 el parque registró la mayor cantidad de focos de incendio de todas las áreas protegidas federales de Brasil.",
+        "El control del fuego ocupa los períodos secos críticos —de agosto a febrero y de septiembre a diciembre— y durante esa temporada el equipo del parque dedica prácticamente toda su energía y sus escasos recursos a combatirlo, con el apoyo de brigadas voluntarias locales."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "ICMBio, Brasil",
+        "titulo": "Histórico dos incêndios na vegetação do Parque Nacional da Chapada Diamantina (1973-2010), Biodiversidade Brasileira",
+        "url": "https://revistaeletronica.icmbio.gov.br/index.php/BioBR/article/view/141",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "ICMBio, Brasil",
+        "titulo": "Chapada Diamantina tem a menor área de incêndios",
+        "url": "https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/chapada-diamantina-tem-a-menor-area-de-incendios",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",
