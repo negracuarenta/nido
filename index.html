@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIDO · Los vuelos de la golondrina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/nido.css?v=34133b41">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="assets/js/mapa.js?v=98ac5d33" defer></script>
+</head>
+<body class="pagina-mapa">
+<header class="barra">
+  <a class="marca" href="">
+    <span class="marca__nombre">NIDO</span>
+    <div class="i18n marca__autores" data-lang="es">Un proyecto de Juan Corro y Martín Virgili</div>
+<div class="i18n marca__autores" data-lang="de">Ein Projekt von Juan Corro und Martín Virgili</div>
+<div class="i18n marca__autores" data-lang="en">A project by Juan Corro and Martín Virgili</div>
+  </a>
+  <nav class="idiomas" aria-label="Idioma / Sprache / Language"><button type="button" class="sel-idioma" data-set-lang="es" lang="es">ES</button><button type="button" class="sel-idioma" data-set-lang="de" lang="de">DE</button><button type="button" class="sel-idioma" data-set-lang="en" lang="en">EN</button></nav>
+</header>
+
+<div class="mapa-zona">
+<div id="mapa" role="application" aria-label="Mapa de los vuelos"></div>
+<aside class="leyenda">
+  <h1 class="titulo"><div class="i18n " data-lang="es">Nido</div>
+<div class="i18n " data-lang="de">Nido</div>
+<div class="i18n " data-lang="en">Nido</div></h1>
+  <div class="i18n " data-lang="es"><p class="subtitulo">Los vuelos de la golondrina</p></div>
+<div class="i18n " data-lang="de"><p class="subtitulo">Die Flüge der Schwalbe</p></div>
+<div class="i18n " data-lang="en"><p class="subtitulo">The Flights of the Swallow</p></div>
+  <div class="i18n " data-lang="es"><p class="bajada">Un liquidámbar de 146 años, en Heidelberg, espera. Una golondrina hace tres viajes y vuelve cada vez a contarle lo que vio.</p></div>
+<div class="i18n " data-lang="de"><p class="bajada">Ein 146 Jahre alter Amberbaum in Heidelberg wartet. Eine Schwalbe unternimmt drei Reisen und kehrt jedes Mal zurück, um zu erzählen, was sie gesehen hat.</p></div>
+<div class="i18n " data-lang="en"><p class="bajada">A 146-year-old sweetgum tree in Heidelberg waits. A swallow makes three journeys and each time returns to tell what it saw.</p></div>
+  <h2><div class="i18n " data-lang="es">Viajes</div>
+<div class="i18n " data-lang="de">Reisen</div>
+<div class="i18n " data-lang="en">Journeys</div></h2>
+  <ul class="filtros"><li><label><input type="checkbox" checked data-viaje="E"><svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="#D9822B" stroke-width="2.5" stroke-dasharray="6 5"/></svg><div class="i18n " data-lang="es">Este</div>
+<div class="i18n " data-lang="de">Osten</div>
+<div class="i18n " data-lang="en">East</div></label></li><li><label><input type="checkbox" checked data-viaje="S"><svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="#2B6CB0" stroke-width="2.5" stroke-dasharray="14 6"/></svg><div class="i18n " data-lang="es">Sur</div>
+<div class="i18n " data-lang="de">Süden</div>
+<div class="i18n " data-lang="en">South</div></label></li><li><label><input type="checkbox" checked data-viaje="O"><svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="#2F8F5B" stroke-width="2.5" stroke-dasharray="12 4 2 4"/></svg><div class="i18n " data-lang="es">Oeste</div>
+<div class="i18n " data-lang="de">Westen</div>
+<div class="i18n " data-lang="en">West</div></label></li><li><label><input type="checkbox" checked data-viaje="OV"><svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="#6B4E9B" stroke-width="2.5" stroke-dasharray="2 4"/></svg><div class="i18n " data-lang="es">Otros vuelos</div>
+<div class="i18n " data-lang="de">Andere Flüge</div>
+<div class="i18n " data-lang="en">Other flights</div></label></li></ul>
+  <h2><div class="i18n " data-lang="es">Símbolos</div>
+<div class="i18n " data-lang="de">Zeichen</div>
+<div class="i18n " data-lang="en">Symbols</div></h2>
+  <ul class="simbolos">
+    <li><span class="s-punto"></span><div class="i18n " data-lang="es">Lugar del vuelo</div>
+<div class="i18n " data-lang="de">Ort des Fluges</div>
+<div class="i18n " data-lang="en">Place on the flight</div></li>
+    <li><label><input type="checkbox" checked id="capa-tragica">
+      <span class="s-cruz">✕</span><div class="i18n " data-lang="es">Lo que también vio</div>
+<div class="i18n " data-lang="de">Was sie auch sah</div>
+<div class="i18n " data-lang="en">What it also saw</div></label></li>
+    <li><span class="s-cero"></span><div class="i18n " data-lang="es">Punto 0 · el árbol</div>
+<div class="i18n " data-lang="de">Punkt 0 · der Baum</div>
+<div class="i18n " data-lang="en">Point 0 · the tree</div></li>
+  </ul>
+</aside>
+<ul class="marcas-mapa"><li><a href="https://negracuarenta.github.io/negra40/" target="_blank" rel="noopener" title="negra40"><img class="logo logo--negra40" src="assets/logos/negra40.png" alt="negra40" loading="lazy"></a></li><li><a href="https://ceac.mdp.utn.edu.ar/" target="_blank" rel="noopener" title="CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata"><img class="logo logo--ceac" src="assets/logos/ceac.png" alt="CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata" loading="lazy"></a></li><li><a href="https://www.voelkerkundemuseum-vpst.de/" target="_blank" rel="noopener" title="Völkerkundemuseum vPST"><img class="logo logo--vpst" src="assets/logos/vpst.png" alt="Völkerkundemuseum vPST" loading="lazy"></a></li></ul>
+</div>
+
+
+<footer class="pie-sitio">
+  <ul class="pie-sitio__logos"><li><a href="https://negracuarenta.github.io/negra40/" target="_blank" rel="noopener" title="negra40"><img class="logo logo--negra40" src="assets/logos/negra40.png" alt="negra40" loading="lazy"></a></li><li><a href="https://ceac.mdp.utn.edu.ar/" target="_blank" rel="noopener" title="CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata"><img class="logo logo--ceac" src="assets/logos/ceac.png" alt="CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata" loading="lazy"></a></li><li><a href="https://www.voelkerkundemuseum-vpst.de/" target="_blank" rel="noopener" title="Völkerkundemuseum vPST"><img class="logo logo--vpst" src="assets/logos/vpst.png" alt="Völkerkundemuseum vPST" loading="lazy"></a></li></ul>
+</footer>
+
+<script src="assets/js/idioma.js?v=d92b7117"></script>
+</body>
+</html>

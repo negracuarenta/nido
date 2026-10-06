@@ -1,0 +1,410 @@
+/* NIDO · estilo del afiche A0 llevado a pantalla.
+   Los colores son los mismos del mapa impreso. */
+
+:root {
+  --tierra: #ECE5D3;
+  --mar: #EAF1F5;
+  --contorno: #B9AD92;
+  --tinta: #2A2520;
+  --tinta-suave: #6B6154;
+  --rojo: #C62828;
+  --este: #D9822B;
+  --sur: #2B6CB0;
+  --oeste: #2F8F5B;
+  --serif: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
+  --medida: 34rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--tinta);
+  background: var(--mar);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Un solo HTML lleva los tres idiomas; acá se elige cuál se ve.
+   Sin JavaScript queda el castellano, que es el original. */
+.i18n { display: none; }
+html[data-lang='es'] .i18n[data-lang='es'],
+html[data-lang='de'] .i18n[data-lang='de'],
+html[data-lang='en'] .i18n[data-lang='en'] { display: block; }
+
+a { color: inherit; }
+
+/* ------------------------------------------------------------- barra */
+
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem clamp(1rem, 4vw, 2.5rem);
+  background: var(--tierra);
+  border-bottom: 1px solid var(--contorno);
+}
+
+.marca {
+  display: block;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.marca__nombre {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  font-size: 1rem;
+}
+
+.marca__autores {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--tinta-suave);
+  letter-spacing: 0.01em;
+}
+
+.idiomas { display: flex; gap: 0.25rem; }
+
+.sel-idioma {
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: none;
+  color: var(--tinta-suave);
+  cursor: pointer;
+}
+
+.sel-idioma[aria-current='true'] {
+  border-color: var(--contorno);
+  background: #fff8;
+  color: var(--tinta);
+}
+
+.sel-idioma:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
+
+/* -------------------------------------------------------------- mapa */
+
+.pagina-mapa { height: 100vh; display: flex; flex-direction: column; }
+.pagina-mapa .barra { flex: 0 0 auto; }
+
+#mapa { flex: 1 1 auto; background: var(--mar); }
+.leaflet-container { background: var(--mar); font-family: var(--serif); }
+
+.leyenda {
+  position: absolute;
+  left: clamp(0.75rem, 3vw, 2rem);
+  bottom: clamp(0.75rem, 3vw, 2rem);
+  z-index: 900;
+  max-width: 19rem;
+  padding: 1rem 1.2rem;
+  background: #FBF8F0E8;
+  border: 1px solid var(--contorno);
+  font-size: 0.95rem;
+}
+
+.leyenda .titulo { font-size: 1.15rem; margin: 0 0 0.3rem; letter-spacing: 0.02em; }
+.leyenda .bajada { margin: 0 0 0.9rem; color: var(--tinta-suave); font-size: 0.9rem; }
+.leyenda h2 {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave); margin: 0.9rem 0 0.4rem; font-weight: 500;
+}
+.leyenda ul { list-style: none; margin: 0; padding: 0; }
+.leyenda li { margin: 0.25rem 0; }
+.leyenda label { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+.leyenda svg { flex: 0 0 auto; }
+
+.s-punto, .s-cero {
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--tinta-suave); display: inline-block; flex: 0 0 auto;
+}
+.s-cero { background: #fff; border: 2.5px solid var(--tinta); }
+.s-cruz { color: var(--rojo); font-size: 0.9rem; width: 11px; flex: 0 0 auto; }
+
+.punto-lugar { border-radius: 50%; border: 1.5px solid #FBF8F0; }
+.marca-cruz { color: var(--rojo); font-weight: 600; line-height: 1; text-shadow: 0 0 2px #FBF8F0; }
+.marca-cero {
+  border-radius: 50%; background: #FBF8F0;
+  border: 3px solid var(--tinta); box-shadow: inset 0 0 0 3px #FBF8F0, inset 0 0 0 7px var(--tinta);
+}
+
+/* ------------------------------------------------------------- ficha */
+
+.ficha { max-width: var(--medida); margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+.pagina-ficha { background: #FBF8F0; }
+
+.codigo {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--tinta-suave); margin: 0 0 0.4rem;
+}
+.pastilla { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+
+.ficha h1 { font-size: clamp(2rem, 6vw, 2.9rem); line-height: 1.1; margin: 0 0 1.4rem; font-weight: 500; }
+.ficha h2 {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--tinta-suave); font-weight: 500;
+  margin: 2.5rem 0 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--contorno);
+}
+
+.cita {
+  margin: 0 0 2rem; padding: 0 0 0 1.1rem;
+  border-left: 2px solid var(--contorno);
+  font-size: 1.3rem; line-height: 1.45; font-style: italic; color: var(--tinta);
+}
+.cita-tragica { border-left-color: var(--rojo); }
+
+.aviso { color: var(--tinta-suave); font-style: italic; }
+
+/* ---------------------------------------------------- lo que también vio */
+
+.tragico { margin: 2.5rem 0 0; }
+
+.abrir-tragico {
+  font: inherit; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1.2rem; cursor: pointer;
+  background: none; color: var(--rojo);
+  border: 1px solid var(--rojo); border-radius: 2px;
+  transition: background-color 160ms, color 160ms;
+}
+.abrir-tragico:hover, .abrir-tragico:focus-visible { background: var(--rojo); color: #FBF8F0; }
+.abrir-tragico .cruz { font-size: 0.9rem; }
+
+.panel-tragico {
+  margin-top: 1.2rem; padding: 1.2rem 1.4rem;
+  border: 1px solid var(--rojo); border-radius: 2px; background: #FDF6F5;
+}
+.panel-tragico p:last-child { margin-bottom: 0; }
+
+/* ----------------------------------------------------------- galería */
+
+.galeria figure { margin: 0 0 1.8rem; }
+.galeria img { width: 100%; height: auto; display: block; background: var(--tierra); }
+.galeria figcaption { font-size: 0.9rem; color: var(--tinta-suave); padding-top: 0.45rem; }
+.credito { display: block; font-size: 0.78rem; opacity: 0.8; }
+
+/* ----------------------------------------------------------- fuentes */
+
+.fuentes ol { font-size: 0.88rem; color: var(--tinta-suave); padding-left: 1.2rem; }
+.fuentes li { margin-bottom: 0.6rem; }
+.fuentes a { word-break: break-word; }
+.consultado { white-space: nowrap; }
+
+/* --------------------------------------------------------------- pie */
+
+.pie {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--contorno);
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;
+}
+.pie a { text-decoration: none; color: var(--tinta-suave); }
+.pie a:hover, .pie a:focus-visible { color: var(--tinta); }
+.pie span { display: block; text-transform: none; letter-spacing: 0; font-size: 0.95rem; color: var(--tinta); }
+.pie .siguiente { text-align: right; }
+.pie .volver { flex: 0 0 auto; }
+
+@media (max-width: 700px) {
+  .leyenda {
+    position: static; max-width: none; border: 0;
+    border-top: 1px solid var(--contorno); background: #FBF8F0;
+  }
+  .pagina-mapa { height: auto; }
+  #mapa { height: 62vh; flex: 0 0 auto; }
+  .pie { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.01ms !important; }
+}
+
+/* ------------------------------------------------- resumen de viaje */
+
+.pagina-viaje { background: #FBF8F0; }
+
+.viaje { max-width: 54rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+
+.viaje__cabecera { max-width: var(--medida); margin-bottom: 3.5rem; }
+.viaje__cabecera h1 {
+  font-size: clamp(2.4rem, 7vw, 3.6rem); font-weight: 500;
+  line-height: 1.05; margin: 0 0 1rem;
+}
+.apertura { font-size: 1.4rem; font-style: italic; color: var(--tinta); margin: 0; }
+
+.paradas { display: grid; gap: 2.8rem; }
+
+.parada {
+  display: grid; grid-template-columns: 13rem 1fr; gap: 1.6rem; align-items: start;
+}
+
+.parada__foto {
+  display: block; aspect-ratio: 1 / 1; overflow: hidden;
+  background: var(--tierra); position: relative;
+}
+.parada__foto img { width: 100%; height: 100%; object-fit: cover; }
+.parada__foto::after {
+  content: ''; position: absolute; inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08); pointer-events: none;
+}
+
+.parada__texto h2 { font-size: 1.5rem; font-weight: 500; margin: 0 0 0.6rem; line-height: 1.15; }
+.parada__texto h2 a { text-decoration: none; }
+.parada__texto h2 a:hover, .parada__texto h2 a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+.parada .codigo { margin-bottom: 0.35rem; }
+.cruz-chica { color: var(--rojo); margin-left: 0.5rem; font-size: 0.85rem; }
+
+.cita-corta {
+  font-style: italic; font-size: 1.15rem; line-height: 1.45;
+  padding-left: 0.9rem; border-left: 2px solid var(--contorno); margin: 0 0 0.8rem;
+}
+
+.viaje__cierre {
+  max-width: var(--medida); margin-top: 4rem; padding-top: 1.6rem;
+  border-top: 1px solid var(--contorno);
+}
+.cierre { font-size: 1.25rem; font-style: italic; margin: 0 0 0.8rem; }
+.cierre--tragico { color: var(--rojo); }
+.viaje__cierre .volver {
+  display: inline-block; margin-top: 1rem; font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 0.14em; color: var(--tinta-suave);
+}
+
+@media (max-width: 640px) {
+  .parada { grid-template-columns: 1fr; gap: 0.9rem; }
+  .parada__foto { max-width: 15rem; }
+}
+
+/* ------------------------------------------------- pie de sitio */
+
+/* Sólo las marcas: la autoría subió al encabezado, donde acompaña al título
+   en todas las páginas, también en las que se llega directo por un QR. */
+.pie-sitio {
+  border-top: 1px solid var(--contorno);
+  background: var(--tierra);
+  padding: clamp(2rem, 4vw, 2.8rem) var(--gutter, clamp(1.25rem, 4vw, 3.5rem));
+}
+
+.pie-sitio__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(2.2rem, 6vw, 4.5rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Las tres marcas pesan muy distinto: negra40 es un wordmark negro macizo y el
+   museo es línea fina que a igual altura casi desaparece. Se ajusta cada una
+   hasta que lean parejo, no hasta que midan lo mismo. */
+.logo { display: block; width: auto; }
+.logo--negra40 { height: 19px; opacity: 0.8; }
+.logo--ceac { height: 38px; opacity: 0.85; }
+.logo--vpst { height: 50px; opacity: 1; }
+
+/* El mapa y su leyenda forman una zona propia: así la leyenda se ancla al
+   mapa y no al cuerpo de la página, que al sumar el pie se hizo más alto.
+   Al envolverlo se cortó la cadena de flex —#mapa dejó de ser hijo directo del
+   body— y el mapa quedaba sin altura: por eso la zona la fija acá. */
+.mapa-zona { position: relative; display: flex; }
+
+.pagina-mapa { height: auto; min-height: 100vh; }
+
+.mapa-zona #mapa {
+  flex: 1 1 auto;
+  height: min(calc(100svh - 4.5rem), 900px);
+  min-height: 400px;
+}
+
+@media (max-width: 700px) {
+  .mapa-zona #mapa { height: min(62svh, 560px); }
+  .pie-sitio__logos { gap: 1.6rem 2.2rem; }
+}
+
+.leyenda .titulo {
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1;
+}
+
+.leyenda .subtitulo {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--tinta);
+}
+
+/* Marcas sobre el mapa: fijas abajo a la derecha, chicas, sobre una pastilla
+   clara para que se lean tanto sobre el mar como sobre la tierra. */
+.marcas-mapa {
+  position: absolute;
+  right: clamp(0.75rem, 3vw, 2rem);
+  bottom: clamp(0.75rem, 3vw, 2rem);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 1.8rem);
+  list-style: none;
+  margin: 0;
+  padding: 0.7rem 1.1rem;
+  background: #FBF8F0E8;
+  border: 1px solid var(--contorno);
+}
+
+.marcas-mapa .logo--negra40 { height: 13px; }
+.marcas-mapa .logo--ceac { height: 24px; }
+.marcas-mapa .logo--vpst { height: 30px; }
+
+@media (max-width: 700px) {
+  .marcas-mapa { gap: 0.9rem; padding: 0.55rem 0.85rem; }
+  .marcas-mapa .logo--negra40 { height: 11px; }
+  .marcas-mapa .logo--ceac { height: 20px; }
+  .marcas-mapa .logo--vpst { height: 25px; }
+}
+
+/* Los logos enlazan a cada institución. */
+.marcas-mapa a, .pie-sitio__logos a { display: block; line-height: 0; }
+.marcas-mapa a:focus-visible, .pie-sitio__logos a:focus-visible {
+  outline: 2px solid var(--tinta); outline-offset: 4px;
+}
+.pie-sitio__logos .logo { transition: opacity var(--ease-dur, 180ms) ease; }
+.pie-sitio__logos a:hover .logo, .marcas-mapa a:hover .logo { opacity: 1; }
+
+/* Fuentes dentro del panel: quién lo dice, pegado a lo que se afirma. */
+.fuentes-tragicas {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #E8C9C6;
+}
+
+.fuentes-tragicas h3 {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: var(--tinta-suave);
+  margin: 0 0 0.6rem;
+}
+
+.fuentes-tragicas ol {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--tinta-suave);
+}
+
+.fuentes-tragicas li { margin-bottom: 0.45rem; }
+.fuentes-tragicas a { word-break: break-word; }
