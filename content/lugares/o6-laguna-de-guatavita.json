@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "La laguna de Guatavita",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Sebastián Pulido G.",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Laguna_Guatavita_(Detalle)_-_Sebasti%C3%A1n_Pulido.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El entorno de la laguna",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Donatello Carloti Torregroza",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Reserva_Vista_Hermosa_,_guatavita_07.jpg"
+    }
+  ],
   "fuentes": []
 }

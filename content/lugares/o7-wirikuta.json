@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Peyote (Lophophora williamsii), en cultivo",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Agnieszka Kwiecień, Nova",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Lophophora_williamsii_2023-10-01_01.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Lophophora williamsii",
+        "de": "",
+        "en": ""
+      },
+      "autor": "USGS Bee Inventory and Monitoring Lab from Beltsville, Maryl",
+      "licencia": "Public domain",
+      "origen": "https://commons.wikimedia.org/wiki/File:Lophophora_williamsii,_native_to_SW_Texas_and_Mexico_2017-07-25-14.28_(38614568754).jpg"
+    }
+  ],
   "fuentes": []
 }

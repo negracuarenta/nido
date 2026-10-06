@@ -23,6 +23,29 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El Aconcagua en invierno",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Kinosmosis",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Monte_Aconcagua_en_su_esplendor_invernal.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El Aconcagua en el horizonte",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Kinosmosis",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_del_Monte_Aconcagua_sobre_Vi%C3%B1a_del_Mar.png"
+    }
+  ],
   "fuentes": []
 }

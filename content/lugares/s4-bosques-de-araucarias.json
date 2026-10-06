@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La araucaria, o pehuén, es un árbol de vida muy larga: se midieron ejemplares de hasta 1.021 años. Sus bosques ocupan unos 2.611 kilómetros cuadrados en la cordillera, entre Chile y Argentina, y la mayor parte está dentro de parques y reservas.",
+      "La especie está clasificada en peligro. Se estima una reducción de al menos el 30 % de su área de ocupación en los últimos 360 años. En Chile fue declarada Monumento Natural por decretos sucesivos en 1974, 1976 y 1987."
+    ],
     "de": [],
     "en": []
   },
@@ -47,5 +50,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_conguillio_(313).jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Ministerio del Medio Ambiente, Chile",
+      "titulo": "Ficha de especie clasificada: Araucaria araucana (PDF)",
+      "url": "https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Araucaria_araucana_14RCE_FINAL.pdf",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Sistema de Información de Biodiversidad, Argentina",
+      "titulo": "Araucaria araucana (pehuén)",
+      "url": "https://sib.gob.ar/especies/araucaria-araucana",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El cóndor andino es una de las aves voladoras más grandes del mundo. Casi no bate las alas: se deja subir por las corrientes de aire caliente que ascienden contra las laderas y puede recorrer cientos de kilómetros planeando.",
+      "Está categorizado como vulnerable. Se estima una población mundial de unos 6.700 ejemplares, en descenso, y el principal motivo no es la caza directa sino el envenenamiento: los cebos tóxicos que se colocan ilegalmente para matar depredadores del ganado, y el plomo de la munición en los animales de los que se alimenta."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +21,9 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "El cóndor no mata: come animales ya muertos. Por eso un solo cebo envenenado puede matar a muchos de una vez. En 2018, en Mendoza, se encontraron 34 cóndores muertos alrededor de un cadáver envenenado a propósito para eliminar depredadores del ganado. En el sur de Bolivia se repitió después un episodio con otros 34."
+      ],
       "de": [],
       "en": []
     }
@@ -58,5 +63,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Patagonian_Glaciers_%26_Andes_Mountains,_Chile_-_Argentina_(34210080150).jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Ministerio de Ambiente, Argentina",
+      "titulo": "Cóndor: una especie clave en el equilibrio del ecosistema andino",
+      "url": "https://www.argentina.gob.ar/interior/ambiente/accion/condor-andino",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Sistema de Información de Biodiversidad, Argentina",
+      "titulo": "Vultur gryphus (Cóndor Andino)",
+      "url": "https://sib.gob.ar/especies/vultur-gryphus",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

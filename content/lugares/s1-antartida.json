@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La Antártida es el continente más frío, más seco y más ventoso del planeta, y está cubierto casi por completo de hielo. En su invierno, cuando el mar se congela, el pingüino emperador cría ahí: los machos incuban el huevo sobre sus patas, apretados en grupo, sin comer durante unos dos meses y soportando temperaturas que caen por debajo de los cuarenta grados bajo cero.",
+      "Las crías dependen del hielo marino: necesitan que la plataforma aguante hasta que les crezca el plumaje impermeable. Si el hielo se rompe antes, caen al agua sin poder flotar ni regular su temperatura."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +21,10 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "En la primavera de 2022, cuatro de las cinco colonias de pingüino emperador del mar de Bellingshausen no sacaron adelante ninguna cría. El hielo marino se rompió antes de que los pichones tuvieran plumaje impermeable. En noviembre de ese año, el sector central y oriental de ese mar perdió el 100 % de su hielo.",
+        "Es el primer caso documentado de una falla reproductiva generalizada de la especie vinculada claramente a la contracción del hielo marino a gran escala. En la colonia de Halley Bay, en el mar de Weddell, el fracaso ya se había repetido tres temporadas seguidas desde 2016."
+      ],
       "de": [],
       "en": []
     }
@@ -58,5 +64,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Fish8011_-_Flickr_-_NOAA_Photo_Library.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "British Antarctic Survey",
+      "titulo": "Loss of sea ice causes catastrophic breeding failure for emperor penguins",
+      "url": "https://www.bas.ac.uk/news/loss-of-sea-ice-causes-catastrophic-breeding-failure-for-emperor-penguins/",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Communications Earth & Environment (Nature)",
+      "titulo": "Record low 2022 Antarctic sea ice led to catastrophic breeding failure of emperor penguins (doi:10.1038/s43247-023-00927-x)",
+      "url": "https://www.nature.com/articles/s43247-023-00927-x",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

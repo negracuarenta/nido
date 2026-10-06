@@ -12,6 +12,29 @@
     "en": []
   },
   "tragico": null,
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El cerro de los Siete Colores, en Purmamarca",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Alejandra Belen Melis",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cerro_de_los_siete_colores_._Purmamarca_._Jujuy_2.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Las capas de color del cerro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Littletroll",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cerro_de_los_siete_colores_-_Purmamarca.jpg"
+    }
+  ],
   "fuentes": []
 }

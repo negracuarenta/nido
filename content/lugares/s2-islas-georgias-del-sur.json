@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El albatros errante tiene la mayor envergadura de todas las aves vivas y pasa casi toda su vida planeando sobre el océano Austral. Los jóvenes se van al mar y pueden tardar años en volver a pisar tierra, hasta que regresan a criar a las islas donde nacieron. En las Georgias del Sur anidan en Prion Island y en Bird Island.",
+      "La Unión Internacional para la Conservación de la Naturaleza lo clasifica como vulnerable. La población de las Georgias del Sur viene en caída sostenida: de 1.553 parejas reproductoras en 2003-2004 pasó a unas 1.278 en 2014-2015, un 18 % menos en poco más de una década."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +21,10 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "La principal causa de la caída del albatros errante es la pesca. Al recorrer distancias enormes, las aves se cruzan con flotas de muchos países; cuando intentan comer la carnada de los palangres quedan enganchadas en el anzuelo y se ahogan arrastradas por la línea. La supervivencia de los adultos empezó a caer con la expansión de los palangres a fines de los años noventa.",
+        "En las Georgias del Sur la población viene bajando alrededor de un 4,8 % por año desde 1996."
+      ],
       "de": [],
       "en": []
     }
@@ -47,5 +53,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Wandering_Albatross_nest_on_Prion_Island,_South_Georgia_(5747169864).jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "BirdLife International",
+      "titulo": "Fishing vessels pose a high risk to South Georgia's Wandering Albatrosses",
+      "url": "https://datazone.birdlife.org/articles/fishing-vessels-pose-a-high-risk-to-south-georgias-wandering-albatrosses",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "British Antarctic Survey",
+      "titulo": "Recent trends in numbers of wandering, black-browed and grey-headed albatrosses breeding at South Georgia",
+      "url": "https://www.bas.ac.uk/data/our-data/publication/recent-trends-in-numbers-of-wandering-diomedea-exulans-black-browed-thalassarche-melanophris-and-grey-headed-t-chrysostoma-albatrosses-breeding-at-south-georgia/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

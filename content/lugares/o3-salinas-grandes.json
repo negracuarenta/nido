@@ -18,11 +18,61 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "El litio de los salares se extrae por evaporación: se bombea la salmuera a piletas y se deja que el sol haga el resto. Según trabajos de investigadores del CONICET, por cada tonelada de litio obtenida de ese modo se evaporan alrededor de dos millones de litros de agua.",
+        "En una región donde el agua es escasa, eso puede secar las vegas y los ojos de agua de donde salen los pequeños acuíferos que se usan para el pastoreo y la agricultura. Las comunidades de la Mesa de Salinas Grandes, junto con la Comisión Internacional de Juristas, plantean que privarlas del agua o del uso del salar vulnera derechos humanos fundamentales."
+      ],
       "de": [],
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Las Salinas Grandes, en Jujuy",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Abuelodelanada",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Panoramica_salinas_grandes_jujuy.png"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Vicuñas en la puna",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jäkel.Andrés",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1as_en_la_puna.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Vicuña en el corredor biológico",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Camilacaviedescameron",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Vicu%C3%B1a_en_el_corredor_biol%C3%B3gico_presente_en_el_Parque_Nevado_Tres_Cruces.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "CONICET",
+      "titulo": "Entre el boom del litio y la defensa de la vida: salares, agua, territorios y comunidades",
+      "url": "https://ri.conicet.gov.ar/handle/11336/130604",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "CONICET",
+      "titulo": "El litio: desde los salares de la Puna a nuestros celulares (PDF)",
+      "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/2588/de%20la%20Hoz%20et%20al%20(2013)%20El%20litio%20-%20desde%20los%20salares%20de%20la%20Puna%20a%20nuestros%20celulares.pdf?sequence=4",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

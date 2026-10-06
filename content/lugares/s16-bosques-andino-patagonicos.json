@@ -18,7 +18,9 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "El huemul es un ciervo de los bosques patagónicos de Argentina y Chile, y está clasificado en peligro de extinción. Se estima un mínimo de 780 ejemplares entre los dos países, y menos de 1.500 en total. En Argentina fue declarado Monumento Natural por la Ley 24.702 de 1996."
+      ],
       "de": [],
       "en": []
     }
@@ -47,5 +49,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Huemul_Reserva_Cerro_Castillo_2.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Administración de Parques Nacionales, Argentina",
+      "titulo": "Huemul, emblema de los bosques patagónicos",
+      "url": "https://www.argentina.gob.ar/jefatura/ambiente/fauna/huemul-emblema-de-los-bosques-patagonicos",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "Sistema de Información de Biodiversidad, Argentina",
+      "titulo": "Hippocamelus bisulcus (huemul)",
+      "url": "https://sib.gob.ar/especies/hippocamelus-bisulcus",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

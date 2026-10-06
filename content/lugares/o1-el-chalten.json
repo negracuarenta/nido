@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Chaltén está a los pies del cerro Fitz Roy, dentro del Parque Nacional Los Glaciares, en el suroeste de Santa Cruz. El parque cubre 600.000 hectáreas y los glaciares ocupan cerca de la mitad.",
+      "La mayoría se alimenta del Campo de Hielo Patagónico Sur, el vestigio más extenso que dejó en Sudamérica la glaciación del Cuaternario. En conjunto, el parque es una reserva enorme de agua dulce."
+    ],
     "de": [],
     "en": []
   },
@@ -23,6 +26,36 @@
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El Fitz Roy desde El Chaltén",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Gedankenstuecke",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Los_Glaciares_-_El_Chalten_Fitz_Roy_001.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El macizo del Fitz Roy",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Gedankenstuecke",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Los_Glaciares_-_Fitz_Roy_001.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Los Glaciares National Park",
+      "url": "https://whc.unesco.org/en/list/145/",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

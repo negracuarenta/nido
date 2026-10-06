@@ -174,3 +174,47 @@ el guión, así que conviene cerrarlas antes de que las investigue.
 - **S11** · «un millón y medio de animales»: UNESCO dice dos millones de ñus más
   cientos de miles de gacelas y cebras, aunque en otro párrafo habla de «más de
   un millón». La ficha usa las cifras de UNESCO; el guión queda como está.
+
+---
+
+## Estado tras completar el Sur y empezar el Oeste
+
+### Sur: los 17 cerrados
+Los siete que faltaban ya tienen información y fuente: Antártida (British Antarctic
+Survey y *Communications Earth & Environment*), Georgias del Sur (BirdLife y BAS),
+cóndor (Ministerio de Ambiente y el Sistema de Información de Biodiversidad),
+araucaria (Ministerio del Medio Ambiente de Chile y SIB), estepa patagónica
+(Parques Nacionales), huemul (Parques Nacionales y SIB) y los incendios
+australianos (WWF-Australia).
+
+**Partes trágicas que siguen sin escribir: S5, S10 y S11.** Las tres están
+marcadas «(a confirmar)» en tu guión, así que conviene que las cierres antes.
+
+### Oeste: fotos en los ocho, información en tres
+Con fuente: **O1** El Chaltén (UNESCO), **O3** Salinas Grandes (CONICET, la parte
+del litio) y **O8** Secuoyas (Servicio de Parques Nacionales de EE.UU.).
+
+Faltan información y fuente en **O2** Aconcagua, **O4** Cerro de los Siete
+Colores, **O5** Páramo de Sumapaz, **O6** Laguna de Guatavita y **O7** Wirikuta,
+y las partes trágicas de O1, O2, O5, O6 y O7.
+
+Para esos hace falta: el Parque Provincial Aconcagua (Mendoza), la Quebrada de
+Humahuaca como sitio UNESCO, el Instituto Humboldt para el páramo y el
+frailejón, y fuentes etnográficas o del Estado mexicano para Wirikuta y el
+pueblo wixárika. Son fuentes más dispersas que UNESCO.
+
+### Más cifras del guión que resultaron exactas
+- **S1** · el hielo que se rompe antes de que las crías aprendan a nadar: en 2022,
+  cuatro de cinco colonias del mar de Bellingshausen perdieron toda la cría.
+- **S3** · «un cebo que era para otro»: en Mendoza, 2018, murieron 34 cóndores
+  por un solo cadáver envenenado para matar depredadores del ganado.
+- **S4** · araucarias «de más de mil años»: se midieron ejemplares de 1.021 años.
+- **S17** · «tres mil millones de animales»: casi tres mil millones, según WWF.
+- **O8** · «casi una de cada cinco»: entre el 13 % y el 19 % de las secuoyas
+  grandes del mundo murieron en los incendios de 2020 y 2021.
+
+### Fotos que no ilustran lo que dicen
+Dos quedaron marcadas en el epígrafe como lo que realmente son, porque no
+encontré con licencia libre la planta en su lugar de origen:
+- **E3** · la *Victoria amazonica* está fotografiada en cultivo, no en el Amazonas.
+- **O7** · el peyote está fotografiado en maceta, no en Wirikuta.

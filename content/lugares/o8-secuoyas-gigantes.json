@@ -18,11 +18,61 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "El incendio Castle, en 2020, mató entre 7.500 y 10.600 secuoyas grandes —las de más de 1,20 metros de diámetro de tronco—: entre el 10 % y el 14 % de toda la población de Sierra Nevada. Dentro del perímetro del fuego murieron entre el 31 % y el 42 %.",
+        "Al año siguiente, los incendios KNP Complex y Windy mataron entre 2.261 y 3.637 más. Sumando las dos temporadas, el Servicio de Parques Nacionales estima que murió entre el 13 % y el 19 % de las secuoyas grandes del mundo: entre 8.431 y 11.897 árboles."
+      ],
       "de": [],
       "en": []
     }
   },
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Secuoyas gigantes en Mariposa Grove",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dietmar Rabich",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias_--_2022_--_2726.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El bosque de secuoyas",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dietmar Rabich",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias_--_2022_--_2760.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Secuoyas gigantes",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Dietmar Rabich",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park_(CA,_USA),_Mariposa_Grove_of_Giant_Sequoias_--_2022_--_2773.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "National Park Service, Estados Unidos",
+      "titulo": "Wildfires Kill Unprecedented Numbers of Large Sequoia Trees",
+      "url": "https://www.nps.gov/articles/000/wildfires-kill-unprecedented-numbers-of-large-sequoia-trees.htm",
+      "consultado": "2026-10-05"
+    },
+    {
+      "institucion": "National Park Service, Estados Unidos",
+      "titulo": "Giant Sequoia Mortality Estimates Released for the 2021 KNP Complex and Windy Fire",
+      "url": "https://www.nps.gov/seki/learn/news/giant-sequoia-mortality-estimates-released-for-the-2021-knp-complex-and-windy-fire.htm",
+      "consultado": "2026-10-05"
+    }
+  ]
 }

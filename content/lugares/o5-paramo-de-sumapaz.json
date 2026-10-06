@@ -23,6 +23,40 @@
       "en": []
     }
   },
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Valle de frailejones en el páramo",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jedidiahhorne",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:WLE2026_CO_-_Valle_de_frailejones,_P%C3%A1ramo_de_Guerrero_(93).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Un frailejón",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jedidiahhorne",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:WLE2026_CO_-_Frailej%C3%B3n_individual,_P%C3%A1ramo_de_Guerrero_(99).jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Oso de anteojos (Tremarctos ornatus)",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Carlo Brescia",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Oso_de_anteojos_(Tremarctos_ornatus)_con_alopecia_por_estr%C3%A9s_03.jpg"
+    }
+  ],
   "fuentes": []
 }
