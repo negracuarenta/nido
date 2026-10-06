@@ -74,7 +74,10 @@ def pie_sitio(site, base):
     <p class="pie-sitio__titulo">NIDO</p>
     {por_idioma(lambda l: f'<p class="pie-sitio__autores">{escape(t(site["ui"]["autores"], l))}</p>')}
   </div>
-  <ul class="pie-sitio__logos">{marcas}</ul>
+  <div class="pie-sitio__marcas">
+    {por_idioma(lambda l: f'<p class="pie-sitio__con">{escape(t(site["ui"]["con_apoyo"], l))}</p>')}
+    <ul class="pie-sitio__logos">{marcas}</ul>
+  </div>
 </footer>
 """
 

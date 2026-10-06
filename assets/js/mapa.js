@@ -73,6 +73,12 @@
       // Los tres vuelos abarcan 268° de longitud: en una pantalla angosta hace
       // falta llegar a zoom 1 para que entren enteros en el encuadre inicial.
       minZoom: 1,
+      // Sin esto Leaflet sólo usa zooms enteros: si el 2 no entra por poco,
+      // salta al 1 y el mundo queda a la mitad de tamaño, flotando en el
+      // centro. Con el paso libre elige el zoom exacto que llena la caja.
+      zoomSnap: 0,
+      zoomDelta: 0.5,
+      wheelPxPerZoomLevel: 120,
       maxZoom: 8,
       zoomControl: true,
       attributionControl: false,
@@ -154,7 +160,7 @@
       .addTo(mapa);
 
     todos.push([origen[1], origen[0]]);
-    var limites = L.latLngBounds(todos).pad(0.08);
+    var limites = L.latLngBounds(todos).pad(0.02);
     mapa.fitBounds(limites);
 
     // El contenedor puede no tener su tamaño final cuando Leaflet arranca, y en
