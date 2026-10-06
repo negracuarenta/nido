@@ -410,3 +410,46 @@ Con el mapa no hay nada que tocar en ninguno de los dos casos: los vuelos son tr
 
 ### Un nombre incompleto
 En la ficha técnica, **Video: Andrés** quedó sin apellido, tal como me lo pasaste.
+
+---
+
+## Los últimos cuatro: E4, E5, O4 y OV5
+
+Cerrados. Los 44 lugares tienen ahora «Lo que también vio», todos con fuente oficial
+a la vista. Lo que conviene que sepas de estos cuatro:
+
+**E4 · Lençóis Maranhenses.** La UICN publicó su primera evaluación del sitio en octubre
+de 2025, un año después de la inscripción: «bueno, con algunas preocupaciones», pero con
+la amenaza general en nivel **alto**. Lo más fuerte lo dice el propio expediente de
+nominación: los parques eólicos del borde oriental de la zona de amortiguación se
+levantaron **sin** el estudio de impacto ambiental que exige la ley federal brasileña.
+Eso está citado tal cual, sin adjetivos míos.
+
+**E5 · Bonito.** Todo sale del plan de manejo del Imasul. El dato del cupo —225 visitantes
+por día desde 1995, guía obligatorio desde 1993— es verificable y es, me parece, lo más
+interesante: el límite no se calcula por metros cuadrados sino por **temperatura del aire**
+dentro de la cueva.
+
+**O4 · Cerro de los Siete Colores.** Dos cosas. La primera: whc.unesco.org me bloqueó otra
+vez con una verificación anti-bots, así que **no pude leer los informes de estado de
+conservación de UNESCO** sobre la Quebrada (el del tren Jujuy–La Quiaca, entre otros).
+Quedan pendientes si te interesan; habría que abrirlos a mano. La segunda: fui por otro
+lado y apareció algo mejor para tu frase. El cerro era privado; se volvió público en 2019
+porque los dueños quisieron cerrarlo, y la provincia expropió unas 149 hectáreas. Y un
+trabajo de investigadores del CONICET señala que la declaratoria protege al cerro **no por
+la roca sino como escenario de procesos históricos** — justo lo contrario de lo que mira
+la golondrina. Lo dejé escrito así porque la tensión es real y está documentada.
+
+**OV5 · Zumaia.** Confirmado en la Comisión Internacional de Estratigrafía: Zumaia tiene
+**dos** «clavos de oro» (Selandiense y Thanetiense, ratificados en 2008). El decreto vasco
+de 2009 protege expresamente los procesos de erosión, no sólo la roca.
+
+### Una trampa que esquivé
+Buscando la geología del cerro de los Siete Colores, una fuente me devolvió una
+descripción —«tobas triásicas alteradas»— que corresponde a **otro** cerro Siete Colores,
+el de Mendoza. No la usé. Es el mismo tipo de homonimia que ya nos había pasado con la
+Cachoeira da Fumaça.
+
+### Lo que sigue pendiente de traducción
+Los párrafos de información y los epígrafes de las fotos siguen sólo en castellano. Las 51
+frases del guión sí están en los tres idiomas.

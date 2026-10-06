@@ -14,7 +14,35 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El cerro estuvo en manos privadas buena parte del siglo XX, y lo que lo volvió público fue un intento de cerrarlo. En febrero de 2019, después de que los propietarios quisieran restringir el acceso, la provincia de Jujuy declaró Monumento Natural al cerro de los Siete Colores y Paisaje Protegido al Paseo de los Colorados, y declaró de utilidad pública y sujeta a expropiación una fracción de unas 149 hectáreas dentro del campo mayor (Decreto Acuerdo 8650-G/2019, ratificado después por la Ley 6115).",
+        "Hay una rareza en cómo está protegido. Los dos sitios están identificados como geositios —lugares que valen por la roca misma—, pero la declaratoria no los ampara por sus características físico-naturales sino como escenarios naturales de procesos históricos: el cerro queda protegido por ser el telón de fondo de la historia que pasó delante. Lo mismo ocurre a escala mayor: la Quebrada entera es Patrimonio Mundial desde 2003 en la categoría de paisaje cultural, y forma parte del Qhapaq Ñan, el itinerario andino. Un trabajo reciente de investigadores del CONICET señala que, aunque la geología aparece en proyectos de educación ambiental, en la práctica se concretó mucho menos que lo vinculado al patrimonio cultural. Las capas de mar, de barro y de hierro que la golondrina mira están ahí, pero casi nadie las nombra."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Gobierno de Jujuy, Boletín Oficial",
+        "titulo": "Decreto Acuerdo N° 8650-G/2019 (4 de febrero de 2019)",
+        "url": "https://boletinoficial.jujuy.gob.ar/?p=138384",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "Medina, W. M. y Vejsbjerg, L. · CONICET",
+        "titulo": "La geología como atributo y valor de conservación en las declaratorias patrimoniales de la Quebrada de Humahuaca, Jujuy, Argentina (Cuadernos de Geografía, 33-2, 2024)",
+        "url": "https://ri.conicet.gov.ar/handle/11336/258164",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

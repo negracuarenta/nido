@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El parque entró en la Lista del Patrimonio Mundial en 2024. Un año después, en su primera evaluación, la UICN lo calificó como «bueno, con algunas preocupaciones», pero situó la amenaza general en el nivel alto: las presiones crecieron desde la inscripción. La mayor es el turismo, y detrás vienen la especulación inmobiliaria —varios intentos de loteos y de desarrollos privados dentro y alrededor del parque, algunos frenados por la justicia— y un conflicto sin resolver con las comunidades tradicionales, cuyos derechos sobre el territorio la política de conservación no reconoce. Mientras esos derechos sigan indefinidos, dice la evaluación, el riesgo de conflicto se mantiene alto.",
+        "En el borde oriental de la zona de amortiguación, en los municipios de Barreirinhas y Paulino Neves, se instalaron parques eólicos que, según el propio expediente de nominación, se levantaron sin el estudio de impacto ambiental que exige la ley federal brasileña. Más lejos, la exploración de petróleo en la cuenca Pará-Maranhão figura como amenaza potencial alta: un derrame comprometería seriamente la biodiversidad de la costa. La UICN reclama además un plan de acción climática, porque los episodios extremos alteran la formación y la dinámica de las dunas, que es justamente lo que hace único al lugar: un campo de dunas que se llena de lagunas de agua dulce."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "UICN, Perspectiva del Patrimonio Mundial (evaluación 2025)",
+        "titulo": "Lençóis Maranhenses National Park",
+        "url": "https://worldheritageoutlook.iucn.org/explore-sites/lencois-maranhenses-national-park",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

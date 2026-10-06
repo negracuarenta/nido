@@ -15,7 +15,29 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "El agua que vuelve azul a estas cuevas es también lo que las vuelve frágiles. El plan de manejo del Monumento Natural enumera las amenazas sobre la fauna subterránea de la Serra da Bodoquena: el asoreamiento de los conductos, la contaminación de las aguas subterráneas y superficiales por insumos agrícolas, el descenso de la napa por uso indiscriminado del agua, las especies invasoras y la minería. En los municipios de Bonito y Jardim, la fauna de las cavernas sufre además el impacto del desmonte para ganadería. Los hábitats subterráneos están entre los más amenazados del mundo, por frágiles y por su escasa capacidad de recuperación: dos peces ciegos que sólo viven acá —el bagrinho Trichomycterus dali y Ancistrus formoso— figuran como vulnerables en la lista brasileña de fauna amenazada.",
+        "Contra eso, Bonito armó un sistema de visitas poco común. Desde 1993 sólo se entra a la Gruta do Lago Azul acompañado por un guía acreditado, y desde 1995 rige un cupo diario de 225 visitantes, fijado tras una reunión convocada por el organismo nacional de patrimonio. El criterio para calcular ese cupo es la temperatura del aire dentro de la cueva: el calor de los cuerpos y la iluminación artificial alteran la cavidad, de modo que el límite se ajusta según cuánto se la caliente. En el río Formoso, en paralelo, se montaron diez puntos de monitoreo de la calidad del agua, con disco de Secchi, regla y pluviómetro, y la intervención se decide según el grado de turbidez."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Instituto de Meio Ambiente de Mato Grosso do Sul (Imasul)",
+        "titulo": "Plano de Manejo do Monumento Natural da Gruta do Lago Azul (PDF)",
+        "url": "https://www.imasul.ms.gov.br/wp-content/uploads/2022/07/PM-MNGLA.pdf",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",

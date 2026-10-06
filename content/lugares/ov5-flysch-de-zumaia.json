@@ -14,7 +14,35 @@
     "de": [],
     "en": []
   },
-  "tragico": null,
+  "tragico": {
+    "cita": {
+      "es": "",
+      "de": "",
+      "en": ""
+    },
+    "info": {
+      "es": [
+        "Zumaia no sólo guarda el límite entre el Cretácico y el Terciario. Guarda, además, dos de los «clavos de oro» con los que la Comisión Internacional de Estratigrafía define la escala del tiempo geológico para todo el planeta: el comienzo del Selandiense, hace 61,66 millones de años, y el del Thanetiense, hace 59,24 millones, ambos ratificados en 2008 dentro de la Formación Itzurun. Son los puntos físicos, en esta roca y no en otra, que fijan dónde empieza cada una de esas edades: pocos lugares del mundo tienen dos.",
+        "Desde 2009 el tramo de unos ocho kilómetros de acantilados entre Deba y Zumaia es Biotopo Protegido por decreto del Gobierno Vasco, que destaca la escasa alteración humana de la zona, debida sobre todo a su aislamiento y a lo difícil del acceso. Lo interesante es qué protege el decreto: además de conservar el patrimonio geológico del frente de acantilados, se propone asegurar el mantenimiento de los procesos geomorfológicos ligados a la rasa mareal y a los acantilados. Es decir que protege la erosión. El mar que gasta la costa es el mismo que deja las capas a la vista; si se detuviera, el libro dejaría de pasar páginas."
+      ],
+      "de": [],
+      "en": []
+    },
+    "fuentes": [
+      {
+        "institucion": "Comisión Internacional de Estratigrafía (ICS/IUGS)",
+        "titulo": "Table of Global Boundary Stratotype Sections and Points (GSSPs)",
+        "url": "https://stratigraphy.org/gssps/",
+        "consultado": "2026-10-06"
+      },
+      {
+        "institucion": "Gobierno Vasco, Boletín Oficial del País Vasco",
+        "titulo": "Decreto 34/2009, de 10 de febrero, por el que se declara Biotopo Protegido el tramo litoral Deba-Zumaia",
+        "url": "https://www.euskadi.eus/eli/es-pv/d/2009/02/10/(1)/dof/spa/html/web01-a2libzer/es/",
+        "consultado": "2026-10-06"
+      }
+    ]
+  },
   "fotos": [
     {
       "archivo": "01.webp",
