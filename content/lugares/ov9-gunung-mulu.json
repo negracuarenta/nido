@@ -7,11 +7,45 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Gunung Mulu, en Borneo, estado de Sarawak, es el área de karst tropical más estudiada del mundo. Son 52.864 hectáreas con diecisiete zonas de vegetación y unas 3.500 especies de plantas vasculares; sus palmeras son excepcionalmente diversas, con 109 especies en veinte géneros.",
+      "Lo domina el Gunung Mulu, un pináculo de arenisca de 2.377 metros. Debajo hay al menos 295 kilómetros de cuevas exploradas, donde viven millones de vencejos y murciélagos.",
+      "La Sarawak Chamber —600 metros por 415, y 80 de altura— es la cámara subterránea más grande que se conoce."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Las cuevas de Mulu",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Eric Lanning from Grand Rapids, MI, USA",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Caves_of_Mulu_(32172276551).jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "La cumbre del Gunung Mulu al atardecer",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Wilson Chin from Kuching, Sarawak",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Mount_Mulu_Summit_in_the_evening.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Gunung Mulu National Park",
+      "url": "https://whc.unesco.org/en/list/1013/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

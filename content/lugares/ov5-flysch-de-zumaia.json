@@ -7,11 +7,50 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "En los trece kilómetros de acantilados del Geoparque de la Costa Vasca, las capas de roca —el flysch— están puestas de canto, una contra otra, y se leen como las páginas de un libro: más de sesenta millones de años de historia de la Tierra, apilados y a la vista.",
+      "Entre esas páginas está el límite Cretácico-Paleógeno, el momento en que se extinguieron los dinosaurios no avianos hace 66 millones de años. Un estudio hecho íntegramente sobre los acantilados de Zumaia, muestreando los sedimentos depositados entre 66,4 y 65,4 millones de años atrás, reafirmó la hipótesis del impacto de un gran asteroide como causa de esa extinción."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El flysch en la playa de Sakoneta",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jörg Braukmann",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Flysch_formation_at_Sakoneta_Beach.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Algorri, en Zumaia",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jörg Braukmann",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Zumaia_Algorri.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "Geoparkea, Geoparque de la Costa Vasca (UNESCO Global Geopark)",
+      "titulo": "Un estudio en el flysch aporta datos sobre la extinción de los dinosaurios",
+      "url": "https://geoparkea.eus/es/noticias/asteroide-y-extincion-de-los-dinosaurios",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Geoparkea, Geoparque de la Costa Vasca",
+      "titulo": "Geología",
+      "url": "https://geoparkea.eus/en/science-education/geology",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

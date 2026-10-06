@@ -7,11 +7,45 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Las Dolomitas son una cadena montañosa del norte de los Alpes italianos: dieciocho cumbres por encima de los 3.000 metros sobre 141.903 hectáreas, repartidas en nueve áreas que se inscribieron juntas.",
+      "Son paredes verticales, farallones y una densidad altísima de valles angostos, profundos y largos, con formas glaciares y sistemas kársticos. Es un paisaje en movimiento: hay derrumbes, crecidas y avalanchas con frecuencia.",
+      "Guardan además uno de los mejores registros conservados de las plataformas carbonatadas del Mesozoico, con sus fósiles."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El Sassongher, en Val Badia",
+        "de": "",
+        "en": ""
+      },
+      "autor": "This Photo was taken by Wolfgang Moroder. Feel free to use m",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Plan_y_lech_de_Ciamp%C3%ABi_y_Sassongher_Val_Badia.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El Secëda, en Val Gardena",
+        "de": "",
+        "en": ""
+      },
+      "autor": "This Photo was taken by Wolfgang Moroder. Feel free to use m",
+      "licencia": "CC BY-SA 3.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Cr%C3%ABpes_de_Gherd%C3%ABina_da_Sec%C3%ABda_n%C3%ABif_d%27agost.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "The Dolomites",
+      "url": "https://whc.unesco.org/en/list/1237/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

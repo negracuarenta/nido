@@ -7,11 +7,44 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Baikal, en el sudeste de Siberia, es el lago más antiguo y más profundo del mundo: veinticinco millones de años y 1.700 metros de hondura, sobre 3,15 millones de hectáreas. Guarda cerca del 20 % de toda el agua dulce no congelada del planeta.",
+      "Lo llaman las Galápagos de Rusia. Su edad y su aislamiento produjeron una de las faunas de agua dulce más ricas y más extrañas que existen, de un valor excepcional para el estudio de la evolución."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El hielo del Baikal al atardecer",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Sergey Pesterev",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Baikal_ice_on_sunset.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Panorámica del lago Baikal",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Sergey Pesterev",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Panorama_of_lake_Baikal.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Lake Baikal",
+      "url": "https://whc.unesco.org/en/list/754/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

@@ -12,6 +12,29 @@
     "en": []
   },
   "tragico": null,
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Camellos en el desierto de Gobi",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Bernard Gagnon",
+      "licencia": "CC0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Camels_in_Gobi_Desert_01.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El Gobi, en Mongolia",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Niek van Son from Eindhoven, Nederland",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Mongolia_-_Gobi_Desert_(49310228777).jpg"
+    }
+  ],
   "fuentes": []
 }

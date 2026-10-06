@@ -7,11 +7,51 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "En el Saimaa vive una foca que no existe en ningún otro lugar del mundo. La foca anillada de Saimaa quedó aislada ahí cuando el lago se separó del mar, y hoy es el único sitio del planeta donde se la encuentra.",
+      "Es una especie ártica: necesita nieve y hielo para criar. En invierno excava madrigueras en los ventisqueros que se acumulan en las orillas de las islas, y ahí pare y descansa. Está en peligro de extinción: la estimación de Metsähallitus para 2025 es de 530 ejemplares.",
+      "La vigilan y la protegen el organismo de parques de Finlandia y más de trescientos voluntarios locales por año, que cuentan madrigueras y palean nieve a mano para armarles ventisqueros artificiales cuando el invierno no alcanza. En 2025 nacieron 114 crías; hace diez años eran unas ochenta."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El lago Saimaa desde el aire",
+        "de": "",
+        "en": ""
+      },
+      "autor": "kallerna",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Lake_Saimaa_aerial.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El laberinto de islas del Saimaa",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Shadow-Aatu",
+      "licencia": "CC BY 2.5",
+      "origen": "https://commons.wikimedia.org/wiki/File:SAIMAA_JA_LAIVAT_BOOK_COVER_PHOTO.JPG"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "Metsähallitus, Parks & Wildlife Finland",
+      "titulo": "Saimaa Ringed Seal",
+      "url": "https://www.metsa.fi/en/protection-and-management/species/saimaa-ringed-seal/",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Metsähallitus, Parks & Wildlife Finland",
+      "titulo": "Saimaa ringed seal population continues to grow",
+      "url": "https://www.metsa.fi/en/press-releases/saimaa-ringed-seal-population-continues-to-grow-mild-winters-and-gill-nets-remain-a-threat/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

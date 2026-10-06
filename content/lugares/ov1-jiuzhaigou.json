@@ -7,11 +7,44 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El valle de Jiuzhaigou se extiende por 72.000 hectáreas en el norte de la provincia de Sichuan y trepa hasta más de 4.800 metros, con una sucesión de ecosistemas forestales distintos según la altura.",
+      "Lo que lo hace raro son sus formas kársticas cónicas y angostas, sus cascadas, y una cadena de lagunas de agua transparente que se ven azules, verdes y hasta violáceas. Viven ahí unas 140 especies de aves, además del panda gigante y el takín de Sichuan, los dos amenazados."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "La cascada de Nuorilang, en Jiuzhaigou",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Chensiyuan",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:1_nuorilang_jiuzhaigou_2023.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "El lago Rinoceronte",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Jean-Marie Hullot from France",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Rhinoceros_Lake,_Jiuzhaigou_Valley.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Jiuzhaigou Valley Scenic and Historic Interest Area",
+      "url": "https://whc.unesco.org/en/list/637/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

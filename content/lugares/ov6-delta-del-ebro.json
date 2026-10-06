@@ -7,11 +7,44 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El delta del Ebro cubre 320 kilómetros cuadrados y es el hábitat acuático más extenso de Cataluña. El Parque Natural protege 7.805,8 hectáreas de ese conjunto.",
+      "Es lagunas, bahías, playas, arrozales y salinas, con una diversidad de ambientes muy alta en poco espacio, y uno de los puntos más importantes del Mediterráneo occidental para las aves acuáticas."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "Flamencos en el Delta del Ebro",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Agustí Descarrega",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Hora_dorada_con_flamencos_en_el_Delta_del_Ebro.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "Anillamiento de flamencos en el delta",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Agustí Descarrega",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Anillamiento_de_flamencos_en_el_Delta_del_Ebro.jpg"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "Generalitat de Catalunya",
+      "titulo": "Parc Natural del Delta de l'Ebre",
+      "url": "https://parcsnaturals.gencat.cat/ca/xarxa-de-parcs/delta-ebre/el-parc/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

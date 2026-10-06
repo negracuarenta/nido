@@ -7,11 +7,56 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Los Sundarbans cubren 10.000 kilómetros cuadrados de tierra y agua en el delta del Ganges —más de la mitad en India, el resto en Bangladesh— y contienen el manglar más grande del mundo.",
+      "Es uno de los ecosistemas naturales más productivos que existen. En la desembocadura del Ganges y el Brahmaputra, su bosque y sus canales sostienen una fauna enorme, buena parte de ella amenazada.",
+      "El manglar alberga la mayor población de tigres del mundo en un solo sitio, adaptados a una vida casi anfibia: nadan distancias largas entre las islas."
+    ],
     "de": [],
     "en": []
   },
   "tragico": null,
-  "fotos": [],
-  "fuentes": []
+  "fotos": [
+    {
+      "archivo": "01.webp",
+      "epigrafe": {
+        "es": "El manglar de los Sundarbans",
+        "de": "",
+        "en": ""
+      },
+      "autor": "MohammadRakibulHasan1977",
+      "licencia": "CC BY 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Sundarbans_Mangrove_Forest.jpg"
+    },
+    {
+      "archivo": "02.webp",
+      "epigrafe": {
+        "es": "La Reserva de Tigres de Sundarban, en Bengala Occidental",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Pinakpani",
+      "licencia": "CC BY-SA 4.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Sundarban_Tiger_Reserve_and_mangrove_forest,_West_Bengal_02.jpg"
+    },
+    {
+      "archivo": "03.webp",
+      "epigrafe": {
+        "es": "Los Sundarbans vistos desde satélite",
+        "de": "",
+        "en": ""
+      },
+      "autor": "Sentinel Hub",
+      "licencia": "CC BY 2.0",
+      "origen": "https://commons.wikimedia.org/wiki/File:Sundarbans,_Mangrove_forest_(50083279617).png"
+    }
+  ],
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Sundarbans National Park",
+      "url": "https://whc.unesco.org/en/list/452/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }
