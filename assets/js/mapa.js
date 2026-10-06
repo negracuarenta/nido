@@ -51,12 +51,20 @@
     return salida.filter(function (t) { return t.length > 1; });
   }
 
-  function ruta(origen, lugares) {
+  function ruta(origen, lugares, porLongitud) {
     // La golondrina sale del árbol, pasa por los lugares en orden y vuelve.
     // Los `soloTragico` no están en el recorrido: aparecen sólo en la capa roja.
+    var escalas = lugares.filter(function (l) { return !l.soloTragico; });
+
+    // "Otros vuelos" no es un recorrido del guión: su orden en el JSON vino de
+    // la lista de países. Para la línea se ordenan de oeste a este, así el
+    // punteado sale limpio en vez de zigzaguear.
+    if (porLongitud) {
+      escalas = escalas.slice().sort(function (a, b) { return a.lon - b.lon; });
+    }
+
     var paradas = [origen].concat(
-      lugares.filter(function (l) { return !l.soloTragico; })
-             .map(function (l) { return [l.lon, l.lat]; })
+      escalas.map(function (l) { return [l.lon, l.lat]; })
     ).concat([origen]);
 
     var linea = [];
@@ -104,9 +112,7 @@
       var grupo = L.layerGroup().addTo(mapa);
       capas[viaje.key] = grupo;
 
-      // "Otros vuelos" no es un recorrido: son lugares sueltos, fuera de la
-      // obra. Se marcan en el mapa pero sin línea que los encadene.
-      (viaje.sinRuta ? [] : ruta(origen, viaje.places)).forEach(function (tramo) {
+      ruta(origen, viaje.places, viaje.ordenarPorLongitud).forEach(function (tramo) {
         L.polyline(tramo, {
           color: color, weight: 2.2, opacity: 0.9,
           dashArray: datos.trazo[viaje.key], interactive: false,

@@ -348,7 +348,6 @@
    "key": "OV",
    "name": "Otros vuelos",
    "acto": "Fuera de la obra",
-   "sinRuta": true,
    "places": [
     {
      "id": "OV1",
@@ -440,7 +439,8 @@
      "tragico": false,
      "soloTragico": false
     }
-   ]
+   ],
+   "ordenarPorLongitud": true
   }
  ]
 }
