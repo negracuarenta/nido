@@ -1,8 +1,8 @@
 {
   "titulo": {
-    "es": "NIDO · Los vuelos de la golondrina",
-    "de": "NIDO · Die Flüge der Schwalbe",
-    "en": "NIDO · The Flights of the Swallow"
+    "es": "Nido",
+    "de": "Nido",
+    "en": "Nido"
   },
   "bajada": {
     "es": "Un liquidámbar de 146 años, en Heidelberg, espera. Una golondrina hace tres viajes y vuelve cada vez a contarle lo que vio.",
@@ -116,6 +116,21 @@
       "es": "Lugares que no están en la obra",
       "de": "Orte, die nicht im Stück vorkommen",
       "en": "Places that do not appear in the play"
+    },
+    "autores": {
+      "es": "Un proyecto de Juan Corro y Martín Virgili",
+      "de": "Ein Projekt von Juan Corro und Martín Virgili",
+      "en": "A project by Juan Corro and Martín Virgili"
+    },
+    "con_apoyo": {
+      "es": "Con",
+      "de": "Mit",
+      "en": "With"
     }
+  },
+  "subtitulo": {
+    "es": "Los vuelos de la golondrina",
+    "de": "Die Flüge der Schwalbe",
+    "en": "The Flights of the Swallow"
   }
 }

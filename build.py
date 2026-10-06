@@ -52,11 +52,39 @@ def parrafos(nodo, lang):
 
 # ------------------------------------------------------------------ plantilla
 
-def pagina(titulo, cuerpo, *, base, clase="", head=""):
+def pie_sitio(site, base):
+    """Autoría de la obra y las instituciones que la acompañan.
+
+    Va en todas las páginas: cada ficha puede llegarse directo por su QR, sin
+    pasar nunca por la portada, así que la autoría tiene que viajar con ella.
+    """
+    logos = [
+        ("negra40.png", "negra40", "negra40"),
+        ("ceac.png", "CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata", "ceac"),
+        ("vpst.png", "Völkerkundemuseum vPST", "vpst"),
+    ]
+    marcas = "".join(
+        f'<li><img class="logo logo--{clase}" src="{base}assets/logos/{archivo}" '
+        f'alt="{escape(alt)}" loading="lazy"></li>'
+        for archivo, alt, clase in logos
+    )
+    return f"""
+<footer class="pie-sitio">
+  <div class="pie-sitio__obra">
+    <p class="pie-sitio__titulo">NIDO</p>
+    {por_idioma(lambda l: f'<p class="pie-sitio__autores">{escape(t(site["ui"]["autores"], l))}</p>')}
+  </div>
+  <ul class="pie-sitio__logos">{marcas}</ul>
+</footer>
+"""
+
+
+def pagina(titulo, cuerpo, *, base, clase="", head="", site=None):
     nav_idiomas = "".join(
         f'<button type="button" class="sel-idioma" data-set-lang="{l}" '
         f'lang="{l}">{l.upper()}</button>' for l in IDIOMAS
     )
+    pie = pie_sitio(site, base) if site else ""
     return f"""<!doctype html>
 <html lang="es" data-lang="es">
 <head>
@@ -75,6 +103,7 @@ def pagina(titulo, cuerpo, *, base, clase="", head=""):
   <nav class="idiomas" aria-label="Idioma / Sprache / Language">{nav_idiomas}</nav>
 </header>
 {cuerpo}
+{pie}
 <script src="{base}assets/js/idioma.js"></script>
 </body>
 </html>
@@ -139,7 +168,7 @@ def ficha(lugar, viaje, contenido, site, vecinos, base):
   </nav>
 </main>
 """
-    return pagina(f"{nombre} · NIDO", cuerpo, base=base, clase="pagina-ficha")
+    return pagina(f"{nombre} · NIDO", cuerpo, base=base, clase="pagina-ficha", site=site)
 
 
 def bloque_galeria(contenido, slug, ui, base):
@@ -208,9 +237,11 @@ def indice(datos, site):
         for v in datos["trips"]
     )
     cuerpo = f"""
+<div class="mapa-zona">
 <div id="mapa" role="application" aria-label="Mapa de los vuelos"></div>
 <aside class="leyenda">
   <h1 class="titulo">{por_idioma(lambda l: escape(t(site["titulo"], l)))}</h1>
+  {por_idioma(lambda l: f'<p class="subtitulo">{escape(t(site["subtitulo"], l))}</p>')}
   {por_idioma(lambda l: f'<p class="bajada">{escape(t(site["bajada"], l))}</p>')}
   <h2>{por_idioma(lambda l: escape(t(ui["viajes"], l)))}</h2>
   <ul class="filtros">{leyenda_viajes}</ul>
@@ -222,12 +253,13 @@ def indice(datos, site):
     <li><span class="s-cero"></span>{por_idioma(lambda l: escape(t(ui["punto_cero"], l)))}</li>
   </ul>
 </aside>
+</div>
 """
     head = ('<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">\n'
             '<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>\n'
             '<script src="assets/js/mapa.js" defer></script>')
     return pagina("NIDO · Los vuelos de la golondrina", cuerpo,
-                  base="", clase="pagina-mapa", head=head)
+                  base="", clase="pagina-mapa", head=head, site=site)
 
 
 
@@ -296,7 +328,7 @@ def resumen_viaje(viaje, textos, contenidos, site, base):
 </main>
 """
     titulo = t(site["viajes"][clave], "es")
-    return pagina(f"{titulo} · NIDO", cuerpo, base=base, clase="pagina-viaje")
+    return pagina(f"{titulo} · NIDO", cuerpo, base=base, clase="pagina-viaje", site=site)
 
 
 # --------------------------------------------------------------------- build
@@ -311,7 +343,7 @@ def main() -> None:
 
     # El mapa necesita los datos de lugares y los colores del afiche.
     (DIST / "assets").mkdir()
-    for sub in ("css", "js", "geo", "fotos"):
+    for sub in ("css", "js", "geo", "fotos", "logos"):
         origen = AQUI / "assets" / sub
         if origen.exists():
             shutil.copytree(origen, DIST / "assets" / sub)

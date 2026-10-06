@@ -270,3 +270,74 @@ a { color: inherit; }
   .parada { grid-template-columns: 1fr; gap: 0.9rem; }
   .parada__foto { max-width: 15rem; }
 }
+
+/* ------------------------------------------------- pie de sitio */
+
+.pie-sitio {
+  border-top: 1px solid var(--contorno);
+  background: var(--tierra);
+  padding: clamp(2rem, 5vw, 3rem) var(--gutter, clamp(1.25rem, 4vw, 3.5rem));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem clamp(1.5rem, 5vw, 4rem);
+}
+
+.pie-sitio__titulo {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+.pie-sitio__autores {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--tinta-suave);
+}
+
+.pie-sitio__logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 2.8rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada marca tiene proporciones distintas: igualarlas por altura las
+   desbalancea, así que se ajusta una por una hasta que pesen parejo. */
+.logo { display: block; width: auto; opacity: 0.85; }
+.logo--negra40 { height: 24px; }
+.logo--ceac { height: 42px; }
+.logo--vpst { height: 52px; }
+
+/* En el mapa el pie va debajo de la leyenda, no flotando sobre la foto. */
+.pagina-mapa { height: auto; min-height: 100vh; }
+.pagina-mapa #mapa { height: min(calc(100svh - 11rem), 820px); flex: 0 0 auto; }
+
+@media (max-width: 700px) {
+  .pie-sitio { justify-content: flex-start; }
+  .pie-sitio__logos { gap: 1.4rem 2rem; }
+}
+
+/* El mapa y su leyenda forman una zona propia: así la leyenda se ancla al
+   mapa y no al cuerpo de la página, que al sumar el pie se hizo más alto. */
+.mapa-zona { position: relative; }
+
+.leyenda .titulo {
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1;
+}
+
+.leyenda .subtitulo {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--tinta);
+}
