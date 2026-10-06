@@ -118,6 +118,28 @@ def navegacion() -> str:
     return "".join(piezas)
 
 
+def fin_de_grupo(svg: str, desde: int) -> int:
+    """El índice del </g> que cierra ese grupo, contando los anidados.
+
+    Buscar el primer </g> no sirve: desde que los QR van incrustados, el índice
+    tiene grupos adentro, y cortar ahí deja medio índice en pie.
+    """
+    nivel = 0
+    for m in re.finditer(r"<g\b|</g>", svg[desde:]):
+        nivel += 1 if m.group(0) != "</g>" else -1
+        if nivel == 0:
+            return desde + m.end()
+    raise ValueError("no encontré el cierre del grupo")
+
+
+def quitar(svg: str, ident: str) -> str:
+    marca = f'<g id="{ident}">'
+    while marca in svg:
+        i = svg.index(marca)
+        svg = svg[:i] + svg[fin_de_grupo(svg, i):]
+    return svg
+
+
 def main() -> None:
     datos = json.loads((AQUI / "nido_lugares.json").read_text())
     nuevo_indice, nueva_nav = indice(datos), navegacion()
@@ -125,16 +147,17 @@ def main() -> None:
 
     for nombre in AFICHES:
         ruta = AQUI / nombre
-        svg = ruta.read_text()
-        svg = re.sub(r'<g id="indice">.*?</g>(?=</svg>|<g id="navegacion">)',
-                     nuevo_indice, svg, count=1, flags=re.S)
-        svg = re.sub(r'<g id="navegacion">.*?</g>', "", svg, count=1, flags=re.S)
-        svg = svg.replace("</svg>", nueva_nav + "</svg>")
-        ruta.write_text(svg)
+        svg = quitar(quitar(ruta.read_text(), "indice"), "navegacion")
+        svg = svg.replace("</svg>", nuevo_indice + nueva_nav + "</svg>")
+
         puestos = len(re.findall(r'<g class="qr" id="qr-', svg))
         vacios = len(re.findall(r'<rect class="qr"', svg))
+        if puestos != total or vacios:
+            raise SystemExit(
+                f"{nombre}: {puestos} códigos puestos de {total} y {vacios} "
+                f"recuadros vacíos. No lo escribo así.")
+        ruta.write_text(svg)
         print(f"{nombre}: {puestos} QR incrustados, {vacios} recuadros vacíos")
-        assert puestos == total and vacios == 0, "quedó algún recuadro sin llenar"
 
 
 if __name__ == "__main__":

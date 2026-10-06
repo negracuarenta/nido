@@ -19,16 +19,30 @@ SALIDA = AQUI / "qr"
 SLUG_ORIGEN = "heidelberg"
 
 
-def url_de(slug: str) -> str:
-    return f"{BASE}/lugares/{slug}/"
+# El afiche castellano no fuerza idioma: la misma dirección sirve para los
+# tres, y el sitio elige según el navegador o lo que el visitante haya pedido.
+# El afiche alemán sí lo fuerza, porque lo lee alguien parado frente a un
+# afiche en alemán: ahí no tiene sentido que la ficha abra en castellano.
+IDIOMAS = {"": "", "de": "?lang=de"}
+
+# El título del código de portada, en cada idioma.
+PORTADA = {"": "Mapa de los vuelos", "de": "Karte der Flüge"}
 
 
-def escribir(codigo: str, url: str) -> None:
+def nombre_de(lugar: dict, lang: str) -> str:
+    return (lugar.get("names") or {}).get(lang) or lugar["name"]
+
+
+def url_de(slug: str, sufijo: str = "") -> str:
+    return f"{BASE}/lugares/{slug}/{sufijo}"
+
+
+def escribir(codigo: str, url: str, salida: Path) -> None:
     # Corrección de errores M: aguanta ~15% del código dañado, que es lo
     # razonable para un afiche que se mira de cerca. Negro sobre transparente
     # (light=None) para poder imprimirlo sobre el fondo beige del mapa.
     segno.make(url, error="m").save(
-        str(SALIDA / f"{codigo}.svg"),
+        str(salida / f"{codigo}.svg"),
         kind="svg",
         dark="#000000",
         light=None,
@@ -38,26 +52,27 @@ def escribir(codigo: str, url: str) -> None:
 
 
 def main() -> None:
-    SALIDA.mkdir(exist_ok=True)
     datos = json.loads((AQUI / "nido_lugares.json").read_text(encoding="utf-8"))
 
-    filas = [
-        ("inicio", "Mapa de los vuelos", f"{BASE}/"),
-        ("heidelberg", datos["origin"]["name"], url_de(SLUG_ORIGEN)),
-    ]
-    for viaje in datos["trips"]:
-        for lugar in viaje["places"]:
-            filas.append((lugar["id"], lugar["name"], url_de(lugar["slug"])))
-
-    for codigo, _, url in filas:
-        escribir(codigo, url)
-
-    with (SALIDA / "indice.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["codigo", "nombre", "url"])
-        w.writerows(filas)
-
-    print(f"{len(filas)} códigos QR en {SALIDA}/")
+    for lang, sufijo in IDIOMAS.items():
+        salida = SALIDA / lang if lang else SALIDA
+        salida.mkdir(parents=True, exist_ok=True)
+        filas = [
+            ("inicio", PORTADA[lang], f"{BASE}/{sufijo}"),
+            ("heidelberg", datos["origin"]["name"], url_de(SLUG_ORIGEN, sufijo)),
+        ]
+        for viaje in datos["trips"]:
+            for lugar in viaje["places"]:
+                filas.append((lugar["id"], nombre_de(lugar, lang),
+                              url_de(lugar["slug"], sufijo)))
+        for codigo, _, url in filas:
+            escribir(codigo, url, salida)
+        with (salida / "indice.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["codigo", "nombre", "url"])
+            w.writerows(filas)
+        print(f"{len(filas)} códigos QR en {salida}/"
+              + (f"  (con {sufijo})" if sufijo else "  (sin idioma forzado)"))
 
 
 if __name__ == "__main__":

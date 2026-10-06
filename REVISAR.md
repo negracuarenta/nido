@@ -602,3 +602,46 @@ archivo que va a imprenta. Se repite con `verificar-pdf.html`.
 - Aparecen dos tipografías de reserva, Times New Roman Italic y Menlo, para unos
   pocos glifos que Palatino y Courier no cubren. No lo vi romper nada, pero vale
   mirarlo con el archivo abierto.
+
+---
+
+## El afiche alemán ahora manda a las fichas en alemán
+
+Hasta acá el afiche alemán llevaba los mismos códigos que el castellano, que no
+fuerzan idioma: el sitio elegía según el navegador del visitante. Para alguien
+parado frente a un afiche en alemán eso estaba mal — podía escanear y abrir la
+ficha en castellano.
+
+`qr.py` genera ahora **dos juegos de códigos**:
+
+- `qr/` — sin idioma forzado, para el afiche castellano. **No cambiaron ni un
+  byte**: lo verifiqué contra el commit anterior.
+- `qr/de/` — con `?lang=de`, para el afiche alemán.
+
+Las direcciones son ocho caracteres más largas pero los códigos siguen en 45
+módulos, así que a 24 mm el módulo mide los mismos 0,53 mm de antes. Cada código
+alemán entra exactamente en el recuadro que ocupaba el otro: la escala se
+recalcula para que el índice no se mueva.
+
+**Verificado sobre los cuatro PDF**, rasterizando y decodificando: los 46 del
+castellano siguen apuntando a la dirección sin idioma, y los 46 del alemán a la
+misma dirección con `?lang=de`.
+
+También corregí `qr/de/indice.csv`, que listaba los nombres de los lugares en
+castellano aunque fuera el índice alemán. Ahora usa los nombres en alemán.
+
+### Lo que sigue en castellano, y por qué
+La dirección misma: `/lugares/e1-cataratas-del-iguazu/?lang=de`. El *slug* es
+castellano en los tres idiomas, a propósito — cada ficha vive en una sola
+dirección y el idioma es una preferencia, no una página distinta. Es lo que
+permite que un visitante cambie de idioma sin que se le rompa el enlace, y que
+el afiche castellano y el alemán apunten a la misma ficha. Si preferís
+direcciones en alemán habría que duplicar las 46 páginas, una por idioma; se
+puede hacer, pero es otra arquitectura. Decime y lo vemos.
+
+### Dos arreglos de camino
+- `afiche.py` borraba los grupos buscando el primer `</g>`, que desde que los QR
+  van incrustados cae dentro del índice y dejaba medio índice en pie. Ahora
+  cuenta los grupos anidados.
+- Validaba el resultado *después* de escribir el archivo. Ahora valida antes: si
+  los códigos no están todos, no escribe nada.

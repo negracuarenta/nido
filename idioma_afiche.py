@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Genera la versión alemana del afiche a partir de la castellana.
 
-Sólo cambia el texto. La geometría, las posiciones y —sobre todo— los códigos
-QR son exactamente los mismos: una misma dirección sirve para los tres idiomas
-del sitio, que es justamente lo que permite imprimir un solo juego de códigos.
-Las dos versiones del afiche se pueden comparar hoja contra hoja.
+Cambia el texto y los códigos QR. La geometría es idéntica: cada código ocupa
+exactamente el mismo recuadro, en el mismo lugar.
+
+Los QR del afiche castellano no fuerzan idioma —la misma dirección sirve para
+los tres y el sitio elige según el navegador—, pero los del alemán llevan
+`?lang=de`. Quien está parado frente a un afiche en alemán y escanea un código
+espera que la ficha abra en alemán, no en castellano.
 
 Va después de afiche.py y planisferio.py, porque traduce lo que ellos dejaron.
 
@@ -56,6 +59,38 @@ PROPIAS = {
 }
 
 CODIGO = re.compile(r"^(?:E|S|O|OV)\d*$")
+GRUPO_QR = re.compile(
+    r'<g class="qr" id="qr-([^"]+)" transform="translate\(([\d.]+) ([\d.]+)\) '
+    r'scale\(([\d.]+)\)"><path d="[^"]*"([^/]*)/></g>')
+
+
+def modulos(ruta: Path) -> tuple:
+    """Lado en módulos y trazo de un QR, tal como lo deja segno."""
+    f = ruta.read_text()
+    ancho = int(re.search(r'width="(\d+)"', f).group(1))
+    escala = int(re.search(r"scale\((\d+)\)", f).group(1))
+    return ancho // escala, re.search(r'\sd="([^"]+)"', f).group(1)
+
+
+def cambiar_qr(svg: str) -> tuple:
+    """Pone los códigos alemanes en el mismo recuadro que ocupaban los otros.
+
+    El QR alemán puede tener otra cantidad de módulos —la dirección es más
+    larga—, así que la escala se recalcula para que el recuadro no se mueva ni
+    cambie de tamaño: el diseño del índice no se entera.
+    """
+    cambiados = []
+
+    def uno(m):
+        codigo, x, y, k, resto = m.groups()
+        mods_es, _ = modulos(AQUI / "qr" / f"{codigo}.svg")
+        lado = float(k) * mods_es
+        mods_de, trazo = modulos(AQUI / "qr/de" / f"{codigo}.svg")
+        cambiados.append(codigo)
+        return (f'<g class="qr" id="qr-{codigo}" transform="translate({x} {y}) '
+                f'scale({lado / mods_de:.6f})"><path d="{trazo}"{resto}/></g>')
+
+    return GRUPO_QR.sub(uno, svg), cambiados
 
 
 def diccionario() -> dict:
@@ -98,6 +133,7 @@ def main() -> None:
     for origen, destino in VERSIONES.items():
         svg = (AQUI / origen).read_text()
         alemán, faltan = traducir(svg, d)
+        alemán, qr_cambiados = cambiar_qr(alemán)
         if faltan:
             raise SystemExit(
                 f"{origen}: quedaron {len(faltan)} textos sin traducir, y un "
@@ -105,9 +141,14 @@ def main() -> None:
                 + "\n  ".join(repr(t) for t in dict.fromkeys(faltan)))
         if "golondrina" in alemán or "Viaje al" in alemán:
             raise SystemExit(f"{destino}: quedó castellano suelto.")
+        total_qr = len(re.findall(r'<g class="qr"', alemán))
+        if len(qr_cambiados) != total_qr:
+            raise SystemExit(
+                f"{destino}: cambié {len(qr_cambiados)} de {total_qr} códigos; "
+                f"un afiche con códigos mezclados manda a la ficha equivocada.")
         (AQUI / destino).write_text(alemán)
-        print(f"{destino}: {len(re.findall(r'<text', alemán))} textos · "
-              f"{len(re.findall(chr(60) + 'g class=.qr.', alemán))} QR intactos")
+        print(f"{destino}: {len(re.findall(r'<text', alemán))} textos traducidos · "
+              f"{total_qr} QR cambiados a ?lang=de")
 
 
 if __name__ == "__main__":
