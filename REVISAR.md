@@ -549,3 +549,30 @@ Queda pendiente de tu ojo: la ubicación de las nueve etiquetas. Las puse con un
 regla simple —a la derecha del punto, salvo cuatro en Europa que van a la
 izquierda— y revisé que no se pisen, pero es justo el tipo de ajuste fino que
 conviene hacer con el diseño delante.
+
+---
+
+## El afiche en alemán
+
+`idioma_afiche.py` genera `NIDO_mapa_A0_de.svg` y `NIDO_mapa_A0_color_de.svg` a
+partir de los castellanos. **Sólo cambia el texto**: lo verifiqué comparando los
+dos archivos con los nodos de texto vaciados, y la geometría es idéntica byte a
+byte. Los 46 códigos QR son los mismos, porque la dirección de cada ficha sirve
+para los tres idiomas: por eso alcanza con imprimir un solo juego de códigos.
+
+Las frases que ya existían en el sitio salen de `content/site.json` —el
+subtítulo, «Andere Flüge», «Was sie auch sah», «Punkt 0 · der Baum»— y los
+nombres de los lugares, del campo `names` de `nido_lugares.json`. Lo propio del
+afiche está traducido en el script, a la vista.
+
+El script falla si queda algún texto sin traducir: un afiche a medio traducir no
+sirve de nada.
+
+**Medido, no mirado:** el alemán es más largo, así que comprobé en el navegador
+el ancho real de cada texto. Ninguno desborda su columna del índice, ninguno se
+sale del pliego, y no hay dos etiquetas del planisferio que se pisen. Lo mismo
+en la versión castellana.
+
+Traducciones que conviene que mire alguien de allá: «Zeichenerklärung» para
+Referencias, «Ort, den sie sah», «Verzeichnis · Code scannen für mehr zu jedem
+Ort» y el pie técnico de la proyección.
