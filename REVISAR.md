@@ -524,3 +524,28 @@ en `nido_lugares.json`, que es de donde lo toman el mapa web y el afiche.
 **Los PDF quedaron viejos.** `NIDO_mapa_A0.pdf` y `NIDO_mapa_A0_color.pdf` siguen
 teniendo el índice de 35 recuadros vacíos. En esta máquina no hay conversor de SVG a
 PDF. El SVG es el archivo bueno; el PDF hay que rehacerlo antes de imprimir.
+
+### El planisferio ya dibuja «Otros vuelos»
+
+Resuelto. Los nueve lugares y su recorrido están ahora sobre el planisferio, con
+su línea punteada violeta y su fila en las referencias.
+
+Para poder dibujarlos había que saber la proyección, y el script del planisferio
+no quedó en el repositorio. La respuesta estaba a la vista, en el pie de las
+propias referencias del afiche: **Equal Earth**. El resto salió de la retícula
+dibujada —el ecuador va de x=28 a x=818, el centro en (423, 272)—.
+
+`planisferio.py` verifica esa reconstrucción en cada ejecución contra los 15.845
+vértices de la costa dibujada: el error es de **0,001 mm** sobre un pliego de
+1189 mm. Como control independiente, el marcador de Heidelberg —que no
+interviene en el cálculo— queda a 0,006 mm del que ya estaba. Si alguna vez se
+redibuja el planisferio, el control falla en vez de poner los puntos mal.
+
+El orden del recorrido es el mismo que usa el mapa web: de oeste a este
+(Zumaia, Ebro, Dolomitas, Saimaa, Sundarbans, Jiuzhaigou, Gobi, Baikal, Mulu),
+saliendo del árbol y volviendo a él, por arcos de círculo máximo.
+
+Queda pendiente de tu ojo: la ubicación de las nueve etiquetas. Las puse con una
+regla simple —a la derecha del punto, salvo cuatro en Europa que van a la
+izquierda— y revisé que no se pisen, pero es justo el tipo de ajuste fino que
+conviene hacer con el diseño delante.
