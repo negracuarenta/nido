@@ -85,14 +85,7 @@ def pie_sitio(site, base):
     )
     return f"""
 <footer class="pie-sitio">
-  <div class="pie-sitio__obra">
-    <p class="pie-sitio__titulo">NIDO</p>
-    {por_idioma(lambda l: f'<p class="pie-sitio__autores">{escape(t(site["ui"]["autores"], l))}</p>')}
-  </div>
-  <div class="pie-sitio__marcas">
-    {por_idioma(lambda l: f'<p class="pie-sitio__con">{escape(t(site["ui"]["con_apoyo"], l))}</p>')}
-    <ul class="pie-sitio__logos">{marcas}</ul>
-  </div>
+  <ul class="pie-sitio__logos">{marcas}</ul>
 </footer>
 """
 
@@ -103,6 +96,8 @@ def pagina(titulo, cuerpo, *, base, clase="", head="", site=None):
         f'lang="{l}">{l.upper()}</button>' for l in IDIOMAS
     )
     pie = pie_sitio(site, base) if site else ""
+    autoria = (por_idioma(lambda l: escape(t(site["ui"]["autores"], l)), "marca__autores")
+               if site else "")
     return f"""<!doctype html>
 <html lang="es" data-lang="es">
 <head>
@@ -117,7 +112,10 @@ def pagina(titulo, cuerpo, *, base, clase="", head="", site=None):
 </head>
 <body class="{clase}">
 <header class="barra">
-  <a class="marca" href="{base}">NIDO</a>
+  <a class="marca" href="{base}">
+    <span class="marca__nombre">NIDO</span>
+    {autoria}
+  </a>
   <nav class="idiomas" aria-label="Idioma / Sprache / Language">{nav_idiomas}</nav>
 </header>
 {cuerpo}

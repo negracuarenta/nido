@@ -69,6 +69,10 @@
 
   function iniciar(datos, tierra) {
     var mapa = L.map('mapa', {
+      // La tierra son más de mil polígonos. Dibujados como SVG, el navegador
+      // mantiene un nodo del DOM por cada uno y los recalcula en cada zoom o
+      // arrastre: se arrastra. En canvas se pintan de una sola pasada.
+      preferCanvas: true,
       worldCopyJump: true,
       // Los tres vuelos abarcan 268° de longitud: en una pantalla angosta hace
       // falta llegar a zoom 1 para que entren enteros en el encuadre inicial.

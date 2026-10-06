@@ -52,10 +52,23 @@ a { color: inherit; }
 }
 
 .marca {
+  display: block;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.marca__nombre {
+  display: block;
   font-weight: 600;
   letter-spacing: 0.22em;
-  text-decoration: none;
   font-size: 1rem;
+}
+
+.marca__autores {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--tinta-suave);
+  letter-spacing: 0.01em;
 }
 
 .idiomas { display: flex; gap: 0.25rem; }
@@ -273,46 +286,20 @@ a { color: inherit; }
 
 /* ------------------------------------------------- pie de sitio */
 
+/* Sólo las marcas: la autoría subió al encabezado, donde acompaña al título
+   en todas las páginas, también en las que se llega directo por un QR. */
 .pie-sitio {
   border-top: 1px solid var(--contorno);
   background: var(--tierra);
-  padding: clamp(2.2rem, 5vw, 3.2rem) var(--gutter, clamp(1.25rem, 4vw, 3.5rem))
-           clamp(2.2rem, 5vw, 3rem);
-}
-
-.pie-sitio__titulo {
-  margin: 0;
-  font-size: 1.1rem;
-  letter-spacing: 0.3em;
-  font-weight: 500;
-}
-
-.pie-sitio__autores {
-  margin: 0.35rem 0 0;
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--tinta-suave);
-}
-
-.pie-sitio__marcas {
-  margin-top: clamp(1.8rem, 4vw, 2.6rem);
-  padding-top: 1.4rem;
-  border-top: 1px solid var(--contorno);
-}
-
-.pie-sitio__con {
-  margin: 0 0 1rem;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--tinta-suave);
+  padding: clamp(2rem, 4vw, 2.8rem) var(--gutter, clamp(1.25rem, 4vw, 3.5rem));
 }
 
 .pie-sitio__logos {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: clamp(2rem, 5vw, 3.6rem);
+  gap: clamp(2.2rem, 6vw, 4.5rem);
   list-style: none;
   margin: 0;
   padding: 0;
