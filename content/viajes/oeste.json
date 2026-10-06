@@ -4,18 +4,18 @@
   "acto": "Acto 4",
   "apertura": {
     "es": "Fui al oeste,",
-    "de": "",
-    "en": ""
+    "de": "Ich flog nach Westen,",
+    "en": "I went west,"
   },
   "cierre": {
     "es": "Me enamoré, árbol. El oeste, la puerta negra, es maravilloso.",
-    "de": "",
-    "en": ""
+    "de": "Ich habe mich verliebt, Baum. Der Westen, das schwarze Tor, ist wunderbar.",
+    "en": "I fell in love, tree. The west, the black door, is wonderful."
   },
   "cierre_tragico": {
     "es": "Dolor. Mucho dolor. Vi la pobreza más difícil de todas: la de los corazones que ya no se conmueven.",
-    "de": "",
-    "en": ""
+    "de": "Schmerz. Sehr viel Schmerz. Ich sah die schwerste Armut von allen: die der Herzen, die sich nicht mehr rühren lassen.",
+    "en": "Pain. Much pain. I saw the hardest poverty of all: that of hearts no longer moved."
   },
   "intro": {
     "es": [],

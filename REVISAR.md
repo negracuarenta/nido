@@ -262,3 +262,33 @@ técnica— pasámela y la escribo. Si no, conviene revisar la frase.
 barro y de hierro apilados en capas»— no la pude respaldar: UNESCO describe la
 Quebrada de Humahuaca por su valor cultural, no geológico. La ficha cuenta la
 quebrada y el Camino Inca. Para las capas haría falta SEGEMAR.
+
+---
+
+## Traducciones · las 51 frases del guión
+
+**Todas las frases del guión están ahora en los tres idiomas**, incluidas las 19
+partes trágicas y los textos de apertura y cierre de cada acto. **Todas necesitan
+tu lectura**, especialmente el alemán.
+
+Las traduje buscando conservar el tono, no la literalidad. Dudas concretas:
+
+- **«se rompe en dos»** (E1) → *entzweibricht*. Es fuerte y literario. Alternativa
+  más llana: *der sich teilt*.
+- **«el arca de Noé, ardiendo»** (E2) → *Die Arche Noah, brennend*. En alemán el
+  participio solo suena casi como un titular. Se podría decir *die brannte*.
+- **«blanco como el fuego de las estrella»** (S1) → mantuve el singular raro de
+  «estrella» como *das Feuer der Sterne*, que lo normaliza. Si el singular es
+  deliberado, decime y lo dejo raro también en alemán.
+- **«la puerta negra»** (cierre del Oeste) → *das schwarze Tor*. Si es una
+  referencia a algo concreto, puede necesitar otra palabra.
+- **«caminatas de poder»** y **«ríos voladores»** (O5) → traduje *ríos voladores*
+  literal, *fliegende Flüsse* / *flying rivers*, porque es el término que usan los
+  hidrólogos. Confirmame si en tu texto significa eso.
+- **«Maradooó»** y las onomatopeyas no aparecen en las fichas, pero si las usás en
+  el sitio hay que decidir si se traducen o no.
+
+### Lo que todavía está sólo en castellano
+Los párrafos de información, los epígrafes de las fotos y los nombres de las
+fuentes. Son unas diez mil palabras por idioma. Las frases del guión, que son la
+obra, ya están.

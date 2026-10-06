@@ -4,18 +4,18 @@
   "acto": "Acto 3",
   "apertura": {
     "es": "Fui al sur. Y vi…",
-    "de": "",
-    "en": ""
+    "de": "Ich flog nach Süden. Und ich sah …",
+    "en": "I went south. And I saw…"
   },
   "cierre": {
     "es": "El sur, árbol, es hermoso.",
-    "de": "",
-    "en": ""
+    "de": "Der Süden, Baum, ist schön.",
+    "en": "The south, tree, is beautiful."
   },
   "cierre_tragico": {
     "es": "Eso también vi, árbol. No te mentí en la primera parte. Tampoco te voy a mentir en esta.",
-    "de": "",
-    "en": ""
+    "de": "Das sah ich auch, Baum. Im ersten Teil habe ich dich nicht belogen. In diesem werde ich es auch nicht tun.",
+    "en": "That too I saw, tree. I did not lie to you in the first part. Nor will I lie to you in this one."
   },
   "intro": {
     "es": [],
