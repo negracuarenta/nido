@@ -244,6 +244,15 @@ def bloque_fuentes(fuentes, ui):
 
 def indice(datos, site):
     ui = site["ui"]
+    marcas_mapa = "".join(
+        f'<li><img class="logo logo--{clase}" src="assets/logos/{archivo}" '
+        f'alt="{escape(alt)}" loading="lazy"></li>'
+        for archivo, alt, clase in (
+            ("negra40.png", "negra40", "negra40"),
+            ("ceac.png", "CEAC · Centro de Arte y Ciencia, UTN Regional Mar del Plata", "ceac"),
+            ("vpst.png", "Völkerkundemuseum vPST", "vpst"),
+        )
+    )
     leyenda_viajes = "".join(
         f'<li><label><input type="checkbox" checked data-viaje="{v["key"]}">'
         f'<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" '
@@ -269,6 +278,7 @@ def indice(datos, site):
     <li><span class="s-cero"></span>{por_idioma(lambda l: escape(t(ui["punto_cero"], l)))}</li>
   </ul>
 </aside>
+<ul class="marcas-mapa">{marcas_mapa}</ul>
 </div>
 """
     head = ('<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">\n'

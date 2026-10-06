@@ -12,8 +12,8 @@ AQUI = Path(__file__).parent
 ENTRADA = AQUI / "assets/geo/ne_50m_land.json"
 SALIDA = AQUI / "assets/geo/land.json"
 
-EPSILON = 0.02      # grados (~2 km): la costa se mantiene limpia hasta zoom alto
-AREA_MINIMA = 0.01  # grados²: descarta islotes que a esta escala son un píxel
+EPSILON = 0.06      # grados (~6 km): a escala mundial no se nota, y pesa un tercio
+AREA_MINIMA = 0.05  # grados²: descarta islotes que a esta escala son un píxel
 DECIMALES = 3
 
 
@@ -72,14 +72,24 @@ def main() -> None:
             if partes:
                 salida.append({"type": "MultiPolygon", "coordinates": partes})
 
-    # Una sola feature: el mapa pinta toda la tierra con el mismo estilo.
+    # Todo en un único MultiPolygon. Repartido en mil features, Leaflet creaba
+    # mil capas y hacía mil llamadas de dibujo por cuadro al hacer zoom; con una
+    # sola capa el costo por cuadro cae de golpe.
+    partes = []
+    for g in salida:
+        if g["type"] == "Polygon":
+            partes.append(g["coordinates"])
+        else:
+            partes.extend(g["coordinates"])
     fc = {"type": "FeatureCollection", "features": [
-        {"type": "Feature", "properties": {}, "geometry": g} for g in salida]}
+        {"type": "Feature", "properties": {},
+         "geometry": {"type": "MultiPolygon", "coordinates": partes}}]}
     SALIDA.write_text(json.dumps(fc, separators=(",", ":")))
     antes = ENTRADA.stat().st_size / 1024
     despues = SALIDA.stat().st_size / 1024
-    print(f"{len(datos['features'])} → {len(salida)} geometrías | "
-          f"{antes:.0f} KB → {despues:.0f} KB ({despues/antes:.0%})")
+    vertices = sum(len(a) for p in partes for a in p)
+    print(f"{len(datos['features'])} features → 1 capa con {len(partes)} polígonos "
+          f"y {vertices} vértices | {antes:.0f} KB → {despues:.0f} KB ({despues/antes:.0%})")
 
 
 if __name__ == "__main__":

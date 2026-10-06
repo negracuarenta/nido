@@ -79,10 +79,11 @@
       minZoom: 1,
       // Sin esto Leaflet sólo usa zooms enteros: si el 2 no entra por poco,
       // salta al 1 y el mundo queda a la mitad de tamaño, flotando en el
-      // centro. Con el paso libre elige el zoom exacto que llena la caja.
+      // centro. Arranca en paso libre para que el encuadre inicial llene la
+      // caja, y después pasa a 0.25 (ver más abajo): con paso libre, cada
+      // golpe de rueda dispara un redibujado y el zoom se siente pegajoso.
       zoomSnap: 0,
       zoomDelta: 0.5,
-      wheelPxPerZoomLevel: 120,
       maxZoom: 8,
       zoomControl: true,
       attributionControl: false,
@@ -170,9 +171,15 @@
     // El contenedor puede no tener su tamaño final cuando Leaflet arranca, y en
     // celular cambia al girar la pantalla. En ambos casos hay que recalcular el
     // tamaño y volver a encuadrar, o el mapa queda cortado.
+    // Una vez que el visitante mueve el mapa, no se lo volvemos a encuadrar:
+    // si no, un cambio de tamaño del contenedor le saltaba la vista de vuelta
+    // al inicio en medio de la navegación.
+    var tocado = false;
+    mapa.on('zoomstart dragstart', function () { tocado = true; });
+
     var reencuadrar = function () {
       mapa.invalidateSize({ animate: false });
-      mapa.fitBounds(limites, { animate: false });
+      if (!tocado) mapa.fitBounds(limites, { animate: false });
     };
     if (window.ResizeObserver) {
       var pendiente = null;
@@ -183,7 +190,12 @@
     } else {
       window.addEventListener('resize', reencuadrar);
     }
-    requestAnimationFrame(reencuadrar);
+    requestAnimationFrame(function () {
+      reencuadrar();
+      // Hecho el encuadre, se vuelve a un paso de zoom con escalones: menos
+      // redibujados por golpe de rueda y una sensación mucho más firme.
+      mapa.options.zoomSnap = 0.25;
+    });
 
     document.querySelectorAll('[data-viaje]').forEach(function (casilla) {
       casilla.addEventListener('change', function () {
