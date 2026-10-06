@@ -28,6 +28,21 @@ TRAZO = {"E": "6 5", "S": "14 6", "O": "12 4 2 4", "OV": "2 4"}
 
 # ---------------------------------------------------------------- utilidades
 
+def v(ruta_relativa: str) -> str:
+    """Sufijo de versión según el contenido del archivo.
+
+    GitHub Pages sirve los assets con max-age=600: sin esto, durante diez
+    minutos después de publicar el navegador sigue mostrando el CSS y el JS
+    viejos. Con el hash en la URL, cada cambio estrena dirección.
+    """
+    archivo = AQUI / ruta_relativa
+    if not archivo.exists():
+        return ""
+    import hashlib
+    return "?v=" + hashlib.sha1(archivo.read_bytes()).hexdigest()[:8]
+
+
+
 def t(nodo, lang):
     """Devuelve la variante de idioma, cayendo al castellano si falta."""
     if not isinstance(nodo, dict):
@@ -97,7 +112,7 @@ def pagina(titulo, cuerpo, *, base, clase="", head="", site=None):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{base}assets/css/nido.css">
+<link rel="stylesheet" href="{base}assets/css/nido.css{v("assets/css/nido.css")}">
 {head}
 </head>
 <body class="{clase}">
@@ -107,7 +122,7 @@ def pagina(titulo, cuerpo, *, base, clase="", head="", site=None):
 </header>
 {cuerpo}
 {pie}
-<script src="{base}assets/js/idioma.js"></script>
+<script src="{base}assets/js/idioma.js{v("assets/js/idioma.js")}"></script>
 </body>
 </html>
 """
@@ -260,7 +275,7 @@ def indice(datos, site):
 """
     head = ('<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">\n'
             '<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>\n'
-            '<script src="assets/js/mapa.js" defer></script>')
+            f'<script src="assets/js/mapa.js{v("assets/js/mapa.js")}" defer></script>')
     return pagina("NIDO · Los vuelos de la golondrina", cuerpo,
                   base="", clase="pagina-mapa", head=head, site=site)
 
