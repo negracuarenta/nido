@@ -327,8 +327,23 @@ a { color: inherit; }
 .logo--vpst { height: 50px; opacity: 1; }
 
 /* El mapa y su leyenda forman una zona propia: así la leyenda se ancla al
-   mapa y no al cuerpo de la página, que al sumar el pie se hizo más alto. */
-.mapa-zona { position: relative; }
+   mapa y no al cuerpo de la página, que al sumar el pie se hizo más alto.
+   Al envolverlo se cortó la cadena de flex —#mapa dejó de ser hijo directo del
+   body— y el mapa quedaba sin altura: por eso la zona la fija acá. */
+.mapa-zona { position: relative; display: flex; }
+
+.pagina-mapa { height: auto; min-height: 100vh; }
+
+.mapa-zona #mapa {
+  flex: 1 1 auto;
+  height: min(calc(100svh - 4.5rem), 900px);
+  min-height: 400px;
+}
+
+@media (max-width: 700px) {
+  .mapa-zona #mapa { height: min(62svh, 560px); }
+  .pie-sitio__logos { gap: 1.6rem 2.2rem; }
+}
 
 .leyenda .titulo {
   font-size: 1.9rem;
