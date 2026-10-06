@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El cerro de los Siete Colores está en Purmamarca, dentro de la Quebrada de Humahuaca, un valle angosto y árido de la provincia de Jujuy, flanqueado por el altiplano de la Puna y las zonas boscosas del este.",
+      "La quebrada forma un corredor natural de 155 kilómetros de norte a sur, por donde corre el río Grande, y sigue el trazado del Camino Inca. Hay rastros de su uso como ruta de intercambio durante los últimos diez mil años: comunidades cazadoras-recolectoras prehistóricas, el Imperio Inca entre los siglos XV y XVI, y las luchas por la independencia en los siglos XIX y XX."
+    ],
     "de": [],
     "en": []
   },
@@ -36,5 +39,12 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Cerro_de_los_siete_colores_-_Purmamarca.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "UNESCO, Centro del Patrimonio Mundial",
+      "titulo": "Quebrada de Humahuaca",
+      "url": "https://whc.unesco.org/en/list/1116/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

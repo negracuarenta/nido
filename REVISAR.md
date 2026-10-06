@@ -218,3 +218,47 @@ Dos quedaron marcadas en el epígrafe como lo que realmente son, porque no
 encontré con licencia libre la planta en su lugar de origen:
 - **E3** · la *Victoria amazonica* está fotografiada en cultivo, no en el Amazonas.
 - **O7** · el peyote está fotografiado en maceta, no en Wirikuta.
+
+---
+
+## Oeste completo, con una contradicción seria
+
+Los ocho lugares tienen ya información con fuente. Pero apareció algo que **no
+puedo resolver yo**.
+
+### O2 · El guión dice que le quitaron protección al Aconcagua
+Tu texto trágico dice: *«vi a los hombres votar una ley que le quita protección,
+para que las máquinas puedan llegar más cerca»*.
+
+**Las fuentes oficiales dicen lo contrario.** La actualización de la zonificación
+del Parque Provincial Aconcagua se presenta como una **ampliación del 21 % del
+territorio**, incorporando áreas nuevas como la Quebrada de Matienzo, y
+reemplazando la zonificación de la Ley 5463 de 1989.
+
+Puede que las dos cosas sean ciertas a la vez: un parque puede crecer en
+superficie y al mismo tiempo bajar la categoría de protección de ciertas zonas,
+habilitando actividad donde antes no la había. Pero **eso no lo pude verificar**,
+y la versión oficial es la de la ampliación.
+
+**No escribí la parte trágica de O2.** Si tenés la fuente que respalda lo que
+decís —un análisis del articulado, una denuncia de alguna organización, una nota
+técnica— pasámela y la escribo. Si no, conviene revisar la frase.
+
+### Lo que sí dio exacto en el Oeste
+- **O6** · «una herida abierta en el borde: la cortaron para vaciarla». Desde 1580
+  los encomenderos intentaron desaguar la laguna de Guatavita. Antonio de
+  Sepúlveda, con quien la Corona había firmado un acuerdo en 1562, hizo un
+  segundo intento con instrumentos construidos para eso y sacó una esmeralda
+  asentada en los libros reales. El corte todavía se ve.
+- **O7** · «minas pedidas sobre la tierra sagrada». Las concesiones mineras sobre
+  Wirikuta están documentadas por el INAH y fueron parte de lo que motivó la
+  postulación del sitio ante la UNESCO.
+- **O5** · «pudrirse de pie, comido por larvas y hongos que el calor dejó subir».
+  El Instituto Humboldt viene registrando un daño extraño en los frailejones,
+  con el aumento de temperatura del páramo como hipótesis principal.
+
+### Pendiente menor
+**O4** · la geología del cerro de los Siete Colores —«millones de años de mar, de
+barro y de hierro apilados en capas»— no la pude respaldar: UNESCO describe la
+Quebrada de Humahuaca por su valor cultural, no geológico. La ficha cuenta la
+quebrada y el Camino Inca. Para las capas haría falta SEGEMAR.

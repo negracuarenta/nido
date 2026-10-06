@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Wirikuta es el más importante de los sitios sagrados del pueblo wixárika, en el cuadrante suroriental del Desierto Chihuahuense, al norte del altiplano de San Luis Potosí. El 9 de junio de 2001 el gobierno de San Luis Potosí lo declaró Sitio Sagrado Natural junto con la Ruta Wixárika: 140.211 hectáreas protegidas en siete municipios.",
+      "Cada año los wixaritari recorren una ruta ceremonial de unos 550 kilómetros, desde la región del Gran Nayar hasta el desierto potosino. La Ruta Wixárika por los sitios sagrados a Wirikuta fue inscripta en la Lista del Patrimonio Mundial de la UNESCO.",
+      "El hikuri —el peyote— es un cactus sagrado que sólo crece silvestre en Wirikuta."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +22,9 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "La peregrinación enfrenta hoy varios riesgos a la vez: el avance de proyectos agrícolas e industriales, el saqueo de las ofrendas ceremoniales, la disminución del peyote en el desierto potosino y las concesiones mineras otorgadas sobre la región de Wirikuta. Esos riesgos son parte de lo que motivó la postulación del sitio ante la UNESCO."
+      ],
       "de": [],
       "en": []
     }
@@ -47,5 +53,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Lophophora_williamsii,_native_to_SW_Texas_and_Mexico_2017-07-25-14.28_(38614568754).jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Instituto Nacional de Antropología e Historia (INAH), México",
+      "titulo": "La Ruta wixárika por los sitios sagrados a Wirikuta es inscrita en la Lista de Patrimonio Mundial de la UNESCO",
+      "url": "https://www.inah.gob.mx//boletines/la-ruta-wixarika-por-los-sitios-sagrados-a-wirikuta-es-inscrita-en-la-lista-de-patrimonio-mundial-de-la-unesco",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Instituto Nacional de los Pueblos Indígenas (INPI), México",
+      "titulo": "Plan de manejo del sitio sagrado natural Wirikuta (PDF)",
+      "url": "https://www.inpi.gob.mx/plan-winaodme/docs/plan-de-manejo-del-sitio-sagrado-natural-wirikuta-enero-2008-.pdf",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

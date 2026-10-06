@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "El Parque Provincial Aconcagua protege 83.971 hectáreas en el departamento de Las Heras, Mendoza, entre los 2.400 y los 6.960 metros sobre el nivel del mar. Se creó por la Ley Provincial 4807, de 1983.",
+      "El cerro Aconcagua llega a los 6.962 metros: es la cumbre más alta de América y la más alta del mundo fuera de Asia."
+    ],
     "de": [],
     "en": []
   },
@@ -47,5 +50,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_del_Monte_Aconcagua_sobre_Vi%C3%B1a_del_Mar.png"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Gobierno de Mendoza",
+      "titulo": "Plan de gestión y uso público del Parque Provincial Aconcagua (PDF)",
+      "url": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2022/08/Plan-de-Manejo-Aconcagua-Tomo-II.pdf",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Sistema de Información de Biodiversidad, Argentina",
+      "titulo": "Parque Provincial Aconcagua",
+      "url": "https://sib.gob.ar/index.php/areas-protegidas/parque-provincial-aconcagua-mendoza",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

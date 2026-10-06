@@ -7,7 +7,11 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "Colombia tiene la mitad de los páramos del mundo: más de 2,9 millones de hectáreas repartidas en 36 complejos. De esa agua viven diecisiete millones de personas, además de la agricultura y la industria de toda la región andina.",
+      "El frailejón es la planta que hace ese trabajo. Sus hojas cubiertas de pelos atrapan la humedad del aire y la conducen al suelo, donde alimenta los acuíferos y los ríos: retiene hasta el 80 % de su propio volumen. En Colombia se conocen 91 especies, y el Instituto Humboldt sigue describiendo nuevas.",
+      "Entre los frailejones vive el oso de anteojos, el único oso nativo de Sudamérica. Al dispersar semillas ayuda a regenerar el bosque y el páramo, y con eso sostiene el mismo ciclo del agua."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +22,10 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "Investigadores del Instituto Humboldt vienen registrando un daño extraño en los frailejones colombianos. La hipótesis principal apunta al aumento de temperatura en los páramos asociado al cambio climático; las simulaciones de laboratorio indican además una probable reducción de la capacidad de los frailejones para capturar agua.",
+        "De las especies de frailejón que crecen en el país, 68 son endémicas de Colombia, 36 están amenazadas y 7 en peligro crítico."
+      ],
       "de": [],
       "en": []
     }
@@ -58,5 +65,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Oso_de_anteojos_(Tremarctos_ornatus)_con_alopecia_por_estr%C3%A9s_03.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Instituto Humboldt, Colombia",
+      "titulo": "Extraño daño en frailejones colombianos preocupa a investigadores",
+      "url": "https://www.humboldt.org.co/noticias/extrano-dano-en-frailejones-colombianos-preocupa-a-investigadores",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Parques Nacionales Naturales de Colombia",
+      "titulo": "Chingaza: entre páramos, osos y frailejones",
+      "url": "https://www.parquesnacionales.gov.co/ecoturismo-especial/chingaza-entre-paramos-osos-y-frailejones/",
+      "consultado": "2026-10-06"
+    }
+  ]
 }

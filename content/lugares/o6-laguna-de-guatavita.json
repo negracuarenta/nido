@@ -7,7 +7,10 @@
     "en": ""
   },
   "info": {
-    "es": [],
+    "es": [
+      "La laguna de Guatavita fue el principal centro de ofrendas religiosas del territorio muisca. En las lagunas de altura se celebraban grandes ceremonias: los pueblos se reunían bajo la conducción de sus caciques y sus sacerdotes para ofrendar a los dioses.",
+      "Según el relato que dio origen a la leyenda de El Dorado, un cacique poderoso entraba con sus sacerdotes en una balsa hasta el medio de la laguna y arrojaba al agua oro y esmeraldas. La Balsa Muisca del Museo del Oro, encontrada en 1969, representa esa ceremonia: para los muiscas, un punto de contacto con otros niveles del cosmos."
+    ],
     "de": [],
     "en": []
   },
@@ -18,7 +21,10 @@
       "en": ""
     },
     "info": {
-      "es": [],
+      "es": [
+        "Desde 1580 los encomenderos intentaron vaciar la laguna, y en cada intento aparecían piezas de oro y esmeraldas más ricas. Antonio de Sepúlveda —con quien la Corona española había firmado en 1562 un acuerdo sobre el oro, la plata, las perlas y las piedras que pudieran sacarse de ahí— hizo un segundo intento con instrumentos construidos para eso, extrajo una enorme cantidad de agua y sacó una esmeralda de gran valor, asentada en los libros reales.",
+        "El corte que abrieron en el borde para desaguarla todavía se ve."
+      ],
       "de": [],
       "en": []
     }
@@ -47,5 +53,18 @@
       "origen": "https://commons.wikimedia.org/wiki/File:Reserva_Vista_Hermosa_,_guatavita_07.jpg"
     }
   ],
-  "fuentes": []
+  "fuentes": [
+    {
+      "institucion": "Banco de la República, Museo del Oro, Colombia",
+      "titulo": "Muisca: Parque Natural Laguna de Guatavita",
+      "url": "https://banrepcultural.org/museo-del-oro/sociedades/muisca/parque-natural-laguna-de-guatavita",
+      "consultado": "2026-10-06"
+    },
+    {
+      "institucion": "Banco de la República, Boletín Museo del Oro",
+      "titulo": "Las primeras exploraciones en la laguna de Guatavita",
+      "url": "https://publicaciones.banrepcultural.org/index.php/bmo/article/view/7340",
+      "consultado": "2026-10-06"
+    }
+  ]
 }
