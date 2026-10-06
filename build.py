@@ -70,6 +70,13 @@ def t(nodo, lang):
     return nodo.get(lang) or nodo.get("es") or ""
 
 
+def nom(lugar, lang):
+    """El nombre del lugar en un idioma. El castellano es el que manda:
+    si falta la traducción, se usa ese. Los ids y los slugs no se tocan
+    nunca, porque están impresos en los QR del afiche."""
+    return (lugar.get("names") or {}).get(lang) or lugar["name"]
+
+
 def por_idioma(constructor, clase=""):
     """Envuelve el mismo bloque en sus tres idiomas; el CSS muestra uno."""
     partes = []
@@ -174,14 +181,14 @@ def ficha(lugar, viaje, contenido, site, vecinos, base):
             return ""
         return por_idioma(lambda l, v=v: (
             f'<a class="{clase}" href="{base}lugares/{v["slug"]}/">'
-            f'{escape(t(ui[etiqueta], l))}<span>{escape(v["name"])}</span></a>'
+            f'{escape(t(ui[etiqueta], l))}<span>{escape(nom(v, l))}</span></a>'
         ))
 
     cuerpo = f"""
 <main class="ficha">
   <article>
     {cabecera}
-    <h1>{escape(nombre)}</h1>
+    <h1>{por_idioma(lambda l: escape(nom(lugar, l)))}</h1>
     {cita}
     {info}
     {tragico}
@@ -344,7 +351,7 @@ def resumen_viaje(viaje, textos, contenidos, site, base):
   <a class="parada__foto" href="{base}lugares/{lugar['slug']}/">{foto}</a>
   <div class="parada__texto">
     <p class="codigo" style="--c:{color}"><span class="pastilla"></span>{escape(lugar['id'])}{marca}</p>
-    <h2><a href="{base}lugares/{lugar['slug']}/">{escape(lugar['name'])}</a></h2>
+    <h2>{por_idioma(lambda l, lugar=lugar: f'<a href="{base}lugares/{lugar["slug"]}/">{escape(nom(lugar, l))}</a>')}</h2>
     {cita}
     {resumen}
   </div>

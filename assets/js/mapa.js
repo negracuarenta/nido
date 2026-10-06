@@ -7,6 +7,36 @@
  * cruzaría el mapa entero de lado a lado. */
 
 (function () {
+  // El nombre de cada lugar cambia con el idioma, pero el marcador ya está
+  // dibujado: guardamos la referencia para reescribir el rótulo al vuelo.
+  var rotulados = [];
+
+  function idioma() {
+    return document.documentElement.getAttribute('data-lang') || 'es';
+  }
+
+  function nombreDe(lugar) {
+    return (lugar.names && lugar.names[idioma()]) || lugar.name;
+  }
+
+  function rotular(marcador, lugar, sufijo) {
+    rotulados.push({ marcador: marcador, lugar: lugar, sufijo: sufijo || '' });
+    return marcador;
+  }
+
+  function reescribirRotulos() {
+    for (var i = 0; i < rotulados.length; i++) {
+      var r = rotulados[i];
+      var nombre = nombreDe(r.lugar);
+      var completo = (r.lugar.id ? r.lugar.id + ' · ' : '') + nombre;
+      r.marcador.setTooltipContent(nombre + r.sufijo);
+      var el = r.marcador.getElement();
+      if (el) { el.setAttribute('title', completo); el.setAttribute('alt', completo); }
+    }
+  }
+
+  document.addEventListener('nido:idioma', reescribirRotulos);
+
   var RAD = Math.PI / 180;
 
   function aCartesiano(p) {
@@ -125,33 +155,33 @@
         var url = 'lugares/' + lugar.slug + '/';
 
         if (!lugar.soloTragico) {
-          L.marker(pos, {
+          rotular(L.marker(pos, {
             icon: L.divIcon({
               className: '', iconSize: [13, 13], iconAnchor: [6.5, 6.5],
               html: '<div class="punto-lugar" style="width:13px;height:13px;' +
                     'background:' + color + '"></div>',
             }),
             keyboard: true,
-            title: lugar.id + ' · ' + lugar.name,
-            alt: lugar.id + ' · ' + lugar.name,
-          }).bindTooltip(lugar.name, { direction: 'top', offset: [0, -8] })
+            title: lugar.id + ' · ' + nombreDe(lugar),
+            alt: lugar.id + ' · ' + nombreDe(lugar),
+          }).bindTooltip(nombreDe(lugar), { direction: 'top', offset: [0, -8] })
             .on('click keypress', function () { location.href = url; })
-            .addTo(grupo);
+            .addTo(grupo), lugar);
         }
 
         if (lugar.tragico || lugar.soloTragico) {
           // La ✕ va al lado del punto; sola, si el lugar es sólo trágico.
           var desp = lugar.soloTragico ? [7, 7] : [-3, 11];
-          L.marker(pos, {
+          rotular(L.marker(pos, {
             icon: L.divIcon({
               className: '', iconSize: [14, 14], iconAnchor: desp,
               html: '<div class="marca-cruz">✕</div>',
             }),
-            title: lugar.id + ' · ' + lugar.name,
-            alt: lugar.id + ' · ' + lugar.name,
-          }).bindTooltip(lugar.name, { direction: 'top', offset: [0, -8] })
+            title: lugar.id + ' · ' + nombreDe(lugar),
+            alt: lugar.id + ' · ' + nombreDe(lugar),
+          }).bindTooltip(nombreDe(lugar), { direction: 'top', offset: [0, -8] })
             .on('click keypress', function () { location.href = url; })
-            .addTo(capaTragica);
+            .addTo(capaTragica), lugar);
         }
       });
     });

@@ -11,8 +11,14 @@
       "El Baikal, en el sudeste de Siberia, es el lago más antiguo y más profundo del mundo: veinticinco millones de años y 1.700 metros de hondura, sobre 3,15 millones de hectáreas. Guarda cerca del 20 % de toda el agua dulce no congelada del planeta.",
       "Lo llaman las Galápagos de Rusia. Su edad y su aislamiento produjeron una de las faunas de agua dulce más ricas y más extrañas que existen, de un valor excepcional para el estudio de la evolución."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Baikal im Südosten Sibiriens ist der älteste und tiefste See der Welt: fünfundzwanzig Millionen Jahre alt und 1.700 Meter tief, auf 3,15 Millionen Hektar. Er birgt rund 20 % des gesamten ungefrorenen Süßwassers der Erde.",
+      "Man nennt ihn das Galapagos Russlands. Sein Alter und seine Abgeschiedenheit haben eine der reichsten und merkwürdigsten Süßwasserfaunen hervorgebracht, die es gibt — von außergewöhnlichem Wert für die Erforschung der Evolution."
+    ],
+    "en": [
+      "Lake Baikal, in south-eastern Siberia, is the oldest and deepest lake in the world: twenty-five million years old and 1,700 metres deep, across 3.15 million hectares. It holds close to 20 % of all the unfrozen fresh water on the planet.",
+      "It is called the Galápagos of Russia. Its age and its isolation produced one of the richest and strangest freshwater faunas in existence, of exceptional value for the study of evolution."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "La UICN evalúa el lago Baikal como de «preocupación significativa», por la contaminación que persiste y por amenazas nuevas: desarrollo turístico a gran escala, tratamiento deficiente de aguas cloacales que provoca eutrofización en la costa, y cambio climático.",
         "También preocupan los proyectos hidroeléctricos en Mongolia y las prácticas actuales de regulación del nivel del agua, calificadas de peligrosas y dañinas. El cierre de la papelera de Baikalsk fue un paso positivo."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet den Baikalsee als «erheblich besorgniserregend», wegen der fortbestehenden Verschmutzung und wegen neuer Bedrohungen: touristische Großprojekte, mangelhafte Abwasserbehandlung, die an der Küste zu Eutrophierung führt, und Klimawandel.",
+        "Sorge bereiten auch die Wasserkraftprojekte in der Mongolei und die gegenwärtige Praxis der Wasserstandsregulierung, die als gefährlich und schädlich eingestuft wird. Die Schließung der Papierfabrik von Baikalsk war ein positiver Schritt."
+      ],
+      "en": [
+        "The IUCN assesses Lake Baikal as of «significant concern», because of persistent pollution and new threats: large-scale tourism development, deficient sewage treatment causing eutrophication along the shore, and climate change.",
+        "Concern also attaches to hydroelectric projects in Mongolia and to current water-level regulation practices, described as dangerous and damaging. The closure of the Baikalsk pulp mill was a positive step."
+      ]
     },
     "fuentes": [
       {
@@ -42,8 +54,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El hielo del Baikal al atardecer",
-        "de": "",
-        "en": ""
+        "de": "Das Eis des Baikal bei Sonnenuntergang",
+        "en": "The ice of Baikal at sunset"
       },
       "autor": "Sergey Pesterev",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +65,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Panorámica del lago Baikal",
-        "de": "",
-        "en": ""
+        "de": "Panorama des Baikalsees",
+        "en": "Panorama of Lake Baikal"
       },
       "autor": "Sergey Pesterev",
       "licencia": "CC BY-SA 4.0",

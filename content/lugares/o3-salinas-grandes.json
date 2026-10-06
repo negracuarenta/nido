@@ -22,8 +22,14 @@
         "El litio de los salares se extrae por evaporación: se bombea la salmuera a piletas y se deja que el sol haga el resto. Según trabajos de investigadores del CONICET, por cada tonelada de litio obtenida de ese modo se evaporan alrededor de dos millones de litros de agua.",
         "En una región donde el agua es escasa, eso puede secar las vegas y los ojos de agua de donde salen los pequeños acuíferos que se usan para el pastoreo y la agricultura. Las comunidades de la Mesa de Salinas Grandes, junto con la Comisión Internacional de Juristas, plantean que privarlas del agua o del uso del salar vulnera derechos humanos fundamentales."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Das Lithium der Salzseen wird durch Verdunstung gewonnen: die Sole wird in Becken gepumpt, und die Sonne erledigt den Rest. Arbeiten von CONICET-Forschenden zufolge verdunsten für jede auf diese Weise gewonnene Tonne Lithium rund zwei Millionen Liter Wasser.",
+        "In einer Region, in der Wasser knapp ist, kann das die Feuchtwiesen und Quellaugen austrocknen, aus denen die kleinen Grundwasserleiter gespeist werden, die für Weidewirtschaft und Landbau genutzt werden. Die Gemeinschaften der Mesa de Salinas Grandes machen gemeinsam mit der Internationalen Juristenkommission geltend, dass es grundlegende Menschenrechte verletzt, ihnen das Wasser oder die Nutzung des Salzsees zu entziehen."
+      ],
+      "en": [
+        "Lithium from the salt flats is extracted by evaporation: the brine is pumped into ponds and the sun does the rest. According to work by CONICET researchers, for every tonne of lithium obtained this way around two million litres of water evaporate.",
+        "In a region where water is scarce, that can dry up the wet meadows and springs that feed the small aquifers used for grazing and farming. The communities of the Mesa de Salinas Grandes, together with the International Commission of Jurists, argue that depriving them of water or of the use of the salt flat violates fundamental human rights."
+      ]
     }
   },
   "fotos": [
@@ -31,8 +37,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Las Salinas Grandes, en Jujuy",
-        "de": "",
-        "en": ""
+        "de": "Die Salinas Grandes in Jujuy",
+        "en": "The Salinas Grandes, in Jujuy"
       },
       "autor": "Abuelodelanada",
       "licencia": "CC BY-SA 3.0",
@@ -42,8 +48,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Vicuñas en la puna",
-        "de": "",
-        "en": ""
+        "de": "Vikunjas in der Puna",
+        "en": "Vicuñas on the puna"
       },
       "autor": "Jäkel.Andrés",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +59,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Vicuña en el corredor biológico",
-        "de": "",
-        "en": ""
+        "de": "Vikunja im biologischen Korridor",
+        "en": "Vicuña in the biological corridor"
       },
       "autor": "Camilacaviedescameron",
       "licencia": "CC BY-SA 4.0",

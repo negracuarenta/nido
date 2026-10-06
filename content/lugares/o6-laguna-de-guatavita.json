@@ -11,8 +11,14 @@
       "La laguna de Guatavita fue el principal centro de ofrendas religiosas del territorio muisca. En las lagunas de altura se celebraban grandes ceremonias: los pueblos se reunían bajo la conducción de sus caciques y sus sacerdotes para ofrendar a los dioses.",
       "Según el relato que dio origen a la leyenda de El Dorado, un cacique poderoso entraba con sus sacerdotes en una balsa hasta el medio de la laguna y arrojaba al agua oro y esmeraldas. La Balsa Muisca del Museo del Oro, encontrada en 1969, representa esa ceremonia: para los muiscas, un punto de contacto con otros niveles del cosmos."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Lagune von Guatavita war das wichtigste Zentrum religiöser Opfergaben im Gebiet der Muisca. An den Hochlandseen wurden große Zeremonien gefeiert: die Völker versammelten sich unter der Führung ihrer Kaziken und Priester, um den Göttern zu opfern.",
+      "Der Erzählung zufolge, aus der die Legende von El Dorado entstand, fuhr ein mächtiger Kazike mit seinen Priestern auf einem Floß bis in die Mitte der Lagune und warf Gold und Smaragde ins Wasser. Das Muisca-Floß des Goldmuseums, 1969 gefunden, stellt diese Zeremonie dar: für die Muisca ein Berührungspunkt mit anderen Ebenen des Kosmos."
+    ],
+    "en": [
+      "The lagoon of Guatavita was the principal centre of religious offerings in Muisca territory. Great ceremonies were held at the high-altitude lagoons: the peoples gathered under the direction of their caciques and priests to make offerings to the gods.",
+      "According to the account that gave rise to the legend of El Dorado, a powerful cacique would go out with his priests on a raft to the middle of the lagoon and throw gold and emeralds into the water. The Muisca Raft in the Gold Museum, found in 1969, represents that ceremony: for the Muisca, a point of contact with other levels of the cosmos."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "Desde 1580 los encomenderos intentaron vaciar la laguna, y en cada intento aparecían piezas de oro y esmeraldas más ricas. Antonio de Sepúlveda —con quien la Corona española había firmado en 1562 un acuerdo sobre el oro, la plata, las perlas y las piedras que pudieran sacarse de ahí— hizo un segundo intento con instrumentos construidos para eso, extrajo una enorme cantidad de agua y sacó una esmeralda de gran valor, asentada en los libros reales.",
         "El corte que abrieron en el borde para desaguarla todavía se ve."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Ab 1580 versuchten die Encomenderos, die Lagune leerzuschöpfen, und bei jedem Versuch kamen reichere Gold- und Smaragdstücke zum Vorschein. Antonio de Sepúlveda — mit dem die spanische Krone 1562 eine Vereinbarung über das Gold, das Silber, die Perlen und die Steine geschlossen hatte, die dort zu bergen wären — unternahm mit eigens gebauten Geräten einen zweiten Versuch, ließ eine gewaltige Menge Wasser ab und holte einen Smaragd von großem Wert heraus, verzeichnet in den königlichen Büchern.",
+        "Der Einschnitt, den sie in den Rand gruben, um sie zu entwässern, ist bis heute zu sehen."
+      ],
+      "en": [
+        "From 1580 the encomenderos tried to drain the lagoon, and with each attempt richer pieces of gold and emeralds appeared. Antonio de Sepúlveda — with whom the Spanish Crown had signed an agreement in 1562 covering the gold, silver, pearls and stones that might be taken from there — made a second attempt with instruments built for the purpose, drew off an enormous quantity of water and brought out an emerald of great value, entered in the royal books.",
+        "The cut they opened in the rim to drain it can still be seen."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "La laguna de Guatavita",
-        "de": "",
-        "en": ""
+        "de": "Die Lagune von Guatavita",
+        "en": "The lagoon of Guatavita"
       },
       "autor": "Sebastián Pulido G.",
       "licencia": "CC BY-SA 4.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El entorno de la laguna",
-        "de": "",
-        "en": ""
+        "de": "Die Umgebung der Lagune",
+        "en": "The setting of the lagoon"
       },
       "autor": "Donatello Carloti Torregroza",
       "licencia": "CC BY-SA 4.0",

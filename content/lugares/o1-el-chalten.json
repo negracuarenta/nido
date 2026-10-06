@@ -11,8 +11,14 @@
       "El Chaltén está a los pies del cerro Fitz Roy, dentro del Parque Nacional Los Glaciares, en el suroeste de Santa Cruz. El parque cubre 600.000 hectáreas y los glaciares ocupan cerca de la mitad.",
       "La mayoría se alimenta del Campo de Hielo Patagónico Sur, el vestigio más extenso que dejó en Sudamérica la glaciación del Cuaternario. En conjunto, el parque es una reserva enorme de agua dulce."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "El Chaltén liegt am Fuß des Cerro Fitz Roy, im Nationalpark Los Glaciares im Südwesten von Santa Cruz. Der Park umfasst 600.000 Hektar, und die Gletscher nehmen fast die Hälfte davon ein.",
+      "Die meisten speisen sich aus dem Südlichen Patagonischen Eisfeld, dem ausgedehntesten Überrest, den die quartäre Vereisung in Südamerika hinterlassen hat. Insgesamt ist der Park ein gewaltiger Süßwasserspeicher."
+    ],
+    "en": [
+      "El Chaltén lies at the foot of Cerro Fitz Roy, inside Los Glaciares National Park, in the south-west of Santa Cruz. The park covers 600,000 hectares and glaciers occupy close to half of it.",
+      "Most are fed by the Southern Patagonian Ice Field, the most extensive remnant left in South America by the Quaternary glaciation. Taken together, the park is an enormous reserve of fresh water."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +32,16 @@
         "El Chaltén está al borde del Campo de Hielo Patagónico Sur, donde entre 2000 y 2012 los glaciares perdieron en promedio casi un metro de espesor por año. Salvo el Perito Moreno y algunos casos aislados, todos retrocedieron y se adelgazaron.",
         "Investigadores del CONICET participaron del primer estudio que comparó la evolución de todos los glaciares andinos entre 2000 y 2018, con más de treinta mil modelos de terreno hechos a partir de imágenes satelitales."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Anden bergen mehr als 31.000 Quadratkilometer Eis, von Venezuela bis Feuerland. Sie zählen zu den besten Anzeigern des Klimawandels: steigt die Temperatur, schmelzen sie; nehmen die Niederschläge zu, wachsen sie.",
+        "El Chaltén liegt am Rand des Südlichen Patagonischen Eisfelds, wo die Gletscher zwischen 2000 und 2012 im Mittel fast einen Meter Dicke pro Jahr verloren. Abgesehen vom Perito Moreno und einigen Einzelfällen sind alle zurückgewichen und dünner geworden.",
+        "Forschende des CONICET waren an der ersten Studie beteiligt, die die Entwicklung sämtlicher Andengletscher zwischen 2000 und 2018 verglich, mit mehr als dreißigtausend aus Satellitenbildern erstellten Geländemodellen."
+      ],
+      "en": [
+        "The Andes hold more than 31,000 square kilometres of ice, from Venezuela to Tierra del Fuego. They are among the best indicators of climate change: if the temperature rises they melt, if precipitation increases they grow.",
+        "El Chaltén sits on the edge of the Southern Patagonian Ice Field, where between 2000 and 2012 the glaciers lost on average almost a metre of thickness per year. Apart from the Perito Moreno and a few isolated cases, all of them retreated and thinned.",
+        "CONICET researchers took part in the first study comparing the evolution of every Andean glacier between 2000 and 2018, using more than thirty thousand terrain models built from satellite imagery."
+      ]
     }
   },
   "fotos": [
@@ -35,8 +49,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El Fitz Roy desde El Chaltén",
-        "de": "",
-        "en": ""
+        "de": "Der Fitz Roy von El Chaltén aus",
+        "en": "The Fitz Roy from El Chaltén"
       },
       "autor": "Gedankenstuecke",
       "licencia": "CC BY-SA 4.0",
@@ -46,8 +60,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El macizo del Fitz Roy",
-        "de": "",
-        "en": ""
+        "de": "Das Fitz-Roy-Massiv",
+        "en": "The Fitz Roy massif"
       },
       "autor": "Gedankenstuecke",
       "licencia": "CC BY-SA 4.0",

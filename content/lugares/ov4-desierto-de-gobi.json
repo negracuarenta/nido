@@ -12,8 +12,16 @@
       "Se declaró Área Estrictamente Protegida en 1975 y entró a la Red Mundial de Reservas de Biosfera en 1991. Representa a los desiertos de Asia Central.",
       "Ahí viven el leopardo de las nieves, el íbice siberiano, el oso del Gobi, el asno salvaje asiático, el argalí y la gacela de bocio. Es además uno de los tres últimos lugares del planeta donde todavía queda el camello bactriano salvaje."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Große Gobi-Biosphärenreservat im Südwesten der Mongolei, an der Grenze zu China, ist eines der größten Schutzgebiete der Welt: insgesamt 6.839.160 Hektar. Allein sein Teil A umfasst rund 4,6 Millionen Hektar, Teil B weitere 0,9 Millionen. Zusammen übertreffen sie die Fläche der Schweiz.",
+      "1975 wurde es zum Streng Geschützten Gebiet erklärt und 1991 in das Weltnetz der Biosphärenreservate aufgenommen. Es steht für die Wüsten Zentralasiens.",
+      "Dort leben der Schneeleopard, der Sibirische Steinbock, der Gobibär, der Asiatische Wildesel, das Argali und die Kropfgazelle. Es ist außerdem einer der letzten drei Orte der Erde, an denen es noch das wilde Trampeltier gibt."
+    ],
+    "en": [
+      "The Great Gobi Biosphere Reserve, in south-western Mongolia on the border with China, is one of the largest protected areas in the world: 6,839,160 hectares in all. Its part A alone occupies some 4.6 million hectares, and part B another 0.9 million. Together they exceed the surface of Switzerland.",
+      "It was declared a Strictly Protected Area in 1975 and entered the World Network of Biosphere Reserves in 1991. It represents the deserts of Central Asia.",
+      "The snow leopard lives there, along with the Siberian ibex, the Gobi bear, the Asiatic wild ass, the argali and the goitered gazelle. It is also one of the last three places on the planet where the wild Bactrian camel still survives."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La reserva alberga al oso del Gobi —el mazaalai—, una subespecie de oso pardo en peligro crítico que sólo vive acá: es el único oso del mundo adaptado a vivir en un desierto.",
         "Las presiones sobre el ecosistema del Gobi son la desertificación asociada al cambio climático, el aumento de inviernos extremos que matan al ganado, y la caza furtiva."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Das Reservat beherbergt den Gobibären — den Mazaalai —, eine vom Aussterben bedrohte Braunbär-Unterart, die nur hier vorkommt: der einzige Bär der Welt, der an das Leben in einer Wüste angepasst ist.",
+        "Der Druck auf das Ökosystem der Gobi geht von der mit dem Klimawandel verbundenen Wüstenbildung aus, von der Zunahme extremer Winter, die das Vieh töten, und von der Wilderei."
+      ],
+      "en": [
+        "The reserve is home to the Gobi bear — the mazaalai — a critically endangered subspecies of brown bear that lives only here: the only bear in the world adapted to living in a desert.",
+        "The pressures on the Gobi ecosystem are desertification associated with climate change, the increase in extreme winters that kill livestock, and poaching."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Camellos en el desierto de Gobi",
-        "de": "",
-        "en": ""
+        "de": "Kamele in der Wüste Gobi",
+        "en": "Camels in the Gobi desert"
       },
       "autor": "Bernard Gagnon",
       "licencia": "CC0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El Gobi, en Mongolia",
-        "de": "",
-        "en": ""
+        "de": "Die Gobi in der Mongolei",
+        "en": "The Gobi, in Mongolia"
       },
       "autor": "Niek van Son from Eindhoven, Nederland",
       "licencia": "CC BY 2.0",

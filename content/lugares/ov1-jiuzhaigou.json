@@ -11,8 +11,14 @@
       "El valle de Jiuzhaigou se extiende por 72.000 hectáreas en el norte de la provincia de Sichuan y trepa hasta más de 4.800 metros, con una sucesión de ecosistemas forestales distintos según la altura.",
       "Lo que lo hace raro son sus formas kársticas cónicas y angostas, sus cascadas, y una cadena de lagunas de agua transparente que se ven azules, verdes y hasta violáceas. Viven ahí unas 140 especies de aves, además del panda gigante y el takín de Sichuan, los dos amenazados."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Tal von Jiuzhaigou erstreckt sich über 72.000 Hektar im Norden der Provinz Sichuan und steigt auf über 4.800 Meter an, mit einer Abfolge von Waldökosystemen, die sich mit der Höhe verändern.",
+      "Selten machen es seine kegelförmigen, schmalen Karstformen, seine Wasserfälle und eine Kette klarer Seen, die blau, grün und bis ins Violette schimmern. Dort leben rund 140 Vogelarten, dazu der Große Panda und der Sichuan-Takin, beide bedroht."
+    ],
+    "en": [
+      "The valley of Jiuzhaigou extends over 72,000 hectares in the north of Sichuan province and climbs to more than 4,800 metres, with a succession of forest ecosystems that change with altitude.",
+      "What makes it rare are its narrow, conical karst forms, its waterfalls, and a chain of clear lakes that appear blue, green and even violet. Some 140 bird species live there, along with the giant panda and the Sichuan takin, both threatened."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "La UICN evalúa Jiuzhaigou como «bueno, con algunas preocupaciones». Los valores naturales se conservaron bien.",
         "En 2017 un terremoto de magnitud 7,0 provocó cambios importantes en el paisaje; los trabajos de restauración lograron recuperar el área y sus rasgos principales. Antes de eso, la protección de algunas zonas se había visto comprometida por una infraestructura turística rápida y excesiva."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet Jiuzhaigou als «gut, mit einigen Bedenken». Die Naturwerte sind gut erhalten geblieben.",
+        "2017 verursachte ein Erdbeben der Stärke 7,0 erhebliche Veränderungen der Landschaft; die Instandsetzungsarbeiten konnten das Gebiet und seine wesentlichen Merkmale wiederherstellen. Zuvor war der Schutz einiger Zonen durch eine rasche und übermäßige touristische Infrastruktur beeinträchtigt worden."
+      ],
+      "en": [
+        "The IUCN assesses Jiuzhaigou as «good with some concerns». Its natural values have been well conserved.",
+        "In 2017 a magnitude 7.0 earthquake caused major changes to the landscape; restoration work managed to recover the area and its principal features. Before that, protection of some zones had been compromised by rapid and excessive tourist infrastructure."
+      ]
     },
     "fuentes": [
       {
@@ -42,8 +54,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "La cascada de Nuorilang, en Jiuzhaigou",
-        "de": "",
-        "en": ""
+        "de": "Der Nuorilang-Wasserfall in Jiuzhaigou",
+        "en": "The Nuorilang waterfall, in Jiuzhaigou"
       },
       "autor": "Chensiyuan",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +65,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El lago Rinoceronte",
-        "de": "",
-        "en": ""
+        "de": "Der Nashornsee",
+        "en": "Rhinoceros Lake"
       },
       "autor": "Jean-Marie Hullot from France",
       "licencia": "CC BY 2.0",

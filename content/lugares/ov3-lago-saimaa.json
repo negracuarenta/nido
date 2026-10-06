@@ -12,8 +12,16 @@
       "Es una especie ártica: necesita nieve y hielo para criar. En invierno excava madrigueras en los ventisqueros que se acumulan en las orillas de las islas, y ahí pare y descansa. Está en peligro de extinción: la estimación de Metsähallitus para 2025 es de 530 ejemplares.",
       "La vigilan y la protegen el organismo de parques de Finlandia y más de trescientos voluntarios locales por año, que cuentan madrigueras y palean nieve a mano para armarles ventisqueros artificiales cuando el invierno no alcanza. En 2025 nacieron 114 crías; hace diez años eran unas ochenta."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Im Saimaa lebt eine Robbe, die es sonst nirgendwo auf der Welt gibt. Die Saimaa-Ringelrobbe blieb dort zurück, als sich der See vom Meer trennte, und heute ist dies der einzige Ort der Erde, an dem man sie findet.",
+      "Sie ist eine arktische Art: sie braucht Schnee und Eis zum Aufziehen ihrer Jungen. Im Winter gräbt sie Höhlen in die Schneewehen, die sich an den Ufern der Inseln auftürmen, und dort wirft sie und ruht. Sie ist vom Aussterben bedroht: die Schätzung von Metsähallitus für 2025 liegt bei 530 Tieren.",
+      "Überwacht und geschützt wird sie von der finnischen Forst- und Parkverwaltung und von mehr als dreihundert örtlichen Freiwilligen pro Jahr, die Höhlen zählen und von Hand Schnee schaufeln, um künstliche Wehen anzulegen, wenn der Winter nicht ausreicht. 2025 kamen 114 Junge zur Welt; vor zehn Jahren waren es rund achtzig."
+    ],
+    "en": [
+      "A seal lives in Lake Saimaa that exists nowhere else in the world. The Saimaa ringed seal was left isolated there when the lake separated from the sea, and today this is the only place on the planet where it is found.",
+      "It is an Arctic species: it needs snow and ice to breed. In winter it digs lairs in the drifts that pile up along the shores of the islands, and there it gives birth and rests. It is endangered: Metsähallitus's estimate for 2025 is 530 individuals.",
+      "It is watched over and protected by Finland's parks agency and by more than three hundred local volunteers a year, who count lairs and shovel snow by hand to build artificial drifts when the winter falls short. In 2025, 114 pups were born; ten years ago there were some eighty."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La foca anillada de Saimaa necesita nieve y hielo para criar: excava sus madrigueras en los ventisqueros de las orillas. Los inviernos suaves son por eso una amenaza directa, junto con las redes de enmalle en las que las crías quedan atrapadas.",
         "La población crece, pero despacio y de forma despareja: avanza en Puruvesi y en el sur del Saimaa, mientras que la situación en el norte del lago es preocupante. Cada invierno, más de trescientos voluntarios palean nieve a mano para armar ventisqueros artificiales cuando el frío no alcanza."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Saimaa-Ringelrobbe braucht Schnee und Eis zum Aufziehen ihrer Jungen: sie gräbt ihre Höhlen in die Schneewehen der Ufer. Milde Winter sind deshalb eine unmittelbare Bedrohung, ebenso die Stellnetze, in denen sich die Jungtiere verfangen.",
+        "Die Population wächst, aber langsam und ungleichmäßig: sie nimmt in Puruvesi und im Süden des Saimaa zu, während die Lage im Norden des Sees besorgniserregend ist. Jeden Winter schaufeln mehr als dreihundert Freiwillige von Hand Schnee, um künstliche Wehen anzulegen, wenn die Kälte nicht ausreicht."
+      ],
+      "en": [
+        "The Saimaa ringed seal needs snow and ice to breed: it digs its lairs in the drifts along the shores. Mild winters are therefore a direct threat, along with the gillnets in which the pups become trapped.",
+        "The population is growing, but slowly and unevenly: it is advancing in Puruvesi and the south of Saimaa, while the situation in the north of the lake is worrying. Each winter, more than three hundred volunteers shovel snow by hand to build artificial drifts when the cold falls short."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El lago Saimaa desde el aire",
-        "de": "",
-        "en": ""
+        "de": "Der Saimaa-See aus der Luft",
+        "en": "Lake Saimaa from the air"
       },
       "autor": "kallerna",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El laberinto de islas del Saimaa",
-        "de": "",
-        "en": ""
+        "de": "Das Insellabyrinth des Saimaa",
+        "en": "The maze of islands of the Saimaa"
       },
       "autor": "Shadow-Aatu",
       "licencia": "CC BY 2.5",

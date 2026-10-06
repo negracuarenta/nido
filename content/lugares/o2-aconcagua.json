@@ -11,8 +11,14 @@
       "El Parque Provincial Aconcagua protege 83.971 hectáreas en el departamento de Las Heras, Mendoza, entre los 2.400 y los 6.960 metros sobre el nivel del mar. Se creó por la Ley Provincial 4807, de 1983.",
       "El cerro Aconcagua llega a los 6.962 metros: es la cumbre más alta de América y la más alta del mundo fuera de Asia."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Der Provinzpark Aconcagua schützt 83.971 Hektar im Departamento Las Heras in Mendoza, zwischen 2.400 und 6.960 Metern über dem Meer. Er wurde durch das Provinzgesetz 4807 von 1983 eingerichtet.",
+      "Der Aconcagua erreicht 6.962 Meter: er ist der höchste Gipfel Amerikas und der höchste der Welt außerhalb Asiens."
+    ],
+    "en": [
+      "Aconcagua Provincial Park protects 83,971 hectares in the department of Las Heras, Mendoza, between 2,400 and 6,960 metres above sea level. It was created by Provincial Law 4807, of 1983.",
+      "Cerro Aconcagua rises to 6,962 metres: it is the highest summit in the Americas and the highest in the world outside Asia."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +32,16 @@
         "En 2011 la Legislatura de Mendoza rechazó la Declaración de Impacto Ambiental del proyecto. En 2025 la aprobó: la ratificación quedó formalizada en la Ley provincial 9684, que habilita a «PSJ Cobre Mendocino» a avanzar en Uspallata.",
         "El parque en sí no se achicó. En 2024, otra ley actualizó la zonificación del Parque Provincial Aconcagua y amplió el área protegida un 21 %, de 67.438 a 85.699 hectáreas, incorporando zonas nuevas como la Quebrada de Matienzo. Las dos cosas ocurrieron casi a la vez: el parque creció, y en el mismo corredor que lleva hacia él se votó habilitar una mina de cobre a cielo abierto."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Lagerstätte San Jorge liegt auf der Estancia Yalguaraz, Distrikt Uspallata, Departamento Las Heras: demselben Departamento wie der Provinzpark Aconcagua, rund 37 Kilometer nördlich der Stadt Uspallata. Es handelt sich um einen Kupferporphyr mit geringeren Goldanteilen, seit den sechziger Jahren bekannt; das Projekt sieht einen etwa sechzehnjährigen Tagebau auf einer betroffenen Fläche von 475.870 Quadratmetern vor.",
+        "2011 lehnte das Parlament von Mendoza die Umweltverträglichkeitserklärung des Projekts ab. 2025 stimmte es ihr zu: die Bestätigung wurde im Provinzgesetz 9684 festgeschrieben, das «PSJ Cobre Mendocino» erlaubt, in Uspallata weiterzugehen.",
+        "Der Park selbst wurde nicht verkleinert. 2024 aktualisierte ein weiteres Gesetz die Zonierung des Provinzparks Aconcagua und erweiterte das Schutzgebiet um 21 %, von 67.438 auf 85.699 Hektar, unter Einbeziehung neuer Zonen wie der Quebrada de Matienzo. Beides geschah fast gleichzeitig: der Park wuchs, und in demselben Korridor, der zu ihm führt, wurde eine Kupfermine im Tagebau genehmigt."
+      ],
+      "en": [
+        "The San Jorge deposit lies on the Yalguaraz estate, Uspallata district, department of Las Heras: the same department as Aconcagua Provincial Park, some 37 kilometres north of the town of Uspallata. It is a copper porphyry with gold in smaller proportion, known since the nineteen-sixties, and the project envisages open-pit extraction for around sixteen years over an affected surface of 475,870 square metres.",
+        "In 2011 the Mendoza legislature rejected the project's Environmental Impact Declaration. In 2025 it approved it: the ratification was formalised in provincial Law 9684, which allows «PSJ Cobre Mendocino» to proceed in Uspallata.",
+        "The park itself was not reduced. In 2024 another law updated the zoning of Aconcagua Provincial Park and enlarged the protected area by 21 %, from 67,438 to 85,699 hectares, incorporating new zones such as the Quebrada de Matienzo. The two things happened almost at once: the park grew, and in the same corridor leading to it an open-pit copper mine was voted through."
+      ]
     }
   },
   "fotos": [
@@ -35,8 +49,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El Aconcagua en invierno",
-        "de": "",
-        "en": ""
+        "de": "Der Aconcagua im Winter",
+        "en": "The Aconcagua in winter"
       },
       "autor": "Kinosmosis",
       "licencia": "CC BY-SA 4.0",
@@ -46,8 +60,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El Aconcagua en el horizonte",
-        "de": "",
-        "en": ""
+        "de": "Der Aconcagua am Horizont",
+        "en": "The Aconcagua on the horizon"
       },
       "autor": "Kinosmosis",
       "licencia": "CC BY-SA 4.0",

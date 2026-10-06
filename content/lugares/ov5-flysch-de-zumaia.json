@@ -11,8 +11,14 @@
       "En los trece kilómetros de acantilados del Geoparque de la Costa Vasca, las capas de roca —el flysch— están puestas de canto, una contra otra, y se leen como las páginas de un libro: más de sesenta millones de años de historia de la Tierra, apilados y a la vista.",
       "Entre esas páginas está el límite Cretácico-Paleógeno, el momento en que se extinguieron los dinosaurios no avianos hace 66 millones de años. Un estudio hecho íntegramente sobre los acantilados de Zumaia, muestreando los sedimentos depositados entre 66,4 y 65,4 millones de años atrás, reafirmó la hipótesis del impacto de un gran asteroide como causa de esa extinción."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Auf den dreizehn Kilometern Kliff des Geoparks der Baskischen Küste stehen die Gesteinsschichten — der Flysch — hochkant, eine an der anderen, und lassen sich lesen wie die Seiten eines Buches: mehr als sechzig Millionen Jahre Erdgeschichte, aufgestapelt und offen vor Augen.",
+      "Unter diesen Seiten liegt die Kreide-Paläogen-Grenze, der Moment, in dem vor 66 Millionen Jahren die nichtvogelartigen Dinosaurier ausstarben. Eine Studie, die vollständig an den Kliffs von Zumaia durchgeführt wurde und die zwischen 66,4 und 65,4 Millionen Jahren abgelagerten Sedimente beprobte, bekräftigte die Hypothese, dass der Einschlag eines großen Asteroiden die Ursache dieses Aussterbens war."
+    ],
+    "en": [
+      "Along the thirteen kilometres of cliffs of the Basque Coast Geopark, the rock layers — the flysch — stand on edge, one against the next, and can be read like the pages of a book: more than sixty million years of Earth history, stacked and in plain sight.",
+      "Among those pages lies the Cretaceous-Palaeogene boundary, the moment when the non-avian dinosaurs went extinct 66 million years ago. A study carried out entirely on the cliffs of Zumaia, sampling the sediments laid down between 66.4 and 65.4 million years ago, reaffirmed the hypothesis of a large asteroid impact as the cause of that extinction."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +31,14 @@
         "Zumaia no sólo guarda el límite entre el Cretácico y el Terciario. Guarda, además, dos de los «clavos de oro» con los que la Comisión Internacional de Estratigrafía define la escala del tiempo geológico para todo el planeta: el comienzo del Selandiense, hace 61,66 millones de años, y el del Thanetiense, hace 59,24 millones, ambos ratificados en 2008 dentro de la Formación Itzurun. Son los puntos físicos, en esta roca y no en otra, que fijan dónde empieza cada una de esas edades: pocos lugares del mundo tienen dos.",
         "Desde 2009 el tramo de unos ocho kilómetros de acantilados entre Deba y Zumaia es Biotopo Protegido por decreto del Gobierno Vasco, que destaca la escasa alteración humana de la zona, debida sobre todo a su aislamiento y a lo difícil del acceso. Lo interesante es qué protege el decreto: además de conservar el patrimonio geológico del frente de acantilados, se propone asegurar el mantenimiento de los procesos geomorfológicos ligados a la rasa mareal y a los acantilados. Es decir que protege la erosión. El mar que gasta la costa es el mismo que deja las capas a la vista; si se detuviera, el libro dejaría de pasar páginas."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Zumaia bewahrt nicht nur die Grenze zwischen Kreide und Tertiär. Es bewahrt überdies zwei der «goldenen Nägel», mit denen die Internationale Kommission für Stratigraphie die geologische Zeitskala für den gesamten Planeten festlegt: den Beginn des Seelandiums vor 61,66 Millionen Jahren und den des Thanetiums vor 59,24 Millionen, beide 2008 ratifiziert, innerhalb der Itzurun-Formation. Es sind die physischen Punkte, in diesem Gestein und in keinem anderen, die festlegen, wo jede dieser Stufen beginnt: nur wenige Orte der Welt haben zwei davon.",
+        "Seit 2009 ist der rund acht Kilometer lange Kliffabschnitt zwischen Deba und Zumaia durch Dekret der Baskischen Regierung ein Geschütztes Biotop; das Dekret hebt die geringe menschliche Veränderung des Gebiets hervor, die vor allem seiner Abgeschiedenheit und dem schwierigen Zugang zu verdanken ist. Interessant ist, was das Dekret schützt: neben der Erhaltung des geologischen Erbes der Kliffront nimmt es sich vor, den Fortbestand der geomorphologischen Prozesse zu sichern, die mit der Brandungsplattform und den Kliffs verbunden sind. Es schützt also die Erosion. Das Meer, das die Küste abträgt, ist dasselbe, das die Schichten freilegt; stünde es still, hörte das Buch auf, Seiten umzublättern."
+      ],
+      "en": [
+        "Zumaia holds not only the boundary between the Cretaceous and the Tertiary. It holds, besides, two of the «golden spikes» with which the International Commission on Stratigraphy defines the geological time scale for the whole planet: the beginning of the Selandian, 61.66 million years ago, and that of the Thanetian, 59.24 million, both ratified in 2008 within the Itzurun Formation. They are the physical points, in this rock and no other, that fix where each of those ages begins: few places in the world have two.",
+        "Since 2009 the stretch of some eight kilometres of cliffs between Deba and Zumaia has been a Protected Biotope by decree of the Basque Government, which notes the area's slight human alteration, owing above all to its isolation and the difficulty of access. What is interesting is what the decree protects: besides conserving the geological heritage of the cliff front, it sets out to ensure the maintenance of the geomorphological processes linked to the wave-cut platform and the cliffs. That is to say, it protects erosion. The sea that wears the coast away is the same one that leaves the layers exposed; were it to stop, the book would stop turning pages."
+      ]
     },
     "fuentes": [
       {
@@ -48,8 +60,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El flysch en la playa de Sakoneta",
-        "de": "",
-        "en": ""
+        "de": "Der Flysch am Strand von Sakoneta",
+        "en": "The flysch at Sakoneta beach"
       },
       "autor": "Jörg Braukmann",
       "licencia": "CC BY-SA 4.0",
@@ -59,8 +71,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Algorri, en Zumaia",
-        "de": "",
-        "en": ""
+        "de": "Algorri in Zumaia",
+        "en": "Algorri, in Zumaia"
       },
       "autor": "Jörg Braukmann",
       "licencia": "CC BY-SA 4.0",

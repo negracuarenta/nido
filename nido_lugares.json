@@ -20,7 +20,11 @@
      "lon": -54.437,
      "lat": -25.695,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Iguazú-Wasserfälle",
+      "en": "Iguazú Falls"
+     }
     },
     {
      "id": "E2",
@@ -29,7 +33,11 @@
      "lon": -57,
      "lat": -18,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Pantanal",
+      "en": "The Pantanal"
+     }
     },
     {
      "id": "E3",
@@ -38,7 +46,11 @@
      "lon": -60,
      "lat": -3.1,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Amazonas",
+      "en": "The Amazon"
+     }
     },
     {
      "id": "E4",
@@ -47,7 +59,11 @@
      "lon": -43.12,
      "lat": -2.53,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Lençóis Maranhenses",
+      "en": "Lençóis Maranhenses"
+     }
     },
     {
      "id": "E5",
@@ -56,7 +72,11 @@
      "lon": -56.48,
      "lat": -21.13,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Bonito",
+      "en": "Bonito"
+     }
     },
     {
      "id": "E6",
@@ -65,7 +85,11 @@
      "lon": -41.47,
      "lat": -12.6,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Cachoeira da Fumaça",
+      "en": "Cachoeira da Fumaça"
+     }
     },
     {
      "id": "E7",
@@ -74,7 +98,11 @@
      "lon": -58.6,
      "lat": -34,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Paraná-Delta",
+      "en": "The Paraná Delta"
+     }
     },
     {
      "id": "E8",
@@ -83,7 +111,11 @@
      "lon": -32.42,
      "lat": -3.85,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Fernando de Noronha",
+      "en": "Fernando de Noronha"
+     }
     },
     {
      "id": "E9",
@@ -92,7 +124,11 @@
      "lon": -57.2,
      "lat": -28.5,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Esteros del Iberá",
+      "en": "The Iberá Wetlands"
+     }
     },
     {
      "id": "E10",
@@ -101,7 +137,11 @@
      "lon": -55.6,
      "lat": -24,
      "tragico": true,
-     "soloTragico": true
+     "soloTragico": true,
+     "names": {
+      "de": "Atlantischer Regenwald",
+      "en": "The Atlantic Forest"
+     }
     }
    ]
   },
@@ -117,7 +157,11 @@
      "lon": -40,
      "lat": -75,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Antarktis",
+      "en": "Antarctica"
+     }
     },
     {
      "id": "S2",
@@ -126,7 +170,11 @@
      "lon": -36.5,
      "lat": -54.3,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Südgeorgien",
+      "en": "South Georgia"
+     }
     },
     {
      "id": "S3",
@@ -135,7 +183,11 @@
      "lon": -69.8,
      "lat": -36.2,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Anden",
+      "en": "The Andes"
+     }
     },
     {
      "id": "S4",
@@ -144,7 +196,11 @@
      "lon": -71.1,
      "lat": -38.9,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Araukarienwälder",
+      "en": "Araucaria Forests"
+     }
     },
     {
      "id": "S5",
@@ -153,7 +209,11 @@
      "lon": -73.05,
      "lat": -50.48,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Perito-Moreno-Gletscher",
+      "en": "The Perito Moreno Glacier"
+     }
     },
     {
      "id": "S6",
@@ -162,7 +222,11 @@
      "lon": -69,
      "lat": -46.5,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Patagonische Steppe",
+      "en": "The Patagonian Steppe"
+     }
     },
     {
      "id": "S7",
@@ -171,7 +235,11 @@
      "lon": -64,
      "lat": -42.5,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Halbinsel Valdés",
+      "en": "Península Valdés"
+     }
     },
     {
      "id": "S8",
@@ -180,7 +248,11 @@
      "lon": 25.857,
      "lat": -17.925,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Victoriafälle",
+      "en": "Victoria Falls"
+     }
     },
     {
      "id": "S9",
@@ -189,7 +261,11 @@
      "lon": 15.3,
      "lat": -24.73,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Namib-Wüste",
+      "en": "The Namib Desert"
+     }
     },
     {
      "id": "S10",
@@ -198,7 +274,11 @@
      "lon": 22.9,
      "lat": -19.3,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Okavango-Delta",
+      "en": "The Okavango Delta"
+     }
     },
     {
      "id": "S11",
@@ -207,7 +287,11 @@
      "lon": 34.83,
      "lat": -2.33,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Serengeti",
+      "en": "The Serengeti"
+     }
     },
     {
      "id": "S12",
@@ -216,7 +300,11 @@
      "lon": 148.3,
      "lat": -19.2,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Großes Barriereriff",
+      "en": "The Great Barrier Reef"
+     }
     },
     {
      "id": "S13",
@@ -225,7 +313,11 @@
      "lon": 113.5,
      "lat": -26,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Shark Bay",
+      "en": "Shark Bay"
+     }
     },
     {
      "id": "S14",
@@ -234,7 +326,11 @@
      "lon": 145.42,
      "lat": -16.17,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Daintree-Regenwald",
+      "en": "The Daintree Rainforest"
+     }
     },
     {
      "id": "S15",
@@ -243,7 +339,11 @@
      "lon": 131.04,
      "lat": -25.34,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Uluru",
+      "en": "Uluru"
+     }
     },
     {
      "id": "S16",
@@ -252,7 +352,11 @@
      "lon": -71.5,
      "lat": -42.1,
      "tragico": true,
-     "soloTragico": true
+     "soloTragico": true,
+     "names": {
+      "de": "Andin-patagonische Wälder",
+      "en": "Andean-Patagonian Forests"
+     }
     },
     {
      "id": "S17",
@@ -261,7 +365,11 @@
      "lon": 149.5,
      "lat": -36,
      "tragico": true,
-     "soloTragico": true
+     "soloTragico": true,
+     "names": {
+      "de": "Südosten Australiens",
+      "en": "South-East Australia"
+     }
     }
    ]
   },
@@ -277,7 +385,11 @@
      "lon": -72.89,
      "lat": -49.33,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "El Chaltén",
+      "en": "El Chaltén"
+     }
     },
     {
      "id": "O2",
@@ -286,7 +398,11 @@
      "lon": -70.01,
      "lat": -32.65,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Aconcagua",
+      "en": "Aconcagua"
+     }
     },
     {
      "id": "O3",
@@ -295,7 +411,11 @@
      "lon": -65.87,
      "lat": -23.62,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Salinas Grandes",
+      "en": "Salinas Grandes"
+     }
     },
     {
      "id": "O4",
@@ -304,7 +424,11 @@
      "lon": -65.5,
      "lat": -23.745,
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Cerro de los Siete Colores",
+      "en": "Cerro de los Siete Colores"
+     }
     },
     {
      "id": "O5",
@@ -313,7 +437,11 @@
      "lon": -74.25,
      "lat": 3.95,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Páramo von Sumapaz",
+      "en": "The Sumapaz Páramo"
+     }
     },
     {
      "id": "O6",
@@ -322,7 +450,11 @@
      "lon": -73.776,
      "lat": 4.978,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Lagune von Guatavita",
+      "en": "The Lagoon of Guatavita"
+     }
     },
     {
      "id": "O7",
@@ -331,7 +463,11 @@
      "lon": -100.88,
      "lat": 23.69,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Wirikuta",
+      "en": "Wirikuta"
+     }
     },
     {
      "id": "O8",
@@ -340,7 +476,11 @@
      "lon": -118.75,
      "lat": 36.56,
      "tragico": true,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Riesenmammutbäume",
+      "en": "Giant Sequoias"
+     }
     }
    ]
   },
@@ -357,7 +497,11 @@
      "lat": 33.26,
      "pais": "China",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Jiuzhaigou",
+      "en": "Jiuzhaigou"
+     }
     },
     {
      "id": "OV2",
@@ -367,7 +511,11 @@
      "lat": 53.5,
      "pais": "Rusia",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Baikalsee",
+      "en": "Lake Baikal"
+     }
     },
     {
      "id": "OV3",
@@ -377,7 +525,11 @@
      "lat": 61.3,
      "pais": "Finlandia",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Saimaa-See",
+      "en": "Lake Saimaa"
+     }
     },
     {
      "id": "OV4",
@@ -387,7 +539,11 @@
      "lat": 43.5,
      "pais": "Mongolia",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Wüste Gobi",
+      "en": "The Gobi Desert"
+     }
     },
     {
      "id": "OV5",
@@ -397,7 +553,11 @@
      "lat": 43.3,
      "pais": "País Vasco",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Flysch von Zumaia",
+      "en": "The Flysch of Zumaia"
+     }
     },
     {
      "id": "OV6",
@@ -407,7 +567,11 @@
      "lat": 40.72,
      "pais": "Cataluña",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Ebrodelta",
+      "en": "The Ebro Delta"
+     }
     },
     {
      "id": "OV7",
@@ -417,7 +581,11 @@
      "lat": 46.43,
      "pais": "Italia",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Dolomiten",
+      "en": "The Dolomites"
+     }
     },
     {
      "id": "OV8",
@@ -427,7 +595,11 @@
      "lat": 21.95,
      "pais": "India",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Sundarbans",
+      "en": "The Sundarbans"
+     }
     },
     {
      "id": "OV9",
@@ -437,7 +609,11 @@
      "lat": 4.13,
      "pais": "Malasia",
      "tragico": false,
-     "soloTragico": false
+     "soloTragico": false,
+     "names": {
+      "de": "Gunung Mulu",
+      "en": "Gunung Mulu"
+     }
     }
    ],
    "ordenarPorLongitud": true

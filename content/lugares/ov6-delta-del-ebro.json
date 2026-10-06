@@ -11,8 +11,14 @@
       "El delta del Ebro cubre 320 kilómetros cuadrados y es el hábitat acuático más extenso de Cataluña. El Parque Natural protege 7.805,8 hectáreas de ese conjunto.",
       "Es lagunas, bahías, playas, arrozales y salinas, con una diversidad de ambientes muy alta en poco espacio, y uno de los puntos más importantes del Mediterráneo occidental para las aves acuáticas."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Das Ebrodelta umfasst 320 Quadratkilometer und ist der ausgedehnteste Wasserlebensraum Kataloniens. Der Naturpark schützt 7.805,8 Hektar dieses Ganzen.",
+      "Es besteht aus Lagunen, Buchten, Stränden, Reisfeldern und Salinen, mit einer sehr hohen Vielfalt an Lebensräumen auf engem Raum, und ist einer der wichtigsten Orte des westlichen Mittelmeers für Wasservögel."
+    ],
+    "en": [
+      "The Ebro delta covers 320 square kilometres and is the most extensive aquatic habitat in Catalonia. The Natural Park protects 7,805.8 hectares of that whole.",
+      "It is lagoons, bays, beaches, rice fields and salt pans, with a very high diversity of environments in little space, and one of the most important points in the western Mediterranean for waterbirds."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +32,16 @@
         "La causa del segundo fenómeno está río arriba: en la cuenca del Ebro se construyeron unos doscientos embalses que retienen alrededor del 99,9 % de la carga sólida que el río llevaba a fines del siglo XIX. El barro que formó el delta ya no llega.",
         "En enero de 2020 el temporal Gloria dejó daños por más de 75 millones de euros sólo en reparaciones de puertos, playas y paseos marítimos. Se están ensayando inyecciones de sedimento en el tramo final del río."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Das Ebrodelta sinkt und weicht zugleich zurück. Auf der einen Seite frisst das Meer die Küste; auf der anderen senkt sich das Gelände unter seinem eigenen Gewicht und aus Mangel an Sediment, und dazu kommt der Anstieg des Meeresspiegels durch die Erwärmung.",
+        "Die Ursache des zweiten Phänomens liegt flussaufwärts: im Einzugsgebiet des Ebro wurden rund zweihundert Stauseen gebaut, die etwa 99,9 % der Feststofffracht zurückhalten, die der Fluss Ende des 19. Jahrhunderts mitführte. Der Schlamm, der das Delta bildete, kommt nicht mehr an.",
+        "Im Januar 2020 hinterließ der Sturm Gloria Schäden von mehr als 75 Millionen Euro allein an Reparaturen von Häfen, Stränden und Uferpromenaden. Derzeit werden Sedimenteinspeisungen im Mündungsabschnitt des Flusses erprobt."
+      ],
+      "en": [
+        "The Ebro delta is sinking and retreating at the same time. On one side the sea eats away the coast; on the other the ground settles under its own weight and for lack of sediment, and to that is added sea-level rise from warming.",
+        "The cause of the second phenomenon lies upstream: some two hundred reservoirs were built in the Ebro basin, retaining around 99.9 % of the solid load the river carried at the end of the nineteenth century. The mud that built the delta no longer arrives.",
+        "In January 2020 storm Gloria left damage of more than 75 million euros in repairs to ports, beaches and seafront promenades alone. Sediment injections are being trialled in the river's final stretch."
+      ]
     },
     "fuentes": [
       {
@@ -49,8 +63,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Flamencos en el Delta del Ebro",
-        "de": "",
-        "en": ""
+        "de": "Flamingos im Ebrodelta",
+        "en": "Flamingos in the Ebro delta"
       },
       "autor": "Agustí Descarrega",
       "licencia": "CC BY-SA 4.0",
@@ -60,8 +74,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Anillamiento de flamencos en el delta",
-        "de": "",
-        "en": ""
+        "de": "Beringung von Flamingos im Delta",
+        "en": "Ringing flamingos in the delta"
       },
       "autor": "Agustí Descarrega",
       "licencia": "CC BY-SA 4.0",

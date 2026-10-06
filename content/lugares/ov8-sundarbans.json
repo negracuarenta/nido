@@ -12,8 +12,16 @@
       "Es uno de los ecosistemas naturales más productivos que existen. En la desembocadura del Ganges y el Brahmaputra, su bosque y sus canales sostienen una fauna enorme, buena parte de ella amenazada.",
       "El manglar alberga la mayor población de tigres del mundo en un solo sitio, adaptados a una vida casi anfibia: nadan distancias largas entre las islas."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Sundarbans bedecken 10.000 Quadratkilometer Land und Wasser im Ganges-Delta — mehr als die Hälfte in Indien, der Rest in Bangladesch — und enthalten den größten Mangrovenwald der Welt.",
+      "Es ist eines der produktivsten natürlichen Ökosysteme überhaupt. An der Mündung von Ganges und Brahmaputra tragen sein Wald und seine Kanäle eine gewaltige Tierwelt, zu einem guten Teil bedroht.",
+      "Der Mangrovenwald beherbergt die größte Tigerpopulation der Welt an einem einzigen Ort, angepasst an ein beinahe amphibisches Leben: sie schwimmen weite Strecken zwischen den Inseln."
+    ],
+    "en": [
+      "The Sundarbans cover 10,000 square kilometres of land and water in the Ganges delta — more than half in India, the rest in Bangladesh — and contain the largest mangrove forest in the world.",
+      "It is one of the most productive natural ecosystems in existence. At the mouth of the Ganges and the Brahmaputra, its forest and its channels sustain an enormous fauna, much of it threatened.",
+      "The mangrove holds the largest tiger population in the world at a single site, adapted to an almost amphibious life: they swim long distances between the islands."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa los Sundarbans como de «preocupación significativa». La biodiversidad se mantiene en buena medida intacta, pero las presiones del cambio climático, la degradación del hábitat y la actividad humana crecen.",
         "Preocupan en particular la conservación de las aves y los mamíferos acuáticos, y la degradación de la diversidad vegetal: sobre todo el mangle sundri (Heritiera fomes), la especie que le da nombre al lugar, hoy en peligro a escala global."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet die Sundarbans als «erheblich besorgniserregend». Die Artenvielfalt ist weitgehend unversehrt geblieben, doch der Druck durch Klimawandel, Lebensraumzerstörung und menschliche Aktivität wächst.",
+        "Besondere Sorge bereiten der Schutz der Vögel und der im Wasser lebenden Säugetiere sowie der Rückgang der pflanzlichen Vielfalt: vor allem der Sundri-Mangrove (Heritiera fomes), der Art, die dem Ort seinen Namen gibt und heute weltweit als gefährdet gilt."
+      ],
+      "en": [
+        "The IUCN assesses the Sundarbans as of «significant concern». Biodiversity remains largely intact, but the pressures of climate change, habitat degradation and human activity are growing.",
+        "Of particular concern are the conservation of birds and aquatic mammals, and the degradation of plant diversity: above all the sundri mangrove (Heritiera fomes), the species that gives the place its name, now endangered globally."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El manglar de los Sundarbans",
-        "de": "",
-        "en": ""
+        "de": "Der Mangrovenwald der Sundarbans",
+        "en": "The mangrove forest of the Sundarbans"
       },
       "autor": "MohammadRakibulHasan1977",
       "licencia": "CC BY 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "La Reserva de Tigres de Sundarban, en Bengala Occidental",
-        "de": "",
-        "en": ""
+        "de": "Das Sundarban-Tigerreservat in Westbengalen",
+        "en": "The Sundarban Tiger Reserve, in West Bengal"
       },
       "autor": "Pinakpani",
       "licencia": "CC BY-SA 4.0",
@@ -65,8 +79,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Los Sundarbans vistos desde satélite",
-        "de": "",
-        "en": ""
+        "de": "Die Sundarbans vom Satelliten aus",
+        "en": "The Sundarbans seen from satellite"
       },
       "autor": "Sentinel Hub",
       "licencia": "CC BY 2.0",

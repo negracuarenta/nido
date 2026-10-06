@@ -22,8 +22,14 @@
         "El incendio Castle, en 2020, mató entre 7.500 y 10.600 secuoyas grandes —las de más de 1,20 metros de diámetro de tronco—: entre el 10 % y el 14 % de toda la población de Sierra Nevada. Dentro del perímetro del fuego murieron entre el 31 % y el 42 %.",
         "Al año siguiente, los incendios KNP Complex y Windy mataron entre 2.261 y 3.637 más. Sumando las dos temporadas, el Servicio de Parques Nacionales estima que murió entre el 13 % y el 19 % de las secuoyas grandes del mundo: entre 8.431 y 11.897 árboles."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Der Castle-Brand tötete 2020 zwischen 7.500 und 10.600 große Mammutbäume — jene mit mehr als 1,20 Metern Stammdurchmesser —: zwischen 10 % und 14 % der gesamten Population der Sierra Nevada. Innerhalb des Brandumfangs starben zwischen 31 % und 42 %.",
+        "Im folgenden Jahr töteten die Brände KNP Complex und Windy weitere 2.261 bis 3.637. Für beide Saisons zusammen schätzt der National Park Service, dass zwischen 13 % und 19 % der großen Mammutbäume der Welt starben: zwischen 8.431 und 11.897 Bäume."
+      ],
+      "en": [
+        "The Castle fire, in 2020, killed between 7,500 and 10,600 large sequoias — those over 1.2 metres in trunk diameter —: between 10 % and 14 % of the entire Sierra Nevada population. Within the fire perimeter, between 31 % and 42 % died.",
+        "The following year, the KNP Complex and Windy fires killed between 2,261 and 3,637 more. Adding the two seasons, the National Park Service estimates that between 13 % and 19 % of the world's large sequoias died: between 8,431 and 11,897 trees."
+      ]
     }
   },
   "fotos": [
@@ -31,8 +37,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Secuoyas gigantes en Mariposa Grove",
-        "de": "",
-        "en": ""
+        "de": "Riesenmammutbäume im Mariposa Grove",
+        "en": "Giant sequoias in Mariposa Grove"
       },
       "autor": "Dietmar Rabich",
       "licencia": "CC BY-SA 4.0",
@@ -42,8 +48,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El bosque de secuoyas",
-        "de": "",
-        "en": ""
+        "de": "Der Mammutbaumwald",
+        "en": "The sequoia forest"
       },
       "autor": "Dietmar Rabich",
       "licencia": "CC BY-SA 4.0",
@@ -53,8 +59,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Secuoyas gigantes",
-        "de": "",
-        "en": ""
+        "de": "Riesenmammutbäume",
+        "en": "Giant sequoias"
       },
       "autor": "Dietmar Rabich",
       "licencia": "CC BY-SA 4.0",

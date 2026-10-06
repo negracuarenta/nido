@@ -12,8 +12,16 @@
       "El frailejón es la planta que hace ese trabajo. Sus hojas cubiertas de pelos atrapan la humedad del aire y la conducen al suelo, donde alimenta los acuíferos y los ríos: retiene hasta el 80 % de su propio volumen. En Colombia se conocen 91 especies, y el Instituto Humboldt sigue describiendo nuevas.",
       "Entre los frailejones vive el oso de anteojos, el único oso nativo de Sudamérica. Al dispersar semillas ayuda a regenerar el bosque y el páramo, y con eso sostiene el mismo ciclo del agua."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "In Kolumbien liegt die Hälfte der Páramos der Welt: mehr als 2,9 Millionen Hektar, verteilt auf 36 Komplexe. Von diesem Wasser leben siebzehn Millionen Menschen, dazu die Landwirtschaft und die Industrie der gesamten Andenregion.",
+      "Der Frailejón ist die Pflanze, die diese Arbeit leistet. Seine behaarten Blätter fangen die Feuchtigkeit der Luft ein und leiten sie in den Boden, wo sie die Grundwasserleiter und die Flüsse speist: er hält bis zu 80 % seines eigenen Volumens zurück. In Kolumbien sind 91 Arten bekannt, und das Humboldt-Institut beschreibt weiterhin neue.",
+      "Zwischen den Frailejones lebt der Brillenbär, der einzige in Südamerika heimische Bär. Indem er Samen verbreitet, hilft er, Wald und Páramo zu erneuern, und trägt damit denselben Wasserkreislauf."
+    ],
+    "en": [
+      "Colombia holds half the world's páramos: more than 2.9 million hectares spread across 36 complexes. Seventeen million people live on that water, along with the agriculture and industry of the whole Andean region.",
+      "The frailejón is the plant that does that work. Its hair-covered leaves trap moisture from the air and channel it into the soil, where it feeds the aquifers and the rivers: it retains up to 80 % of its own volume. Ninety-one species are known in Colombia, and the Humboldt Institute keeps describing new ones.",
+      "Among the frailejones lives the spectacled bear, the only bear native to South America. By dispersing seeds it helps regenerate the forest and the páramo, and with that it sustains the same water cycle."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "Investigadores del Instituto Humboldt vienen registrando un daño extraño en los frailejones colombianos. La hipótesis principal apunta al aumento de temperatura en los páramos asociado al cambio climático; las simulaciones de laboratorio indican además una probable reducción de la capacidad de los frailejones para capturar agua.",
         "De las especies de frailejón que crecen en el país, 68 son endémicas de Colombia, 36 están amenazadas y 7 en peligro crítico."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Forschende des Humboldt-Instituts verzeichnen seit einiger Zeit einen eigentümlichen Schaden an den kolumbianischen Frailejones. Die Hauptvermutung verweist auf den mit dem Klimawandel verbundenen Temperaturanstieg in den Páramos; Laborsimulationen deuten zudem auf eine wahrscheinliche Verringerung der Fähigkeit der Frailejones hin, Wasser aufzunehmen.",
+        "Von den im Land wachsenden Frailejón-Arten sind 68 in Kolumbien endemisch, 36 sind bedroht und 7 vom Aussterben bedroht."
+      ],
+      "en": [
+        "Researchers at the Humboldt Institute have been recording a strange damage in Colombia's frailejones. The main hypothesis points to the rise in temperature in the páramos associated with climate change; laboratory simulations also indicate a probable reduction in the frailejones' capacity to capture water.",
+        "Of the frailejón species growing in the country, 68 are endemic to Colombia, 36 are threatened and 7 critically endangered."
+      ]
     }
   },
   "fotos": [
@@ -35,8 +49,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Valle de frailejones en el páramo",
-        "de": "",
-        "en": ""
+        "de": "Tal voller Frailejones im Páramo",
+        "en": "A valley of frailejones on the páramo"
       },
       "autor": "Jedidiahhorne",
       "licencia": "CC BY-SA 4.0",
@@ -46,8 +60,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Un frailejón",
-        "de": "",
-        "en": ""
+        "de": "Ein Frailejón",
+        "en": "A frailejón"
       },
       "autor": "Jedidiahhorne",
       "licencia": "CC BY-SA 4.0",
@@ -57,8 +71,8 @@
       "archivo": "03.webp",
       "epigrafe": {
         "es": "Oso de anteojos (Tremarctos ornatus)",
-        "de": "",
-        "en": ""
+        "de": "Brillenbär (Tremarctos ornatus)",
+        "en": "Spectacled bear (Tremarctos ornatus)"
       },
       "autor": "Carlo Brescia",
       "licencia": "CC BY-SA 4.0",

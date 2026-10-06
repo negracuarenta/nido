@@ -12,8 +12,16 @@
       "Son paredes verticales, farallones y una densidad altísima de valles angostos, profundos y largos, con formas glaciares y sistemas kársticos. Es un paisaje en movimiento: hay derrumbes, crecidas y avalanchas con frecuencia.",
       "Guardan además uno de los mejores registros conservados de las plataformas carbonatadas del Mesozoico, con sus fósiles."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Die Dolomiten sind eine Gebirgskette im Norden der italienischen Alpen: achtzehn Gipfel über 3.000 Meter auf 141.903 Hektar, verteilt auf neun Gebiete, die gemeinsam eingeschrieben wurden.",
+      "Es sind senkrechte Wände, Felstürme und eine sehr hohe Dichte schmaler, tiefer und langer Täler, mit glazialen Formen und Karstsystemen. Es ist eine Landschaft in Bewegung: Felsstürze, Hochwasser und Lawinen sind häufig.",
+      "Sie bewahren zudem eines der am besten erhaltenen Zeugnisse der mesozoischen Karbonatplattformen, samt ihren Fossilien."
+    ],
+    "en": [
+      "The Dolomites are a mountain range in the north of the Italian Alps: eighteen peaks above 3,000 metres across 141,903 hectares, spread over nine areas inscribed together.",
+      "They are vertical walls, crags and a very high density of narrow, deep and long valleys, with glacial forms and karst systems. It is a landscape in movement: rockfalls, floods and avalanches are frequent.",
+      "They also preserve one of the best-conserved records of Mesozoic carbonate platforms, with their fossils."
+    ]
   },
   "tragico": {
     "cita": {
@@ -26,8 +34,14 @@
         "La UICN evalúa las Dolomitas como «bueno, con algunas preocupaciones». En 2015 se aprobó una estrategia general de manejo para todo el sitio, elaborada con las administraciones locales y las comunidades, y fue un paso importante.",
         "Aun así, la construcción de infraestructura turística sigue siendo una amenaza para los valores del sitio, agravada ahora por el cambio climático: eventos meteorológicos extremos e inestabilidad hidrogeológica creciente. Hay proyectos para ampliar instalaciones de esquí, incluso cerca de algunos componentes del área protegida."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die IUCN bewertet die Dolomiten als «gut, mit einigen Bedenken». 2015 wurde eine Gesamtstrategie für das Management der ganzen Stätte verabschiedet, erarbeitet mit den örtlichen Verwaltungen und den Gemeinden, und das war ein wichtiger Schritt.",
+        "Dennoch bleibt der Bau touristischer Infrastruktur eine Bedrohung für die Werte der Stätte, inzwischen verschärft durch den Klimawandel: extreme Wetterereignisse und zunehmende hydrogeologische Instabilität. Es gibt Vorhaben zum Ausbau von Skianlagen, teils nahe an einzelnen Bestandteilen des Schutzgebiets."
+      ],
+      "en": [
+        "The IUCN assesses the Dolomites as «good with some concerns». In 2015 an overall management strategy for the whole site was approved, drawn up with local administrations and communities, and it was an important step.",
+        "Even so, the building of tourist infrastructure remains a threat to the site's values, now aggravated by climate change: extreme weather events and growing hydrogeological instability. There are projects to expand ski installations, some near components of the protected area."
+      ]
     },
     "fuentes": [
       {
@@ -43,8 +57,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "El Sassongher, en Val Badia",
-        "de": "",
-        "en": ""
+        "de": "Der Sassongher im Val Badia",
+        "en": "The Sassongher, in Val Badia"
       },
       "autor": "This Photo was taken by Wolfgang Moroder. Feel free to use m",
       "licencia": "CC BY-SA 4.0",
@@ -54,8 +68,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "El Secëda, en Val Gardena",
-        "de": "",
-        "en": ""
+        "de": "Die Seceda im Grödnertal",
+        "en": "The Seceda, in Val Gardena"
       },
       "autor": "This Photo was taken by Wolfgang Moroder. Feel free to use m",
       "licencia": "CC BY-SA 3.0",

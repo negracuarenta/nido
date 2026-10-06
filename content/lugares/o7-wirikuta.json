@@ -12,8 +12,16 @@
       "Cada año los wixaritari recorren una ruta ceremonial de unos 550 kilómetros, desde la región del Gran Nayar hasta el desierto potosino. La Ruta Wixárika por los sitios sagrados a Wirikuta fue inscripta en la Lista del Patrimonio Mundial de la UNESCO.",
       "El hikuri —el peyote— es un cactus sagrado que sólo crece silvestre en Wirikuta."
     ],
-    "de": [],
-    "en": []
+    "de": [
+      "Wirikuta ist der bedeutendste der heiligen Orte des Wixárika-Volkes, im südöstlichen Quadranten der Chihuahua-Wüste, im Norden des Hochlands von San Luis Potosí. Am 9. Juni 2001 erklärte die Regierung von San Luis Potosí ihn zusammen mit der Wixárika-Route zur Heiligen Naturstätte: 140.211 geschützte Hektar in sieben Gemeinden.",
+      "Jedes Jahr legen die Wixaritari einen zeremoniellen Weg von rund 550 Kilometern zurück, von der Region Gran Nayar bis in die Wüste von San Luis Potosí. Die Wixárika-Route über die heiligen Orte nach Wirikuta wurde in die Welterbeliste der UNESCO aufgenommen.",
+      "Das Hikuri — der Peyote — ist ein heiliger Kaktus, der wild nur in Wirikuta wächst."
+    ],
+    "en": [
+      "Wirikuta is the most important of the sacred sites of the Wixárika people, in the south-eastern quadrant of the Chihuahuan Desert, north of the San Luis Potosí plateau. On 9 June 2001 the government of San Luis Potosí declared it a Sacred Natural Site together with the Wixárika Route: 140,211 protected hectares across seven municipalities.",
+      "Each year the Wixaritari travel a ceremonial route of some 550 kilometres, from the Gran Nayar region to the Potosí desert. The Wixárika Route through the sacred sites to Wirikuta was inscribed on UNESCO's World Heritage List.",
+      "The hikuri — peyote — is a sacred cactus that grows wild only in Wirikuta."
+    ]
   },
   "tragico": {
     "cita": {
@@ -25,8 +33,12 @@
       "es": [
         "La peregrinación enfrenta hoy varios riesgos a la vez: el avance de proyectos agrícolas e industriales, el saqueo de las ofrendas ceremoniales, la disminución del peyote en el desierto potosino y las concesiones mineras otorgadas sobre la región de Wirikuta. Esos riesgos son parte de lo que motivó la postulación del sitio ante la UNESCO."
       ],
-      "de": [],
-      "en": []
+      "de": [
+        "Die Pilgerfahrt steht heute mehreren Gefahren zugleich gegenüber: dem Vordringen landwirtschaftlicher und industrieller Projekte, der Plünderung der zeremoniellen Opfergaben, dem Rückgang des Peyote in der Wüste von San Luis Potosí und den Bergbaukonzessionen, die über die Region Wirikuta vergeben wurden. Diese Gefahren gehören zu dem, was die Bewerbung der Stätte bei der UNESCO veranlasst hat."
+      ],
+      "en": [
+        "The pilgrimage today faces several risks at once: the advance of agricultural and industrial projects, the looting of ceremonial offerings, the decline of peyote in the Potosí desert, and the mining concessions granted over the Wirikuta region. Those risks are part of what prompted the site's nomination to UNESCO."
+      ]
     }
   },
   "fotos": [
@@ -34,8 +46,8 @@
       "archivo": "01.webp",
       "epigrafe": {
         "es": "Peyote (Lophophora williamsii), en cultivo",
-        "de": "",
-        "en": ""
+        "de": "Peyote (Lophophora williamsii), in Kultur",
+        "en": "Peyote (Lophophora williamsii), in cultivation"
       },
       "autor": "Agnieszka Kwiecień, Nova",
       "licencia": "CC BY-SA 4.0",
@@ -45,8 +57,8 @@
       "archivo": "02.webp",
       "epigrafe": {
         "es": "Lophophora williamsii",
-        "de": "",
-        "en": ""
+        "de": "Lophophora williamsii",
+        "en": "Lophophora williamsii"
       },
       "autor": "USGS Bee Inventory and Monitoring Lab from Beltsville, Maryl",
       "licencia": "Public domain",

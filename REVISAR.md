@@ -445,3 +445,36 @@ Cachoeira da Fumaça.
 ### Lo que sigue pendiente de traducción
 Los párrafos de información y los epígrafes de las fotos siguen sólo en castellano. Las 51
 frases del guión sí están en los tres idiomas.
+
+---
+
+## Traducción completa · los tres idiomas
+
+Ya no queda castellano sin traducir. Los 44 lugares tienen en alemán y en inglés los
+párrafos de información, el bloque «Lo que también vio» y los epígrafes de las fotos.
+Las 51 frases del guión ya lo estaban.
+
+**Lo traduje yo, no una máquina.** Conviene que alguien que hable alemán le dé una
+pasada, sobre todo a los términos técnicos: los nombres de especies, las figuras de
+protección (Biotopo Protegido → *Geschütztes Biotop*, Monumento Natural → *Naturdenkmal*)
+y las categorías de la UICN, que traduje de forma consistente pero que tienen
+equivalentes oficiales en alemán que quizá convenga usar tal cual.
+
+### Los nombres de los lugares también cambian de idioma
+Agregué un campo `names` en `nido_lugares.json` con el nombre de cada lugar en alemán y
+en inglés: «Serengueti» ahora es *Serengeti*, «Cataratas del Iguazú» es *Iguazú Falls*.
+Cambian el título de la ficha, el listado de cada viaje y los rótulos del mapa, que se
+reescriben al vuelo cuando tocás el selector de idioma.
+
+**Los ids, los slugs y las coordenadas no se tocaron**, y lo verifiqué contra el commit
+anterior antes de publicar: son los que están impresos en los QR del afiche. Los 46 QR
+siguen llegando a una página que existe.
+
+### Decisiones de traducción que podés querer revisar
+- Dejé en castellano los nombres propios que funcionan como tales en cualquier idioma:
+  *Pantanal*, *Salinas Grandes*, *Cerro de los Siete Colores*, *El Chaltén*, *Wirikuta*.
+- El título de cada página (la pestaña del navegador) quedó en castellano en los tres
+  idiomas. Es un solo texto por página y no cambia con el selector; me pareció preferible
+  a inventar un mecanismo aparte.
+- «Lo que también vio» quedó como *Was sie außerdem sah* / *What it also saw*, que ya
+  estaba definido en `site.json`.
