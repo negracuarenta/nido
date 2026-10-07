@@ -206,7 +206,7 @@ def main() -> None:
                 f"recuadros vacíos. No lo escribo así.")
         ruta.write_text(svg)
         print(f"{nombre}: {puestos} QR incrustados, {vacios} recuadros vacíos, "
-              f"{len(re.findall(r'<image ', svg))} logos")
+              f"{len(re.findall(r'<image ', fila_logos))} logos")
 
 
 if __name__ == "__main__":

@@ -840,3 +840,59 @@ Sin rosa de los vientos ni marco: elegiste la versión contenida.
 ## Estado
 Los cuatro PDF pesan ahora unos 8,4 MB cada uno, por el relieve. Los 46 códigos
 siguen verificados sobre los cuatro.
+
+---
+
+## Trece animales, dibujados en vez de pegados
+
+**El problema era el método, no el tamaño.** Los grabados se trataban como
+fotografías: se les quitaba el fondo por brillo y quedaba un parche de tono
+pegado encima del mapa. Pero un grabado en talla dulce ya es un dibujo — el
+gris lo hacen las rayas. Ahora se extrae la línea: se compara cada píxel con el
+fondo local, estimado desenfocando mucho la lámina. Queda el trazo, y el papel,
+el cielo y las manchas desaparecen solos porque forman parte de ese fondo.
+
+De paso, eso rescató láminas que antes no servían. La vicuña, que es pálida
+sobre cielo pálido, con el método viejo perdía la cabeza; ahora sale entera.
+
+**Los trece, y el lugar donde la golondrina los vio:**
+
+| grabado | lugar |
+|---|---|
+| golondrina común | el árbol de Heidelberg |
+| flamenco | OV6 · delta del Ebro |
+| pingüino emperador | S1 · Antártida |
+| albatros errante | S2 · Georgias del Sur |
+| vicuña | O3 · Salinas Grandes |
+| tapir | E1 · Iguazú y E3 · Amazonas |
+| pirarucú | E3 · Amazonas |
+| guacamayo jacinto | E2 · Pantanal |
+| carpincho | E2 · Pantanal |
+| rinoceronte negro | S10 · delta del Okavango |
+| elefante africano | S10 y S11 · Serengueti |
+| camello bactriano | OV4 · desierto de Gobi |
+| canguro | S14 y S17 · Australia |
+
+Los trece están nombrados en la ficha de su lugar. Ninguno es decorativo.
+
+### Dos trampas de nomenclatura
+La colección usa nombres del siglo XIX y hay que mirar la lámina, no el título:
+**Trichechus rosmarus es la morsa**, no el manatí del Amazonas, y **Harpyia
+cephalotes es un murciélago**, no la harpía de Iguazú. Las dos las descarté.
+Y los títulos tampoco avisan cuándo la lámina es un cráneo: las mejores de
+*Rhinoceros bicornis* y *Tapirus americanus* lo eran, y hubo que mirarlas.
+
+El cóndor andino sigue sin estar: la colección sólo tiene *Vultur monachus*, el
+buitre negro europeo, y *Sarcoramphus papa*, el jote real. Ninguno es *Vultur
+gryphus*.
+
+## Color
+El relieve pasó de la versión en gris a **Natural Earth 1**, que trae el color
+del terreno: verdes de bosque, ocres de desierto, blanco de hielo. Se le baja la
+saturación y se lo mezcla con el tono de papel del afiche, para que la selva se
+note sin que el mapa cambie de familia de color.
+
+## Verificado
+Cero solapes entre los 60 textos y los 13 grabados, en los dos idiomas. Los 46
+códigos siguen bien en los cuatro PDF, que ahora pesan 11,6 MB por el relieve en
+color.

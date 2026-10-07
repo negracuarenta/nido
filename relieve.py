@@ -20,14 +20,21 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 AQUI = Path(__file__).parent
-ORIGEN = Path("/tmp/ne/SR_50M.tif")
+# Natural Earth 1 con relieve sombreado: trae el color del terreno —verdes de
+# bosque, ocres de desierto, blanco de hielo— y no sólo la sombra.
+ORIGEN = Path("/tmp/ne/NE1_50M_SR_W/NE1_50M_SR_W.tif")
 SALIDA = AQUI / "assets/geo/relieve.jpg"
 
 A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
 X0, Y0, SEMIANCHO = 423.0, 272.0, 395.0
 PPP = 150                       # resolución de salida, en puntos por pulgada
-CLARO = np.array([0xF7, 0xF2, 0xE4], float)   # cumbres iluminadas
-OSCURO = np.array([0x8A, 0x7C, 0x60], float)  # laderas en sombra
+# El color de Natural Earth es más saturado y más frío que el afiche. Se lo
+# acerca al papel: se mezcla con el tono de tierra del mapa y se le baja la
+# saturación, para que el verde de la selva se note sin que el mapa cambie de
+# familia de color.
+PAPEL = np.array([0xEC, 0xE5, 0xD3], float)
+MEZCLA_PAPEL = 0.42      # cuánto del papel entra en la mezcla
+SATURACION = 0.78
 
 
 def directa(lon_rad, lat_rad):
@@ -70,9 +77,9 @@ def main() -> None:
 
     # Suavizo la fuente antes de muestrear: vamos de 30 px por grado a 13,
     # y sin este paso las cordilleras aparecen dentadas.
-    src = Image.open(ORIGEN).resize((5400, 2700), Image.LANCZOS)
+    src = Image.open(ORIGEN).convert("RGB").resize((5400, 2700), Image.LANCZOS)
     g = np.asarray(src, dtype=np.float32)
-    sh, sw = g.shape
+    sh, sw = g.shape[:2]
 
     xs = (np.arange(W) + 0.5) / W * ancho_mm + (X0 - SEMIANCHO)
     ys = (np.arange(H) + 0.5) / H * alto_mm + (Y0 - alto_mm / 2)
@@ -86,22 +93,19 @@ def main() -> None:
     c0 = np.clip(np.floor(col), 0, sw - 1).astype(np.int32)
     f0 = np.clip(np.floor(fil), 0, sh - 1).astype(np.int32)
     c1 = np.minimum(c0 + 1, sw - 1); f1 = np.minimum(f0 + 1, sh - 1)
-    tc = (col - c0).clip(0, 1)[..., None][..., 0]
-    tf = (fil - f0).clip(0, 1)
+    tc = (col - c0).clip(0, 1)[..., None]
+    tf = (fil - f0).clip(0, 1)[..., None]
     muestra = ((g[f0, c0] * (1 - tc) + g[f0, c1] * tc) * (1 - tf)
                + (g[f1, c0] * (1 - tc) + g[f1, c1] * tc) * tf)
 
-    # Estiro el contraste: el relieve crudo vive en una franja estrecha de grises.
-    lo, hi = np.percentile(muestra[dentro], [2, 98])
-    t = np.clip((muestra - lo) / (hi - lo), 0, 1)[..., None]
-    rgb = OSCURO + (CLARO - OSCURO) * t
-    # Va en JPEG: el relieve es tono continuo y en el afiche se recorta contra
-    # la silueta de la tierra, así que no hace falta transparencia. En PNG
-    # pesaba 6 MB; así pesa una fracción y no se nota la diferencia impreso.
-    rgb[~dentro] = CLARO
+    gris = muestra.mean(axis=2, keepdims=True)
+    rgb = gris + (muestra - gris) * SATURACION
+    rgb = rgb * (1 - MEZCLA_PAPEL) + PAPEL * MEZCLA_PAPEL
+    rgb[~dentro] = PAPEL
+    rgb = np.clip(rgb, 0, 255)
+
     Image.fromarray(rgb.astype(np.uint8)).save(SALIDA, quality=88, subsampling=0)
-    print(f"{SALIDA.name}: {SALIDA.stat().st_size/1e6:.1f} MB · "
-          f"gris original entre {lo:.0f} y {hi:.0f}")
+    print(f"{SALIDA.name}: {SALIDA.stat().st_size / 1e6:.1f} MB")
 
 
 if __name__ == "__main__":

@@ -22,18 +22,30 @@ from expresividad import proyectar
 AQUI = Path(__file__).parent
 AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 GRABADOS = AQUI / "assets/grabados"
-ALTO = 19.0          # alto de la viñeta en el afiche, en mm
+ALTO = 15.0          # alto de la viñeta en el afiche, en mm
 
 # Dónde mirar primero. Es la región del animal, no el punto exacto: desde ahí
 # se busca el primer hueco libre.
+# Cada animal cerca del lugar donde la golondrina lo vio, y todos nombrados en
+# la ficha de ese lugar. No es el punto exacto: desde ahí se busca hueco.
 DESTINOS = {
-    "Hirundo": (-27, 46),        # Atlántico Norte, de camino a Heidelberg
-    "Diomedea": (-18, -42),      # Atlántico Sur, cerca de las Georgias
-    "Aptenodytes": (95, -64),    # océano Antártico
-    "Camelus": (88, 50),         # Asia central, al norte del Gobi
+    "golondrina": (-27, 46),      # el árbol de Heidelberg, al otro lado del mar
+    "flamenco": (4, 38),          # OV6 · delta del Ebro
+    "pinguino": (95, -64),        # S1 · Antártida
+    "albatros": (-18, -42),       # S2 · Georgias del Sur
+    "vicuna": (-85, -26),         # O3 · Salinas Grandes
+    "tapir": (-72, 2),            # E1 · Iguazú y E3 · Amazonas
+    "pirarucu": (-60, 4),         # E3 · Amazonas
+    "guacamayo": (-30, -17),      # E2 · Pantanal
+    "carpincho": (-26, -28),      # E2 · Pantanal
+    "rinoceronte": (24, -26),     # S10 · delta del Okavango
+    "elefante": (36, -4),         # S10 · Okavango y S11 · Serengueti
+    "camello": (88, 50),          # OV4 · desierto de Gobi
+    "canguro": (133, -26),        # S14 y S17 · Australia
 }
-RADIOS = (0, 10, 20, 32, 46, 62, 80, 100)
-ANGULOS = (0, 45, -45, 90, -90, 135, -135, 180)
+
+RADIOS = (0, 9, 18, 28, 40, 54, 70, 88, 110)
+ANGULOS = (0, 30, -30, 60, -60, 90, -90, 120, -120, 150, -150, 180)
 
 
 def grupo(svg: str) -> str:
