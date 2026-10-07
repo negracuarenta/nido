@@ -20,8 +20,8 @@ import re
 from pathlib import Path
 
 AQUI = Path(__file__).parent
-VERSIONES = {"NIDO_mapa_A0.svg": "NIDO_mapa_A0_de.svg",
-             "NIDO_mapa_A0_color.svg": "NIDO_mapa_A0_color_de.svg"}
+VERSIONES = {"MAPA_FINAL_es_bn.svg": "MAPA_FINAL_de_bn.svg",
+             "MAPA_FINAL_es_color.svg": "MAPA_FINAL_de_color.svg"}
 
 # Lo que no está en el sitio y es propio del afiche.
 PROPIAS = {

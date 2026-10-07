@@ -60,8 +60,7 @@ def main() -> None:
     if not CHROME.exists():
         raise SystemExit("No encuentro Google Chrome, que es lo que imprime el PDF.")
     archivos = sys.argv[1:] or [
-        "NIDO_mapa_A0_color.svg", "NIDO_mapa_A0_color_de.svg",
-        "NIDO_mapa_A0.svg", "NIDO_mapa_A0_de.svg"]
+        "MAPA_FINAL_es_color.svg", "MAPA_FINAL_de_color.svg", "MAPA_FINAL_es_bn.svg", "MAPA_FINAL_de_bn.svg"]
     for nombre in archivos:
         pdf = convertir(AQUI / nombre)
         peso = pdf.stat().st_size / 1_000_000

@@ -664,3 +664,37 @@ siendo autónomo: se abre en Illustrator sin perder las imágenes.
 
 El rótulo se traduce solo, porque sale de `ui.con_apoyo` de `site.json`, que es
 de donde lo toma también la web.
+
+---
+
+## Logos más grandes y archivos renombrados
+
+Los logos pasaron de 9 a 14 mm de alto. La fila ocupa ahora 151 mm, alineada al
+margen derecho (28 mm, el mismo que el resto del afiche) y 4 mm por encima de
+la base del índice.
+
+**Hay un techo de resolución y conviene que lo sepas.** Los tres archivos de
+logo miden 120 px de alto. A 9 mm daban 339 ppp; a 14 mm dan **218 ppp**. Para
+un A0, que se mira a un metro de distancia, 218 alcanza y en el PDF se ven
+limpios —lo verifiqué rasterizando—. Pero están por debajo de los 300 ppp de
+manual, y si querés agrandarlos más, ahí sí empieza a notarse.
+
+La solución no es escalar el PNG: es conseguir los archivos vectoriales.
+**El de negra40 ya lo tenés**: `NEGRA40/negra40_logo.pdf` es vector puro, 10 KB,
+sin un solo píxel rasterizado. Los del CEAC y el museo habría que pedírselos a
+las instituciones (un SVG, un EPS o un PDF vectorial). Con los tres en vector,
+el tamaño deja de tener límite. Decime y los integro.
+
+### Nombres de archivo
+Los cuatro archivos finales empiezan ahora por `MAPA_FINAL`, con el idioma y la
+versión a la vista:
+
+| archivo | idioma | versión |
+|---|---|---|
+| `MAPA_FINAL_es_color` | castellano | color |
+| `MAPA_FINAL_es_bn` | castellano | blanco y negro |
+| `MAPA_FINAL_de_color` | alemán | color |
+| `MAPA_FINAL_de_bn` | alemán | blanco y negro |
+
+Cada uno en `.svg` y en `.pdf`. Los `NIDO_mapa_A0*` viejos se borraron para que
+no quede ninguna duda sobre cuál es el bueno.

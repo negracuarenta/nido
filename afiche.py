@@ -15,7 +15,7 @@ import re
 from pathlib import Path
 
 AQUI = Path(__file__).parent
-AFICHES = ("NIDO_mapa_A0.svg", "NIDO_mapa_A0_color.svg")
+AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 ROJO = "#C62828"
@@ -41,7 +41,7 @@ NAV_X, NAV_Y, NAV_LADO, NAV_PASO = 964.0, 652.0, 32.0, 52.0
 # Son grises puros, así que el mismo archivo sirve para las dos versiones del
 # afiche. A 9 mm de alto, los 120 px de origen dan 339 ppp: calidad de imprenta.
 LOGOS = ("negra40.png", "ceac.png", "vpst.png")
-LOGO_ALTO, LOGO_AIRE = 9.0, 9.0
+LOGO_ALTO, LOGO_AIRE = 14.0, 12.0
 LOGO_DERECHA, LOGO_ABAJO = 1161.0, 792.0
 
 
@@ -163,7 +163,7 @@ def logos() -> str:
     x = LOGO_DERECHA - ancho_total
     y = LOGO_ABAJO - LOGO_ALTO
     salida = [f'<g id="logos">'
-              f'<text x="{x:.2f}" y="{y - 4.4:.2f}" class="small" '
+              f'<text x="{x:.2f}" y="{y - 5.2:.2f}" class="small" '
               f'style="font-size:3px">Con</text>']
     for datos, ancho in piezas:
         salida.append(f'<image x="{x:.2f}" y="{y:.2f}" width="{ancho:.2f}" '

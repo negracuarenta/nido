@@ -21,7 +21,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 
 AQUI = Path(__file__).parent
-AFICHES = ("NIDO_mapa_A0.svg", "NIDO_mapa_A0_color.svg")
+AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 
 # Equal Earth (Šavrič, Patterson y Jenny, 2018), la que declara el afiche.
 A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
