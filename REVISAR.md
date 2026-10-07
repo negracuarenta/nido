@@ -698,3 +698,41 @@ versión a la vista:
 
 Cada uno en `.svg` y en `.pdf`. Los `NIDO_mapa_A0*` viejos se borraron para que
 no quede ninguna duda sobre cuál es el bueno.
+
+---
+
+## Los logos: orden nuevo y tamaños equilibrados
+
+Orden: Völkerkundemuseum a la izquierda, CEAC al centro, negra40 a la derecha.
+Centrados sobre una misma línea horizontal, alineados al margen derecho.
+
+**No van los tres a la misma altura, y es a propósito.** Igualar la altura era
+justamente lo que hacía que negra40 pesara de más: es un logotipo ancho —4,7:1—
+y los otros dos son sellos casi cuadrados, así que a igual altura cubría el
+triple de superficie. Ahora cada uno se escala para igualar la raíz del área que
+ocupa, que es la medida que más se parece a cómo el ojo compara dos marcas de
+formas distintas:
+
+| logo | factor | alto | ancho | ppp impresos |
+|---|---|---|---|---|
+| Völkerkundemuseum | 1,00 | 20,0 mm | 31,3 mm | 152 |
+| CEAC | 0,75 | 15,0 mm | 41,6 mm | 203 |
+| negra40 | 0,58 | 11,6 mm | 54,7 mm | 263 |
+
+Respecto de antes, el museo creció un 43 % y el CEAC un 7 %; negra40 bajó un
+17 %, que era el ajuste que pedía la vista.
+
+### Por qué no pueden ser más grandes todavía
+Los 20 mm del museo son el techo: con un archivo de 120 px eso da 152 ppp, que
+a un metro —la distancia a la que se mira un A0— está justo en el límite de lo
+que el ojo resuelve. Y acá la gente se va a acercar más que eso, porque va a
+escanear códigos.
+
+**Probé vectorizar los PNG con Adobe y no sirve.** El resultado pierde el
+dibujo: en el sello del museo se empasta el edificio y desaparece el «VPST» del
+frontón. Un archivo de 188 px no tiene detalle que trazar.
+
+La única forma de agrandarlos más es conseguir los originales vectoriales.
+**El de negra40 ya lo tenés**: `NEGRA40/negra40_logo.pdf` es vector puro, 10 KB.
+Los del CEAC y del museo hay que pedírselos a las instituciones —un SVG, un EPS
+o un PDF vectorial—. Con los tres en vector el tamaño deja de tener techo.

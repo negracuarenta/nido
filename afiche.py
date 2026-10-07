@@ -38,10 +38,20 @@ NAVEGACION = (
 NAV_X, NAV_Y, NAV_LADO, NAV_PASO = 964.0, 652.0, 32.0, 52.0
 
 # Los logos de las instituciones, abajo a la derecha, como en la web.
-# Son grises puros, así que el mismo archivo sirve para las dos versiones del
-# afiche. A 9 mm de alto, los 120 px de origen dan 339 ppp: calidad de imprenta.
-LOGOS = ("negra40.png", "ceac.png", "vpst.png")
-LOGO_ALTO, LOGO_AIRE = 14.0, 12.0
+# Son grises puros, así que el mismo archivo sirve para las dos versiones.
+#
+# No van todos a la misma altura: igualar la altura es justo lo que hacía que
+# negra40 pesara de más. Es un logotipo ancho —4,7:1— y los otros dos son
+# sellos casi cuadrados, así que a igual altura ocupa el triple de superficie.
+# El factor de cada uno iguala la raíz del área que cubre, que es la medida que
+# más se parece a cómo el ojo compara dos marcas de formas distintas.
+#
+# El alto de referencia son 20 mm. Con archivos de 120 px eso da 152 ppp, que a
+# la distancia a la que se mira un A0 —un metro— está en el límite de lo que el
+# ojo resuelve. Más grandes habría que pedirles los vectores a las
+# instituciones: vectorizar los PNG no sirve, lo probé y pierde el dibujo.
+LOGOS = (("vpst.png", 1.00), ("ceac.png", 0.75), ("negra40.png", 0.58))
+LOGO_ALTO, LOGO_AIRE = 20.0, 14.0
 LOGO_DERECHA, LOGO_ABAJO = 1161.0, 792.0
 
 
@@ -149,25 +159,27 @@ def quitar(svg: str, ident: str) -> str:
 
 
 def logos() -> str:
-    """La fila de logos, alineada al margen derecho y a la base del índice."""
-    piezas, ancho_total = [], 0.0
-    for archivo in LOGOS:
-        png = (AQUI / "assets/logos" / archivo).read_bytes()
-        import struct
-        w, h = struct.unpack(">II", png[16:24])
-        ancho = LOGO_ALTO * w / h
-        piezas.append((base64.b64encode(png).decode(), ancho))
-        ancho_total += ancho
-    ancho_total += LOGO_AIRE * (len(LOGOS) - 1)
+    """La fila de logos, alineada al margen derecho y centrada en una misma línea."""
+    import struct
 
+    piezas = []
+    for archivo, factor in LOGOS:
+        png = (AQUI / "assets/logos" / archivo).read_bytes()
+        w, h = struct.unpack(">II", png[16:24])
+        alto = LOGO_ALTO * factor
+        piezas.append((base64.b64encode(png).decode(), alto * w / h, alto))
+
+    ancho_total = sum(p[1] for p in piezas) + LOGO_AIRE * (len(piezas) - 1)
     x = LOGO_DERECHA - ancho_total
-    y = LOGO_ABAJO - LOGO_ALTO
+    medio = LOGO_ABAJO - LOGO_ALTO / 2
+
     salida = [f'<g id="logos">'
-              f'<text x="{x:.2f}" y="{y - 5.2:.2f}" class="small" '
+              f'<text x="{x:.2f}" y="{medio - LOGO_ALTO / 2 - 5.2:.2f}" class="small" '
               f'style="font-size:3px">Con</text>']
-    for datos, ancho in piezas:
-        salida.append(f'<image x="{x:.2f}" y="{y:.2f}" width="{ancho:.2f}" '
-                      f'height="{LOGO_ALTO}" preserveAspectRatio="xMidYMid meet" '
+    for datos, ancho, alto in piezas:
+        salida.append(f'<image x="{x:.2f}" y="{medio - alto / 2:.2f}" '
+                      f'width="{ancho:.2f}" height="{alto:.2f}" '
+                      f'preserveAspectRatio="xMidYMid meet" '
                       f'href="data:image/png;base64,{datos}"/>')
         x += ancho + LOGO_AIRE
     salida.append("</g>")
