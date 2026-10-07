@@ -938,3 +938,46 @@ igualarlo hay que deducir también su proyección —el pie dice acimutal
 equivalente de Lambert— y no salió al primer intento: el ajuste da 11 mm de
 error, demasiado. Su retícula es curva, así que no se lee tan directo como la
 del planisferio. Decime si lo seguimos y lo saco.
+
+---
+
+## Pendiente: el gran plano a todo el A0
+
+Pedido: el planisferio ocupando todo el pliego y el recuadro de detalle de
+Sudamérica fuera. **No lo empecé**, para no dejar la maqueta a medias. Lo que sí
+resolví es el cálculo, que era la parte con riesgo.
+
+### La ampliación es exacta, no un reencuadre
+El planisferio está dibujado a una escala fija, pero como la proyección se
+conoce —Equal Earth con el ecuador de 2 × 395 mm centrado en (423, 272)—
+ampliarlo es una semejanza: multiplicar por un factor es *exactamente* lo mismo
+que volver a proyectar a mayor escala. No hay que redibujar nada.
+
+Para que el mapa vaya de x=28 a x=1161, el ancho útil del pliego:
+
+```
+transform="translate(-12.157 -34.371) scale(1.43418)"
+```
+
+Comprobado: lleva x 28→28, x 818→1161, y 79,747→80 y y 464,253→631,5. El mapa
+queda de **1133 × 551,5 mm**, contra los 790 × 384,5 de ahora: más del doble de
+superficie.
+
+Ese `transform` hay que aplicarlo a un grupo que envuelva desde `mapa-mundi`
+hasta `otros-vuelos`, que es donde viven todas las capas generadas. Así escalan
+juntas y los scripts pueden seguir calculando en las coordenadas viejas.
+
+### Lo que falta hacer
+1. Envolver ese rango y borrar `detalle-sudamerica`, el rectángulo punteado que
+   lo marcaba dentro del planisferio y el texto «ver detalle →».
+2. Rehacer el índice de QR, que hoy ocupa 9 filas y ya no entra. Con la banda
+   libre de y=652 a 810 caben **5 filas × 10 columnas** (46 códigos en 50
+   huecos), con paso de 80 mm en horizontal. El reparto por viaje sería
+   E 5+5, S 5+4+4+4, O 4+4, OV 5+4.
+3. `referencias`, `navegacion` y los logos se quedan donde están: el mapa
+   termina en y=631,5 y esa columna arranca en y=644.
+4. Volver a correr el canal entero, regenerar el alemán y los PDF, y repetir la
+   verificación de los 46 códigos.
+
+Nada de esto está hecho. Los cuatro archivos actuales siguen siendo los de la
+entrega anterior, verificados.
