@@ -978,5 +978,3 @@ falta: «Bosques andino-patagónicos» desbordaba 5,7 mm, y su equivalente alem�
 - Cero solapes entre los 85 textos del plano en castellano y los 95 en alemán.
 - Ningún nombre del índice desborda su columna, en ninguno de los dos idiomas.
 - Nada se sale del pliego.
-
-entrega anterior, verificados.
