@@ -56,7 +56,11 @@ AVANCES = {"accidente": 0.90, "mar": 0.95, "lab": 0.53}
 
 def obstaculos(svg: str) -> list:
     """Lo que ya ocupa sitio en el planisferio, con su caja real."""
-    a, b = svg.index('id="mapa-mundi"'), svg.index('id="detalle-sudamerica"')
+    a = svg.index('id="mapa-mundi"')
+    # El planisferio termina donde empieza lo que venga después: el detalle de
+    # Sudamérica mientras exista, y si no, el cuadro de referencias.
+    b = next(svg.index(x) for x in ('id="detalle-sudamerica"', 'id="referencias"')
+             if x in svg)
     m, cajas = svg[a:b], []
     for t in re.finditer(r'<text x="([-\d.]+)" y="([-\d.]+)"([^>]*)>(.*?)</text>',
                          m, re.S):

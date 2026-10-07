@@ -20,15 +20,19 @@ AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 ROJO = "#C62828"
 
-# La grilla del afiche, en milímetros. El lienzo es de 1189 × 841.
-COLUMNAS = (28, 160, 292, 424, 556, 688)
-Y0, PASO, FILAS = 506.0, 33.5, 9
+# La grilla del índice, en milímetros. El lienzo es de 1189 × 841.
+# Desde que el planisferio ocupa todo el ancho, al índice le queda una banda
+# más baja y más larga: diez columnas de cinco filas en vez de seis de nueve.
+COLUMNAS = tuple(28.0 + 80.0 * i for i in range(10))
+Y0, PASO, FILAS = 652.0, 33.5, 5
 LADO = 24.0          # lado del QR; con 45 módulos da 0,53 mm por módulo
 SANGRIA = 28.0       # del borde del QR al texto
+CUERPO_IDX = 4.4     # el cuerpo de los nombres, como lo define la hoja de estilo
+AVANCE_IDX = 0.52    # ancho de un carácter en fracción del cuerpo, medido
 
 # Cada viaje ocupa las columnas que necesita. El Este y el Sur son los más
 # largos y se reparten en dos; el Oeste y Otros vuelos entran en una.
-REPARTO = {"E": (0, 1), "S": (2, 3), "O": (4,), "OV": (5,)}
+REPARTO = {"E": (0, 1), "S": (2, 3, 4, 5), "O": (6, 7), "OV": (8, 9)}
 
 # Los dos códigos que no son un lugar: la portada del mapa y el árbol.
 NAVEGACION = (
@@ -73,8 +77,18 @@ def qr_incrustado(codigo: str, x: float, y: float, lado: float) -> str:
     )
 
 
+def ancho_columna() -> float:
+    return (COLUMNAS[1] - COLUMNAS[0]) - SANGRIA - 3.0
+
+
 def entrada(lugar: dict, clave: str, x: float, y: float) -> str:
     color = COLOR[clave]
+    # Los nombres largos se achican para no invadir la columna de al lado.
+    # Sólo unos pocos lo necesitan; el resto va al cuerpo normal.
+    cuerpo = min(CUERPO_IDX,
+                 ancho_columna() / (len(lugar["name"]) * AVANCE_IDX))
+    estilo = (f' style="font-size:{cuerpo:.2f}px"'
+              if cuerpo < CUERPO_IDX - 0.05 else "")
     cruz = (f'  <tspan style="fill:{ROJO}">✕</tspan>'
             if lugar.get("tragico") or lugar.get("soloTragico") else "")
     tx = x + SANGRIA
@@ -82,7 +96,7 @@ def entrada(lugar: dict, clave: str, x: float, y: float) -> str:
         qr_incrustado(lugar["id"], x, y, LADO)
         + f'<text x="{tx}" y="{y + 9}" class="code" '
           f'style="font-size:3.4px;fill:{color}">{lugar["id"]}{cruz}</text>'
-        + f'<text x="{tx}" y="{y + 15.5}" class="idx">{lugar["name"]}</text>'
+        + f'<text x="{tx}" y="{y + 15.5}" class="idx"{estilo}>{lugar["name"]}</text>'
     )
 
 
@@ -96,7 +110,7 @@ def reparte(cuantos: int, columnas: int) -> list:
 
 def indice(datos: dict) -> str:
     piezas = ['<g id="indice">',
-              '<text x="28" y="490" class="sect">'
+              '<text x="28" y="636" class="sect">'
               'Índice · escaneá el código para saber más de cada lugar</text>']
     for viaje in datos["trips"]:
         clave = viaje["key"]
@@ -108,7 +122,7 @@ def indice(datos: dict) -> str:
                 f"El viaje {clave} tiene {len(lugares)} lugares y no entra en "
                 f"{len(cols)} columna(s) de {FILAS} filas. Hay que rehacer el reparto.")
         piezas.append(
-            f'<text x="{COLUMNAS[cols[0]]}" y="501" class="leg" style="font-size:4.6px">'
+            f'<text x="{COLUMNAS[cols[0]]}" y="647" class="leg" style="font-size:4.6px">'
             f'<tspan class="code" style="fill:{COLOR[clave]};font-weight:bold">{clave}</tspan>'
             f'  {viaje["name"] if clave == "OV" else "Viaje al " + viaje["name"].lower()}</text>')
         i = 0

@@ -941,43 +941,42 @@ del planisferio. Decime si lo seguimos y lo saco.
 
 ---
 
-## Pendiente: el gran plano a todo el A0
+## El gran plano, hecho
 
-Pedido: el planisferio ocupando todo el pliego y el recuadro de detalle de
-Sudamérica fuera. **No lo empecé**, para no dejar la maqueta a medias. Lo que sí
-resolví es el cálculo, que era la parte con riesgo.
+El planisferio ocupa ahora **todo el ancho del pliego** y el recuadro de detalle
+de Sudamérica salió, con el rectángulo punteado que lo marcaba y el «ver detalle
+→» que lo anunciaba.
 
-### La ampliación es exacta, no un reencuadre
-El planisferio está dibujado a una escala fija, pero como la proyección se
-conoce —Equal Earth con el ecuador de 2 × 395 mm centrado en (423, 272)—
-ampliarlo es una semejanza: multiplicar por un factor es *exactamente* lo mismo
-que volver a proyectar a mayor escala. No hay que redibujar nada.
+**La ampliación es exacta, no un reencuadre.** El planisferio está dibujado a
+una escala fija, pero la proyección se conoce —Equal Earth, con el ecuador
+midiendo 2 × 395 mm y el centro en (423, 272)— y eso la vuelve una semejanza:
+multiplicar por un factor es *exactamente* lo mismo que volver a proyectar a
+mayor escala. No hubo que redibujar nada.
 
-Para que el mapa vaya de x=28 a x=1161, el ancho útil del pliego:
+`gran_plano.py` envuelve todas las capas del mapa en
+`translate(-12,157 -34,371) scale(1,43418)`. Comprobado: lleva x 28→28,
+x 818→1161, y 79,747→80 y y 464,253→631,5. El mapa pasa de 790 × 384,5 mm a
+**1133 × 551,5**: más del doble de superficie.
 
-```
-transform="translate(-12.157 -34.371) scale(1.43418)"
-```
+Va al final del canal, después del alemán, para que todo lo que se genera antes
+—relieve, mares, accidentes, rótulos— siga calculando en las coordenadas
+originales y escale junto con el dibujo.
 
-Comprobado: lleva x 28→28, x 818→1161, y 79,747→80 y y 464,253→631,5. El mapa
-queda de **1133 × 551,5 mm**, contra los 790 × 384,5 de ahora: más del doble de
-superficie.
+### El índice, rehecho
+Las nueve filas de antes ya no entraban en la banda que queda. Ahora son
+**cinco filas por diez columnas**, 46 códigos en 50 huecos, con el reparto
+E 5+5, S 5+4+4+4, O 4+4, OV 5+4. Ocupa de x=28 a 804 y de y=652 a 810.
+Referencias, «Para empezar» y los logos se quedaron donde estaban: el mapa
+termina en y=631,5 y esa columna arranca en 644.
 
-Ese `transform` hay que aplicarlo a un grupo que envuelva desde `mapa-mundi`
-hasta `otros-vuelos`, que es donde viven todas las capas generadas. Así escalan
-juntas y los scripts pueden seguir calculando en las coordenadas viejas.
+Los nombres largos se achican solos para no invadir la columna de al lado. Hacía
+falta: «Bosques andino-patagónicos» desbordaba 5,7 mm, y su equivalente alemán
+5,1. El avance real de esa clase es 0,52 del cuerpo, medido sobre el render.
 
-### Lo que falta hacer
-1. Envolver ese rango y borrar `detalle-sudamerica`, el rectángulo punteado que
-   lo marcaba dentro del planisferio y el texto «ver detalle →».
-2. Rehacer el índice de QR, que hoy ocupa 9 filas y ya no entra. Con la banda
-   libre de y=652 a 810 caben **5 filas × 10 columnas** (46 códigos en 50
-   huecos), con paso de 80 mm en horizontal. El reparto por viaje sería
-   E 5+5, S 5+4+4+4, O 4+4, OV 5+4.
-3. `referencias`, `navegacion` y los logos se quedan donde están: el mapa
-   termina en y=631,5 y esa columna arranca en y=644.
-4. Volver a correr el canal entero, regenerar el alemán y los PDF, y repetir la
-   verificación de los 46 códigos.
+### Verificado
+- Los 46 códigos, decodificados sobre los cuatro PDF: 46/46 en cada uno.
+- Cero solapes entre los 85 textos del plano en castellano y los 95 en alemán.
+- Ningún nombre del índice desborda su columna, en ninguno de los dos idiomas.
+- Nada se sale del pliego.
 
-Nada de esto está hecho. Los cuatro archivos actuales siguen siendo los de la
 entrega anterior, verificados.
