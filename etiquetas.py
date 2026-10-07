@@ -25,7 +25,8 @@ AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 CUERPO = 3.1            # cuerpo de letra, como las etiquetas ya dibujadas
-AVANCE = 0.455          # ancho medio de un carácter, en fracción del cuerpo
+AVANCE = 0.53           # ancho de un carácter en fracción del cuerpo, medido
+                        # sobre el render: la estimación a ojo se quedaba corta
 MARGEN = 0.9            # aire mínimo entre dos rótulos, en mm
 GUIA_DESDE = 7.0        # a partir de esta distancia se dibuja la línea
 
@@ -47,23 +48,40 @@ def chocan(a, b):
     return not (a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1])
 
 
+# Ancho de un carácter en fracción del cuerpo, medido sobre el afiche ya
+# compuesto. Cada clase tiene el suyo: la versalita espaciada de los accidentes
+# ocupa casi el doble que el texto corriente de un rótulo.
+AVANCES = {"accidente": 0.90, "mar": 0.95, "lab": 0.53}
+
+
 def obstaculos(svg: str) -> list:
-    """Lo que ya ocupa sitio en el planisferio."""
+    """Lo que ya ocupa sitio en el planisferio, con su caja real."""
     a, b = svg.index('id="mapa-mundi"'), svg.index('id="detalle-sudamerica"')
     m, cajas = svg[a:b], []
     for t in re.finditer(r'<text x="([-\d.]+)" y="([-\d.]+)"([^>]*)>(.*?)</text>',
                          m, re.S):
         x, y, attrs, cuerpo = float(t.group(1)), float(t.group(2)), t.group(3), t.group(4)
         texto = re.sub(r"<[^>]+>", "", cuerpo)
+        if not texto.strip():
+            continue
         tam = float(re.search(r"font-size:([\d.]+)", attrs).group(1)) \
-            if "font-size:" in attrs else 3.1
-        esp = float(re.search(r"letter-spacing:([\d.]+)", attrs).group(1)) \
-            if "letter-spacing:" in attrs else 0.0
-        ancho = len(texto) * (tam * AVANCE + esp)
-        ancla = (re.search(r'text-anchor="(\w+)"', attrs) or [None, "start"])[1] \
-            if 'text-anchor="' in attrs else "start"
+            if "font-size:" in attrs else CUERPO
+        clase = next((c for c in AVANCES if f'class="{c}"' in attrs), "lab")
+        ancho = len(texto) * tam * AVANCES[clase]
+        alto = tam * 1.3
+        ancla = re.search(r'text-anchor="(\w+)"', attrs)
+        ancla = ancla.group(1) if ancla else "start"
         x0 = {"start": x, "end": x - ancho, "middle": x - ancho / 2}[ancla]
-        cajas.append((x0, y - tam, x0 + ancho, y + tam * 0.3))
+        y0 = y - tam
+        giro = re.search(r"rotate\(([-\d.]+)", attrs)
+        if giro:
+            # Tumbado: la caja que ocupa es la del rectángulo girado.
+            rad = math.radians(float(giro.group(1)))
+            cx, cy = x0 + ancho / 2, y0 + alto / 2
+            anc = abs(ancho * math.cos(rad)) + abs(alto * math.sin(rad))
+            alt = abs(ancho * math.sin(rad)) + abs(alto * math.cos(rad))
+            x0, y0, ancho, alto = cx - anc / 2, cy - alt / 2, anc, alt
+        cajas.append((x0, y0, x0 + ancho, y0 + alto))
     return cajas
 
 

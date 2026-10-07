@@ -896,3 +896,45 @@ note sin que el mapa cambie de familia de color.
 Cero solapes entre los 60 textos y los 13 grabados, en los dos idiomas. Los 46
 códigos siguen bien en los cuatro PDF, que ahora pesan 11,6 MB por el relieve en
 color.
+
+---
+
+## Fuera los animales, más color y más mapa
+
+**Los grabados salieron.** `animales.py` y `assets/grabados/` se borraron; el
+código de preparación (`grabados_preparar.py`) queda, por si alguna vez los
+querés recuperar.
+
+**Color.** Dos cambios. El relieve de la tierra se dejó mucho más vivo: antes se
+mezclaba un 42 % con el papel del afiche y ahora un 18 %, así que el verde de la
+selva, el ocre del Sahara y el blanco del hielo se ven de verdad. Y el océano
+dejó de ser un plano de color: ahora lleva el **fondo marino** de Natural Earth,
+reproyectado igual que el relieve, con sus dorsales, sus fosas y las plataformas
+continentales. Va recortado contra el marco del planisferio para no desbordar la
+elipse, y debajo de la tierra, que lo tapa donde corresponde.
+
+**Expresividad: 26 accidentes geográficos nombrados.** Cordilleras, desiertos,
+cuencas, mesetas y llanuras, de Natural Earth, que los trae en castellano y en
+alemán. Cada nombre va **tumbado siguiendo la dirección en que se estira el
+accidente** —los Andes casi verticales, el Himalaya casi horizontal— y el cuerpo
+de letra se ajusta a lo que mide por ahí. Si no entra, no se pone.
+
+### Un error de medida que valía la pena perseguir
+Los primeros nombres salían encimados. La causa: yo estimaba el ancho del texto
+a ojo, en 0,58 del cuerpo por carácter. Lo medí sobre el afiche ya compuesto y
+el valor real de la versalita espaciada es **0,90** — un 40 % más. También estaba
+mal el lector de obstáculos, que medía todos los textos con el mismo avance e
+ignoraba la rotación.
+
+Corregido eso —cada clase con su avance medido, y la caja del rectángulo girado
+para los tumbados—, quedan **cero solapes entre los 86 textos del planisferio en
+castellano y los 95 en alemán**, verificado sobre el render, no sobre mi
+estimación.
+
+### Lo que quedó desparejo
+El recuadro de detalle de Sudamérica **sigue en el estilo pálido anterior**,
+mientras el planisferio tiene relieve en color y batimetría. Se nota. Para
+igualarlo hay que deducir también su proyección —el pie dice acimutal
+equivalente de Lambert— y no salió al primer intento: el ajuste da 11 mm de
+error, demasiado. Su retícula es curva, así que no se lee tan directo como la
+del planisferio. Decime si lo seguimos y lo saco.

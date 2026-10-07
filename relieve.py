@@ -20,10 +20,13 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 AQUI = Path(__file__).parent
-# Natural Earth 1 con relieve sombreado: trae el color del terreno —verdes de
-# bosque, ocres de desierto, blanco de hielo— y no sólo la sombra.
-ORIGEN = Path("/tmp/ne/NE1_50M_SR_W/NE1_50M_SR_W.tif")
-SALIDA = AQUI / "assets/geo/relieve.jpg"
+# Dos rásteres de Natural Earth: la tierra con su color real —verdes de bosque,
+# ocres de desierto, blanco de hielo— y el fondo del océano, que trae las
+# dorsales, las fosas y las plataformas continentales.
+CAPAS = {
+    "relieve": Path("/tmp/ne/NE1_50M_SR_W/NE1_50M_SR_W.tif"),
+    "batimetria": Path("/tmp/ne/OB_50M/OB_50M.tif"),
+}
 
 A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
 X0, Y0, SEMIANCHO = 423.0, 272.0, 395.0
@@ -33,8 +36,11 @@ PPP = 150                       # resolución de salida, en puntos por pulgada
 # saturación, para que el verde de la selva se note sin que el mapa cambie de
 # familia de color.
 PAPEL = np.array([0xEC, 0xE5, 0xD3], float)
-MEZCLA_PAPEL = 0.42      # cuánto del papel entra en la mezcla
-SATURACION = 0.78
+# Cuánto se acerca cada capa al papel del afiche. La tierra ahora se deja
+# bastante más viva que antes; el mar, algo más contenido para que no le gane
+# al dibujo.
+MEZCLA = {"relieve": 0.18, "batimetria": 0.24}
+SATURACION = {"relieve": 1.05, "batimetria": 1.0}
 
 
 def directa(lon_rad, lat_rad):
@@ -68,16 +74,21 @@ def inversa(X, Y):
 
 
 def main() -> None:
+    for nombre, origen in CAPAS.items():
+        convertir(nombre, origen)
+
+
+def convertir(nombre: str, origen: Path) -> None:
     k = escala()
     ancho_mm = 2 * SEMIANCHO
     alto_mm = 2 * k * directa(0.0, math.pi / 2)[1]   # del polo al polo
     W = round(ancho_mm / 25.4 * PPP)
     H = round(alto_mm / 25.4 * PPP)
-    print(f"salida: {W}×{H} px para {ancho_mm:.1f}×{alto_mm:.1f} mm a {PPP} ppp")
+    print(f"{nombre}: {W}×{H} px para {ancho_mm:.1f}×{alto_mm:.1f} mm a {PPP} ppp")
 
     # Suavizo la fuente antes de muestrear: vamos de 30 px por grado a 13,
     # y sin este paso las cordilleras aparecen dentadas.
-    src = Image.open(ORIGEN).convert("RGB").resize((5400, 2700), Image.LANCZOS)
+    src = Image.open(origen).convert("RGB").resize((5400, 2700), Image.LANCZOS)
     g = np.asarray(src, dtype=np.float32)
     sh, sw = g.shape[:2]
 
@@ -99,13 +110,14 @@ def main() -> None:
                + (g[f1, c0] * (1 - tc) + g[f1, c1] * tc) * tf)
 
     gris = muestra.mean(axis=2, keepdims=True)
-    rgb = gris + (muestra - gris) * SATURACION
-    rgb = rgb * (1 - MEZCLA_PAPEL) + PAPEL * MEZCLA_PAPEL
+    rgb = gris + (muestra - gris) * SATURACION[nombre]
+    rgb = rgb * (1 - MEZCLA[nombre]) + PAPEL * MEZCLA[nombre]
     rgb[~dentro] = PAPEL
     rgb = np.clip(rgb, 0, 255)
 
-    Image.fromarray(rgb.astype(np.uint8)).save(SALIDA, quality=88, subsampling=0)
-    print(f"{SALIDA.name}: {SALIDA.stat().st_size / 1e6:.1f} MB")
+    salida = AQUI / f"assets/geo/{nombre}.jpg"
+    Image.fromarray(rgb.astype(np.uint8)).save(salida, quality=88, subsampling=0)
+    print(f"{salida.name}: {salida.stat().st_size / 1e6:.1f} MB")
 
 
 if __name__ == "__main__":

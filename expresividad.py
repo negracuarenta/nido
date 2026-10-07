@@ -17,6 +17,8 @@ import math
 import re
 from pathlib import Path
 
+import numpy as np
+
 AQUI = Path(__file__).parent
 AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 NE = Path("/tmp/ne")
@@ -118,13 +120,23 @@ def creditos_mapa(lang="es") -> str:
             f'{texto}</text></g>')
 
 
-def relieve(pal) -> str:
-    datos = base64.b64encode((AQUI / "assets/geo/relieve.jpg").read_bytes()).decode()
+def capa_raster(ident: str, archivo: str, pal, recorte=None) -> str:
+    datos = base64.b64encode((AQUI / "assets/geo" / archivo).read_bytes()).decode()
     x, y, w, h = MAPA
-    return (f'<g id="relieve" clip-path="url(#recorte-tierra)">'
+    clip = f' clip-path="url(#{recorte})"' if recorte else ""
+    return (f'<g id="{ident}"{clip}>'
             f'<image x="{x}" y="{y}" width="{w}" height="{h}" '
             f'preserveAspectRatio="none" opacity="{pal["relieve"]}" '
             f'href="data:image/jpeg;base64,{datos}"/></g>')
+
+
+def relieve(pal) -> str:
+    return capa_raster("relieve", "relieve.jpg", pal, "recorte-tierra")
+
+
+def batimetria(pal) -> str:
+    """El fondo del océano: dorsales, fosas y plataformas continentales."""
+    return capa_raster("batimetria", "batimetria.jpg", pal, "solo-mapa")
 
 
 def hidrografia(pal) -> str:
@@ -227,6 +239,92 @@ def mares(pal, lang="es") -> str:
 
 
 
+# Qué accidentes se nombran y hasta qué rango de importancia de Natural Earth.
+ACCIDENTES = {
+    "Range/mtn": (2, 3.6), "Desert": (3, 3.4), "Basin": (2, 3.4),
+    "Plateau": (2, 3.2), "Plain": (2, 3.2), "Geoarea": (2, 3.2),
+    "Wetlands": (3, 3.0), "Valley": (3, 3.0), "Tundra": (2, 3.0),
+}
+
+
+def _eje(anillo):
+    """Dirección en la que se estira el accidente, y cuánto mide en ella."""
+    xs = np.array([c[0] for c in anillo]); ys = np.array([c[1] for c in anillo])
+    cx, cy = xs.mean(), ys.mean()
+    cov = np.cov(np.vstack([xs - cx, ys - cy]))
+    val, vec = np.linalg.eigh(cov)
+    v = vec[:, int(np.argmax(val))]
+    ang = math.degrees(math.atan2(v[1], v[0]))
+    if ang > 90: ang -= 180
+    if ang < -90: ang += 180
+    proy = (xs - cx) * v[0] + (ys - cy) * v[1]
+    return ang, float(proy.max() - proy.min())
+
+
+def accidentes(pal, lang="es", ocupado=None) -> str:
+    """Nombra cordilleras, desiertos, cuencas y mesetas, como un atlas.
+
+    El nombre se tumba siguiendo la dirección en que se estira el accidente
+    —los Andes van casi verticales, el Himalaya casi horizontal— y el cuerpo de
+    letra se ajusta a lo que mide por ahí. Si no entra, no se pone.
+    """
+    from scipy.spatial import cKDTree
+
+    datos = json.loads((NE / "ne_50m_geography_regions_polys.geojson").read_text())
+    campo = "NAME_ES" if lang == "es" else "NAME_DE"
+    puestos, piezas = list(ocupado or []), ['<g id="accidentes">']
+    rasgos = []
+    for f in datos["features"]:
+        p = f["properties"]
+        tope = ACCIDENTES.get(p.get("FEATURECLA"))
+        if not tope or (p.get("SCALERANK") or 9) > tope[0]:
+            continue
+        nombre = (p.get(campo) or p.get("NAME") or "").strip()
+        if nombre:
+            rasgos.append((p.get("SCALERANK") or 9, nombre, tope[1], f["geometry"]))
+    rasgos.sort(key=lambda r: r[0])
+
+    for _, nombre, base, geom in rasgos:
+        proy = [[proyectar(*c) for c in a] for a in anillos(geom)]
+        grande = max(proy, key=area)
+        if len(grande) < 8:
+            continue
+        ang, largo = _eje(grande)
+        pt, holgura = _lejos_de_la_costa(grande, cKDTree(grande))
+        if pt is None:
+            continue
+        # 0,90 por carácter: medido sobre el afiche ya compuesto, con la
+        # versalita espaciada. La estimación anterior se quedaba un 40 % corta
+        # y por eso algunos nombres terminaban encimados.
+        cuenta = max(len(nombre), 4)
+        tam = min(base, largo / (cuenta * 0.90), holgura * 1.9)
+        if tam < 2.1:
+            continue
+        ancho = cuenta * tam * 0.90
+        # El rótulo va tumbado, así que la caja que ocupa de verdad es la del
+        # rectángulo girado, no la del texto en horizontal.
+        rad = math.radians(ang)
+        anc = abs(ancho * math.cos(rad)) + abs(tam * 1.4 * math.sin(rad))
+        alt = abs(ancho * math.sin(rad)) + abs(tam * 1.4 * math.cos(rad))
+        caja = (pt[0] - anc / 2 - 1, pt[1] - alt / 2 - 1,
+                pt[0] + anc / 2 + 1, pt[1] + alt / 2 + 1)
+        if any(_chocan(caja, c) for c in puestos):
+            continue
+        puestos.append(caja)
+        giro = (f' transform="rotate({ang:.1f} {pt[0]:.1f} {pt[1]:.1f})"'
+                if abs(ang) > 4 else "")
+        piezas.append(
+            f'<text x="{pt[0]:.1f}" y="{pt[1]:.1f}" text-anchor="middle"{giro} '
+            f'class="accidente" style="font-size:{tam:.2f}px;'
+            f'letter-spacing:{tam * 0.16:.2f}px">{nombre.upper()}</text>')
+    piezas.append("</g>")
+    return "".join(piezas)
+
+
+def _chocan(a, b):
+    return not (a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1])
+
+
 PALETAS = {
     "color": {"agua": "#7E9FB8", "lago": "#D7E6EF", "mar": "#8FA6B6",
               "relieve": "1", "orla": "#6E8EA6"},
@@ -234,7 +332,9 @@ PALETAS = {
            "relieve": "0.85", "orla": "#777777"},
 }
 ESTILO_MAR = (".mar{font-family:'TeX Gyre Pagella','Palatino',serif;"
-              "font-style:italic;fill:%s;opacity:0.85}")
+              "font-style:italic;fill:%s;opacity:0.85}"
+              ".accidente{font-family:'TeX Gyre Pagella','Palatino',serif;"
+              "font-style:italic;fill:#6B5B43;opacity:0.72}")
 
 
 def fin_de_grupo(svg: str, desde: int) -> int:
@@ -263,9 +363,10 @@ def main() -> None:
         svg = ruta.read_text()
         pal = PALETAS["color" if "#D9822B" in svg else "bn"]
 
-        for ident in ("relieve", "hidrografia", "mares", "orla", "fuentes-mapa"):
+        for ident in ("relieve", "batimetria", "hidrografia", "mares", "orla",
+                      "fuentes-mapa", "accidentes"):
             svg = quitar(svg, ident)
-        svg = re.sub(r'<defs id="recorte">.*?</defs>', "", svg, flags=re.S)
+        svg = re.sub(r'<defs id="recorte(-marco)?">.*?</defs>', "", svg, flags=re.S)
 
         # La costa es el trazo con más vértices del planisferio; le pongo id
         # para poder recortar el relieve contra ella sin duplicar 700 KB.
@@ -278,6 +379,25 @@ def main() -> None:
             svg = svg[:ini] + '<path id="tierra"' + svg[ini + len("<path"):]
             fin += len(' id="tierra"')
 
+        # El fondo del océano va justo encima del relleno del mar y debajo de
+        # todo lo demás: la tierra se dibuja después y lo tapa donde
+        # corresponde, sin necesidad de un recorte inverso. Se recorta contra
+        # el marco del planisferio para que no desborde la elipse.
+        # El marco es el primer trazo del planisferio: la silueta del mapa
+        # rellena con el color del agua. En la versión en blanco y negro ese
+        # relleno es blanco, así que no sirve buscarlo por color.
+        ini_marco = svg.index("<path", a)
+        fin_marco = svg.index("/>", ini_marco) + 2
+        if 'id="marco-mapa"' not in svg:
+            svg = svg[:ini_marco] + '<path id="marco-mapa"' + svg[ini_marco + len("<path"):]
+            crece = len(' id="marco-mapa"')
+            fin_marco += crece; ini += crece; fin += crece
+        capa_fondo = ('<defs id="recorte-marco"><clipPath id="solo-mapa">'
+                      '<use href="#marco-mapa"/></clipPath></defs>'
+                      + batimetria(pal))
+        svg = svg[:fin_marco] + capa_fondo + svg[fin_marco:]
+        ini += len(capa_fondo); fin += len(capa_fondo)
+
         capa_mar, capa_agua = mares(pal), hidrografia(pal)
         # La orla necesita que #tierra ya exista, así que va después del trazo.
         svg = (svg[:ini] + capa_mar + svg[ini:fin] + orla(pal)
@@ -285,6 +405,11 @@ def main() -> None:
                  '<use href="#tierra"/></clipPath></defs>'
                + relieve(pal) + capa_agua + svg[fin:])
         svg = svg.replace('<g id="indice">', creditos_mapa() + '<g id="indice">', 1)
+        # Los nombres de los accidentes van sobre el relieve, pero esquivando
+        # lo que ya está escrito en el mapa.
+        from etiquetas import obstaculos
+        acc = accidentes(pal, "es", obstaculos(svg))
+        svg = svg.replace('<g id="otros-vuelos">', acc + '<g id="otros-vuelos">', 1)
 
         if ".mar{" not in svg:
             svg = svg.replace("</style>", ESTILO_MAR % pal["mar"] + "</style>", 1)
@@ -294,8 +419,9 @@ def main() -> None:
         if "#D9822B" in svg:
             svg = svg.replace(AGUA_FRIA, AGUA_CALIDA)
         ruta.write_text(svg)
-        print(f"{nombre}: relieve + {len(re.findall(r'<path ', capa_agua))} capas de "
-              f"agua + {len(re.findall(r'<text', capa_mar))} nombres de mar · "
+        print(f"{nombre}: relieve y batimetría + "
+              f"{len(re.findall(r'<text', capa_mar))} mares + "
+              f"{len(re.findall(r'<text', acc))} accidentes · "
               f"{ruta.stat().st_size / 1e6:.1f} MB")
 
 

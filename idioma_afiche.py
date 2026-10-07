@@ -18,7 +18,6 @@ y que el afiche y la web no se contradigan.
 import json
 import re
 
-import animales
 import etiquetas
 import expresividad
 from pathlib import Path
@@ -145,19 +144,19 @@ def main() -> None:
                      count=1, flags=re.S)
         svg = re.sub(r'<g id="rotulos">.*?</g>', "", svg, count=1, flags=re.S)
         svg = re.sub(r'<g id="animales">.*?</g>', "", svg, count=1, flags=re.S)
+        svg = re.sub(r'<g id="accidentes">.*?</g>', "<!--ACCIDENTES-->", svg,
+                     count=1, flags=re.S)
         # El crédito de las fuentes del mapa también se regenera, no se traduce.
         svg = re.sub(r'<g id="fuentes-mapa">.*?</g>', "<!--FUENTES-->", svg,
                      count=1, flags=re.S)
         alemán, faltan = traducir(svg, d)
         alemán = alemán.replace("<!--MARES-->", expresividad.mares(pal, "de"), 1)
         alemán = alemán.replace("<!--FUENTES-->", expresividad.creditos_mapa("de"), 1)
+        alemán = alemán.replace("<!--ACCIDENTES-->", expresividad.accidentes(
+            pal, "de", etiquetas.obstaculos(alemán)), 1)
         # Los rótulos se recalculan en alemán: otro largo, otras posiciones.
         alemán = alemán.replace('<g id="otros-vuelos">',
                                 etiquetas.grupo(alemán, "de") + '<g id="otros-vuelos">', 1)
-        # Los grabados también se recolocan: los rótulos alemanes ocupan otro
-        # sitio, y un animal encima de un nombre no se puede leer.
-        alemán = alemán.replace('<g id="rotulos">',
-                                animales.grupo(alemán) + '<g id="rotulos">', 1)
         alemán, qr_cambiados = cambiar_qr(alemán)
         if faltan:
             raise SystemExit(
