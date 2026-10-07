@@ -797,3 +797,46 @@ planisferio, en castellano y en alemán.
 Los rótulos no se traducen: se vuelven a calcular. Los nombres alemanes tienen
 otro largo, así que las posiciones que sirven en castellano no tienen por qué
 servir en alemán, y de hecho salen distintas.
+
+---
+
+## Animales: cuatro grabados del siglo XIX
+
+Los mapas antiguos llevaban bichos dibujados donde se sabía que vivían. Acá hay
+cuatro, y **los cuatro son animales que la obra nombra**: la golondrina que
+cuenta la historia (Atlántico Norte, de camino a Heidelberg), el pingüino
+emperador de la Antártida, el albatros errante de las Georgias y el camello
+bactriano del Gobi.
+
+Son grabados de la **Iconographia Zoologica**, en dominio público, bajados de
+Commons con el mismo criterio que las fotos. Dominio público y no Creative
+Commons a propósito: una licencia CC obliga a atribuir en el propio afiche, y un
+pie de autor por bicho no entra en un mapa. Vienen fotografiados con su hoja de
+montaje, así que `grabados_preparar.py` los recorta, les saca el papel y los pasa
+a la tinta del afiche con un desvanecido ovalado, como las viñetas antiguas.
+
+### Tres que descarté, y por qué
+- **El cóndor andino.** La categoría *Vultur* de la colección son todos *Vultur
+  monachus*, el buitre negro europeo. El cóndor es *Vultur gryphus* y no está.
+  Poner el buitre como cóndor habría sido el mismo error que la Cachoeira da
+  Fumaça de Mato Grosso.
+- **El elefante**, que es una escena nocturna entera y no una figura que se
+  pueda separar del fondo.
+- **El canguro y la vicuña.** El canguro está fotografiado en diagonal con otros
+  animales encima. La vicuña es pálida sobre un cielo pálido: al quitarle el
+  fondo pierde la cabeza, y preferí no publicar un animal decapitado.
+
+Si conseguís un grabado limpio de cóndor o de yaguareté, los sumo.
+
+## La estética antigua, contenida
+- **Orla de costa**: la banda de sombra que los mapas viejos dibujaban bordeando
+  la tierra. Son tres trazos sobre la propia silueta, dibujados *antes* del
+  relleno, así que sólo se ve la mitad que da al agua.
+- **Agua un punto más cálida**: de #EAF1F5 a #E9EFEE, menos azul y más papel.
+- **Nombres de mar** en itálica espaciada, que ya estaban.
+
+Sin rosa de los vientos ni marco: elegiste la versión contenida.
+
+## Estado
+Los cuatro PDF pesan ahora unos 8,4 MB cada uno, por el relieve. Los 46 códigos
+siguen verificados sobre los cuatro.

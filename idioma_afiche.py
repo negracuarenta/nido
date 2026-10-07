@@ -143,8 +143,12 @@ def main() -> None:
         svg = re.sub(r'<g id="mares">.*?</g>', "<!--MARES-->", svg,
                      count=1, flags=re.S)
         svg = re.sub(r'<g id="rotulos">.*?</g>', "", svg, count=1, flags=re.S)
+        # El crédito de las fuentes del mapa también se regenera, no se traduce.
+        svg = re.sub(r'<g id="fuentes-mapa">.*?</g>', "<!--FUENTES-->", svg,
+                     count=1, flags=re.S)
         alemán, faltan = traducir(svg, d)
         alemán = alemán.replace("<!--MARES-->", expresividad.mares(pal, "de"), 1)
+        alemán = alemán.replace("<!--FUENTES-->", expresividad.creditos_mapa("de"), 1)
         # Los rótulos se recalculan en alemán: otro largo, otras posiciones.
         alemán = alemán.replace('<g id="otros-vuelos">',
                                 etiquetas.grupo(alemán, "de") + '<g id="otros-vuelos">', 1)

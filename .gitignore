@@ -5,3 +5,5 @@ __pycache__/
 assets/geo/ne_50m_land.json
 qrs.json
 *-qrs.png
+.grabados-cache/
+contacto.png

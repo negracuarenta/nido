@@ -94,6 +94,30 @@ def area(coords):
     return abs(s) / 2
 
 
+def orla(pal) -> str:
+    """La banda de sombra que los mapas antiguos dibujaban bordeando la costa.
+
+    Son tres trazos cada vez más finos y más oscuros sobre la silueta de la
+    tierra. Como se dibujan *antes* del relleno, la mitad interior queda tapada
+    y sólo se ve la mitad que da al agua: una orla que se desvanece.
+    """
+    capas = ((2.6, 0.10), (1.5, 0.14), (0.7, 0.18))
+    return ('<g id="orla" fill="none">' + "".join(
+        f'<use href="#tierra" stroke="{pal["orla"]}" stroke-width="{w}" '
+        f'opacity="{o}"/>' for w, o in capas) + "</g>")
+
+
+def creditos_mapa(lang="es") -> str:
+    texto = {
+        "es": "Relieve, hidrografía y mares: Natural Earth. Viñetas: grabados "
+              "de la Iconographia Zoologica, dominio público.",
+        "de": "Relief, Gewässer und Meere: Natural Earth. Vignetten: Stiche aus "
+              "der Iconographia Zoologica, gemeinfrei.",
+    }[lang]
+    return (f'<g id="fuentes-mapa"><text x="845" y="804" class="small">'
+            f'{texto}</text></g>')
+
+
 def relieve(pal) -> str:
     datos = base64.b64encode((AQUI / "assets/geo/relieve.jpg").read_bytes()).decode()
     x, y, w, h = MAPA
@@ -204,8 +228,10 @@ def mares(pal, lang="es") -> str:
 
 
 PALETAS = {
-    "color": {"agua": "#7E9FB8", "lago": "#D7E6EF", "mar": "#8FA6B6", "relieve": "1"},
-    "bn": {"agua": "#9a9a9a", "lago": "#f2f2f2", "mar": "#9a9a9a", "relieve": "0.85"},
+    "color": {"agua": "#7E9FB8", "lago": "#D7E6EF", "mar": "#8FA6B6",
+              "relieve": "1", "orla": "#6E8EA6"},
+    "bn": {"agua": "#9a9a9a", "lago": "#f2f2f2", "mar": "#9a9a9a",
+           "relieve": "0.85", "orla": "#777777"},
 }
 ESTILO_MAR = (".mar{font-family:'TeX Gyre Pagella','Palatino',serif;"
               "font-style:italic;fill:%s;opacity:0.85}")
@@ -228,13 +254,16 @@ def quitar(svg: str, ident: str) -> str:
     return svg
 
 
+AGUA_FRIA, AGUA_CALIDA = "#EAF1F5", "#E9EFEE"   # un punto menos azul, más papel
+
+
 def main() -> None:
     for nombre in AFICHES:
         ruta = AQUI / nombre
         svg = ruta.read_text()
         pal = PALETAS["color" if "#D9822B" in svg else "bn"]
 
-        for ident in ("relieve", "hidrografia", "mares"):
+        for ident in ("relieve", "hidrografia", "mares", "orla", "fuentes-mapa"):
             svg = quitar(svg, ident)
         svg = re.sub(r'<defs id="recorte">.*?</defs>', "", svg, flags=re.S)
 
@@ -250,16 +279,20 @@ def main() -> None:
             fin += len(' id="tierra"')
 
         capa_mar, capa_agua = mares(pal), hidrografia(pal)
-        svg = (svg[:ini] + capa_mar + svg[ini:fin]
+        # La orla necesita que #tierra ya exista, así que va después del trazo.
+        svg = (svg[:ini] + capa_mar + svg[ini:fin] + orla(pal)
                + '<defs id="recorte"><clipPath id="recorte-tierra">'
                  '<use href="#tierra"/></clipPath></defs>'
                + relieve(pal) + capa_agua + svg[fin:])
+        svg = svg.replace('<g id="indice">', creditos_mapa() + '<g id="indice">', 1)
 
         if ".mar{" not in svg:
             svg = svg.replace("</style>", ESTILO_MAR % pal["mar"] + "</style>", 1)
         else:
             svg = re.sub(r"\.mar\{[^}]*\}", ESTILO_MAR % pal["mar"], svg, count=1)
 
+        if "#D9822B" in svg:
+            svg = svg.replace(AGUA_FRIA, AGUA_CALIDA)
         ruta.write_text(svg)
         print(f"{nombre}: relieve + {len(re.findall(r'<path ', capa_agua))} capas de "
               f"agua + {len(re.findall(r'<text', capa_mar))} nombres de mar · "
