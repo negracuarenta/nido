@@ -1,3 +1,9 @@
-<!doctype html><meta charset="utf-8"><title>mapa</title>
-<style>html,body{margin:0;background:#666}img{width:1580px;display:block}</style>
-<script>document.write(`<img src="/MAPA_FINAL_es_color.svg?v=${Date.now()}">`)</script>
+<!doctype html><meta charset="utf-8"><title>zoom</title>
+<style>body{margin:0;background:#999;font:12px sans-serif}
+.caja{position:relative;overflow:hidden}
+.caja img{position:absolute}b{position:absolute;z-index:9;background:#000;color:#fff;padding:2px 6px}</style>
+<script>
+document.write(`<div class="caja" style="width:${260*3}px;height:${230*3}px">
+<b>Sudamérica ×3</b><img src="/MAPA_FINAL_es_color.svg?v=${Date.now()}"
+style="width:${1189*3}px;left:${-170*3}px;top:${-235*3}px"></div>`);
+</script>

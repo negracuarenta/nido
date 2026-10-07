@@ -773,3 +773,27 @@ separar.
 ### Orden del canal
 `qr.py` → `afiche.py` → `planisferio.py` → `expresividad.py` → `idioma_afiche.py`
 → `pdf_afiche.py`.
+
+---
+
+## Los 44 lugares, todos con nombre en el planisferio
+
+Faltaban 23: los de Sudamérica, que sólo se nombraban en el recuadro de
+detalle. Un punto sin nombre en el mapa grande obliga a buscarlo en otro lado.
+
+`etiquetas.py` le busca sitio a cada uno probando posiciones en anillos cada vez
+más amplios alrededor del punto, de más cerca a más lejos y prefiriendo los
+costados, que es el orden en que lo haría un cartógrafo. Respeta lo que ya está:
+las etiquetas puestas a mano, los nombres de mar y el recuadro de detalle. Si un
+nombre queda a más de 7 mm de su punto, se le tira una línea de guía fina del
+color de su viaje.
+
+Salió mejor de lo que esperaba: de los 23, **21 entraron pegados a su punto** y
+sólo 2 necesitaron línea de guía.
+
+**Verificado midiendo, no mirando:** cero solapes entre los 60 textos del
+planisferio, en castellano y en alemán.
+
+Los rótulos no se traducen: se vuelven a calcular. Los nombres alemanes tienen
+otro largo, así que las posiciones que sirven en castellano no tienen por qué
+servir en alemán, y de hecho salen distintas.

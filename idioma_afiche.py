@@ -18,6 +18,7 @@ y que el afiche y la web no se contradigan.
 import json
 import re
 
+import etiquetas
 import expresividad
 from pathlib import Path
 
@@ -141,8 +142,12 @@ def main() -> None:
         pal = expresividad.PALETAS["color" if "#D9822B" in svg else "bn"]
         svg = re.sub(r'<g id="mares">.*?</g>', "<!--MARES-->", svg,
                      count=1, flags=re.S)
+        svg = re.sub(r'<g id="rotulos">.*?</g>', "", svg, count=1, flags=re.S)
         alemán, faltan = traducir(svg, d)
         alemán = alemán.replace("<!--MARES-->", expresividad.mares(pal, "de"), 1)
+        # Los rótulos se recalculan en alemán: otro largo, otras posiciones.
+        alemán = alemán.replace('<g id="otros-vuelos">',
+                                etiquetas.grupo(alemán, "de") + '<g id="otros-vuelos">', 1)
         alemán, qr_cambiados = cambiar_qr(alemán)
         if faltan:
             raise SystemExit(
