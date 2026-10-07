@@ -736,3 +736,40 @@ La única forma de agrandarlos más es conseguir los originales vectoriales.
 **El de negra40 ya lo tenés**: `NEGRA40/negra40_logo.pdf` es vector puro, 10 KB.
 Los del CEAC y del museo hay que pedírselos a las instituciones —un SVG, un EPS
 o un PDF vectorial—. Con los tres en vector el tamaño deja de tener techo.
+
+---
+
+## El planisferio deja de ser una silueta
+
+Tenía la costa y nada más. Ahora tiene relieve, hidrografía y nombres de mar.
+
+**El relieve es real, no dibujado.** Es el sombreado de Natural Earth, que viene
+en equirectangular —la cuadrícula cruda de latitud y longitud— mientras el
+afiche está en Equal Earth. No alcanzaba con pegarlo: `relieve.py` invierte la
+proyección y para cada uno de los 10,6 millones de píxeles de salida calcula a
+qué punto de la Tierra corresponde. La inversa de Equal Earth no tiene fórmula
+cerrada; la latitud auxiliar sale por Newton. Lo comprobé superponiendo la costa
+ya dibujada sobre el relieve reproyectado: calzan.
+
+Se ven los Andes, el Himalaya, las Rocosas, el Atlas, la Gran Cordillera
+Divisoria, la fosa del Rift. El gris original se tiñe con los dos tonos del
+afiche, así que el mapa no cambia de color.
+
+**Ríos y lagos** salen del mismo Natural Earth: los 255 ríos de rango 1 a 5 —el
+1 es el Amazonas— con el trazo más grueso cuanto más importante, y los 45 lagos
+mayores.
+
+**Los nombres de mar se ubican solos.** El centroide no servía: el del Pacífico
+Norte cae sobre México. Cada nombre va en el punto del polígono más alejado de
+cualquier costa, que es donde lo pondría un cartógrafo, y el cuerpo de letra se
+ajusta al hueco disponible. Si un mar no tiene sitio para su nombre sin meterse
+debajo de la tierra, no se escribe: leerlo cortado es peor que no ponerlo. Van
+además por debajo de la capa de tierra, nunca encima.
+
+Los nombres vienen traducidos en el propio Natural Earth, así que la versión
+alemana no los traduce: los vuelve a generar. Afiche y dato oficial no se pueden
+separar.
+
+### Orden del canal
+`qr.py` → `afiche.py` → `planisferio.py` → `expresividad.py` → `idioma_afiche.py`
+→ `pdf_afiche.py`.

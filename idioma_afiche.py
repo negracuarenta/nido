@@ -17,6 +17,8 @@ y que el afiche y la web no se contradigan.
 """
 import json
 import re
+
+import expresividad
 from pathlib import Path
 
 AQUI = Path(__file__).parent
@@ -133,7 +135,14 @@ def main() -> None:
     d = diccionario()
     for origen, destino in VERSIONES.items():
         svg = (AQUI / origen).read_text()
+        # Los nombres de mar no se traducen a mano: se vuelven a generar desde
+        # Natural Earth, que los trae en alemán. Se apartan antes de traducir
+        # para que el control de textos sin traducir no los marque.
+        pal = expresividad.PALETAS["color" if "#D9822B" in svg else "bn"]
+        svg = re.sub(r'<g id="mares">.*?</g>', "<!--MARES-->", svg,
+                     count=1, flags=re.S)
         alemán, faltan = traducir(svg, d)
+        alemán = alemán.replace("<!--MARES-->", expresividad.mares(pal, "de"), 1)
         alemán, qr_cambiados = cambiar_qr(alemán)
         if faltan:
             raise SystemExit(
