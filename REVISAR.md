@@ -645,3 +645,22 @@ puede hacer, pero es otra arquitectura. Decime y lo vemos.
   cuenta los grupos anidados.
 - Validaba el resultado *después* de escribir el archivo. Ahora valida antes: si
   los códigos no están todos, no escribe nada.
+
+---
+
+## Los tres logos en el afiche
+
+Abajo a la derecha, alineados al margen derecho (x=1161) y a la base del
+índice: negra40, CEAC y el Völkerkundemuseum, en el mismo orden que en la web,
+con el rótulo «Con» / «Mit» encima, alineado con el borde izquierdo de negra40.
+
+Van a 9 mm de alto. Los archivos miden 120 px, así que impresos dan 339 ppp
+—por encima de los 300 que pide una imprenta—. Comprobé además que los tres
+PNG son **gris puro**, sin un solo píxel de color: por eso el mismo archivo
+sirve para la versión en color y para la de blanco y negro, sin filtros.
+
+Van incrustados en el SVG como datos, no enlazados, así que el archivo sigue
+siendo autónomo: se abre en Illustrator sin perder las imágenes.
+
+El rótulo se traduce solo, porque sale de `ui.con_apoyo` de `site.json`, que es
+de donde lo toma también la web.

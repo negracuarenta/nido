@@ -100,6 +100,7 @@ def diccionario() -> dict:
     d["Otros vuelos"] = site["viajes"]["OV"]["de"]
     d["Lo que también vio"] = site["ui"]["capa_tragica"]["de"]
     d["Punto 0 · el árbol"] = site["ui"]["punto_cero"]["de"]
+    d["Con"] = site["ui"]["con_apoyo"]["de"]
     for viaje in json.loads((AQUI / "nido_lugares.json").read_text())["trips"]:
         for l in viaje["places"]:
             d[l["name"]] = (l.get("names") or {}).get("de") or l["name"]

@@ -9,6 +9,7 @@ Hasta ahora el índice tenía recuadros punteados vacíos y se había quedado en
 lugares. Generarlo desde nido_lugares.json es lo que evita que vuelva a
 desincronizarse: una vez impreso, un QR equivocado no se arregla.
 """
+import base64
 import json
 import re
 from pathlib import Path
@@ -35,6 +36,13 @@ NAVEGACION = (
     ("heidelberg", "Punto 0 · el árbol", "El liquidámbar de Heidelberg"),
 )
 NAV_X, NAV_Y, NAV_LADO, NAV_PASO = 964.0, 652.0, 32.0, 52.0
+
+# Los logos de las instituciones, abajo a la derecha, como en la web.
+# Son grises puros, así que el mismo archivo sirve para las dos versiones del
+# afiche. A 9 mm de alto, los 120 px de origen dan 339 ppp: calidad de imprenta.
+LOGOS = ("negra40.png", "ceac.png", "vpst.png")
+LOGO_ALTO, LOGO_AIRE = 9.0, 9.0
+LOGO_DERECHA, LOGO_ABAJO = 1161.0, 792.0
 
 
 def qr_incrustado(codigo: str, x: float, y: float, lado: float) -> str:
@@ -140,15 +148,43 @@ def quitar(svg: str, ident: str) -> str:
     return svg
 
 
+def logos() -> str:
+    """La fila de logos, alineada al margen derecho y a la base del índice."""
+    piezas, ancho_total = [], 0.0
+    for archivo in LOGOS:
+        png = (AQUI / "assets/logos" / archivo).read_bytes()
+        import struct
+        w, h = struct.unpack(">II", png[16:24])
+        ancho = LOGO_ALTO * w / h
+        piezas.append((base64.b64encode(png).decode(), ancho))
+        ancho_total += ancho
+    ancho_total += LOGO_AIRE * (len(LOGOS) - 1)
+
+    x = LOGO_DERECHA - ancho_total
+    y = LOGO_ABAJO - LOGO_ALTO
+    salida = [f'<g id="logos">'
+              f'<text x="{x:.2f}" y="{y - 4.4:.2f}" class="small" '
+              f'style="font-size:3px">Con</text>']
+    for datos, ancho in piezas:
+        salida.append(f'<image x="{x:.2f}" y="{y:.2f}" width="{ancho:.2f}" '
+                      f'height="{LOGO_ALTO}" preserveAspectRatio="xMidYMid meet" '
+                      f'href="data:image/png;base64,{datos}"/>')
+        x += ancho + LOGO_AIRE
+    salida.append("</g>")
+    return "".join(salida)
+
+
 def main() -> None:
     datos = json.loads((AQUI / "nido_lugares.json").read_text())
-    nuevo_indice, nueva_nav = indice(datos), navegacion()
+    nuevo_indice, nueva_nav, fila_logos = indice(datos), navegacion(), logos()
     total = sum(len(v["places"]) for v in datos["trips"]) + len(NAVEGACION)
 
     for nombre in AFICHES:
         ruta = AQUI / nombre
-        svg = quitar(quitar(ruta.read_text(), "indice"), "navegacion")
-        svg = svg.replace("</svg>", nuevo_indice + nueva_nav + "</svg>")
+        svg = ruta.read_text()
+        for ident in ("indice", "navegacion", "logos"):
+            svg = quitar(svg, ident)
+        svg = svg.replace("</svg>", nuevo_indice + nueva_nav + fila_logos + "</svg>")
 
         puestos = len(re.findall(r'<g class="qr" id="qr-', svg))
         vacios = len(re.findall(r'<rect class="qr"', svg))
@@ -157,7 +193,8 @@ def main() -> None:
                 f"{nombre}: {puestos} códigos puestos de {total} y {vacios} "
                 f"recuadros vacíos. No lo escribo así.")
         ruta.write_text(svg)
-        print(f"{nombre}: {puestos} QR incrustados, {vacios} recuadros vacíos")
+        print(f"{nombre}: {puestos} QR incrustados, {vacios} recuadros vacíos, "
+              f"{len(re.findall(r'<image ', svg))} logos")
 
 
 if __name__ == "__main__":
