@@ -49,9 +49,12 @@ PROPIAS = {
     "golondrina las cuenta.":
         "Routen als Großkreisbögen, in der Reihenfolge, in der die Schwalbe "
         "sie erzählt.",
-    "Proyección Equal Earth · detalle en acimutal equivalente de Lambert.":
-        "Projektion Equal Earth · Detail in flächentreuer Azimutalprojektion "
-        "nach Lambert.",
+    # El pie de proyección cambió: ya no hay detalle de Sudamérica que
+    # mencionar, y en cambio se nombran las fuentes del mapa.
+    "Proyección Equal Earth. Relieve, batimetría, hidrografía y nombres "
+    "geográficos: Natural Earth.":
+        "Projektion Equal Earth. Relief, Meeresboden, Gewässer und "
+        "geografische Namen: Natural Earth.",
     "Índice · escaneá el código para saber más de cada lugar":
         "Verzeichnis · Code scannen für mehr zu jedem Ort",
     "Para empezar": "Zum Anfang",

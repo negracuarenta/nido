@@ -47,6 +47,33 @@ def fin_de_grupo(svg: str, desde: int) -> int:
     raise ValueError("no encontré el cierre del grupo")
 
 
+def despejar_el_arbol(svg: str) -> str:
+    """Pone el rótulo de Heidelberg por encima de todo lo demás del mapa.
+
+    El recorrido de «Otros vuelos» se dibuja después del planisferio, así que
+    pasaba por encima del nombre y lo cruzaba. Acá se saca el marcador con sus
+    dos líneas de texto y se los vuelve a poner al final del grupo, ya sin nada
+    encima, con el halo blanco más grueso para que corte limpio.
+    """
+    m = re.search(
+        r'<circle cx="[\d.]+" cy="[\d.]+" r="3\.4"[^>]*/>'
+        r'<circle[^>]*r="1\.5"[^>]*/>'
+        r'<text[^>]*class="lab origin"[^>]*>.*?</text>'
+        r'<text[^>]*class="small"[^>]*>.*?</text>', svg, re.S)
+    if not m:
+        return svg
+    bloque = m.group(0).replace('class="lab origin"',
+                                'class="lab origin" style="stroke-width:1.9px"')
+    bloque = bloque.replace('class="small"',
+                            'class="small" style="paint-order:stroke;stroke:#fff;'
+                            'stroke-width:1.5px;stroke-linejoin:round"', 1)
+    svg = svg[:m.start()] + svg[m.end():]
+    # Va al final del rango que se amplía, justo antes del cuadro de
+    # referencias: ahí no le queda nada encima.
+    cierre = svg.rindex("<g", 0, svg.index(HASTA))
+    return svg[:cierre] + f'<g id="arbol">{bloque}</g>' + svg[cierre:]
+
+
 def main() -> None:
     s, tx, ty, alto = parametros()
     print(f"ampliación ×{s:.5f} · el mapa pasa a "
@@ -67,6 +94,7 @@ def main() -> None:
         svg = re.sub(r"<text[^>]*>[^<]*ver detalle[^<]*</text>", "", svg,
                      count=1, flags=re.I)
 
+        svg = despejar_el_arbol(svg)
         a = svg.rindex("<g", 0, svg.index(DESDE))
         b = svg.rindex("<g", 0, svg.index(HASTA))
         svg = (svg[:a]

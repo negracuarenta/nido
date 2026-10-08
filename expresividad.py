@@ -47,6 +47,45 @@ def proyectar(lon, lat):
     return X0 + ESCALA * x, Y0 - ESCALA * y
 
 
+def inversa(x, y):
+    """De milímetros del afiche a longitud y latitud. Devuelve None si el punto
+    cae fuera del mapa, que en Equal Earth no es un rectángulo sino una elipse
+    achatada: hacia los polos sobra papel a los costados."""
+    Y = (Y0 - y) / ESCALA
+    th = Y
+    for _ in range(6):
+        t2, t6 = th * th, th ** 6
+        f = th * (A1 + A2 * t2 + t6 * (A3 + A4 * t2)) - Y
+        d = A1 + 3 * A2 * t2 + t6 * (7 * A3 + 9 * A4 * t2)
+        th -= f / d
+    sen = math.sin(th) / (math.sqrt(3) / 2)
+    if abs(sen) > 1:
+        return None
+    t2, t6 = th * th, th ** 6
+    D = A1 + 3 * A2 * t2 + t6 * (7 * A3 + 9 * A4 * t2)
+    lon = math.degrees(3 * (x - X0) / ESCALA * D / (2 * math.sqrt(3) * math.cos(th)))
+    return (lon, math.degrees(math.asin(sen))) if abs(lon) <= 180 else None
+
+
+def cabe_en_el_mapa(x, y, ancho, alto) -> bool:
+    """Los cuatro extremos del rótulo tienen que caer dentro del dibujo."""
+    return all(inversa(px, py) is not None
+               for px, py in ((x - ancho / 2, y), (x + ancho / 2, y),
+                              (x, y - alto), (x, y + alto * 0.3)))
+
+
+def adentro(pt, ancho, alto, pasos=14):
+    """Empuja el rótulo hacia el centro del mapa hasta que entre entero."""
+    x, y = pt
+    for i in range(pasos):
+        if cabe_en_el_mapa(x, y, ancho, alto):
+            return (x, y)
+        t = (i + 1) / pasos * 0.6
+        x = x + (X0 - x) * t * 0.5
+        y = y + (Y0 - y) * t * 0.5
+    return None
+
+
 def anillos(geom):
     """Todas las listas de coordenadas de una geometría, sin importar el tipo."""
     salida = []
@@ -231,8 +270,18 @@ def mares(pal, lang="es") -> str:
                   holgura / (len(nombre) * 0.46))
         if tam < 2.2:
             continue
-        piezas.append(f'<text x="{pt[0]:.1f}" y="{pt[1]:.1f}" text-anchor="middle" '
-                      f'class="mar" style="font-size:{tam}px;'
+        ancho = len(nombre) * tam * 0.95
+        for _ in range(6):
+            sitio = adentro(pt, ancho, tam)
+            if sitio:
+                break
+            tam *= 0.82                 # si no entra, se achica y se reintenta
+            ancho = len(nombre) * tam * 0.95
+        if not sitio or tam < 2.0:
+            continue
+        piezas.append(f'<text x="{sitio[0]:.1f}" y="{sitio[1]:.1f}" '
+                      f'text-anchor="middle" class="mar" '
+                      f'style="font-size:{tam:.2f}px;'
                       f'letter-spacing:{tam * 0.3:.2f}px">{nombre.upper()}</text>')
     piezas.append("</g>")
     return "".join(piezas)
@@ -310,6 +359,11 @@ def accidentes(pal, lang="es", ocupado=None) -> str:
                 pt[0] + anc / 2 + 1, pt[1] + alt / 2 + 1)
         if any(_chocan(caja, c) for c in puestos):
             continue
+        if not cabe_en_el_mapa(pt[0], pt[1], anc, alt):
+            sitio = adentro(pt, anc, alt)
+            if not sitio:
+                continue
+            pt = sitio
         puestos.append(caja)
         giro = (f' transform="rotate({ang:.1f} {pt[0]:.1f} {pt[1]:.1f})"'
                 if abs(ang) > 4 else "")
@@ -404,7 +458,6 @@ def main() -> None:
                + '<defs id="recorte"><clipPath id="recorte-tierra">'
                  '<use href="#tierra"/></clipPath></defs>'
                + relieve(pal) + capa_agua + svg[fin:])
-        svg = svg.replace('<g id="indice">', creditos_mapa() + '<g id="indice">', 1)
         # Los nombres de los accidentes van sobre el relieve, pero esquivando
         # lo que ya está escrito en el mapa.
         from etiquetas import obstaculos

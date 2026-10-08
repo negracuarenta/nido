@@ -39,7 +39,7 @@ def convertir(svg_path: Path) -> Path:
              "--run-all-compositor-stages-before-draw",
              "--virtual-time-budget=20000", "--no-pdf-header-footer",
              f"--print-to-pdf={pdf}", html.resolve().as_uri()],
-            check=True, capture_output=True, timeout=180)
+            check=True, capture_output=True, timeout=900)
     finally:
         html.unlink(missing_ok=True)
     return pdf

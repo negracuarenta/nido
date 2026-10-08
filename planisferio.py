@@ -151,44 +151,13 @@ def grupo_ov(datos: dict, pal: dict) -> str:
     return "".join(piezas)
 
 
-def fin_de_grupo(svg: str, desde: int) -> int:
-    """El índice del </g> que cierra ese grupo, contando los anidados.
+def leyenda_ov_obsoleta():
+    """El cuadro de referencias lo arma ahora afiche.py, de cero.
 
-    Buscar el primer </g> no sirve: el cuadro de referencias tiene grupos
-    adentro, y cortar ahí deja el SVG mal formado.
+    Antes acá se le insertaba la fila de «Otros vuelos» corriendo hacia abajo
+    lo que venía después. Como el corrimiento se aplicaba en cada corrida y no
+    se deshacía, el cuadro bajaba 9 mm por pasada.
     """
-    nivel, i = 0, desde
-    for m in re.finditer(r"<g\b|</g>", svg[desde:]):
-        nivel += 1 if m.group(0) != "</g>" else -1
-        if nivel == 0:
-            return desde + m.start()
-    raise ValueError("no encontré el cierre del grupo")
-
-
-def leyenda(svg: str, pal: dict) -> str:
-    """Agrega la fila de «Otros vuelos» al cuadro de referencias.
-
-    Las filas van cada 9 mm y la que seguía al Oeste ya estaba ocupada, así que
-    lo que viene más abajo se corre para hacerle lugar.
-    """
-    svg = re.sub(r'<g id="ref-ov">.*?</g>', "", svg, count=1, flags=re.S)
-    i = svg.rindex("<g", 0, svg.index('id="referencias"'))
-    j = fin_de_grupo(svg, i)
-    bloque, Y = svg[i:j], 683.8
-
-    def correr(m):
-        v = float(m.group(2))
-        return f'{m.group(1)}="{round(v + 9, 3) if v >= Y else m.group(2)}"'
-
-    bloque = re.sub(r'\b(y|y1|y2|cy)="([\d.]+)"', correr, bloque)
-    fila = (f'<g id="ref-ov">'
-            f'<line x1="845" y1="{Y - 1.2}" x2="875" y2="{Y - 1.2}" '
-            f'stroke="{pal["trazo"]}" stroke-width="{round(pal["grosor"] + 0.15, 2)}" '
-            f'stroke-dasharray="{TRAZO_OV}" stroke-linecap="round"/>'
-            f'<text x="881" y="{Y}" class="leg">'
-            f'<tspan class="code">OV</tspan>  Otros vuelos '
-            f'<tspan class="small">· fuera de la obra</tspan></text></g>')
-    return svg[:i] + bloque + fila + svg[j:]
 
 
 def main() -> None:
@@ -206,7 +175,6 @@ def main() -> None:
         svg = re.sub(r'<g id="otros-vuelos">.*?</g>', "", svg, count=1, flags=re.S)
         svg = svg.replace('<g id="detalle-sudamerica">',
                           grupo_ov(datos, pal) + '<g id="detalle-sudamerica">', 1)
-        svg = leyenda(svg, pal)
         ruta.write_text(svg)
         print(f"{nombre}: proyección verificada a {error:.3f} mm · "
               f"recorrido y 9 puntos de Otros vuelos dibujados")

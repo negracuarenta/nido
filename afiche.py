@@ -15,7 +15,12 @@ import re
 from pathlib import Path
 
 AQUI = Path(__file__).parent
-AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
+# El canal parte siempre del dibujo a mano, que vive en base/ y no se toca.
+# Antes reescribía el entregable encima de sí mismo y dejaba de poder
+# re-ejecutarse: cada pasada arrastraba lo que había dejado la anterior.
+BASES = {"MAPA_FINAL_es_bn.svg": "base/MAPA_BASE_bn.svg",
+         "MAPA_FINAL_es_color.svg": "base/MAPA_BASE_color.svg"}
+AFICHES = tuple(BASES)
 
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 ROJO = "#C62828"
@@ -39,7 +44,82 @@ NAVEGACION = (
     ("inicio", "El mapa completo", "Escaneá para abrir el mapa interactivo"),
     ("heidelberg", "Punto 0 · el árbol", "El liquidámbar de Heidelberg"),
 )
-NAV_X, NAV_Y, NAV_LADO, NAV_PASO = 964.0, 652.0, 32.0, 52.0
+NAV_X, NAV_Y, NAV_LADO, NAV_PASO = 1010.0, 666.0, 32.0, 46.0
+
+# ---------------------------------------------------------------- referencias
+# El cuadro se rehace entero en cada corrida, con las filas calculadas de cero.
+# Antes se parcheaba el que venía dibujado y cada pasada lo corría 9 mm hacia
+# abajo: las notas habían llegado a 833 mm, al borde del pliego.
+# Los cuerpos van un tercio más grandes que los de antes.
+LEY_X, LEY_Y, LEY_PASO = 845.0, 650.0, 12.0
+LEY_TEXTO = LEY_X + 36.0
+LEY_MUESTRA = 30.0                      # largo del trocito de línea
+CUERPO_SECT, CUERPO_LEG, CUERPO_NOTA = 6.1, 5.05, 3.45
+
+VIAJES_LEY = (
+    ("E", "#D9822B", "Viaje al este", "Acto 2", 1.5, "0 2.6", "round"),
+    ("S", "#2B6CB0", "Viaje al sur", "Acto 3", 1.2, "6.6 2.9", "butt"),
+    ("O", "#2F8F5B", "Viaje al oeste", "Acto 4", 1.2, "9 2.6 0 2.6", "round"),
+    ("OV", "#6B4E9B", "Otros vuelos", "fuera de la obra", 1.2, "2.6 5.3", "round"),
+)
+NOTAS = (
+    "Rutas trazadas por arcos de círculo máximo, en el orden en que la "
+    "golondrina las cuenta.",
+    "Proyección Equal Earth. Relieve, batimetría, hidrografía y nombres "
+    "geográficos: Natural Earth.",
+)
+
+
+def referencias() -> str:
+    y = LEY_Y
+    piezas = [f'<g id="referencias">'
+              f'<text x="{LEY_X}" y="{y}" class="sect" '
+              f'style="font-size:{CUERPO_SECT}px">Referencias</text>']
+    for clave, color, titulo, acto, grosor, trazo, punta in VIAJES_LEY:
+        y += LEY_PASO
+        piezas.append(
+            f'<line x1="{LEY_X}" y1="{y - 1.4}" x2="{LEY_X + LEY_MUESTRA}" '
+            f'y2="{y - 1.4}" stroke="{color}" stroke-width="{grosor}" '
+            f'stroke-dasharray="{trazo}" stroke-linecap="{punta}"/>'
+            f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
+            f'style="font-size:{CUERPO_LEG}px">'
+            f'<tspan class="code" style="fill:{color};font-weight:bold">{clave}</tspan>'
+            f'  {titulo} <tspan class="small" style="font-size:{CUERPO_NOTA}px">'
+            f'· {acto}</tspan></text>')
+
+    cx = LEY_X + 14
+    y += LEY_PASO * 1.5
+    piezas.append("".join(
+        f'<circle cx="{LEY_X + 9 + i * 8}" cy="{y - 1.4}" r="2.15" fill="{c}" '
+        f'stroke="#fff" stroke-width="0.7"/>'
+        for i, c in enumerate(("#D9822B", "#2B6CB0", "#2F8F5B")))
+        + f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
+          f'style="font-size:{CUERPO_LEG}px">Lugar que vio</text>')
+
+    y += LEY_PASO
+    a, b = cx - 1.7, y - 3.1
+    cruz = (f'<line x1="{a}" y1="{b}" x2="{a + 3.4}" y2="{b + 3.4}"/>'
+            f'<line x1="{a}" y1="{b + 3.4}" x2="{a + 3.4}" y2="{b}"/>')
+    piezas.append(
+        f'<g stroke="#fff" stroke-width="1.8" stroke-linecap="round">{cruz}</g>'
+        f'<g stroke="#C62828" stroke-width="0.9" stroke-linecap="round">{cruz}</g>'
+        f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
+        f'style="font-size:{CUERPO_LEG}px">Lo que también vio</text>')
+
+    y += LEY_PASO
+    piezas.append(
+        f'<circle cx="{cx}" cy="{y - 1.4}" r="4.5" fill="#fff" stroke="#111" '
+        f'stroke-width="0.66"/><circle cx="{cx}" cy="{y - 1.4}" r="2" fill="#111"/>'
+        f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
+        f'style="font-size:{CUERPO_LEG}px">Heidelberg · el árbol</text>')
+
+    y += LEY_PASO * 1.4
+    for nota in NOTAS:
+        piezas.append(f'<text x="{LEY_X}" y="{y}" class="small" '
+                      f'style="font-size:{CUERPO_NOTA}px">{nota}</text>')
+        y += CUERPO_NOTA * 1.7
+    piezas.append("</g>")
+    return "".join(piezas)
 
 # Los logos de las instituciones, abajo a la derecha, como en la web.
 # Son grises puros, así que el mismo archivo sirve para las dos versiones.
@@ -172,6 +252,32 @@ def quitar(svg: str, ident: str) -> str:
     return svg
 
 
+# ------------------------------------------------------------------ cabecera
+# El salto de tamaño era brutal: NIDO a 30 y las frases a 8 y 4,4. Ahora las
+# tres líneas van apiladas, con pasos parejos, y el bloque baja hasta meterse
+# en la esquina superior izquierda del mapa, que queda fuera de la elipse.
+CAB_X = 28.0
+CABECERA = (
+    ("Nido", "title", 24.0, 54.0, 0),
+    ("Los vuelos de la golondrina", "subtitle", 10.5, 70.0, 0),
+    ("Desde un liquidámbar en Heidelberg, hacia el este, el sur y el oeste",
+     "subtitle2", 6.2, 82.0, 0),
+)
+
+
+def cabecera() -> str:
+    piezas = ['<g id="cabecera">']
+    for texto, clase, cuerpo, y, _ in CABECERA:
+        estilo = f"font-size:{cuerpo}px"
+        if clase == "title":
+            estilo += f";letter-spacing:{cuerpo * 0.13:.2f}px"
+            texto = texto.upper()
+        piezas.append(f'<text x="{CAB_X}" y="{y}" class="{clase}" '
+                      f'style="{estilo}">{texto}</text>')
+    piezas.append("</g>")
+    return "".join(piezas)
+
+
 def logos() -> str:
     """La fila de logos, alineada al margen derecho y centrada en una misma línea."""
     import struct
@@ -203,14 +309,24 @@ def logos() -> str:
 def main() -> None:
     datos = json.loads((AQUI / "nido_lugares.json").read_text())
     nuevo_indice, nueva_nav, fila_logos = indice(datos), navegacion(), logos()
+    nueva_cab, nueva_ley = cabecera(), referencias()
     total = sum(len(v["places"]) for v in datos["trips"]) + len(NAVEGACION)
 
     for nombre in AFICHES:
         ruta = AQUI / nombre
-        svg = ruta.read_text()
-        for ident in ("indice", "navegacion", "logos"):
+        svg = (AQUI / BASES[nombre]).read_text()
+        for ident in ("indice", "navegacion", "logos", "cabecera", "referencias"):
             svg = quitar(svg, ident)
-        svg = svg.replace("</svg>", nuevo_indice + nueva_nav + fila_logos + "</svg>")
+        # La cabecera vieja estaba suelta, sin grupo: se la lleva por su clase.
+        svg = re.sub(r'<text[^>]*class="(title|subtitle2?)"[^>]*>.*?</text>',
+                     "", svg, flags=re.S)
+        svg = re.sub(r'<g id="ref-ov">.*?</g>', "", svg, count=1, flags=re.S)
+        svg = re.sub(r'<g id="fuentes-mapa">.*?</g>', "", svg, count=1, flags=re.S)
+        # La cabecera va la última a propósito: gran_plano.py amplía todo lo
+        # que hay entre el planisferio y el cuadro de referencias, y si la
+        # cabecera quedaba ahí en medio se escalaba junto con el mapa.
+        svg = svg.replace("</svg>", nueva_ley + nuevo_indice + nueva_nav
+                          + fila_logos + nueva_cab + "</svg>")
 
         puestos = len(re.findall(r'<g class="qr" id="qr-', svg))
         vacios = len(re.findall(r'<rect class="qr"', svg))
