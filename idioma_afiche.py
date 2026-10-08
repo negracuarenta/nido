@@ -18,6 +18,7 @@ y que el afiche y la web no se contradigan.
 import json
 import re
 
+import afiche
 import etiquetas
 import expresividad
 from pathlib import Path
@@ -142,7 +143,7 @@ def main() -> None:
         # Los nombres de mar no se traducen a mano: se vuelven a generar desde
         # Natural Earth, que los trae en alemán. Se apartan antes de traducir
         # para que el control de textos sin traducir no los marque.
-        pal = expresividad.PALETAS["color" if "#D9822B" in svg else "bn"]
+        pal = expresividad.PALETAS["bn" if "_bn" in origen else "color"]
         svg = re.sub(r'<g id="mares">.*?</g>', "<!--MARES-->", svg,
                      count=1, flags=re.S)
         svg = re.sub(r'<g id="rotulos">.*?</g>', "", svg, count=1, flags=re.S)

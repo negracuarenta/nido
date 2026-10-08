@@ -18,13 +18,13 @@ import math
 import re
 from pathlib import Path
 
-from afiche import cartela_sin_ampliar
+from afiche import COLOR, zonas_ocupadas
 from expresividad import proyectar
 
 AQUI = Path(__file__).parent
 AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 
-COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
+
 CUERPO = 3.1            # cuerpo de letra, como las etiquetas ya dibujadas
 AVANCE = 0.53           # ancho de un carácter en fracción del cuerpo, medido
                         # sobre el render: la estimación a ojo se quedaba corta
@@ -100,7 +100,7 @@ def grupo(svg: str, lang: str = "es") -> str:
     lugares = json.loads((AQUI / "nido_lugares.json").read_text())
     a, b = svg.index('id="mapa-mundi"'), svg.index('id="detalle-sudamerica"')
     ya = set(re.findall(r'<tspan class="code"[^>]*>([A-Z]+\d+)</tspan>', svg[a:b]))
-    ocupado = obstaculos(svg) + [cartela_sin_ampliar()]
+    ocupado = obstaculos(svg) + zonas_ocupadas()
 
     faltan = []
     for viaje in lugares["trips"]:

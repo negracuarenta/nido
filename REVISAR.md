@@ -1052,3 +1052,94 @@ a **#EDE4D0**, un crema de mapa antiguo, emitido como primer hijo del SVG
 Un apunte de método: el script que extraía la banda de QR del PDF era un heredoc
 suelto y se había perdido. Quedó como `verificar_qr_pdf.py`, junto con
 `medir.html`, para que la verificación se pueda repetir sin reconstruirla.
+
+## El pergamino (8 de octubre de 2026)
+
+El autor pidió «una onda muy parecida» a una lámina de pirata del XVIII —papel
+manchado, tinta sepia, borde graduado, rosa de los vientos— con una condición:
+«un cambio fuerte, pero que se lea con claridad toda la información». Las dos
+mitades de esa frase tiran para lados opuestos y casi todas las decisiones de
+esta ronda salieron de ahí.
+
+### El papel
+`pergamino.py` construye el pliego por capas, como se ensucia un papel de
+verdad: la fibra, las aguas del batido, treinta y cuatro manchones de humedad
+sorteados con sesgo hacia el borde, y el oscurecimiento del canto. Todo de una
+semilla fija: si cada corrida inventara manchas nuevas, dos tiradas del mismo
+afiche no serían el mismo afiche.
+
+**La banda inferior se deja deliberadamente más limpia.** Es la zona que hay que
+leer —el índice, las referencias, los 46 códigos— y un QR sobre un manchón
+pierde justamente el contraste del que vive. Medido sobre el PDF: el papel más
+oscuro que queda debajo de un código es 188/255 y el contraste mínimo, 11,1:1.
+El mínimo práctico para un lector de QR ronda 3:1.
+
+### El viraje
+El relieve ya no se mezcla con el papel: se pasa por una rampa de dos tonos
+—cada píxel elige un punto entre el sepia oscuro y el crema— con una pizca del
+color original encima, para que la selva, el desierto y el hielo se sigan
+distinguiendo. Toda la información queda en el valor, que es exactamente cómo
+se lee una lámina antigua.
+
+La tierra va a una rampa de ámbar y el mar a una casi blanca. Al principio
+salió al revés —continente pálido flotando en un mar de color— y era lo que más
+delataba que esto no era una lámina sino una pantalla.
+
+Con el mar y la tierra en la misma familia de color, la silueta deja de
+sostenerse sola: se reforzó la orla costera (cinco trazos en vez de tres) y se
+agregó `costa()`, un trazo nítido *por encima* del relieve. Es la misma
+solución que inventaron las láminas que copiamos.
+
+### El borde y la rosa
+El neto pasa a ser una banda graduada con dientes alternados. Es honesta: cada
+diente es un paso real de cinco grados, porque en Equal Earth la posición de un
+meridiano sobre el ecuador gradúa el ancho y la de un paralelo gradúa el alto.
+Donde no hay mapa —por encima del polo norte y por debajo del sur— la banda
+lateral queda lisa; dibujar dientes ahí sería inventar una graduación.
+
+Los grados se fueron del ecuador al borde: ya no cruzan el dibujo.
+
+La rosa de treinta y dos rumbos va en el Pacífico norte y entra, como la
+cartela, en la lista de zonas que los rótulos tienen que esquivar. Las cuatro
+letras de rumbo quedaron **fuera** del limbo: adentro las tapaba la propia
+punta, que es el defecto de toda rosa dibujada de memoria.
+
+### Las tintas
+Los colores del sitio —naranja, azul brillante, verde esmeralda— cantaban sobre
+pergamino: no hay tinta del XVIII que haga esos tonos. Pasaron al rojo de
+óxido, el azul de Prusia, el verdigrís y el morado de campeche, manteniendo las
+cuatro familias para que el afiche y la web se sigan leyendo juntos.
+
+**Esto es un cambio del impreso solamente: la web conserva los suyos.** Queda a
+decisión del autor si propagarlo o dejar que cada soporte tenga su paleta.
+
+Los halos de los rótulos eran blanco puro y sobre el papel ámbar se recortaban
+como un parche pegado encima. Ahora son del crema del pergamino.
+
+### La versión a una tinta, de verdad
+Venía siendo a medias: papel gris pero relieve a color y códigos del índice en
+color. Ahora los viajes tienen su propia escala de grises —separados por valor,
+porque pasarlos por luminancia los habría juntado— y al final del canal pasa
+`a_una_tinta()`, que lleva cada color del archivo a su gris. Ir módulo por
+módulo cambiando cada sepia era la forma segura de olvidarse de uno.
+
+El relieve en gris es un raster aparte. Desaturarlo con un filtro de SVG daba
+el mismo dibujo, pero Chrome rasteriza el grupo filtrado entero al imprimir y
+**el PDF pasaba de 8 a 42 MB**.
+
+### Un detector que mentía
+`expresividad.py` decidía si el afiche era en color buscando `#D9822B` adentro.
+Al cambiar la paleta dejó de encontrarlo y aplicó en silencio la paleta a una
+tinta al archivo de color: el mar volvió a gris azulado y el corte contra el
+papel era durísimo. Los tres detectores de versión miran ahora el nombre del
+archivo.
+
+### Verificado, sobre los cuatro PDF
+- **46/46 códigos** en cada uno, contrastados contra `qr/indice.csv` y
+  `qr/de/indice.csv`.
+- Contraste de los códigos sobre el papel manchado: **11,1:1** el peor.
+- **Cero solapes** entre los 237 textos del castellano y los 242 del alemán.
+- Todos los rótulos dentro de la elipse; sobre la cartela y sobre la rosa no
+  cae ningún texto ajeno.
+- Los dos archivos a una tinta: **cero colores no grises**.
+- Los cuatro PDF, 10,6–10,8 MB.

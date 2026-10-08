@@ -19,7 +19,7 @@ from pathlib import Path
 
 import numpy as np
 
-from afiche import cartela_sin_ampliar
+from afiche import zonas_ocupadas
 
 AQUI = Path(__file__).parent
 AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
@@ -140,14 +140,31 @@ def area(coords):
 def orla(pal) -> str:
     """La banda de sombra que los mapas antiguos dibujaban bordeando la costa.
 
-    Son tres trazos cada vez más finos y más oscuros sobre la silueta de la
+    Son cinco trazos cada vez más finos y más densos sobre la silueta de la
     tierra. Como se dibujan *antes* del relleno, la mitad interior queda tapada
     y sólo se ve la mitad que da al agua: una orla que se desvanece.
+
+    Sobre pergamino la orla deja de ser un adorno y pasa a ser necesaria: el
+    mar y la tierra están ahora casi en el mismo tono, y lo que separa una cosa
+    de la otra es esta banda, igual que en las láminas que la inventaron.
     """
-    capas = ((2.6, 0.10), (1.5, 0.14), (0.7, 0.18))
+    capas = ((6.0, 0.07), (4.2, 0.09), (2.8, 0.12), (1.7, 0.17), (0.9, 0.24))
     return ('<g id="orla" fill="none">' + "".join(
         f'<use href="#tierra" stroke="{pal["orla"]}" stroke-width="{w}" '
         f'opacity="{o}"/>' for w, o in capas) + "</g>")
+
+
+def costa(pal) -> str:
+    """El trazo de la costa, por encima del relieve.
+
+    Sobre pergamino el mar y la tierra quedan casi en el mismo tono —que es lo
+    que hace que el mapa se lea como una lámina y no como una pantalla— y
+    entonces la silueta la tiene que sostener la línea. Va después del relieve
+    para que ninguna sombra se la coma.
+    """
+    return (f'<g id="costa" fill="none"><use href="#tierra" '
+            f'stroke="{pal["costa"]}" stroke-width="0.34" '
+            f'stroke-linejoin="round"/></g>')
 
 
 def creditos_mapa(lang="es") -> str:
@@ -162,9 +179,15 @@ def creditos_mapa(lang="es") -> str:
 
 
 def capa_raster(ident: str, archivo: str, pal, recorte=None) -> str:
-    datos = base64.b64encode((AQUI / "assets/geo" / archivo).read_bytes()).decode()
     x, y, w, h = MAPA
     clip = f' clip-path="url(#{recorte})"' if recorte else ""
+    # La versión a una tinta tiene su propio raster en gris. Desaturar el de
+    # color con un filtro de SVG también daba el mismo dibujo, pero Chrome
+    # rasteriza el grupo filtrado entero al imprimir y el PDF pasaba de 8 a
+    # 42 MB.
+    if pal.get("una_tinta"):
+        archivo = archivo.replace(".jpg", "_bn.jpg")
+    datos = base64.b64encode((AQUI / "assets/geo" / archivo).read_bytes()).decode()
     return (f'<g id="{ident}"{clip}>'
             f'<image x="{x}" y="{y}" width="{w}" height="{h}" '
             f'preserveAspectRatio="none" opacity="{pal["relieve"]}" '
@@ -253,7 +276,7 @@ def mares(pal, lang="es") -> str:
     campo = "name_es" if lang == "es" else "name_de"
     # La cartela del título se apoya sobre el Pacífico: ahí no va ningún
     # nombre de mar, o quedaría debajo.
-    ocupado = [cartela_sin_ampliar()]
+    ocupado = zonas_ocupadas()
     piezas = ['<g id="mares">']
     for f in datos["features"]:
         p = f["properties"]
@@ -331,7 +354,7 @@ def accidentes(pal, lang="es", ocupado=None) -> str:
 
     datos = json.loads((NE / "ne_50m_geography_regions_polys.geojson").read_text())
     campo = "NAME_ES" if lang == "es" else "NAME_DE"
-    puestos = list(ocupado or []) + [cartela_sin_ampliar()]
+    puestos = list(ocupado or []) + zonas_ocupadas()
     piezas = ['<g id="accidentes">']
     rasgos = []
     for f in datos["features"]:
@@ -390,11 +413,15 @@ def _chocan(a, b):
     return not (a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1])
 
 
+# Sobre pergamino el azul no sirve: canta. Los ríos, los lagos y los nombres
+# de mar pasan a un sepia frío —tiene algo de azul adentro, lo justo para que
+# el agua no se confunda con la tierra, pero vive en la familia del papel.
 PALETAS = {
-    "color": {"agua": "#7E9FB8", "lago": "#D7E6EF", "mar": "#8FA6B6",
-              "relieve": "1", "orla": "#6E8EA6"},
-    "bn": {"agua": "#9a9a9a", "lago": "#f2f2f2", "mar": "#9a9a9a",
-           "relieve": "0.85", "orla": "#777777"},
+    "color": {"agua": "#6E7A62", "lago": "#C9CBA6", "mar": "#6B5A3C",
+              "relieve": "1", "orla": "#6B4F2A", "costa": "#4A3414"},
+    "bn": {"agua": "#8a8a8a", "lago": "#eeeeee", "mar": "#6a6a6a",
+           "relieve": "0.85", "orla": "#5a5a5a", "costa": "#3a3a3a",
+           "una_tinta": True},
 }
 ESTILO_MAR = (".mar{font-family:'TeX Gyre Pagella','Palatino',serif;"
               "font-style:italic;fill:%s;opacity:0.85}"
@@ -426,9 +453,13 @@ def main() -> None:
     for nombre in AFICHES:
         ruta = AQUI / nombre
         svg = ruta.read_text()
-        pal = PALETAS["color" if "#D9822B" in svg else "bn"]
+        # La versión se decide por el nombre del archivo, no por buscar un
+        # color adentro: el día que la paleta cambie —y cambió— un detector
+        # por color aplica en silencio la paleta equivocada.
+        pal = PALETAS["bn" if "_bn" in nombre else "color"]
 
         for ident in ("relieve", "batimetria", "hidrografia", "mares", "orla",
+                      "costa",
                       "fuentes-mapa", "accidentes"):
             svg = quitar(svg, ident)
         svg = re.sub(r'<defs id="recorte(-marco)?">.*?</defs>', "", svg, flags=re.S)
@@ -468,7 +499,7 @@ def main() -> None:
         svg = (svg[:ini] + capa_mar + svg[ini:fin] + orla(pal)
                + '<defs id="recorte"><clipPath id="recorte-tierra">'
                  '<use href="#tierra"/></clipPath></defs>'
-               + relieve(pal) + capa_agua + svg[fin:])
+               + relieve(pal) + costa(pal) + capa_agua + svg[fin:])
         # Los nombres de los accidentes van sobre el relieve, pero esquivando
         # lo que ya está escrito en el mapa.
         from etiquetas import obstaculos
@@ -480,7 +511,7 @@ def main() -> None:
         else:
             svg = re.sub(r"\.mar\{[^}]*\}", ESTILO_MAR % pal["mar"], svg, count=1)
 
-        if "#D9822B" in svg:
+        if "_bn" not in nombre:
             svg = svg.replace(AGUA_FRIA, AGUA_CALIDA)
         ruta.write_text(svg)
         print(f"{nombre}: relieve y batimetría + "

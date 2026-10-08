@@ -15,6 +15,8 @@ poner los puntos en el lugar equivocado y que nos enteremos impreso en A0.
 import json
 import math
 import re
+
+from afiche import COLOR, HALO
 from pathlib import Path
 
 import numpy as np
@@ -43,11 +45,11 @@ ESCALA = SEMIANCHO / float(equal_earth(180.0, 0.0)[0])
 
 TRAZO_OV = "2 4"
 
-def paleta(svg: str) -> dict:
+def paleta(nombre: str) -> dict:
     """El afiche existe en color y en blanco y negro, con paletas distintas."""
-    color = "#D9822B" in svg
-    return {"trazo": "#6B4E9B" if color else "#111",
-            "punto": "#6B4E9B" if color else "#111",
+    color = "_bn" not in nombre
+    return {"trazo": COLOR["OV"] if color else "#111",
+            "punto": COLOR["OV"] if color else "#111",
             "grosor": 0.8 if color else 0.6}
 ORIGEN = (8.6724, 49.3988)
 
@@ -140,7 +142,7 @@ def grupo_ov(datos: dict, pal: dict) -> str:
     for l in viaje["places"]:
         x, y = (float(v) for v in proyectar(l["lon"], l["lat"]))
         piezas.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="1.15" fill="{pal['punto']}" '
-                      f'stroke="#fff" stroke-width="0.38"/>')
+                      f'stroke="{HALO}" stroke-width="0.38"/>')
         ancla = ANCLAS.get(l["id"], "start")
         tx = x + 3.2 if ancla == "start" else x - 3.2
         piezas.append(
@@ -171,7 +173,7 @@ def main() -> None:
                 f"{nombre}: la proyección reconstruida ya no cae sobre la costa "
                 f"({error:.3f} mm > {TOLERANCIA}). El planisferio cambió: hay que "
                 f"volver a deducirla antes de dibujar nada encima.")
-        pal = paleta(svg)
+        pal = paleta(nombre)
         svg = re.sub(r'<g id="otros-vuelos">.*?</g>', "", svg, count=1, flags=re.S)
         svg = svg.replace('<g id="detalle-sudamerica">',
                           grupo_ov(datos, pal) + '<g id="detalle-sudamerica">', 1)

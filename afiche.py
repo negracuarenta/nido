@@ -22,10 +22,29 @@ BASES = {"MAPA_FINAL_es_bn.svg": "base/MAPA_BASE_bn.svg",
          "MAPA_FINAL_es_color.svg": "base/MAPA_BASE_color.svg"}
 AFICHES = tuple(BASES)
 
-TINTA = "#3A3024"      # la tinta sepia del afiche
+TINTA = "#2E2416"      # la tinta ferrogálica del afiche
 
-COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
-ROJO = "#C62828"
+# Los cuatro viajes, en tintas de época. Sobre pergamino los colores del sitio
+# —naranja, azul brillante, verde esmeralda— cantan como una pantalla: no hay
+# tinta del XVIII que haga esos tonos. Se mantienen las cuatro familias (cálida,
+# azul, verde, violeta) para que el afiche y la web se sigan leyendo juntos,
+# pero llevadas al rojo de óxido, el azul de Prusia, el verdigrís y el morado
+# de campeche. Es un cambio del impreso solamente; la web conserva los suyos.
+COLOR = {"E": "#A2411D", "S": "#2A4A78", "O": "#4A6B33", "OV": "#5C3C68"}
+ROJO = "#9E2B23"
+# La versión a una tinta no puede usar los colores de los viajes: impresa en
+# negro los cuatro caerían en el mismo gris. Se separan por valor, y el dibujo
+# de la línea —el patrón de guiones— sigue distinguiéndolos.
+GRIS = {"E": "#262626", "S": "#4A4A4A", "O": "#6E6E6E", "OV": "#909090"}
+GRIS_ROJO = "#555555"
+
+
+def paleta(nombre: str):
+    """Los colores de los viajes y de la cruz, según la versión del afiche."""
+    return (GRIS, GRIS_ROJO) if "_bn" in nombre else (COLOR, ROJO)
+# El halo que separa cada rótulo de lo que tiene debajo. Era blanco puro y
+# sobre el papel ámbar se veía como un parche recortado.
+HALO = "#F0E2BE"
 
 # La grilla del índice, en milímetros. El lienzo es de 1189 × 841.
 # Desde que el planisferio ocupa todo el ancho, al índice le queda una banda
@@ -59,10 +78,10 @@ LEY_MUESTRA = 30.0                      # largo del trocito de línea
 CUERPO_SECT, CUERPO_LEG, CUERPO_NOTA = 6.1, 5.05, 3.45
 
 VIAJES_LEY = (
-    ("E", "#D9822B", "Viaje al este", "Acto 2", 1.5, "0 2.6", "round"),
-    ("S", "#2B6CB0", "Viaje al sur", "Acto 3", 1.2, "6.6 2.9", "butt"),
-    ("O", "#2F8F5B", "Viaje al oeste", "Acto 4", 1.2, "9 2.6 0 2.6", "round"),
-    ("OV", "#6B4E9B", "Otros vuelos", "fuera de la obra", 1.2, "2.6 5.3", "round"),
+    ("E", COLOR["E"], "Viaje al este", "Acto 2", 1.5, "0 2.6", "round"),
+    ("S", COLOR["S"], "Viaje al sur", "Acto 3", 1.2, "6.6 2.9", "butt"),
+    ("O", COLOR["O"], "Viaje al oeste", "Acto 4", 1.2, "9 2.6 0 2.6", "round"),
+    ("OV", COLOR["OV"], "Otros vuelos", "fuera de la obra", 1.2, "2.6 5.3", "round"),
 )
 NOTAS = (
     "Rutas trazadas por arcos de círculo máximo, en el orden en que la "
@@ -72,12 +91,13 @@ NOTAS = (
 )
 
 
-def referencias() -> str:
+def referencias(col, rojo) -> str:
     y = LEY_Y
     piezas = [f'<g id="referencias">'
               f'<text x="{LEY_X}" y="{y}" class="sect" '
               f'style="font-size:{CUERPO_SECT}px">Referencias</text>']
-    for clave, color, titulo, acto, grosor, trazo, punta in VIAJES_LEY:
+    for clave, _, titulo, acto, grosor, trazo, punta in VIAJES_LEY:
+        color = col[clave]
         y += LEY_PASO
         piezas.append(
             f'<line x1="{LEY_X}" y1="{y - 1.4}" x2="{LEY_X + LEY_MUESTRA}" '
@@ -93,8 +113,8 @@ def referencias() -> str:
     y += LEY_PASO * 1.5
     piezas.append("".join(
         f'<circle cx="{LEY_X + 9 + i * 8}" cy="{y - 1.4}" r="2.15" fill="{c}" '
-        f'stroke="#fff" stroke-width="0.7"/>'
-        for i, c in enumerate(("#D9822B", "#2B6CB0", "#2F8F5B")))
+        f'stroke="{HALO}" stroke-width="0.7"/>'
+        for i, c in enumerate((col["E"], col["S"], col["O"])))
         + f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
           f'style="font-size:{CUERPO_LEG}px">Lugar que vio</text>')
 
@@ -103,14 +123,14 @@ def referencias() -> str:
     cruz = (f'<line x1="{a}" y1="{b}" x2="{a + 3.4}" y2="{b + 3.4}"/>'
             f'<line x1="{a}" y1="{b + 3.4}" x2="{a + 3.4}" y2="{b}"/>')
     piezas.append(
-        f'<g stroke="#fff" stroke-width="1.8" stroke-linecap="round">{cruz}</g>'
-        f'<g stroke="#C62828" stroke-width="0.9" stroke-linecap="round">{cruz}</g>'
+        f'<g stroke="{HALO}" stroke-width="1.8" stroke-linecap="round">{cruz}</g>'
+        f'<g stroke="{rojo}" stroke-width="0.9" stroke-linecap="round">{cruz}</g>'
         f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
         f'style="font-size:{CUERPO_LEG}px">Lo que también vio</text>')
 
     y += LEY_PASO
     piezas.append(
-        f'<circle cx="{cx}" cy="{y - 1.4}" r="4.5" fill="#fff" stroke="#111" '
+        f'<circle cx="{cx}" cy="{y - 1.4}" r="4.5" fill="{HALO}" stroke="{TINTA}" '
         f'stroke-width="0.66"/><circle cx="{cx}" cy="{y - 1.4}" r="2" fill="#111"/>'
         f'<text x="{LEY_TEXTO}" y="{y}" class="leg" '
         f'style="font-size:{CUERPO_LEG}px">Heidelberg · el árbol</text>')
@@ -163,15 +183,15 @@ def ancho_columna() -> float:
     return (COLUMNAS[1] - COLUMNAS[0]) - SANGRIA - 3.0
 
 
-def entrada(lugar: dict, clave: str, x: float, y: float) -> str:
-    color = COLOR[clave]
+def entrada(lugar: dict, clave: str, x: float, y: float, col, rojo) -> str:
+    color = col[clave]
     # Los nombres largos se achican para no invadir la columna de al lado.
     # Sólo unos pocos lo necesitan; el resto va al cuerpo normal.
     cuerpo = min(CUERPO_IDX,
                  ancho_columna() / (len(lugar["name"]) * AVANCE_IDX))
     estilo = (f' style="font-size:{cuerpo:.2f}px"'
               if cuerpo < CUERPO_IDX - 0.05 else "")
-    cruz = (f'  <tspan style="fill:{ROJO}">✕</tspan>'
+    cruz = (f'  <tspan style="fill:{rojo}">✕</tspan>'
             if lugar.get("tragico") or lugar.get("soloTragico") else "")
     tx = x + SANGRIA
     return (
@@ -190,7 +210,7 @@ def reparte(cuantos: int, columnas: int) -> list:
     return [base + (1 if i < resto else 0) for i in range(columnas)]
 
 
-def indice(datos: dict) -> str:
+def indice(datos: dict, col, rojo) -> str:
     piezas = ['<g id="indice">',
               '<text x="28" y="636" class="sect">'
               'Índice · escaneá el código para saber más de cada lugar</text>']
@@ -205,13 +225,13 @@ def indice(datos: dict) -> str:
                 f"{len(cols)} columna(s) de {FILAS} filas. Hay que rehacer el reparto.")
         piezas.append(
             f'<text x="{COLUMNAS[cols[0]]}" y="647" class="leg" style="font-size:4.6px">'
-            f'<tspan class="code" style="fill:{COLOR[clave]};font-weight:bold">{clave}</tspan>'
+            f'<tspan class="code" style="fill:{col[clave]};font-weight:bold">{clave}</tspan>'
             f'  {viaje["name"] if clave == "OV" else "Viaje al " + viaje["name"].lower()}</text>')
         i = 0
-        for col, cupo in zip(cols, cupos):
+        for columna, cupo in zip(cols, cupos):
             for fila in range(cupo):
-                piezas.append(entrada(lugares[i], clave,
-                                      COLUMNAS[col], Y0 + fila * PASO))
+                piezas.append(entrada(lugares[i], clave, COLUMNAS[columna],
+                                      Y0 + fila * PASO, col, rojo))
                 i += 1
     piezas.append("</g>")
     return "".join(piezas)
@@ -262,11 +282,15 @@ def quitar(svg: str, ident: str) -> str:
 # La escala tipográfica es pareja a propósito. Antes NIDO iba a 23 y la última
 # línea a 6: casi cuatro veces. Ahora el salto es de una vez y media entre una
 # línea y la siguiente, que es como respiran las cartelas antiguas.
-PAPEL = "#EDE4D0"              # el tono del pliego
-TINTA_CART = "#3A3024"
+PAPEL = "#F2E6C6"              # el paño de la cartela, más claro que el pliego
+TINTA_CART = "#2E2416"
 
 CARTELA = (45.0, 316.0, 300.0, 394.0)    # izquierda, arriba, derecha, abajo
 CART_AIRE = 2.8
+
+# La rosa de los vientos, en el Pacífico norte: mar abierto, lejos de Hawái y
+# de las Aleutianas. Centro en coordenadas finales del pliego y radio exterior.
+ROSA = (163.0, 232.0, 36.0)
 CABECERA = (
     ("Nido", "title", 17.0, 344.0),
     ("Los vuelos de la golondrina", "subtitle", 11.0, 364.0),
@@ -279,11 +303,25 @@ CABECERA = (
 AMPLIACION, DESPLAZO = 1.43418, (-12.157, -34.371)
 
 
-def cartela_sin_ampliar(margen: float = 3.0):
-    x0, y0, x1, y1 = CARTELA
+def _sin_ampliar(x0, y0, x1, y1, margen):
     tx, ty = DESPLAZO
     return ((x0 - margen - tx) / AMPLIACION, (y0 - margen - ty) / AMPLIACION,
             (x1 + margen - tx) / AMPLIACION, (y1 + margen - ty) / AMPLIACION)
+
+
+def cartela_sin_ampliar(margen: float = 3.0):
+    return _sin_ampliar(*CARTELA, margen)
+
+
+def rosa_sin_ampliar(margen: float = 3.0):
+    cx, cy, r = ROSA
+    r += 8.0                       # el limbo más las cuatro letras de rumbo
+    return _sin_ampliar(cx - r, cy - r, cx + r, cy + r, margen)
+
+
+def zonas_ocupadas(margen: float = 3.0):
+    """Lo que ya está puesto sobre el mapa y los rótulos tienen que esquivar."""
+    return [cartela_sin_ampliar(margen), rosa_sin_ampliar(margen)]
 
 
 def floron(x: float, y: float, sx: int, sy: int) -> str:
@@ -297,16 +335,40 @@ def floron(x: float, y: float, sx: int, sy: int) -> str:
             f'fill="currentColor"/>')
 
 
+def voluta(x: float, y: float, sy: int) -> str:
+    """El ornamento del medio del filete: dos espirales enfrentadas y un rombo.
+
+    Es lo que remata las cartelas de las láminas del XVIII, arriba y abajo del
+    recuadro. Se dibuja chico a propósito: tiene que leerse como un remate, no
+    competir con el título que encierra.
+    """
+    b, h = 13.0, 3.4 * sy
+    return (f'<path d="M{x - b:.1f},{y} q{b * 0.42:.1f},0 {b * 0.60:.1f},{h:.1f} '
+            f'q{b * 0.12:.1f},{-h * 0.62:.1f} {b * 0.40:.1f},{-h * 0.62:.1f} '
+            f'q{b * 0.28:.1f},0 {b * 0.40:.1f},{h * 0.62:.1f} '
+            f'q{b * 0.18:.1f},{-h:.1f} {b * 0.60:.1f},{-h:.1f}" '
+            f'fill="none" stroke="currentColor" stroke-width="0.38" '
+            f'stroke-linecap="round"/>'
+            f'<path d="M{x:.1f},{y - 1.5 * sy} l1.5,{1.5 * sy} l-1.5,{1.5 * sy} '
+            f'l-1.5,{-1.5 * sy} z" fill="currentColor"/>')
+
+
 def cabecera() -> str:
     x0, y0, x1, y1 = CARTELA
     a = CART_AIRE
+    cxm = (x0 + x1) / 2
     piezas = [f'<g id="cabecera" color="{TINTA_CART}">',
+              # La sombra del paño sobre el papel: lo despega del mapa sin
+              # recuadro duro, como una hoja apoyada encima.
+              f'<rect x="{x0 + 1.4}" y="{y0 + 1.4}" width="{x1 - x0}" '
+              f'height="{y1 - y0}" fill="#6B4F2A" fill-opacity="0.16"/>',
               f'<rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" '
-              f'fill="{PAPEL}" fill-opacity="0.95" stroke="currentColor" '
-              f'stroke-width="0.6"/>',
+              f'fill="{PAPEL}" fill-opacity="0.93" stroke="currentColor" '
+              f'stroke-width="0.7"/>',
               f'<rect x="{x0 + a}" y="{y0 + a}" width="{x1 - x0 - 2 * a}" '
               f'height="{y1 - y0 - 2 * a}" fill="none" stroke="currentColor" '
-              f'stroke-width="0.24"/>']
+              f'stroke-width="0.24"/>',
+              voluta(cxm, y0 + a, 1), voluta(cxm, y1 - a, -1)]
     for x, sx in ((x0 + a, 1), (x1 - a, -1)):
         for y, sy in ((y0 + a, 1), (y1 - a, -1)):
             piezas.append(floron(x, y, sx, sy))
@@ -322,10 +384,20 @@ def cabecera() -> str:
     return "".join(piezas)
 
 
-def fondo() -> str:
-    """El pliego, en tono de papel viejo en vez de blanco."""
-    return (f'<rect id="papel" x="0" y="0" width="1189" height="841" '
-            f'fill="{PAPEL}"/>')
+def fondo(archivo: str = "pergamino.jpg", liso: str = "#E7D6AE") -> str:
+    """El pliego: el pergamino manchado que genera pergamino.py.
+
+    Un color plano no alcanza. Lo que hace que una lámina se lea como antigua
+    es la irregularidad del papel, y ésa hay que dibujarla. Debajo del raster
+    queda un relleno liso del mismo tono, por si el raster no cargara.
+    """
+    datos = base64.b64encode(
+        (AQUI / "assets/geo" / archivo).read_bytes()).decode()
+    return (f'<g id="papel"><rect x="0" y="0" width="1189" height="841" '
+            f'fill="{liso}"/>'
+            f'<image x="0" y="0" width="1189" height="841" '
+            f'preserveAspectRatio="none" '
+            f'href="data:image/jpeg;base64,{datos}"/></g>')
 
 
 def logos() -> str:
@@ -358,12 +430,14 @@ def logos() -> str:
 
 def main() -> None:
     datos = json.loads((AQUI / "nido_lugares.json").read_text())
-    nuevo_indice, nueva_nav, fila_logos = indice(datos), navegacion(), logos()
-    nueva_cab, nueva_ley = cabecera(), referencias()
+    nueva_nav, fila_logos, nueva_cab = navegacion(), logos(), cabecera()
     total = sum(len(v["places"]) for v in datos["trips"]) + len(NAVEGACION)
 
     for nombre in AFICHES:
         ruta = AQUI / nombre
+        col, rojo = paleta(nombre)
+        nuevo_indice = indice(datos, col, rojo)
+        nueva_ley = referencias(col, rojo)
         svg = (AQUI / BASES[nombre]).read_text()
         for ident in ("indice", "navegacion", "logos", "cabecera", "referencias"):
             svg = quitar(svg, ident)
@@ -375,6 +449,13 @@ def main() -> None:
         svg = re.sub(r'<line x1="28" y1="62"[^>]*/>', "", svg, count=1)
         # La tinta pasa de gris a sepia. Los QR no se tocan: son negro puro y
         # cualquier desvío les quita contraste al escanearlos.
+        # Los colores de las rutas vienen dibujados en el original con la
+        # paleta del sitio. Acá pasan a las tintas de época, y con ellos el
+        # rojo de las cruces.
+        for vivo, tinta in (("#D9822B", col["E"]), ("#2B6CB0", col["S"]),
+                            ("#2F8F5B", col["O"]), ("#6B4E9B", col["OV"]),
+                            ("#C62828", rojo)):
+            svg = svg.replace(vivo, tinta).replace(vivo.lower(), tinta)
         for gris, sepia in (("#111", TINTA), ("#444", "#5A4B38"),
                             ("#555", "#6B5A44")):
             svg = svg.replace(f'fill:{gris}', f"fill:{sepia}")
@@ -386,8 +467,20 @@ def main() -> None:
         # que hay entre el planisferio y el cuadro de referencias, y si la
         # cabecera quedaba ahí en medio se escalaba junto con el mapa.
         # El papel va primero de todo, debajo del dibujo.
+        svg = quitar(svg, "papel")
         svg = re.sub(r'<rect id="papel"[^>]*/>', "", svg, count=1)
-        svg = re.sub(r"(<svg[^>]*>)", r"\1" + fondo(), svg, count=1)
+        # El dibujo a mano trae su propio fondo blanco, sin identificar, y
+        # tapaba el pergamino: se ve el papel sólo si éste se va.
+        svg = re.sub(r'<rect width="1189" height="841" fill="#fff"/>', "",
+                     svg, count=1)
+        # Los halos de los rótulos eran blanco puro: sobre el papel ámbar se
+        # recortaban como un parche. Pasan al crema del pergamino.
+        svg = svg.replace("stroke:#fff", f"stroke:{HALO}")
+        svg = svg.replace('stroke="#fff"', f'stroke="{HALO}"')
+        svg = svg.replace('fill="#fff"', f'fill="{HALO}"')
+        papel = (fondo("pergamino_bn.jpg", "#D9D9D9") if "_bn" in nombre
+                 else fondo())
+        svg = re.sub(r"(<svg[^>]*>)", r"\1" + papel, svg, count=1)
         svg = svg.replace("</svg>", nueva_ley + nuevo_indice + nueva_nav
                           + fila_logos + nueva_cab + "</svg>")
 
