@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>medición</title>
+<body><div id="h">listo</div>
+<script>
+// Mide sobre el render real: getBoundingClientRect, no estimaciones de ancho.
+window.medir = async function (archivo) {
+  const txt = await (await fetch('/' + archivo + '?v=' + Date.now())).text();
+  const h = document.getElementById('h');
+  h.innerHTML = txt;
+  const svg = h.querySelector('svg');
+  await new Promise(r => setTimeout(r, 1200));
+  const textos = [...svg.querySelectorAll('text')].filter(t => t.textContent.trim());
+  const cajas = textos.map(t => ({ t: t.textContent.trim(),
+                                   c: t.getAttribute('class') || '',
+                                   r: t.getBoundingClientRect() }));
+  const choques = [];
+  for (let i = 0; i < cajas.length; i++)
+    for (let j = i + 1; j < cajas.length; j++) {
+      const a = cajas[i].r, b = cajas[j].r;
+      const ax = Math.min(a.right, b.right) - Math.max(a.left, b.left);
+      const ay = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+      if (ax > 1 && ay > 1) choques.push([cajas[i].t, cajas[j].t,
+                                          Math.round(ax) + '×' + Math.round(ay)]);
+    }
+  return { textos: cajas.length, choques };
+};
+</script></body>

@@ -39,8 +39,8 @@ PAPEL = np.array([0xEC, 0xE5, 0xD3], float)
 # Cuánto se acerca cada capa al papel del afiche. La tierra ahora se deja
 # bastante más viva que antes; el mar, algo más contenido para que no le gane
 # al dibujo.
-MEZCLA = {"relieve": 0.18, "batimetria": 0.24}
-SATURACION = {"relieve": 1.05, "batimetria": 1.0}
+MEZCLA = {"relieve": 0.20, "batimetria": 0.38}
+SATURACION = {"relieve": 1.0, "batimetria": 0.72}
 
 
 def directa(lon_rad, lat_rad):

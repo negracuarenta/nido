@@ -255,52 +255,77 @@ def quitar(svg: str, ident: str) -> str:
 
 
 # ------------------------------------------------------------------ cabecera
-# El título va dentro de una cartela, como en las láminas del XVIII: doble
-# filete, un florón en cada esquina y el texto adentro. Dibujada, no calcada:
-# así se imprime limpia a cualquier tamaño y queda en la familia del afiche.
-CART = (28.0, 18.0, 268.0, 80.0)        # izquierda, arriba, derecha, abajo
-CART_AIRE = 2.6                          # separación entre los dos filetes
+# El título va en una cartela puesta sobre el Pacífico, a media altura del
+# mapa, como la de las láminas del XVIII: doble filete, un florón en cada
+# esquina y el texto centrado sobre un paño de papel.
+#
+# La escala tipográfica es pareja a propósito. Antes NIDO iba a 23 y la última
+# línea a 6: casi cuatro veces. Ahora el salto es de una vez y media entre una
+# línea y la siguiente, que es como respiran las cartelas antiguas.
+PAPEL = "#EDE4D0"              # el tono del pliego
+TINTA_CART = "#3A3024"
+
+CARTELA = (45.0, 316.0, 300.0, 394.0)    # izquierda, arriba, derecha, abajo
+CART_AIRE = 2.8
 CABECERA = (
-    ("Nido", "title", 23.0, 45.0),
-    ("Los vuelos de la golondrina", "subtitle", 10.0, 60.5),
+    ("Nido", "title", 17.0, 344.0),
+    ("Los vuelos de la golondrina", "subtitle", 11.0, 364.0),
     ("Desde un liquidámbar en Heidelberg, hacia el este, el sur y el oeste",
-     "subtitle2", 6.0, 72.0),
+     "subtitle2", 7.2, 380.0),
 )
+
+# El mismo rectángulo, en las coordenadas del mapa sin ampliar, para que los
+# rótulos del planisferio sepan que ese sitio está ocupado.
+AMPLIACION, DESPLAZO = 1.43418, (-12.157, -34.371)
+
+
+def cartela_sin_ampliar(margen: float = 3.0):
+    x0, y0, x1, y1 = CARTELA
+    tx, ty = DESPLAZO
+    return ((x0 - margen - tx) / AMPLIACION, (y0 - margen - ty) / AMPLIACION,
+            (x1 + margen - tx) / AMPLIACION, (y1 + margen - ty) / AMPLIACION)
 
 
 def floron(x: float, y: float, sx: int, sy: int) -> str:
-    """Un remate de esquina: dos curvas que se abren y un punto."""
-    r = 5.2
+    """Un remate de esquina: una curva que se abre y un punto."""
+    r = 5.6
     return (f'<path d="M{x + sx * r:.2f},{y} q{-sx * r * 0.55:.2f},0 '
             f'{-sx * r * 0.78:.2f},{sy * r * 0.42:.2f} q{-sx * r * 0.22:.2f},'
             f'{sy * r * 0.2:.2f} {-sx * r * 0.22:.2f},{sy * r * 0.58:.2f}" '
             f'fill="none" stroke="currentColor" stroke-width="0.4"/>'
-            f'<circle cx="{x + sx * 1.9:.2f}" cy="{y + sy * 1.9:.2f}" r="0.55" '
+            f'<circle cx="{x + sx * 2:.2f}" cy="{y + sy * 2:.2f}" r="0.6" '
             f'fill="currentColor"/>')
 
 
 def cabecera() -> str:
-    x0, y0, x1, y1 = CART
+    x0, y0, x1, y1 = CARTELA
     a = CART_AIRE
-    piezas = [f'<g id="cabecera" color="{TINTA}">',
+    piezas = [f'<g id="cabecera" color="{TINTA_CART}">',
               f'<rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" '
-              f'fill="none" stroke="currentColor" stroke-width="0.55"/>',
+              f'fill="{PAPEL}" fill-opacity="0.95" stroke="currentColor" '
+              f'stroke-width="0.6"/>',
               f'<rect x="{x0 + a}" y="{y0 + a}" width="{x1 - x0 - 2 * a}" '
               f'height="{y1 - y0 - 2 * a}" fill="none" stroke="currentColor" '
-              f'stroke-width="0.22"/>']
+              f'stroke-width="0.24"/>']
     for x, sx in ((x0 + a, 1), (x1 - a, -1)):
         for y, sy in ((y0 + a, 1), (y1 - a, -1)):
             piezas.append(floron(x, y, sx, sy))
     for texto, clase, cuerpo, y in CABECERA:
         estilo = f"font-size:{cuerpo}px"
         if clase == "title":
-            estilo += f";letter-spacing:{cuerpo * 0.13:.2f}px"
+            estilo += f";letter-spacing:{cuerpo * 0.14:.2f}px"
             texto = texto.upper()
         piezas.append(f'<text x="{(x0 + x1) / 2:.1f}" y="{y}" '
                       f'text-anchor="middle" class="{clase}" '
                       f'style="{estilo}">{texto}</text>')
     piezas.append("</g>")
     return "".join(piezas)
+
+
+def fondo() -> str:
+    """El pliego, en tono de papel viejo en vez de blanco."""
+    return (f'<rect id="papel" x="0" y="0" width="1189" height="841" '
+            f'fill="{PAPEL}"/>')
 
 
 def logos() -> str:
@@ -360,6 +385,9 @@ def main() -> None:
         # La cabecera va la última a propósito: gran_plano.py amplía todo lo
         # que hay entre el planisferio y el cuadro de referencias, y si la
         # cabecera quedaba ahí en medio se escalaba junto con el mapa.
+        # El papel va primero de todo, debajo del dibujo.
+        svg = re.sub(r'<rect id="papel"[^>]*/>', "", svg, count=1)
+        svg = re.sub(r"(<svg[^>]*>)", r"\1" + fondo(), svg, count=1)
         svg = svg.replace("</svg>", nueva_ley + nuevo_indice + nueva_nav
                           + fila_logos + nueva_cab + "</svg>")
 

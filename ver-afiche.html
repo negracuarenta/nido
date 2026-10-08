@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>mapa</title>
+<style>body{margin:0;background:#666;font:12px sans-serif}
+#todo{width:100vw;display:block;border-bottom:3px solid #333}
+.caja{position:relative;overflow:hidden}.caja img{position:absolute}
+b{position:absolute;z-index:9;background:#000;color:#fff;padding:2px 6px}</style>
+<script>
+const v=Date.now();
+document.write(`<img id="todo" src="/MAPA_FINAL_es_color.svg?v=${v}">`);
+document.write(`<div class="caja" style="width:${300*2.6}px;height:${110*2.6}px">
+<b>cartela ×2.6</b><img src="/MAPA_FINAL_es_color.svg?v=${v}"
+style="width:${1189*2.6}px;left:${-30*2.6}px;top:${-305*2.6}px"></div>`);
+</script>

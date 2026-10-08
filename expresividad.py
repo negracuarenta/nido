@@ -19,6 +19,8 @@ from pathlib import Path
 
 import numpy as np
 
+from afiche import cartela_sin_ampliar
+
 AQUI = Path(__file__).parent
 AFICHES = ("MAPA_FINAL_es_bn.svg", "MAPA_FINAL_es_color.svg")
 NE = Path("/tmp/ne")
@@ -249,6 +251,9 @@ def mares(pal, lang="es") -> str:
 
     datos = json.loads((NE / "ne_50m_geography_marine_polys.geojson").read_text())
     campo = "name_es" if lang == "es" else "name_de"
+    # La cartela del título se apoya sobre el Pacífico: ahí no va ningún
+    # nombre de mar, o quedaría debajo.
+    ocupado = [cartela_sin_ampliar()]
     piezas = ['<g id="mares">']
     for f in datos["features"]:
         p = f["properties"]
@@ -279,6 +284,11 @@ def mares(pal, lang="es") -> str:
             ancho = len(nombre) * tam * 0.95
         if not sitio or tam < 2.0:
             continue
+        caja = (sitio[0] - ancho / 2, sitio[1] - tam,
+                sitio[0] + ancho / 2, sitio[1] + tam * 0.4)
+        if any(_chocan(caja, c) for c in ocupado):
+            continue
+        ocupado.append(caja)
         piezas.append(f'<text x="{sitio[0]:.1f}" y="{sitio[1]:.1f}" '
                       f'text-anchor="middle" class="mar" '
                       f'style="font-size:{tam:.2f}px;'
@@ -321,7 +331,8 @@ def accidentes(pal, lang="es", ocupado=None) -> str:
 
     datos = json.loads((NE / "ne_50m_geography_regions_polys.geojson").read_text())
     campo = "NAME_ES" if lang == "es" else "NAME_DE"
-    puestos, piezas = list(ocupado or []), ['<g id="accidentes">']
+    puestos = list(ocupado or []) + [cartela_sin_ampliar()]
+    piezas = ['<g id="accidentes">']
     rasgos = []
     for f in datos["features"]:
         p = f["properties"]

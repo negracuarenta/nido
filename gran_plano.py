@@ -16,6 +16,8 @@ doble de superficie.
 """
 import math
 import re
+
+from afiche import CARTELA
 from pathlib import Path
 
 AQUI = Path(__file__).parent
@@ -96,12 +98,18 @@ def marco_y_grados() -> str:
                           f'text-anchor="{ancla}" class="grado">'
                           f'{abs(lat)}° {letra}</text>')
 
+    cx0, cy0, cx1, cy1 = CARTELA
     for lon in MERIDIANOS:
         if lon == 0:
             continue
         xb, _ = equal_earth(lon, 0.0)
+        x = cx + k * xb
+        # La cartela se apoya sobre el ecuador: los grados que caerían debajo
+        # de ella no se escriben.
+        if cx0 - 4 < x < cx1 + 4 and cy0 - 6 < cy < cy1 + 6:
+            continue
         letra = "E" if lon > 0 else "O"
-        piezas.append(f'<text x="{cx + k * xb:.1f}" y="{cy - 2.4:.1f}" '
+        piezas.append(f'<text x="{x:.1f}" y="{cy - 2.4:.1f}" '
                       f'text-anchor="middle" class="grado">{abs(lon)}° {letra}</text>')
     piezas.append("</g>")
     return "".join(piezas)

@@ -18,6 +18,7 @@ import math
 import re
 from pathlib import Path
 
+from afiche import cartela_sin_ampliar
 from expresividad import proyectar
 
 AQUI = Path(__file__).parent
@@ -99,7 +100,7 @@ def grupo(svg: str, lang: str = "es") -> str:
     lugares = json.loads((AQUI / "nido_lugares.json").read_text())
     a, b = svg.index('id="mapa-mundi"'), svg.index('id="detalle-sudamerica"')
     ya = set(re.findall(r'<tspan class="code"[^>]*>([A-Z]+\d+)</tspan>', svg[a:b]))
-    ocupado = obstaculos(svg)
+    ocupado = obstaculos(svg) + [cartela_sin_ampliar()]
 
     faltan = []
     for viaje in lugares["trips"]:

@@ -1014,3 +1014,41 @@ del mapa. Ahora va dentro, en el mismo sistema de coordenadas que su recorte.
 - Los 46 códigos sobre los cuatro PDF: 46/46 en cada uno.
 - Cero solapes entre los 225 textos del afiche alemán.
 - La regla vieja ya no está; la cartela y los 18 grados, sí.
+
+## La cartela al Pacífico y el papel cálido (8 de octubre de 2026)
+
+Tres reparos del autor: la tipografía de la cartela seguía desequilibrada, tenía
+que ir a la izquierda pero **al medio, dentro del océano**, y el contraste entre
+el celeste del mar y el blanco del papel era malo.
+
+### La escala tipográfica
+Venía 23 / 10 / 6: NIDO aplastaba a todo lo demás. Ahora **17 / 11 / 7,2**, una
+progresión pareja donde cada línea se lee como un escalón del anterior y no como
+un apéndice. La cartela pasó a `(45, 316) – (300, 394)`, centrada verticalmente
+sobre el mapa (su centro cae en y ≈ 355,7) y apoyada en el Pacífico, sobre agua
+abierta: no tapa ninguna costa.
+
+Para que ningún rótulo quede debajo, `cartela_sin_ampliar()` devuelve el
+rectángulo en coordenadas del mapa sin ampliar y entra como obstáculo en
+`expresividad.mares()`, `expresividad.accidentes()` y `etiquetas.grupo()`. En
+`gran_plano.marco_y_grados()` se saltean además los grados del ecuador que caen
+dentro de ella: si no, "150° O" y "120° O" se imprimían encima.
+
+### El fondo
+El blanco del pliego contra el celeste del mar era un corte duro. El papel pasó
+a **#EDE4D0**, un crema de mapa antiguo, emitido como primer hijo del SVG
+(`fondo()`), y el mar se apagó en `relieve.py`: la batimetría sube de 0,24 a
+0,38 de mezcla y baja de 1,0 a 0,72 de saturación. El salto desapareció.
+
+### Verificado, sobre los cuatro PDF
+- **46/46 códigos** en cada uno, contrastados uno por uno contra `qr/indice.csv`
+  y `qr/de/indice.csv` — no sólo que decodifican, sino que apuntan adonde deben.
+- **Cero solapes** entre los 217 textos del afiche castellano y los 222 del alemán.
+- Dentro del rectángulo de la cartela no cae ningún otro texto: sólo sus tres
+  líneas. Ningún grado la cruza.
+- Los rótulos de mares, accidentes y lugares, todos dentro de la elipse,
+  comprobado con `isPointInFill` contra `#marco-mapa`.
+
+Un apunte de método: el script que extraía la banda de QR del PDF era un heredoc
+suelto y se había perdido. Quedó como `verificar_qr_pdf.py`, junto con
+`medir.html`, para que la verificación se pueda repetir sin reconstruirla.

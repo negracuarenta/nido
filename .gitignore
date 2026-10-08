@@ -4,6 +4,6 @@ __pycache__/
 # Original sin simplificar de Natural Earth: se baja a mano y pesa 2,7 MB.
 assets/geo/ne_50m_land.json
 qrs.json
-*-qrs.png
+qrs.png
 .grabados-cache/
 contacto.png
