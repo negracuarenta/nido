@@ -978,3 +978,39 @@ falta: «Bosques andino-patagónicos» desbordaba 5,7 mm, y su equivalente alem�
 - Cero solapes entre los 85 textos del plano en castellano y los 95 en alemán.
 - Ningún nombre del índice desborda su columna, en ninguno de los dos idiomas.
 - Nada se sale del pliego.
+
+---
+
+## Cartela, marco y pátina
+
+La regla que cruzaba bajo el título salió. En su lugar, el título va ahora
+dentro de una **cartela**, al modo de las láminas del XVIII: doble filete, un
+florón en cada esquina y las tres líneas centradas adentro. Dibujada en vector,
+no calcada de ningún grabado, así que se imprime limpia a cualquier tamaño y
+queda en la familia tipográfica del afiche. Sigue arriba a la izquierda, sin
+invadir el mapa.
+
+### El recuadro graduado, adaptado
+La referencia de Delisle tiene el neto con los grados en el borde, pero **eso no
+se traslada**: su mapa es rectangular y el nuestro termina en una elipse, así
+que los meridianos no llegan al marco salvo en el ecuador. La solución:
+
+- **Neto del pliego**: doble filete a 14 mm del borde, alrededor de toda la hoja.
+- **Latitudes** escritas en los extremos de cada paralelo, en el papel libre que
+  deja la elipse. Comprobado uno por uno: los ocho caen fuera del dibujo.
+- **Longitudes** sobre el ecuador, que sí cruza el mapa de lado a lado. Los diez
+  caen dentro, como corresponde.
+
+### La pátina
+Un velo cálido muy leve sobre el mapa, y la tinta pasada de gris a sepia: los
+filetes, los rótulos y los nombres. **Los QR no se tocaron**: son negro puro y
+cualquier desvío les quita contraste al escanear.
+
+Un error que la pantalla disimulaba: el velo quedaba fuera del grupo que se
+amplía pero se recortaba contra la elipse sin ampliar, así que sólo cubría parte
+del mapa. Ahora va dentro, en el mismo sistema de coordenadas que su recorte.
+
+### Verificado
+- Los 46 códigos sobre los cuatro PDF: 46/46 en cada uno.
+- Cero solapes entre los 225 textos del afiche alemán.
+- La regla vieja ya no está; la cartela y los 18 grados, sí.

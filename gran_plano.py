@@ -47,6 +47,83 @@ def fin_de_grupo(svg: str, desde: int) -> int:
     raise ValueError("no encontré el cierre del grupo")
 
 
+A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
+TINTA = "#3A3024"
+MARGEN_MARCO = 14.0          # del borde del pliego al filete exterior
+PLIEGO = (1189.0, 841.0)
+PARALELOS = (60, 30, 0, -30, -60)
+MERIDIANOS = (-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150)
+
+
+def equal_earth(lon_g, lat_g):
+    th = math.asin(math.sqrt(3) / 2 * math.sin(math.radians(lat_g)))
+    t2, t6 = th * th, th ** 6
+    x = (2 * math.sqrt(3) * math.radians(lon_g) * math.cos(th)
+         / (3 * (A1 + 3 * A2 * t2 + t6 * (7 * A3 + 9 * A4 * t2))))
+    return x, th * (A1 + A2 * t2 + t6 * (A3 + A4 * t2))
+
+
+def marco_y_grados() -> str:
+    """El neto del pliego y los grados sobre la propia retícula.
+
+    En Equal Earth los meridianos no llegan al marco —el mapa termina en una
+    elipse— así que la graduación no puede ir en el borde como en una lámina
+    rectangular. La latitud se escribe en los extremos de cada paralelo, en el
+    papel que queda libre, y la longitud sobre el ecuador, que sí cruza el
+    mapa de lado a lado.
+    """
+    s, tx, ty, alto = parametros()
+    k = s * 145.9379
+    cx = (IZQUIERDA + DERECHA) / 2
+    cy = ARRIBA + alto / 2
+    m, W, H = MARGEN_MARCO, *PLIEGO
+
+    piezas = [f'<g id="marco" color="{TINTA}">'
+              f'<rect x="{m}" y="{m}" width="{W - 2 * m}" height="{H - 2 * m}" '
+              f'fill="none" stroke="currentColor" stroke-width="0.6"/>'
+              f'<rect x="{m + 3}" y="{m + 3}" width="{W - 2 * m - 6}" '
+              f'height="{H - 2 * m - 6}" fill="none" stroke="currentColor" '
+              f'stroke-width="0.22"/>']
+
+    for lat in PARALELOS:
+        if lat == 0:
+            continue
+        xb, yb = equal_earth(180.0, lat)
+        x_izq, y = cx - k * xb, cy - k * yb
+        letra = "N" if lat > 0 else "S"
+        for xx, ancla, signo in ((x_izq - 3.2, "end", -1), (2 * cx - x_izq + 3.2, "start", 1)):
+            piezas.append(f'<text x="{xx:.1f}" y="{y + 1.3:.1f}" '
+                          f'text-anchor="{ancla}" class="grado">'
+                          f'{abs(lat)}° {letra}</text>')
+
+    for lon in MERIDIANOS:
+        if lon == 0:
+            continue
+        xb, _ = equal_earth(lon, 0.0)
+        letra = "E" if lon > 0 else "O"
+        piezas.append(f'<text x="{cx + k * xb:.1f}" y="{cy - 2.4:.1f}" '
+                      f'text-anchor="middle" class="grado">{abs(lon)}° {letra}</text>')
+    piezas.append("</g>")
+    return "".join(piezas)
+
+
+def velo() -> str:
+    """Un velo cálido sobre el mapa, para la pátina de lámina antigua.
+
+    Va en las coordenadas del dibujo sin ampliar, porque se inserta dentro del
+    grupo que luego se escala: el recorte contra el marco del mapa sólo calza
+    si los dos están en el mismo sistema.
+    """
+    return ('<g id="velo" clip-path="url(#solo-mapa)">'
+            '<rect x="28" y="79.747" width="790" height="384.506" '
+            'fill="#C9A869" opacity="0.07"/></g>')
+
+
+ESTILO_GRADO = (".grado{font-family:'TeX Gyre Pagella','Palatino',serif;"
+                "font-style:italic;font-size:3.2px;fill:%s;opacity:0.75}"
+                % TINTA)
+
+
 def despejar_el_arbol(svg: str) -> str:
     """Pone el rótulo de Heidelberg por encima de todo lo demás del mapa.
 
@@ -71,7 +148,9 @@ def despejar_el_arbol(svg: str) -> str:
     # Va al final del rango que se amplía, justo antes del cuadro de
     # referencias: ahí no le queda nada encima.
     cierre = svg.rindex("<g", 0, svg.index(HASTA))
-    return svg[:cierre] + f'<g id="arbol">{bloque}</g>' + svg[cierre:]
+    # El velo entra acá, dentro del rango que se amplía, para que su recorte
+    # contra el marco del mapa siga valiendo.
+    return svg[:cierre] + velo() + f'<g id="arbol">{bloque}</g>' + svg[cierre:]
 
 
 def main() -> None:
@@ -100,8 +179,13 @@ def main() -> None:
         svg = (svg[:a]
                + f'<g id="plano" transform="translate({tx:.3f} {ty:.3f}) '
                  f'scale({s:.5f})">' + svg[a:b] + "</g>" + svg[b:])
+        # El velo va dentro del grupo ampliado, recortado al marco del mapa;
+        # el neto del pliego y los grados, fuera, en coordenadas finales.
+        svg = svg.replace("</svg>", marco_y_grados() + "</svg>")
+        if ".grado{" not in svg:
+            svg = svg.replace("</style>", ESTILO_GRADO + "</style>", 1)
         ruta.write_text(svg)
-        print(f"{nombre}: ampliado, detalle fuera")
+        print(f"{nombre}: ampliado, detalle fuera, marco y grados puestos")
 
 
 if __name__ == "__main__":

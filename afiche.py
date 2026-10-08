@@ -22,6 +22,8 @@ BASES = {"MAPA_FINAL_es_bn.svg": "base/MAPA_BASE_bn.svg",
          "MAPA_FINAL_es_color.svg": "base/MAPA_BASE_color.svg"}
 AFICHES = tuple(BASES)
 
+TINTA = "#3A3024"      # la tinta sepia del afiche
+
 COLOR = {"E": "#D9822B", "S": "#2B6CB0", "O": "#2F8F5B", "OV": "#6B4E9B"}
 ROJO = "#C62828"
 
@@ -253,26 +255,49 @@ def quitar(svg: str, ident: str) -> str:
 
 
 # ------------------------------------------------------------------ cabecera
-# El salto de tamaño era brutal: NIDO a 30 y las frases a 8 y 4,4. Ahora las
-# tres líneas van apiladas, con pasos parejos, y el bloque baja hasta meterse
-# en la esquina superior izquierda del mapa, que queda fuera de la elipse.
-CAB_X = 28.0
+# El título va dentro de una cartela, como en las láminas del XVIII: doble
+# filete, un florón en cada esquina y el texto adentro. Dibujada, no calcada:
+# así se imprime limpia a cualquier tamaño y queda en la familia del afiche.
+CART = (28.0, 18.0, 268.0, 80.0)        # izquierda, arriba, derecha, abajo
+CART_AIRE = 2.6                          # separación entre los dos filetes
 CABECERA = (
-    ("Nido", "title", 24.0, 54.0, 0),
-    ("Los vuelos de la golondrina", "subtitle", 10.5, 70.0, 0),
+    ("Nido", "title", 23.0, 45.0),
+    ("Los vuelos de la golondrina", "subtitle", 10.0, 60.5),
     ("Desde un liquidámbar en Heidelberg, hacia el este, el sur y el oeste",
-     "subtitle2", 6.2, 82.0, 0),
+     "subtitle2", 6.0, 72.0),
 )
 
 
+def floron(x: float, y: float, sx: int, sy: int) -> str:
+    """Un remate de esquina: dos curvas que se abren y un punto."""
+    r = 5.2
+    return (f'<path d="M{x + sx * r:.2f},{y} q{-sx * r * 0.55:.2f},0 '
+            f'{-sx * r * 0.78:.2f},{sy * r * 0.42:.2f} q{-sx * r * 0.22:.2f},'
+            f'{sy * r * 0.2:.2f} {-sx * r * 0.22:.2f},{sy * r * 0.58:.2f}" '
+            f'fill="none" stroke="currentColor" stroke-width="0.4"/>'
+            f'<circle cx="{x + sx * 1.9:.2f}" cy="{y + sy * 1.9:.2f}" r="0.55" '
+            f'fill="currentColor"/>')
+
+
 def cabecera() -> str:
-    piezas = ['<g id="cabecera">']
-    for texto, clase, cuerpo, y, _ in CABECERA:
+    x0, y0, x1, y1 = CART
+    a = CART_AIRE
+    piezas = [f'<g id="cabecera" color="{TINTA}">',
+              f'<rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" '
+              f'fill="none" stroke="currentColor" stroke-width="0.55"/>',
+              f'<rect x="{x0 + a}" y="{y0 + a}" width="{x1 - x0 - 2 * a}" '
+              f'height="{y1 - y0 - 2 * a}" fill="none" stroke="currentColor" '
+              f'stroke-width="0.22"/>']
+    for x, sx in ((x0 + a, 1), (x1 - a, -1)):
+        for y, sy in ((y0 + a, 1), (y1 - a, -1)):
+            piezas.append(floron(x, y, sx, sy))
+    for texto, clase, cuerpo, y in CABECERA:
         estilo = f"font-size:{cuerpo}px"
         if clase == "title":
             estilo += f";letter-spacing:{cuerpo * 0.13:.2f}px"
             texto = texto.upper()
-        piezas.append(f'<text x="{CAB_X}" y="{y}" class="{clase}" '
+        piezas.append(f'<text x="{(x0 + x1) / 2:.1f}" y="{y}" '
+                      f'text-anchor="middle" class="{clase}" '
                       f'style="{estilo}">{texto}</text>')
     piezas.append("</g>")
     return "".join(piezas)
@@ -320,6 +345,16 @@ def main() -> None:
         # La cabecera vieja estaba suelta, sin grupo: se la lleva por su clase.
         svg = re.sub(r'<text[^>]*class="(title|subtitle2?)"[^>]*>.*?</text>',
                      "", svg, flags=re.S)
+        # Fuera la regla horizontal que cruzaba bajo el título: la cartela
+        # ya encierra el texto y la línea sobraba.
+        svg = re.sub(r'<line x1="28" y1="62"[^>]*/>', "", svg, count=1)
+        # La tinta pasa de gris a sepia. Los QR no se tocan: son negro puro y
+        # cualquier desvío les quita contraste al escanearlos.
+        for gris, sepia in (("#111", TINTA), ("#444", "#5A4B38"),
+                            ("#555", "#6B5A44")):
+            svg = svg.replace(f'fill:{gris}', f"fill:{sepia}")
+            svg = svg.replace(f'stroke="{gris}"', f'stroke="{sepia}"')
+            svg = svg.replace(f'fill="{gris}"', f'fill="{sepia}"')
         svg = re.sub(r'<g id="ref-ov">.*?</g>', "", svg, count=1, flags=re.S)
         svg = re.sub(r'<g id="fuentes-mapa">.*?</g>', "", svg, count=1, flags=re.S)
         # La cabecera va la última a propósito: gran_plano.py amplía todo lo
