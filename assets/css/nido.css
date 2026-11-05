@@ -122,6 +122,7 @@ a { color: inherit; }
 .leyenda ul { list-style: none; margin: 0; padding: 0; }
 .leyenda li { margin: 0.25rem 0; }
 .leyenda label { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+.leyenda input[type="checkbox"] { accent-color: var(--tinta); }
 .leyenda svg { flex: 0 0 auto; }
 
 .s-punto, .s-cero {
@@ -328,7 +329,13 @@ a { color: inherit; }
 }
 
 @media (max-width: 700px) {
-  .mapa-zona #mapa { height: min(62svh, 560px); }
+  /* En el teléfono la leyenda deja de flotar sobre el mapa y vuelve al flujo.
+     Con la zona en fila los dos se repartían el ancho: la leyenda se llevaba
+     los 375 px y el mapa quedaba en cero —invisible— porque un hijo flex no
+     baja de su contenido mínimo salvo que se le diga. Apilados, el mapa va
+     arriba con todo el ancho, que es lo primero que hay que ver al abrir. */
+  .mapa-zona { flex-direction: column; }
+  .mapa-zona #mapa { width: 100%; min-width: 0; height: min(62svh, 560px); }
   .pie-sitio__logos { gap: 1.6rem 2.2rem; }
 }
 
